@@ -108,8 +108,18 @@ def main():
     filter_ = argumente[0].lower() if argumente else None
 
     REF_DIR.mkdir(parents=True, exist_ok=True)
-    verzeichnis = []
+
+    # Bestehendes Verzeichnis einlesen und ERGAENZEN, nicht ersetzen. Sonst
+    # verlieren Dateien ihre Metadaten, sobald ein Suchlauf fehlschlaegt --
+    # genau so sind die alarm-call-Dateien schon einmal zu "?" geworden.
+    verzeichnis_map = {}
+    vpfad = REF_DIR / "verzeichnis.json"
+    if vpfad.exists():
+        for e in json.loads(vpfad.read_text(encoding="utf-8")):
+            verzeichnis_map[e["datei"]] = e
+
     geladen = uebersprungen = 0
+    leer_ausgegangen = []
 
     for name_de, genus, species, typen in REFERENZ_ARTEN:
         if filter_ and filter_ not in f"{name_de} {genus} {species}".lower():
@@ -117,6 +127,12 @@ def main():
         print(f"\n{name_de} ({genus} {species})")
         for typ in typen:
             treffer = suche(genus, species, typ)
+            if not treffer:
+                # Nicht stillschweigend weiterlaufen: ein leerer Suchlauf kann
+                # heissen "gibt es nicht" ODER "Abruf fehlgeschlagen".
+                print(f"  {typ:12s} KEINE Treffer — Abruf gescheitert oder Bestand leer")
+                leer_ausgegangen.append(f"{name_de}/{typ}")
+                continue
             print(f"  {typ:12s} {len(treffer)} Referenz(en)")
             for rec in treffer:
                 xid = rec.get("id")
@@ -144,7 +160,7 @@ def main():
                 else:
                     uebersprungen += 1
 
-                verzeichnis.append({
+                verzeichnis_map[ziel.name] = {
                     "datei": ziel.name,
                     "ordner": name_de,
                     "art": name_de,
@@ -157,15 +173,20 @@ def main():
                     "lizenz": rec.get("lic"),
                     "anmerkung": (rec.get("rmk") or "").strip()[:300],
                     "label": None,        # <- wird beim Abhoeren gesetzt
-                })
+                }
                 print(f"     XC{xid:9s} {rec.get('length'):6s} {ziel.name}")
 
+    verzeichnis = sorted(verzeichnis_map.values(), key=lambda e: e["datei"])
     (REF_DIR / "verzeichnis.json").write_text(
         json.dumps(verzeichnis, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"\n{len(verzeichnis)} Referenzen ({geladen} neu, {uebersprungen} vorhanden)")
+    print(f"\n{len(verzeichnis)} Referenzen im Verzeichnis "
+          f"({geladen} neu geladen, {uebersprungen} schon vorhanden)")
     print(f"Ordner: {REF_DIR}")
     print("Hinweis: bleibt lokal, wird NICHT ausgeliefert (siehe .gitignore).")
+    if leer_ausgegangen:
+        print("\nOHNE ERGEBNIS: " + ", ".join(leer_ausgegangen))
+        print("  -> nochmal laufen lassen; das sind meist Zeitüberschreitungen")
 
 
 if __name__ == "__main__":
