@@ -101,7 +101,11 @@ def main():
                 xid = rec.get("id")
                 suffix = Path(rec.get("file-name") or "x.mp3").suffix.lower() or ".mp3"
                 sicher = typ.replace(" ", "_")
-                ziel = REF_DIR / f"{species}_{sicher}_XC{xid}{suffix}"
+                # Ein Ordner je Vogelart -- beim Abhoeren will man nicht
+                # zwischen zwanzig Arten in einem Verzeichnis suchen.
+                art_dir = REF_DIR / name_de
+                art_dir.mkdir(parents=True, exist_ok=True)
+                ziel = art_dir / f"{species}_{sicher}_XC{xid}{suffix}"
 
                 if not ziel.exists():
                     url = rec["file"]
@@ -121,6 +125,7 @@ def main():
 
                 verzeichnis.append({
                     "datei": ziel.name,
+                    "ordner": name_de,
                     "art": name_de,
                     "wissenschaftlich": f"{genus} {species}",
                     "xc_typ": typ,

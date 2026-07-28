@@ -44,4 +44,4 @@ yarn-error.*
 data/referenz/
 # Silben-Schnipsel und Labelseite werden erzeugt
 data/silben/
-data/labelseite.html
+data/labelseite_*.html

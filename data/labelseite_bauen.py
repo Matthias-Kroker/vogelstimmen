@@ -28,8 +28,9 @@ from scipy.cluster.vq import kmeans2, whiten
 
 BASIS = Path(__file__).resolve().parent
 REF_DIR = BASIS / "referenz"
-SILBEN_DIR = BASIS / "silben"
-SEITE = BASIS / "labelseite.html"
+SILBEN_BASIS = BASIS / "silben"
+# Je Vogelart ein eigener Ordner und eine eigene Seite -- so bleibt das
+# Abhoeren uebersichtlich, statt 191 Schnipsel aus zwanzig Arten zu mischen.
 
 FFMPEG = Path(r"C:\Users\kroker\Tools\ffmpeg\bin\ffmpeg.exe")
 if FFMPEG.exists():
@@ -126,7 +127,15 @@ def merkmale(seg, sr):
 
 
 def main():
-    anzahl_gruppen = int(sys.argv[1]) if len(sys.argv) > 1 else 8
+    argumente = [a for a in sys.argv[1:] if not a.startswith("--")]
+    anzahl_gruppen = 8
+    nur_art = None
+    for a in argumente:
+        if a.isdigit():
+            anzahl_gruppen = int(a)
+        else:
+            nur_art = a
+
     if not REF_DIR.exists():
         print("Kein referenz/ -- erst referenz_holen.py laufen lassen.")
         sys.exit(1)
@@ -137,14 +146,35 @@ def main():
         for e in json.loads(vpfad.read_text(encoding="utf-8")):
             verzeichnis[e["datei"]] = e
 
-    SILBEN_DIR.mkdir(parents=True, exist_ok=True)
-    for alt in SILBEN_DIR.glob("*.wav"):
+    art_ordner = sorted(d for d in REF_DIR.iterdir() if d.is_dir())
+    if nur_art:
+        art_ordner = [d for d in art_ordner if nur_art.lower() in d.name.lower()]
+    if not art_ordner:
+        print("Keine Artordner gefunden.")
+        sys.exit(1)
+
+    seiten = []
+    for ordner in art_ordner:
+        seite = verarbeite_art(ordner, verzeichnis, anzahl_gruppen)
+        if seite:
+            seiten.append(seite)
+
+    print("\nSeiten zum Abhören:")
+    for s in seiten:
+        print(f"  {s}")
+
+
+def verarbeite_art(ordner, verzeichnis, anzahl_gruppen):
+    art = ordner.name
+    silben_dir = SILBEN_BASIS / art
+    silben_dir.mkdir(parents=True, exist_ok=True)
+    for alt in silben_dir.glob("*.wav"):
         alt.unlink()
 
     silben = []
-    dateien = sorted(f for f in REF_DIR.iterdir()
+    dateien = sorted(f for f in ordner.iterdir()
                      if f.suffix.lower() in (".mp3", ".wav", ".flac"))
-    print(f"{len(dateien)} Referenzaufnahmen\n")
+    print(f"\n=== {art} — {len(dateien)} Referenzaufnahmen ===")
 
     for f in dateien:
         signal, sr, seg = lade_mono(f)
@@ -160,7 +190,7 @@ def main():
             start_ms = max(0, a / sr * 1000 - POLSTER_MS)
             ende_ms = min(len(seg), b / sr * 1000 + POLSTER_MS)
             name = f"{f.stem}_s{nr:03d}.wav"
-            seg[start_ms:ende_ms].export(SILBEN_DIR / name, format="wav")
+            seg[start_ms:ende_ms].export(silben_dir / name, format="wav")
             m.update({"datei": name, "quelle": f.name,
                       "art": info.get("art", "?"),
                       "xc_typ": info.get("xc_typ", "?")})
@@ -169,8 +199,8 @@ def main():
         print(f"  {f.name:42s} {behalten:3d} Silben")
 
     if len(silben) < anzahl_gruppen:
-        print("\nZu wenige Silben für eine Gruppierung.")
-        sys.exit(1)
+        print(f"  zu wenige Silben ({len(silben)}) für {anzahl_gruppen} Gruppen")
+        return None
 
     felder = ["spitze_hz", "schwerpunkt_hz", "bandbreite_hz",
               "flachheit", "modulation", "dauer_ms"]
@@ -182,15 +212,15 @@ def main():
     for s, g in zip(silben, zuordnung):
         s["gruppe"] = int(g)
 
-    baue_seite(silben, anzahl_gruppen)
-    print(f"\n{len(silben)} Silben in {anzahl_gruppen} Gruppen")
-    print(f"Seite: {SEITE}")
-    print("Im Browser öffnen, pro Gruppe 2-3 Schnipsel hören, zuordnen.")
+    seite = BASIS / f"labelseite_{art}.html"
+    baue_seite(silben, anzahl_gruppen, art, seite)
+    print(f"  {len(silben)} Silben in {anzahl_gruppen} Gruppen -> {seite.name}")
+    return seite
 
 
-def baue_seite(silben, anzahl_gruppen):
-    teile = ["""<!doctype html><html lang="de"><head><meta charset="utf-8">
-<title>Vogelstimmen — Silben beschriften</title><style>
+def baue_seite(silben, anzahl_gruppen, art, seite):
+    kopf_vorlage = """<!doctype html><html lang="de"><head><meta charset="utf-8">
+<title>{art} — Silben beschriften</title><style>
 body{font-family:system-ui,sans-serif;margin:0;background:#1a1a1a;color:#e8e8e8;line-height:1.5}
 .kopf{padding:20px 28px;background:#111;border-bottom:1px solid #333}
 h1{margin:0 0 6px;font-size:19px}
@@ -212,12 +242,16 @@ border-radius:6px;padding:11px;font-family:ui-monospace,monospace;font-size:12px
 button{background:#0e639c;color:#fff;border:0;padding:9px 16px;border-radius:5px;
 font-size:14px;cursor:pointer;margin-top:9px}
 </style></head><body>
-<div class="kopf"><h1>Silben beschriften</h1>
+<div class="kopf"><h1>{art} — Silben beschriften</h1>
 <div class="hinweis">Pro Gruppe zwei, drei Schnipsel anhören — nicht alle.
 Die Gruppen sind nach akustischer Ähnlichkeit gebildet, nicht nach den
 xeno-canto-Etiketten. Passt eine Gruppe nicht zusammen, ruhig „unklar“
 wählen; dann wird feiner unterteilt.</div></div>
-<div class="legende">"""]
+<div class="legende">"""
+
+    # .replace statt .format -- im CSS stehen geschweifte Klammern, die
+    # .format als Platzhalter missverstehen wuerde.
+    teile = [kopf_vorlage.replace("{art}", art)]
 
     for _, titel, beschreibung in RUFTYPEN:
         teile.append(f"<div><b>{titel}</b><br>{beschreibung}</div>")
@@ -249,7 +283,7 @@ wählen; dann wird feiner unterteilt.</div></div>
             teile.append(
                 f'<figure><figcaption>{s["spitze_hz"]/1000:.1f} kHz · '
                 f'{s["dauer_ms"]:.0f} ms</figcaption>'
-                f'<audio controls preload="none" src="silben/{s["datei"]}"></audio>'
+                f'<audio controls preload="none" src="silben/{art}/{s["datei"]}"></audio>'
                 f'</figure>')
         teile.append("</div>")
 
@@ -272,7 +306,7 @@ function aktualisieren(){
 felder.forEach(f=>f.addEventListener('change',aktualisieren));
 </script></body></html>""")
 
-    SEITE.write_text("".join(teile), encoding="utf-8")
+    seite.write_text("".join(teile), encoding="utf-8")
 
 
 if __name__ == "__main__":
