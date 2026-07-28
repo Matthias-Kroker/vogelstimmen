@@ -39,3 +39,9 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Referenzaufnahmen: nur zum Messen, NIE ausliefern (Lizenz!)
+data/referenz/
+# Silben-Schnipsel und Labelseite werden erzeugt
+data/silben/
+data/labelseite.html
