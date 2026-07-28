@@ -29,7 +29,7 @@ API_KEY = os.environ.get("XENO_CANTO_API_KEY", "")
 REF_DIR = Path(__file__).resolve().parent / "referenz"
 UA = {"User-Agent": "Vogelstimmen-Lern-App/0.1 (privates Lernprojekt)"}
 
-PRO_TYP = 4          # so viele Referenzaufnahmen je Art und Ruftyp
+PRO_TYP = 10         # so viele Referenzaufnahmen je Art und Ruftyp
 MAX_SEKUNDEN = 45    # laengere Aufnahmen enthalten meist mehrere Ruftypen
 
 # Bewusst klein gehalten: die Referenz soll erstklassig sein, nicht gross.
@@ -58,13 +58,34 @@ def rang(rec):
     return (hat_anmerkung, sekunden(rec))
 
 
+def hole(url, params=None, versuche=4, timeout=60):
+    """GET mit Wiederholung -- xeno-canto laeuft gelegentlich in Zeitueberschreitung."""
+    warte = 3
+    for versuch in range(versuche):
+        try:
+            r = requests.get(url, params=params, headers=UA, timeout=timeout)
+            if r.status_code == 429:
+                print(f"    gedrosselt, warte {warte}s...")
+                time.sleep(warte); warte *= 2
+                continue
+            r.raise_for_status()
+            return r
+        except requests.RequestException as e:
+            if versuch == versuche - 1:
+                print(f"    Abruf endgültig fehlgeschlagen: {e}")
+                return None
+            print(f"    Versuch {versuch + 1} fehlgeschlagen, neuer Anlauf in {warte}s")
+            time.sleep(warte); warte *= 2
+    return None
+
+
 def suche(genus, species, typ):
     wert = f'"{typ}"' if " " in typ else typ
     query = f"gen:{genus} sp:{species} type:{wert} q:A"
-    r = requests.get("https://xeno-canto.org/api/3/recordings",
-                     params={"query": query, "key": API_KEY},
-                     headers=UA, timeout=40)
-    r.raise_for_status()
+    r = hole("https://xeno-canto.org/api/3/recordings",
+             {"query": query, "key": API_KEY})
+    if r is None:
+        return []
     treffer = []
     for rec in r.json().get("recordings") or []:
         typen = [t.strip() for t in (rec.get("type") or "").lower().split(",")]

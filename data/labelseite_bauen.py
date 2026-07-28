@@ -39,8 +39,16 @@ if FFMPEG.exists():
     AudioSegment.ffprobe = str(FFMPEG.parent / "ffprobe.exe")
 
 MIN_HZ = 1200          # darunter ist Wind und Verkehr, nicht Vogel
-POLSTER_MS = 60        # etwas Luft vor und nach der Silbe, sonst klickt es
+POLSTER_MS = 250       # Luft vor und nach der Phrase
 BEISPIELE_PRO_GRUPPE = 6
+
+# Gehoert wird in PHRASEN, nicht in Einzelsilben. Eine einzelne 60-ms-Silbe
+# ist zum Wiedererkennen unbrauchbar -- "tix-tix-tix" ist eine Folge, kein
+# einzelnes tix. Gemessen wird weiterhin silbenweise (die Wiederholrate ist
+# ja gerade ein Unterscheidungsmerkmal), zusammengeschnitten aber phrasenweise.
+LUECKE_MS = 450        # groessere Pause trennt zwei Phrasen
+MIN_PHRASE_MS = 1500   # kuerzere Schnipsel werden symmetrisch aufgefuellt
+MAX_PHRASE_MS = 6000
 
 # Aus der ornithologischen Literatur -- steht in der Seite neben den Knoepfen,
 # damit man nicht raten muss, sondern weiss, worauf zu achten ist.
@@ -91,6 +99,57 @@ def silben_finden(signal, sr, fenster=512, schwelle=0.20, min_rahmen=3):
     if start is not None:
         gefunden.append((start * schritt, len(signal)))
     return gefunden
+
+
+def phrasen_bilden(silben, sr, gesamt_laenge):
+    """Benachbarte Silben zu hoerbaren Phrasen zusammenfassen.
+
+    Silben, die dichter als LUECKE_MS aufeinanderfolgen, gehoeren zum selben
+    Ruf. Zu kurze Phrasen werden symmetrisch verlaengert, damit ueberhaupt
+    etwas zu hoeren ist.
+    """
+    if not silben:
+        return []
+
+    luecke_proben = LUECKE_MS / 1000.0 * sr
+    gruppen, aktuell = [], [silben[0]]
+    for a, b in silben[1:]:
+        if a - aktuell[-1][1] <= luecke_proben:
+            aktuell.append((a, b))
+        else:
+            gruppen.append(aktuell)
+            aktuell = [(a, b)]
+    gruppen.append(aktuell)
+
+    max_proben = MAX_PHRASE_MS / 1000.0 * sr
+
+    # Lange Folgen an Silbengrenzen weiter unterteilen statt abzuschneiden.
+    # Frueher wurde der Rest verworfen: aus 20 s Tixen wurde EINE 6-s-Phrase
+    # und der Rest war weg.
+    zerlegt = []
+    for gruppe in gruppen:
+        teil = [gruppe[0]]
+        for silbe in gruppe[1:]:
+            if silbe[1] - teil[0][0] > max_proben:
+                zerlegt.append(teil)
+                teil = [silbe]
+            else:
+                teil.append(silbe)
+        zerlegt.append(teil)
+
+    phrasen = []
+    for gruppe in zerlegt:
+        start, ende = gruppe[0][0], gruppe[-1][1]
+        dauer_ms = (ende - start) / sr * 1000
+
+        # zu kurz? nach beiden Seiten aufblasen, bis es hoerbar ist
+        if dauer_ms < MIN_PHRASE_MS:
+            fehlt = (MIN_PHRASE_MS - dauer_ms) / 1000.0 * sr / 2
+            start = max(0, start - fehlt)
+            ende = min(gesamt_laenge, ende + fehlt)
+
+        phrasen.append((int(start), int(ende), gruppe))
+    return phrasen
 
 
 def merkmale(seg, sr):
@@ -183,27 +242,42 @@ def verarbeite_art(ordner, verzeichnis, anzahl_gruppen):
         gefunden = silben_finden(signal, sr)
         info = verzeichnis.get(f.name, {})
         behalten = 0
-        for nr, (a, b) in enumerate(gefunden):
-            m = merkmale(signal[a:b], sr)
-            if m is None or m["dauer_ms"] < 25:
+
+        for nr, (start, ende, gruppe) in enumerate(
+                phrasen_bilden(gefunden, sr, len(signal))):
+            # Messen bleibt silbenweise -- die Einzelwerte werden dann
+            # ueber die Phrase gemittelt.
+            einzeln = [merkmale(signal[a:b], sr) for a, b in gruppe]
+            einzeln = [m for m in einzeln if m and m["dauer_ms"] >= 25]
+            if not einzeln:
                 continue
-            start_ms = max(0, a / sr * 1000 - POLSTER_MS)
-            ende_ms = min(len(seg), b / sr * 1000 + POLSTER_MS)
-            name = f"{f.stem}_s{nr:03d}.wav"
+
+            phrase_ms = (ende - start) / sr * 1000
+            m = {feld: float(np.median([e[feld] for e in einzeln]))
+                 for feld in ("spitze_hz", "schwerpunkt_hz", "bandbreite_hz",
+                              "flachheit", "modulation", "dauer_ms")}
+            m["silben"] = len(einzeln)
+            # Wiederholrate: unterscheidet gehaltenen ssiih von hackendem Tixen
+            m["rate_hz"] = len(einzeln) / (phrase_ms / 1000.0) if phrase_ms else 0.0
+            m["phrase_ms"] = phrase_ms
+
+            start_ms = max(0, start / sr * 1000 - POLSTER_MS)
+            ende_ms = min(len(seg), ende / sr * 1000 + POLSTER_MS)
+            name = f"{f.stem}_p{nr:03d}.wav"
             seg[start_ms:ende_ms].export(silben_dir / name, format="wav")
             m.update({"datei": name, "quelle": f.name,
                       "art": info.get("art", "?"),
                       "xc_typ": info.get("xc_typ", "?")})
             silben.append(m)
             behalten += 1
-        print(f"  {f.name:42s} {behalten:3d} Silben")
+        print(f"  {f.name:42s} {behalten:3d} Phrasen")
 
     if len(silben) < anzahl_gruppen:
         print(f"  zu wenige Silben ({len(silben)}) für {anzahl_gruppen} Gruppen")
         return None
 
-    felder = ["spitze_hz", "schwerpunkt_hz", "bandbreite_hz",
-              "flachheit", "modulation", "dauer_ms"]
+    felder = ["spitze_hz", "bandbreite_hz", "flachheit",
+              "modulation", "dauer_ms", "rate_hz"]
     matrix = np.array([[s[f] for f in felder] for s in silben])
     # whiten: alle Merkmale auf vergleichbare Streuung bringen, sonst
     # dominieren die Hertz-Werte allein durch ihre Groessenordnung.
@@ -214,7 +288,7 @@ def verarbeite_art(ordner, verzeichnis, anzahl_gruppen):
 
     seite = BASIS / f"labelseite_{art}.html"
     baue_seite(silben, anzahl_gruppen, art, seite)
-    print(f"  {len(silben)} Silben in {anzahl_gruppen} Gruppen -> {seite.name}")
+    print(f"  {len(silben)} Phrasen in {anzahl_gruppen} Gruppen -> {seite.name}")
     return seite
 
 
@@ -268,13 +342,15 @@ wählen; dann wird feiner unterteilt.</div></div>
         herkunft = ", ".join(f"{k}×{v}" for k, v in
                              sorted(typen.items(), key=lambda kv: -kv[1]))
 
-        teile.append(f'<div class="gruppe"><h2>Gruppe {g + 1} — {len(drin)} Silben</h2>')
+        teile.append(f'<div class="gruppe"><h2>Gruppe {g + 1} — {len(drin)} Phrasen</h2>')
         teile.append(
             f'<div class="werte">Spitze {mit("spitze_hz")/1000:.2f} kHz &nbsp; '
             f'Bandbreite {mit("bandbreite_hz")/1000:.2f} kHz &nbsp; '
             f'Flachheit {mit("flachheit"):.3f} &nbsp; '
             f'Modulation {mit("modulation"):.2f} &nbsp; '
-            f'Dauer {mit("dauer_ms"):.0f} ms<br>'
+            f'Silbe {mit("dauer_ms"):.0f} ms &nbsp; '
+            f'Rate {mit("rate_hz"):.1f}/s &nbsp; '
+            f'Phrase {mit("phrase_ms")/1000:.1f} s<br>'
             f'xeno-canto sagt dazu: {herkunft}</div>')
 
         teile.append('<div class="schnipsel">')
@@ -282,7 +358,7 @@ wählen; dann wird feiner unterteilt.</div></div>
         for s in drin[::schritt][:BEISPIELE_PRO_GRUPPE]:
             teile.append(
                 f'<figure><figcaption>{s["spitze_hz"]/1000:.1f} kHz · '
-                f'{s["dauer_ms"]:.0f} ms</figcaption>'
+                f'{s["silben"]}× · {s["phrase_ms"]/1000:.1f} s</figcaption>'
                 f'<audio controls preload="none" src="silben/{art}/{s["datei"]}"></audio>'
                 f'</figure>')
         teile.append("</div>")
