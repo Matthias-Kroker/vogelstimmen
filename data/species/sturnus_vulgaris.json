@@ -1,0 +1,164 @@
+{
+  "id": "sturnus_vulgaris",
+  "domaene": "voegel",
+  "name_de": "Star",
+  "name_wissenschaftlich": "Sturnus vulgaris",
+  "gattung": "Sturnus",
+  "art": "vulgaris",
+  "wikidata_id": "Q25469",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Der Star, auch als Gemeiner Star bezeichnet, ist der in Eurasien am weitesten verbreitete und häufigste Vertreter der Familie der Stare (Sturnidae). Durch zahlreiche Einbürgerungen auf anderen Kontinenten ist der Star heute einer der häufigsten Vögel der Welt. Im Niederdeutschen werden Stare Spreen genannt.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Star_(Art)",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Sturnus_vulgaris_2_%28Marek_Szczepanek%29.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Dendrocopos major",
+      "deutsch": "Buntspecht"
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "deutsch": "Eichelhäher"
+    },
+    {
+      "wissenschaftlich": "Sciurus vulgaris",
+      "deutsch": "Eichhörnchen"
+    },
+    {
+      "wissenschaftlich": "Pica pica",
+      "deutsch": "Elster"
+    },
+    {
+      "wissenschaftlich": "Eliomys quercinus",
+      "deutsch": "Gartenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Muscardinus avellanarius",
+      "deutsch": "Haselmaus"
+    },
+    {
+      "wissenschaftlich": "Felis catus",
+      "deutsch": "Hauskatze"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Falco columbarius",
+      "deutsch": "Merlin"
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "deutsch": "Mäusebussard"
+    },
+    {
+      "wissenschaftlich": "Lanius collurio",
+      "deutsch": "Neuntöter"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Lanius excubitor",
+      "deutsch": "Raubwürger"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Milvus milvus",
+      "deutsch": "Rotmilan"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Milvus migrans",
+      "deutsch": "Schwarzmilan"
+    },
+    {
+      "wissenschaftlich": "Glis glis",
+      "deutsch": "Siebenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Glaucidium passerinum",
+      "deutsch": "Sperlingskauz"
+    },
+    {
+      "wissenschaftlich": "Athene noctua",
+      "deutsch": "Steinkauz"
+    },
+    {
+      "wissenschaftlich": "Martes foina",
+      "deutsch": "Steinmarder"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Falco peregrinus",
+      "deutsch": "Wanderfalke"
+    },
+    {
+      "wissenschaftlich": "Felis silvestris",
+      "deutsch": "Wildkatze"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

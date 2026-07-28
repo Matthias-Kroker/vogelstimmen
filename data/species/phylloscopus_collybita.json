@@ -1,0 +1,132 @@
+{
+  "id": "phylloscopus_collybita",
+  "domaene": "voegel",
+  "name_de": "Zilpzalp",
+  "name_wissenschaftlich": "Phylloscopus collybita",
+  "gattung": "Phylloscopus",
+  "art": "collybita",
+  "wikidata_id": "Q185784",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Der Zilpzalp oder Weidenlaubsänger ist eine Vogelart aus der Familie der Laubsängerartigen (Phylloscopidae). Dieser Laubsänger besiedelt große Teile der Paläarktis vom Nordosten Spaniens und Irland nach Osten bis zur Kolyma in Sibirien. Zilpzalpe sind klein, ohne auffallende Zeichnungen und bewegen sich meist gedeckt in höherer Vegetation. Sie fallen daher am ehesten durch den markanten Gesang auf, dem die Art ihren lautmalenden deutschen Namen verdankt. Die Tiere bewohnen ein weites Spektrum bewaldeter Habitate und kommen auch häufig in Parks und den durchgrünten Randbereichen von Städten vor. Die Nahrung besteht vor allem aus kleinen und weichhäutigen Insekten. Der Zilpzalp ist je nach geografischer Verbreitung Kurz- bis Langstreckenzieher. Europäische Vögel überwintern im Bereich des Persischen Golfs, im Mittelmeerraum, in den Oasen der Sahara, in der Trockensavanne südlich der Sahara sowie im ostafrikanischen Hochland. Die Art ist in Europa ein sehr häufiger Brutvogel und nicht gefährdet.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Zilpzalp",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Chiffchaff_-_Phylloscopus_collybita.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "deutsch": "Eichelhäher"
+    },
+    {
+      "wissenschaftlich": "Sciurus vulgaris",
+      "deutsch": "Eichhörnchen"
+    },
+    {
+      "wissenschaftlich": "Eliomys quercinus",
+      "deutsch": "Gartenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Muscardinus avellanarius",
+      "deutsch": "Haselmaus"
+    },
+    {
+      "wissenschaftlich": "Felis catus",
+      "deutsch": "Hauskatze"
+    },
+    {
+      "wissenschaftlich": "Mustela putorius",
+      "deutsch": "Iltis"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Mustela nivalis",
+      "deutsch": "Mauswiesel"
+    },
+    {
+      "wissenschaftlich": "Falco columbarius",
+      "deutsch": "Merlin"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Aegolius funereus",
+      "deutsch": "Raufußkauz"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Glis glis",
+      "deutsch": "Siebenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Glaucidium passerinum",
+      "deutsch": "Sperlingskauz"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Felis silvestris",
+      "deutsch": "Wildkatze"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

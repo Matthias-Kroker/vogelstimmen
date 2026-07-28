@@ -1,0 +1,108 @@
+{
+  "id": "pica_pica",
+  "domaene": "voegel",
+  "name_de": "Elster",
+  "name_wissenschaftlich": "Pica pica",
+  "gattung": "Pica",
+  "art": "pica",
+  "wikidata_id": "Q25307",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Die Elster ist eine Vogelart aus der Familie der Rabenvögel. Sie besiedelt weite Teile Europas und Asiens sowie das nördliche Nordafrika. In Europa ist sie vor allem im Siedlungsraum häufig. Aufgrund ihres charakteristischen schwarz-weißen Gefieders mit den auffallend langen Schwanzfedern ist sie in Europa auch für den vogelkundlichen Laien unverwechselbar, ansonsten sieht sie dem Schildraben und der Elsterdohle ähnlich.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Elster",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/5/50/01-Magpie.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Pica pica",
+      "deutsch": "Elster"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "deutsch": "Mäusebussard"
+    },
+    {
+      "wissenschaftlich": "Lanius collurio",
+      "deutsch": "Neuntöter"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Aquila chrysaetos",
+      "deutsch": "Steinadler"
+    },
+    {
+      "wissenschaftlich": "Athene noctua",
+      "deutsch": "Steinkauz"
+    },
+    {
+      "wissenschaftlich": "Martes foina",
+      "deutsch": "Steinmarder"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Falco peregrinus",
+      "deutsch": "Wanderfalke"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

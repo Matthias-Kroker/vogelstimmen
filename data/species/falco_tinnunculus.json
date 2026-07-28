@@ -1,0 +1,76 @@
+{
+  "id": "falco_tinnunculus",
+  "domaene": "voegel",
+  "name_de": "Turmfalke",
+  "name_wissenschaftlich": "Falco tinnunculus",
+  "gattung": "Falco",
+  "art": "tinnunculus",
+  "wikidata_id": "Q26490",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Der Turmfalke ist der am häufigsten vorkommende Falke Mitteleuropas. Der Öffentlichkeit ist er relativ vertraut, da er sich auch Städte und Stadträume als Lebensraum erobert hat und öfter beim „Rüttelflug“ zu beobachten ist.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Turmfalke",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/2/24/Common_kestrel_falco_tinnunculus.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "deutsch": "Mäusebussard"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Martes foina",
+      "deutsch": "Steinmarder"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Falco peregrinus",
+      "deutsch": "Wanderfalke"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

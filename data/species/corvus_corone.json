@@ -1,0 +1,108 @@
+{
+  "id": "corvus_corone",
+  "domaene": "voegel",
+  "name_de": "Rabenkrähe",
+  "name_wissenschaftlich": "Corvus corone",
+  "gattung": "Corvus",
+  "art": "corone",
+  "wikidata_id": "Q26198",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Die Rabenkrähe ist eine Vogelart aus der Familie der Rabenvögel (Corvidae). Sie ist eng mit der grau-schwarzen Nebelkrähe verwandt, mit der sie sich auch verpaart. Beide Arten wurden früher als zwei Unterarten oder Morphen derselben Art aufgefasst, die traditionell als Aaskrähe bezeichnet wurde – eine Auffassung, die von einigen Autoren weiterhin vertreten wird. Aufgrund der engen Verwandtschaft beider Schwesterarten, bzw. Unterarten, wird in der folgenden Darstellung das traditionelle Bild der Unterarten verwendet und der Artname „Aaskrähe“ für die gemeinsame Klade verwendet. Die Forschungsdiskussion zur Aufteilung beider Arten wird unten im Abschnitt „Systematik und Taxonomie“ dargestellt.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Rabenkr%C3%A4he",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Carrion_crow_2022_04_05_05_01.jpg/3840px-Carrion_crow_2022_04_05_05_01.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "deutsch": "Mäusebussard"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Milvus milvus",
+      "deutsch": "Rotmilan"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Milvus migrans",
+      "deutsch": "Schwarzmilan"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Aquila chrysaetos",
+      "deutsch": "Steinadler"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Falco peregrinus",
+      "deutsch": "Wanderfalke"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

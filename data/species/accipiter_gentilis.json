@@ -1,0 +1,60 @@
+{
+  "id": "accipiter_gentilis",
+  "domaene": "voegel",
+  "name_de": "Habicht",
+  "name_wissenschaftlich": "Accipiter gentilis",
+  "gattung": "Accipiter",
+  "art": "gentilis",
+  "wikidata_id": "Q25353",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Der Habicht ist ein Greifvogel, der zur Familie der Habichtartigen (Accipitridae) gehört. Das Verbreitungsgebiet der Art umfasst die arktischen bis subtropischen Zonen der Paläarktis. Habichte ernähren sich überwiegend von kleinen bis mittelgroßen Vögeln und Säugetieren bis zu einem Gewicht von etwa 1,0 kg. Die Art ist nicht gefährdet.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Habicht",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/8/81/Northern_Goshawk_ad_M2.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Aquila chrysaetos",
+      "deutsch": "Steinadler"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

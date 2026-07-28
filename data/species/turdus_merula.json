@@ -1,0 +1,180 @@
+{
+  "id": "turdus_merula",
+  "domaene": "voegel",
+  "name_de": "Amsel",
+  "name_wissenschaftlich": "Turdus merula",
+  "gattung": "Turdus",
+  "art": "merula",
+  "wikidata_id": "Q25234",
+  "kurzbeschreibung": "species of thrush",
+  "beschreibung": "Die Amsel oder Schwarzdrossel, manchmal Kohlamsel oder Schwarzamsel, ist eine Vogelart aus der Familie der Drosseln (Turdidae). In Europa ist die Amsel der am weitesten verbreitete Vertreter dieser Familie und zugleich einer der bekanntesten Vögel überhaupt. Ihre Körperlänge liegt zwischen 24 und 27 Zentimetern. Die Männchen sind schwarz gefärbt und haben einen gelben Schnabel, das Gefieder der Weibchen ist größtenteils dunkelbraun. Der melodiöse und laut vorgetragene Reviergesang der Männchen ist in Mitteleuropa hauptsächlich zwischen Anfang März und Ende Juli zu hören und kann bereits vor der Morgendämmerung beginnen.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Amsel",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Common_Blackbird.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Dendrocopos major",
+      "deutsch": "Buntspecht"
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "deutsch": "Eichelhäher"
+    },
+    {
+      "wissenschaftlich": "Sciurus vulgaris",
+      "deutsch": "Eichhörnchen"
+    },
+    {
+      "wissenschaftlich": "Pica pica",
+      "deutsch": "Elster"
+    },
+    {
+      "wissenschaftlich": "Eliomys quercinus",
+      "deutsch": "Gartenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Muscardinus avellanarius",
+      "deutsch": "Haselmaus"
+    },
+    {
+      "wissenschaftlich": "Felis catus",
+      "deutsch": "Hauskatze"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Nyctereutes procyonoides",
+      "deutsch": "Marderhund"
+    },
+    {
+      "wissenschaftlich": "Falco columbarius",
+      "deutsch": "Merlin"
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "deutsch": "Mäusebussard"
+    },
+    {
+      "wissenschaftlich": "Lanius collurio",
+      "deutsch": "Neuntöter"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Lanius excubitor",
+      "deutsch": "Raubwürger"
+    },
+    {
+      "wissenschaftlich": "Aegolius funereus",
+      "deutsch": "Raufußkauz"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Milvus milvus",
+      "deutsch": "Rotmilan"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Milvus migrans",
+      "deutsch": "Schwarzmilan"
+    },
+    {
+      "wissenschaftlich": "Glis glis",
+      "deutsch": "Siebenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Glaucidium passerinum",
+      "deutsch": "Sperlingskauz"
+    },
+    {
+      "wissenschaftlich": "Aquila chrysaetos",
+      "deutsch": "Steinadler"
+    },
+    {
+      "wissenschaftlich": "Athene noctua",
+      "deutsch": "Steinkauz"
+    },
+    {
+      "wissenschaftlich": "Martes foina",
+      "deutsch": "Steinmarder"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Falco peregrinus",
+      "deutsch": "Wanderfalke"
+    },
+    {
+      "wissenschaftlich": "Pernis apivorus",
+      "deutsch": "Wespenbussard"
+    },
+    {
+      "wissenschaftlich": "Felis silvestris",
+      "deutsch": "Wildkatze"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

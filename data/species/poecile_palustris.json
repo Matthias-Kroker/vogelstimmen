@@ -1,0 +1,144 @@
+{
+  "id": "poecile_palustris",
+  "domaene": "voegel",
+  "name_de": "Sumpfmeise",
+  "name_wissenschaftlich": "Poecile palustris",
+  "gattung": "Poecile",
+  "art": "palustris",
+  "wikidata_id": "Q207838",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Die Sumpfmeise oder Nonnenmeise ist eine Singvogelart aus der Familie der Meisen (Paridae). Die Art ist in Mitteleuropa ein verbreiteter und häufiger Brut- und Jahresvogel. Ihr Verbreitungsgebiet zerfällt in zwei Teile, die durch eine fast 2000 km große Lücke getrennt sind. Der westliche Teil umfasst die Eichen-Mischwälder Europas bis hin zum Ural, der östliche Teil die Gebirgstaiga und die sommergrünen Laubwälder Ostasiens; er reicht bis nach Japan und ins östliche China. Die Sumpfmeise besiedelt – anders als ihr Name vermuten lässt – vor allem Laub- und Mischwälder mit altem Baumbestand und Totholz, in denen sie ein ausreichendes Höhlenangebot vorfindet. Sie ernährt sich vor allem von Insekten und Spinnentieren, aber auch viel von Sämereien. Sind diese in ausreichender Menge vorhanden, legt die Sumpfmeise Vorräte an, indem sie einzelne Samen in Rindenspalten und unter Moos versteckt.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Sumpfmeise",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Sumpfmeise1.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Dendrocopos major",
+      "deutsch": "Buntspecht"
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "deutsch": "Eichelhäher"
+    },
+    {
+      "wissenschaftlich": "Sciurus vulgaris",
+      "deutsch": "Eichhörnchen"
+    },
+    {
+      "wissenschaftlich": "Pica pica",
+      "deutsch": "Elster"
+    },
+    {
+      "wissenschaftlich": "Eliomys quercinus",
+      "deutsch": "Gartenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Muscardinus avellanarius",
+      "deutsch": "Haselmaus"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Mustela nivalis",
+      "deutsch": "Mauswiesel"
+    },
+    {
+      "wissenschaftlich": "Falco columbarius",
+      "deutsch": "Merlin"
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "deutsch": "Mäusebussard"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Aegolius funereus",
+      "deutsch": "Raufußkauz"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Glis glis",
+      "deutsch": "Siebenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Glaucidium passerinum",
+      "deutsch": "Sperlingskauz"
+    },
+    {
+      "wissenschaftlich": "Athene noctua",
+      "deutsch": "Steinkauz"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Felis silvestris",
+      "deutsch": "Wildkatze"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

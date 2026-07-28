@@ -1,0 +1,136 @@
+{
+  "id": "troglodytes_troglodytes",
+  "domaene": "voegel",
+  "name_de": "Zaunkönig",
+  "name_wissenschaftlich": "Troglodytes troglodytes",
+  "gattung": "Troglodytes",
+  "art": "troglodytes",
+  "wikidata_id": "Q25740",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Der Zaunkönig ist die einzige in Eurasien vorkommende Art aus der Vogelfamilie der Zaunkönige (Troglodytidae). Er ist nach Winter- und Sommergoldhähnchen der drittkleinste Vogel Europas. Lange Zeit wurde er Schneekönig genannt, da er auch im Winter lebhaft singt. Der Zaunkönig besiedelt Europa, Nordafrika, Vorder-, Zentral- und Ostasien. Seine Nahrung setzt sich aus Spinnen, Weberknechten und Insekten, wie beispielsweise Nachtfaltern und Fliegen, sowie deren Eiern und Larven zusammen. Die Art gilt derzeit als nicht gefährdet.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Zaunk%C3%B6nig",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Eurasian_wren_%28Troglodytes_troglodytes%29.jpg/3840px-Eurasian_wren_%28Troglodytes_troglodytes%29.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Dendrocopos major",
+      "deutsch": "Buntspecht"
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "deutsch": "Eichelhäher"
+    },
+    {
+      "wissenschaftlich": "Sciurus vulgaris",
+      "deutsch": "Eichhörnchen"
+    },
+    {
+      "wissenschaftlich": "Pica pica",
+      "deutsch": "Elster"
+    },
+    {
+      "wissenschaftlich": "Eliomys quercinus",
+      "deutsch": "Gartenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Muscardinus avellanarius",
+      "deutsch": "Haselmaus"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Mustela nivalis",
+      "deutsch": "Mauswiesel"
+    },
+    {
+      "wissenschaftlich": "Falco columbarius",
+      "deutsch": "Merlin"
+    },
+    {
+      "wissenschaftlich": "Lanius collurio",
+      "deutsch": "Neuntöter"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Lanius excubitor",
+      "deutsch": "Raubwürger"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Glis glis",
+      "deutsch": "Siebenschläfer"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Glaucidium passerinum",
+      "deutsch": "Sperlingskauz"
+    },
+    {
+      "wissenschaftlich": "Athene noctua",
+      "deutsch": "Steinkauz"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

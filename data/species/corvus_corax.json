@@ -1,0 +1,88 @@
+{
+  "id": "corvus_corax",
+  "domaene": "voegel",
+  "name_de": "Kolkrabe",
+  "name_wissenschaftlich": "Corvus corax",
+  "gattung": "Corvus",
+  "art": "corax",
+  "wikidata_id": "Q25357",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Der Kolkrabe ist eine Singvogelart aus der Familie der Rabenvögel (Corvidae). Durch menschliche Verfolgung waren Kolkraben bis 1940 in weiten Teilen Mitteleuropas ausgerottet und haben sich danach durch nachlassende Verfolgung wieder ausgebreitet. Der wissenschaftliche Name Corvus corax setzt sich aus dem lateinischen Corvus und dem griechischen Corax zusammen, beides bedeutet „Rabe“. Kolk, die erste Silbe seines seit dem 16. Jahrhundert bezeugten deutschen Namens, ist vermutlich lautmalerischen Ursprungs, ahmt also den Ruf des Vogels nach.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Kolkrabe",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg/3840px-Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Falco subbuteo",
+      "deutsch": "Baumfalke"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Vipera berus",
+      "deutsch": "Kreuzotter"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Corvus frugilegus",
+      "deutsch": "Saatkrähe"
+    },
+    {
+      "wissenschaftlich": "Tyto alba",
+      "deutsch": "Schleiereule"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Aquila chrysaetos",
+      "deutsch": "Steinadler"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Falco peregrinus",
+      "deutsch": "Wanderfalke"
+    },
+    {
+      "wissenschaftlich": "Zamenis longissimus",
+      "deutsch": "Äskulapnatter"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}

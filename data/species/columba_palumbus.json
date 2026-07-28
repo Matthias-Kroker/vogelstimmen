@@ -1,0 +1,100 @@
+{
+  "id": "columba_palumbus",
+  "domaene": "voegel",
+  "name_de": "Ringeltaube",
+  "name_wissenschaftlich": "Columba palumbus",
+  "gattung": "Columba",
+  "art": "palumbus",
+  "wikidata_id": "Q26026",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Die Ringeltaube ist eine Vogelart aus der Familie der Tauben (Columbidae). Sie ist die größte Taubenart Mitteleuropas und besiedelt weite Teile der Paläarktis von Nordafrika, Portugal und Irland nach Osten bis Ostsibirien und Kaschmir. Auffällige Merkmale sind die weißen Flügelbänder und der weiße Halsstreifen. Ringeltauben, im deutschsprachigen Raum auch Waldtauben genannt, bewohnen bewaldete Landschaften aller Art, aber auch Alleen, Parks und Friedhöfe, begrünte Wohngebiete, heute auch bis in die Zentren der Städte. Die Ernährung erfolgt wie bei den meisten Arten der Familie fast ausschließlich pflanzlich. Die Ringeltaube ist je nach geografischer Verbreitung Standvogel, Teilzieher oder überwiegend Kurzstreckenzieher und verbringt den Winter vor allem in West- und Südwesteuropa. Die Art ist trotz der starken Bejagung in vielen Ländern ein häufiger Brutvogel und in Europa nicht gefährdet.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Ringeltaube",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/6/63/Columba_palumbus_1_%28Marek_Szczepanek%29.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder"
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "deutsch": "Eichelhäher"
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht"
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe"
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "deutsch": "Mäusebussard"
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe"
+    },
+    {
+      "wissenschaftlich": "Vulpes vulpes",
+      "deutsch": "Rotfuchs"
+    },
+    {
+      "wissenschaftlich": "Milvus milvus",
+      "deutsch": "Rotmilan"
+    },
+    {
+      "wissenschaftlich": "Milvus migrans",
+      "deutsch": "Schwarzmilan"
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber"
+    },
+    {
+      "wissenschaftlich": "Martes foina",
+      "deutsch": "Steinmarder"
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "deutsch": "Turmfalke"
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu"
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz"
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule"
+    },
+    {
+      "wissenschaftlich": "Falco peregrinus",
+      "deutsch": "Wanderfalke"
+    },
+    {
+      "wissenschaftlich": "Pernis apivorus",
+      "deutsch": "Wespenbussard"
+    },
+    {
+      "wissenschaftlich": "Felis silvestris",
+      "deutsch": "Wildkatze"
+    }
+  ],
+  "quelle_fressfeinde": {
+    "name": "GloBI",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert"
+  }
+}
