@@ -21,124 +21,67 @@
   "fressfeinde": [
     {
       "wissenschaftlich": "Falco subbuteo",
-      "deutsch": "Baumfalke"
+      "deutsch": "Baumfalke",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": false
     },
     {
       "wissenschaftlich": "Martes martes",
-      "deutsch": "Baummarder"
+      "deutsch": "Baummarder",
+      "stadium": "beides",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
     },
     {
       "wissenschaftlich": "Dendrocopos major",
-      "deutsch": "Buntspecht"
+      "deutsch": "Buntspecht",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
     },
     {
       "wissenschaftlich": "Garrulus glandarius",
-      "deutsch": "Eichelhäher"
+      "deutsch": "Eichelhäher",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
     },
     {
       "wissenschaftlich": "Sciurus vulgaris",
-      "deutsch": "Eichhörnchen"
+      "deutsch": "Eichhörnchen",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
     },
     {
       "wissenschaftlich": "Pica pica",
-      "deutsch": "Elster"
-    },
-    {
-      "wissenschaftlich": "Eliomys quercinus",
-      "deutsch": "Gartenschläfer"
-    },
-    {
-      "wissenschaftlich": "Accipiter gentilis",
-      "deutsch": "Habicht"
-    },
-    {
-      "wissenschaftlich": "Muscardinus avellanarius",
-      "deutsch": "Haselmaus"
-    },
-    {
-      "wissenschaftlich": "Corvus corax",
-      "deutsch": "Kolkrabe"
-    },
-    {
-      "wissenschaftlich": "Vipera berus",
-      "deutsch": "Kreuzotter"
-    },
-    {
-      "wissenschaftlich": "Mustela nivalis",
-      "deutsch": "Mauswiesel"
-    },
-    {
-      "wissenschaftlich": "Falco columbarius",
-      "deutsch": "Merlin"
-    },
-    {
-      "wissenschaftlich": "Buteo buteo",
-      "deutsch": "Mäusebussard"
-    },
-    {
-      "wissenschaftlich": "Corvus corone",
-      "deutsch": "Rabenkrähe"
-    },
-    {
-      "wissenschaftlich": "Aegolius funereus",
-      "deutsch": "Raufußkauz"
-    },
-    {
-      "wissenschaftlich": "Vulpes vulpes",
-      "deutsch": "Rotfuchs"
-    },
-    {
-      "wissenschaftlich": "Corvus frugilegus",
-      "deutsch": "Saatkrähe"
-    },
-    {
-      "wissenschaftlich": "Tyto alba",
-      "deutsch": "Schleiereule"
-    },
-    {
-      "wissenschaftlich": "Glis glis",
-      "deutsch": "Siebenschläfer"
-    },
-    {
-      "wissenschaftlich": "Accipiter nisus",
-      "deutsch": "Sperber"
-    },
-    {
-      "wissenschaftlich": "Glaucidium passerinum",
-      "deutsch": "Sperlingskauz"
-    },
-    {
-      "wissenschaftlich": "Athene noctua",
-      "deutsch": "Steinkauz"
-    },
-    {
-      "wissenschaftlich": "Falco tinnunculus",
-      "deutsch": "Turmfalke"
-    },
-    {
-      "wissenschaftlich": "Bubo bubo",
-      "deutsch": "Uhu"
-    },
-    {
-      "wissenschaftlich": "Strix aluco",
-      "deutsch": "Waldkauz"
-    },
-    {
-      "wissenschaftlich": "Asio otus",
-      "deutsch": "Waldohreule"
-    },
-    {
-      "wissenschaftlich": "Felis silvestris",
-      "deutsch": "Wildkatze"
-    },
-    {
-      "wissenschaftlich": "Zamenis longissimus",
-      "deutsch": "Äskulapnatter"
+      "deutsch": "Elster",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
     }
   ],
+  "fressfeinde_unbestaetigt": [],
+  "alarmtypen": {
+    "Warnruf": {
+      "ausloeser": "Greifvogel im Flug",
+      "klang": "hoher, gleichbleibender dünner Ton (~7 kHz), weich ein- und ausklingend",
+      "warum": "absichtlich schwer zu orten — verrät den Rufer nicht",
+      "reaktion": "Deckung suchen, verstummen",
+      "beispiel_amsel": "langes „ziiiiehhh“"
+    },
+    "Hassruf": {
+      "ausloeser": "sitzender oder bodengebundener Feind, auch Nesträuber",
+      "klang": "breitbandig, hart, abgehackt",
+      "warum": "absichtlich leicht zu orten — ruft Artgenossen zur Verstärkung",
+      "reaktion": "hinfliegen und den Feind bedrängen („Hassen“)",
+      "beispiel_amsel": "„keckern“, Schäckern"
+    }
+  },
   "quelle_fressfeinde": {
-    "name": "GloBI",
+    "name": "GloBI, gegengeprüft mit Wikipedia (de)",
     "url": "https://www.globalbioticinteractions.org/",
-    "hinweis": "auf mitteleuropäische Arten gefiltert"
+    "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   }
 }

@@ -93,7 +93,99 @@ PRAEDATOREN_DE = {
     "Eliomys quercinus": "Gartenschläfer",
     "Vipera berus": "Kreuzotter",
     "Zamenis longissimus": "Äskulapnatter",
+    "Rattus norvegicus": "Wanderratte",
 }
+
+# Was erbeutet wird. GloBI kennt diese Unterscheidung nicht (das Feld
+# life_stage ist durchgehend leer), sie ist aber der Kern der Sache: ein
+# Buntspecht jagt keine erwachsene Amsel, er pluendert Nester. Und nur
+# Praedatoren von Altvoegeln loesen den Alarmruf aus, um den es beim
+# Lernen geht.
+BEUTE_STADIUM = {
+    # Greifvögel und Eulen -- jagen Altvögel
+    "Sperber": "Altvogel", "Habicht": "Altvogel", "Wanderfalke": "Altvogel",
+    "Baumfalke": "Altvogel", "Merlin": "Altvogel", "Turmfalke": "Altvogel",
+    "Mäusebussard": "Altvogel", "Rotmilan": "Altvogel", "Schwarzmilan": "Altvogel",
+    "Wespenbussard": "Altvogel", "Steinadler": "Altvogel", "Waldkauz": "Altvogel",
+    "Schleiereule": "Altvogel", "Waldohreule": "Altvogel", "Steinkauz": "Altvogel",
+    "Uhu": "Altvogel", "Raufußkauz": "Altvogel", "Sperlingskauz": "Altvogel",
+    "Raubwürger": "Altvogel", "Neuntöter": "Altvogel",
+    # Rabenvögel, Specht, Nager, Schlangen -- pluendern Gelege und Jungvögel
+    "Rabenkrähe": "Nest", "Kolkrabe": "Nest", "Saatkrähe": "Nest",
+    "Elster": "Nest", "Eichelhäher": "Nest", "Buntspecht": "Nest",
+    "Eichhörnchen": "Nest", "Siebenschläfer": "Nest", "Haselmaus": "Nest",
+    "Gartenschläfer": "Nest", "Kreuzotter": "Nest", "Äskulapnatter": "Nest",
+    "Wanderratte": "Nest",
+    # Säuger am Boden -- beides, je nach Gelegenheit
+    "Hauskatze": "beides", "Wildkatze": "beides", "Rotfuchs": "beides",
+    "Baummarder": "beides", "Steinmarder": "beides", "Hermelin": "beides",
+    "Mauswiesel": "beides", "Iltis": "beides", "Marderhund": "beides",
+}
+
+# Welchen Alarm ein Praedator ausloest. Zweite, UNABHAENGIGE Achse neben
+# BEUTE_STADIUM -- das ist der Kern der Sache:
+#
+#   Warnruf  ~7 kHz, gleichbleibender duenner Ton, weicher Ein- und Ausklang.
+#            Absichtlich schwer zu orten, verraet den Rufer nicht. Reaktion:
+#            Deckung suchen. Nur fuer Greifvoegel IM FLUG.
+#   Hassruf  breitbandig, hart, abgehackt. Absichtlich leicht zu orten, ruft
+#            Artgenossen herbei. Reaktion: hinfliegen und bedraengen ("Hassen").
+#            Fuer alles Sitzende oder am Boden -- auch Nesträuber.
+#
+# Wichtig: Eine Eule erbeutet Altvoegel (stadium=Altvogel), wird tagsueber am
+# Schlafplatz aber gehasst (alarmtyp=Hassruf). Die beiden Achsen laufen
+# deshalb nicht parallel und duerfen nicht zusammengelegt werden.
+# Quelle: Marler, Unterscheidung aerial alarm / mobbing call.
+ALARMTYP = {
+    # Greifvögel im Flug -> duenner Warnruf, Deckung suchen
+    "Sperber": "Warnruf", "Habicht": "Warnruf", "Wanderfalke": "Warnruf",
+    "Baumfalke": "Warnruf", "Merlin": "Warnruf", "Turmfalke": "Warnruf",
+    "Mäusebussard": "Warnruf", "Rotmilan": "Warnruf", "Schwarzmilan": "Warnruf",
+    "Wespenbussard": "Warnruf", "Steinadler": "Warnruf",
+}
+# Alles Uebrige (Eulen am Schlafplatz, Rabenvoegel, Saeuger, Nager, Schlangen)
+# wird gehasst statt bewarnt.
+ALARMTYP_STANDARD = "Hassruf"
+
+ALARMTYP_INFO = {
+    "Warnruf": {
+        "ausloeser": "Greifvogel im Flug",
+        "klang": "hoher, gleichbleibender dünner Ton (~7 kHz), weich ein- und ausklingend",
+        "warum": "absichtlich schwer zu orten — verrät den Rufer nicht",
+        "reaktion": "Deckung suchen, verstummen",
+        "beispiel_amsel": "langes „ziiiiehhh“",
+    },
+    "Hassruf": {
+        "ausloeser": "sitzender oder bodengebundener Feind, auch Nesträuber",
+        "klang": "breitbandig, hart, abgehackt",
+        "warum": "absichtlich leicht zu orten — ruft Artgenossen zur Verstärkung",
+        "reaktion": "hinfliegen und den Feind bedrängen („Hassen“)",
+        "beispiel_amsel": "„keckern“, Schäckern",
+    },
+}
+
+# Zusaetzliche Suchformen fuer den Wikipedia-Abgleich. Der Artikel schreibt
+# "Füchse", nicht "Rotfuchs" -- ohne diese Varianten faende der Abgleich
+# genau die Arten nicht, die im Text stehen.
+SUCHFORMEN = {
+    "Rotfuchs": ["Fuchs", "Füchse", "Füchsen"],
+    "Hauskatze": ["Hauskatze", "Hauskatzen", "Katze", "Katzen"],
+    "Wildkatze": ["Wildkatze", "Wildkatzen"],
+    "Baummarder": ["Baummarder", "Marder"],
+    "Steinmarder": ["Steinmarder", "Marder"],
+    "Eichhörnchen": ["Eichhörnchen"],
+    "Rabenkrähe": ["Rabenkrähe", "Rabenkrähen", "Krähe", "Krähen"],
+    "Wanderratte": ["Wanderratte", "Wanderratten", "Ratte", "Ratten"],
+    "Mäusebussard": ["Mäusebussard", "Bussard"],
+    "Kreuzotter": ["Kreuzotter", "Schlange", "Schlangen"],
+}
+
+
+def _suchformen(name_de):
+    """Wortformen, unter denen ein Praedator im Artikel stehen kann."""
+    if name_de in SUCHFORMEN:
+        return SUCHFORMEN[name_de]
+    return [name_de, name_de + "n", name_de + "en", name_de + "e"]
 
 
 def hole(url, params=None, versuche=4, timeout=30):
@@ -178,13 +270,62 @@ def globi_fressfeinde(genus, species):
     return treffer, len(roh)
 
 
+def wikipedia_volltext(name_de):
+    """Kompletter Artikeltext -- Grundlage fuer den Gegencheck."""
+    r = hole("https://de.wikipedia.org/w/api.php",
+             {"action": "query", "prop": "extracts", "explaintext": 1,
+              "format": "json", "titles": name_de}, timeout=45)
+    if r is None:
+        return ""
+    try:
+        seiten = r.json()["query"]["pages"]
+        return list(seiten.values())[0].get("extract", "") or ""
+    except (KeyError, IndexError, ValueError):
+        return ""
+
+
+def pruefe_fressfeinde(kandidaten, artikel):
+    """Gegencheck gegen den Wikipedia-Artikel + Einordnung nach Beutestadium.
+
+    GloBI allein ist zu grosszuegig (weltweite Datensaetze, je nur eine
+    Quelle, keine Lebensstadien). Wer im Artikel der Art namentlich steht,
+    gilt als bestaetigt -- das ist eine unabhaengige zweite Quelle.
+    """
+    bestaetigt, offen = [], []
+    for k in kandidaten:
+        eintrag = dict(k)
+        # Zwei unabhaengige Achsen: WAS erbeutet wird und WELCHER Alarm kommt.
+        eintrag["stadium"] = BEUTE_STADIUM.get(k["deutsch"], "unbekannt")
+        eintrag["alarmtyp"] = ALARMTYP.get(k["deutsch"], ALARMTYP_STANDARD)
+        if artikel and any(f in artikel for f in _suchformen(k["deutsch"])):
+            eintrag["bestaetigt"] = True
+            bestaetigt.append(eintrag)
+        else:
+            eintrag["bestaetigt"] = False
+            offen.append(eintrag)
+
+    # Bestaetigte zuerst. Bleibt nichts uebrig (kurzer Artikel), die
+    # plausibelsten unbestaetigten mitnehmen, aber sichtbar markiert.
+    if bestaetigt:
+        return bestaetigt, offen
+    return offen[:6], []
+
+
 def enrich(name_de, genus, species):
     print(f"  {name_de} ({genus} {species})")
     qid, qbeschreibung = wikidata_id(genus, species)
     wiki = wikipedia_summary(genus, species, name_de)
-    feinde, roh_anzahl = globi_fressfeinde(genus, species)
+    kandidaten, roh_anzahl = globi_fressfeinde(genus, species)
+    artikel = wikipedia_volltext(name_de)
+    feinde, unbestaetigt = pruefe_fressfeinde(kandidaten, artikel)
+
+    alt = sum(1 for f in feinde if f["stadium"] in ("Altvogel", "beides"))
+    nest = sum(1 for f in feinde if f["stadium"] in ("Nest", "beides"))
+    warn = sum(1 for f in feinde if f["alarmtyp"] == "Warnruf")
+    hass = sum(1 for f in feinde if f["alarmtyp"] == "Hassruf")
     print(f"    Wikidata={qid}  Wikipedia={'ja' if wiki.get('text') else 'NEIN'}"
-          f"  Fressfeinde={len(feinde)}/{roh_anzahl}")
+          f"  Fressfeinde={len(feinde)}/{len(kandidaten)} (roh {roh_anzahl})"
+          f"  [Altvogel {alt}/Nest {nest}]  [Warnruf {warn}/Hassruf {hass}]")
 
     return {
         "id": f"{genus.lower()}_{species.lower()}",
@@ -201,14 +342,23 @@ def enrich(name_de, genus, species):
         "bild": wiki.get("bild_gross") or wiki.get("bild"),
         "quelle_bild": {"name": "Wikimedia Commons", "lizenz": "siehe Dateiseite"},
         "fressfeinde": feinde,
-        "quelle_fressfeinde": {"name": "GloBI", "url":
-                               "https://www.globalbioticinteractions.org/",
-                               "hinweis": "auf mitteleuropäische Arten gefiltert"},
+        "fressfeinde_unbestaetigt": unbestaetigt,
+        "alarmtypen": ALARMTYP_INFO,
+        "quelle_fressfeinde": {
+            "name": "GloBI, gegengeprüft mit Wikipedia (de)",
+            "url": "https://www.globalbioticinteractions.org/",
+            "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt "
+                       "gilt, wer im Artikel der Art namentlich vorkommt. "
+                       "'stadium' unterscheidet Jäger von Altvögeln und "
+                       "Nesträubern -- nur erstere lösen Alarmrufe aus.",
+        },
     }
 
 
 def main():
-    filter_ = sys.argv[1].lower() if len(sys.argv) > 1 else None
+    # Optionen (--force) von einem Art-Filter trennen.
+    argumente = [a for a in sys.argv[1:] if not a.startswith("--")]
+    filter_ = argumente[0].lower() if argumente else None
     arten = [s for s in SPECIES
              if not filter_ or filter_ in " ".join(s).lower()]
     if not arten:

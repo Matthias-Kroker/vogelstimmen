@@ -20,57 +20,111 @@
   },
   "fressfeinde": [
     {
-      "wissenschaftlich": "Martes martes",
-      "deutsch": "Baummarder"
-    },
-    {
-      "wissenschaftlich": "Accipiter gentilis",
-      "deutsch": "Habicht"
-    },
-    {
-      "wissenschaftlich": "Corvus corax",
-      "deutsch": "Kolkrabe"
-    },
-    {
       "wissenschaftlich": "Buteo buteo",
-      "deutsch": "Mäusebussard"
+      "deutsch": "Mäusebussard",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": true
     },
     {
       "wissenschaftlich": "Corvus corone",
-      "deutsch": "Rabenkrähe"
-    },
-    {
-      "wissenschaftlich": "Accipiter nisus",
-      "deutsch": "Sperber"
-    },
-    {
-      "wissenschaftlich": "Martes foina",
-      "deutsch": "Steinmarder"
+      "deutsch": "Rabenkrähe",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": true
     },
     {
       "wissenschaftlich": "Falco tinnunculus",
-      "deutsch": "Turmfalke"
-    },
-    {
-      "wissenschaftlich": "Bubo bubo",
-      "deutsch": "Uhu"
-    },
-    {
-      "wissenschaftlich": "Strix aluco",
-      "deutsch": "Waldkauz"
-    },
-    {
-      "wissenschaftlich": "Asio otus",
-      "deutsch": "Waldohreule"
+      "deutsch": "Turmfalke",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": true
     },
     {
       "wissenschaftlich": "Falco peregrinus",
-      "deutsch": "Wanderfalke"
+      "deutsch": "Wanderfalke",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": true
     }
   ],
+  "fressfeinde_unbestaetigt": [
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder",
+      "stadium": "beides",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Martes foina",
+      "deutsch": "Steinmarder",
+      "stadium": "beides",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu",
+      "stadium": "Altvogel",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz",
+      "stadium": "Altvogel",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule",
+      "stadium": "Altvogel",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    }
+  ],
+  "alarmtypen": {
+    "Warnruf": {
+      "ausloeser": "Greifvogel im Flug",
+      "klang": "hoher, gleichbleibender dünner Ton (~7 kHz), weich ein- und ausklingend",
+      "warum": "absichtlich schwer zu orten — verrät den Rufer nicht",
+      "reaktion": "Deckung suchen, verstummen",
+      "beispiel_amsel": "langes „ziiiiehhh“"
+    },
+    "Hassruf": {
+      "ausloeser": "sitzender oder bodengebundener Feind, auch Nesträuber",
+      "klang": "breitbandig, hart, abgehackt",
+      "warum": "absichtlich leicht zu orten — ruft Artgenossen zur Verstärkung",
+      "reaktion": "hinfliegen und den Feind bedrängen („Hassen“)",
+      "beispiel_amsel": "„keckern“, Schäckern"
+    }
+  },
   "quelle_fressfeinde": {
-    "name": "GloBI",
+    "name": "GloBI, gegengeprüft mit Wikipedia (de)",
     "url": "https://www.globalbioticinteractions.org/",
-    "hinweis": "auf mitteleuropäische Arten gefiltert"
+    "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   }
 }
