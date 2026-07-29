@@ -1,0 +1,103 @@
+{
+  "quelle": "Von Matthias abgehoert und bestaetigt, 2026-07-29, an belegten Referenzrufen",
+  "hinweis": "Nur an Amsel geeicht. Andere Arten brauchen eigene Belege.",
+  "ruftypen": {
+    "ssiih": {
+      "spitze_khz": [
+        7.0,
+        9.0
+      ],
+      "bandbreite_khz": [
+        0.7,
+        1.5
+      ],
+      "rate_hz": [
+        0.0,
+        1.2
+      ],
+      "belege": [
+        "XC815414_t0",
+        "XC815414_t1",
+        "XC815414_t2"
+      ],
+      "merkmal": "sehr hoch UND sehr schmalbandig, einzeln stehend"
+    },
+    "tixen": {
+      "spitze_khz": [
+        5.0,
+        6.5
+      ],
+      "bandbreite_khz": [
+        2.2,
+        3.0
+      ],
+      "rate_hz": [
+        1.0,
+        2.0
+      ],
+      "belege": [
+        "XC894642_ganz"
+      ],
+      "merkmal": "mittelhoch, breitbandig, einzelne Anschlaege"
+    },
+    "zetern": {
+      "spitze_khz": [
+        5.0,
+        6.5
+      ],
+      "bandbreite_khz": [
+        2.4,
+        3.2
+      ],
+      "rate_hz": [
+        0.5,
+        3.5
+      ],
+      "belege": [
+        "XC1161236_ganz",
+        "XC688992_ganz"
+      ],
+      "merkmal": "wie Tixen, aber weicher im Ansatz (Kantigkeit ~0.25) und dichter"
+    },
+    "bodenalarm": {
+      "spitze_khz": [
+        4.0,
+        5.0
+      ],
+      "bandbreite_khz": [
+        2.8,
+        3.4
+      ],
+      "rate_hz": [
+        2.5,
+        3.5
+      ],
+      "belege": [
+        "XC544297_ganz",
+        "XC424175_ganz"
+      ],
+      "merkmal": "tiefer als ssiih, breitbandig, in schneller Folge"
+    },
+    "gesang": {
+      "spitze_khz": [
+        1.8,
+        2.6
+      ],
+      "bandbreite_khz": [
+        1.4,
+        3.0
+      ],
+      "rate_hz": [
+        0.3,
+        4.0
+      ],
+      "belege": [
+        "XC1050351_ganz"
+      ],
+      "merkmal": "tief, floetend"
+    }
+  },
+  "offen": {
+    "eule_XC167956": "Matthias hoert es als ssiih-aehnlich, nur tiefer und entspannter. Messung passt dazu: schmalbandig (1.74 kHz) wie ssiih, aber nur 4.25 kHz und in Folge (2.6/s). Passt in KEINE der Schubladen -- eigener Typ? Widerspricht ausserdem der Annahme Eule -> Hassruf."
+  }
+}
