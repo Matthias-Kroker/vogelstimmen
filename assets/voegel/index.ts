@@ -47,9 +47,8 @@ export const vogelBilderAlle: Record<string, VogelBild[]> = {
   "cyanistes_caeruleus": [
     { quelle: require("./cyanistes_caeruleus_0.jpg"), urheber: "Claus Fisser", lizenz: "CC BY-SA 3.0" },
     { quelle: require("./cyanistes_caeruleus_1.jpg"), urheber: "Maximilian Dorsch", lizenz: "CC BY-SA 3.0" },
-    { quelle: require("./cyanistes_caeruleus_2.jpg"), urheber: "Cactus26", lizenz: "CC BY 3.0" },
-    { quelle: require("./cyanistes_caeruleus_3.jpg"), urheber: "Luc Viatour", lizenz: "CC BY-SA 3.0" },
-    { quelle: require("./cyanistes_caeruleus_4.jpg"), urheber: "unbekannt", lizenz: "CC BY-SA 3.0" },
+    { quelle: require("./cyanistes_caeruleus_2.jpg"), urheber: "Luc Viatour", lizenz: "CC BY-SA 3.0" },
+    { quelle: require("./cyanistes_caeruleus_3.jpg"), urheber: "unbekannt", lizenz: "CC BY-SA 3.0" },
   ],
   "dendrocopos_major": [
     { quelle: require("./dendrocopos_major_0.jpg"), urheber: "David Meisel (BlueFox at de.wikipedia)", lizenz: "CC BY-SA 2.0 de" },
@@ -59,11 +58,10 @@ export const vogelBilderAlle: Record<string, VogelBild[]> = {
     { quelle: require("./dendrocopos_major_4.jpg"), urheber: "Zaltys", lizenz: "CC BY-SA 3.0" },
   ],
   "erithacus_rubecula": [
-    { quelle: require("./erithacus_rubecula_0.jpg"), urheber: "Juan Emilio from Las Palmas de Gran Canaria, España", lizenz: "CC BY-SA 2.0" },
-    { quelle: require("./erithacus_rubecula_1.jpg"), urheber: "Samuel Tobler", lizenz: "CC BY 4.0" },
-    { quelle: require("./erithacus_rubecula_2.jpg"), urheber: "Luis García (Zaqarbal)", lizenz: "CC BY-SA 3.0 es" },
+    { quelle: require("./erithacus_rubecula_0.jpg"), urheber: "Samuel Tobler", lizenz: "CC BY 4.0" },
+    { quelle: require("./erithacus_rubecula_1.jpg"), urheber: "Luis García (Zaqarbal)", lizenz: "CC BY-SA 3.0 es" },
+    { quelle: require("./erithacus_rubecula_2.jpg"), urheber: "Klausronja", lizenz: "CC BY-SA 4.0" },
     { quelle: require("./erithacus_rubecula_3.jpg"), urheber: "Klausronja", lizenz: "CC BY-SA 4.0" },
-    { quelle: require("./erithacus_rubecula_4.jpg"), urheber: "Klausronja", lizenz: "CC BY-SA 4.0" },
   ],
   "falco_tinnunculus": [
     { quelle: require("./falco_tinnunculus_0.jpg"), urheber: "Se90", lizenz: "CC BY-SA 3.0" },
@@ -145,9 +143,8 @@ export const vogelBilderAlle: Record<string, VogelBild[]> = {
   "turdus_merula": [
     { quelle: require("./turdus_merula_0.jpg"), urheber: "Pierre-Selim", lizenz: "CC BY 2.0" },
     { quelle: require("./turdus_merula_1.jpg"), urheber: "Ermell", lizenz: "CC BY-SA 4.0" },
-    { quelle: require("./turdus_merula_2.jpg"), urheber: "Hobbyfotowiki", lizenz: "CC0" },
-    { quelle: require("./turdus_merula_3.jpg"), urheber: "3268zauber", lizenz: "CC BY-SA 3.0" },
-    { quelle: require("./turdus_merula_4.jpg"), urheber: "Kathy Büscher from Rinteln, Deutschland", lizenz: "CC BY 2.0" },
+    { quelle: require("./turdus_merula_2.jpg"), urheber: "3268zauber", lizenz: "CC BY-SA 3.0" },
+    { quelle: require("./turdus_merula_3.jpg"), urheber: "Kathy Büscher from Rinteln, Deutschland", lizenz: "CC BY 2.0" },
   ],
 };
 
