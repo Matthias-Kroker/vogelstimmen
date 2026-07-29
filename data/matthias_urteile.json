@@ -1,0 +1,21 @@
+﻿{
+  "quelle": "Von Matthias abgehoert, 2026-07-29, Seite unsichere_Amsel.html",
+  "vorbehalt": "Matthias merkt an, dass ihm die Referenz fuer Grundkategorien fehlte. Urteile entsprechend mit Vorsicht.",
+  "urteile": {
+    "merula_alarm_call_XC590275_9300.wav": "neuer_typ",
+    "merula_alarm_call_XC590275_1500.wav": "neuer_typ",
+    "merula_alarm_call_XC590275_5500.wav": "neuer_typ",
+    "merula_alarm_call_XC590275_4160.wav": "neuer_typ",
+    "merula_call_XC772744_4980.wav": "neuer_typ",
+    "merula_call_XC772744_2990.wav": "neuer_typ",
+    "merula_call_XC772744_6680.wav": "neuer_typ",
+    "merula_call_XC772744_16210.wav": "neuer_typ",
+    "merula_alarm_call_XC982288_1200.wav": "ssiih"
+  },
+  "auswertung": {
+    "XC590275": "VERDACHT STOERGERAEUSCH: Bandbreite 6.8-7.3 kHz bei Spitze 1.4 kHz -- praktisch Rauschen. Anmerkung der Aufnahme: 'Rutting season of Red Deer in the background.' Sehr wahrscheinlich der Hirsch, nicht die Amsel.",
+    "XC772744": "PLAUSIBEL AMSEL: Bandbreite 2.5 kHz, Spitze 4.3-5.1 kHz. Anmerkung: '7 males feeding on the ground next to feeding station.' Passt zu Matthias' Beschreibung 'Schmatzgeraeusche mit Schnaebeln' -- Sozial-/Kontaktlaute fressender Voegel.",
+    "XC982288": "ENTFERNTER SSIIH: 3.51 kHz bei 1.67 kHz Bandbreite. Schmalbandig wie ssiih, aber tief. Matthias vermutete Entfernung -- physikalisch stimmig, hohe Frequenzen werden ueber Distanz staerker gedaempft, die Schmalbandigkeit bleibt. Gleiche Signatur wie die Eulen-Aufnahme XC167956 (4.25 kHz / 1.74 kHz)."
+  },
+  "folgerung": "Bandbreite ist entfernungsrobuster als Spitzenfrequenz und sollte staerker gewichtet werden. Ausserdem fehlt der Phrasenerkennung ein Filter gegen Nicht-Vogel-Geraeusche."
+}
