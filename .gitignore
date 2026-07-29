@@ -45,3 +45,6 @@ data/referenz/
 # Silben-Schnipsel und Labelseite werden erzeugt
 data/silben/
 data/labelseite_*.html
+
+data/referenzrufe/
+data/referenzrufe_*.html
