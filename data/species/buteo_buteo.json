@@ -159,5 +159,37 @@
       "titel": "Verhalten",
       "text": "Während der Brutsaison verteidigen Mäusebussarde – ein territoriales Verhalten – ihr Brutrevier um den Horstbaum. Während der Balz ab Mitte Februar vollführen die Brutpaare Balzflüge über dem Brutrevier. Sie bestehen aus gemeinsamem, segelnden Kreisen, bei dem viel gerufen wird. Dann folgt ein sinusähnliches Fallen und Steigen, welches meistens mit einem Sturzflug zum Nest beendet wird.\nFremde Mäusebussarde werden durch schnellen Anflug mit kräftigen Flügelschlägen aus dem Luftraum über dem Brutrevier vertrieben. Während der Brut und Jungenaufzucht werden diese Grenzstreitigkeiten zwischen Nachbarpaaren seltener. Mit einzelnen fremden Mäusebussarden kann es gelegentlich noch zu Auseinandersetzungen kommen.\nMäusebussarde sind außerhalb der Brutsaison eher in losen, weit verteilten Gruppen anzutreffen. Dies betrifft vor allem Flächen mit entsprechend hohem Nahrungsangebot, also Wiesen, Felder und feuchte Niederungen. Sie werden im Winter vermehrt von Mäusebussarden (auch Wintergästen) genutzt. Diese halten sich dann meist den ganzen Tag dort auf, nur zum Schlafen werden Bäume aufgesucht. Besonders an Fallwild und bei Nahrungsmangel in strengen Wintern kann es zur Bildung von Gruppen mit entsprechenden Rangordnungen kommen, d. h., es gibt einzelne Individuen, die gegenüber ihren Artgenossen den Vorrang haben, der auch erkämpft und verteidigt wird."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "buteo_buteo_0.jpg",
+      "urheber": "Hobbyfotowiki",
+      "lizenz": "CC0",
+      "commons": "Datei:Buteo buteo insularum, Azores.jpg"
+    },
+    {
+      "datei": "buteo_buteo_1.jpg",
+      "urheber": "SanoAK: Alexander Kürthy",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:ButeoButeoIUCN2019 1.png"
+    },
+    {
+      "datei": "buteo_buteo_2.jpg",
+      "urheber": "Morbakka",
+      "lizenz": "CC BY 4.0",
+      "commons": "Datei:Buteo Buteo.jpg"
+    },
+    {
+      "datei": "buteo_buteo_3.jpg",
+      "urheber": "Marek Szczepanek",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Buteo buteo 2 (Marek Szczepanek).jpg"
+    },
+    {
+      "datei": "buteo_buteo_4.jpg",
+      "urheber": "Marek Szczepanek",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Buteo buteo 4 (Marek Szczepanek).jpg"
+    }
+  ]
 }

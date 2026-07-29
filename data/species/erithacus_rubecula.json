@@ -340,5 +340,37 @@
       "titel": "Verhalten",
       "text": "Nahrung und Nahrungserwerb: Das Rotkehlchen ernährt sich hauptsächlich von Insekten, kleinen Spinnen und kleinen Regenwürmern. Ergänzend nimmt es Früchte und weiche Samen zu sich, darunter das Rotkehlchenbrot, Beeren (beispielsweise Mehlbeeren), Seidelbast und Liguster. Dabei behalten etwa 80 Prozent der aufgenommenen Beerensamen ihre Keimfähigkeit. Während der Brutzeit ist die Nahrung fast ausnahmslos aus tierischen Bestandteilen zusammengesetzt. Im Spätsommer, Herbst und Winter wird sie durch pflanzliche Nahrung ergänzt. Während der Zugzeit geht der Anteil pflanzlicher Nahrung jedoch stark zurück.\nZur Nahrungssuche bewegt sich das Rotkehlchen in kleinen Sprüngen auf der Erde vorwärts, selten werden kurze Schritte gemacht. Durch Umdrehen und Ablesen des Laubes, seltener von Stämmen oder Ästen, oder durch die Ansitzjagd mit anschließendem Hinunterstoßen kann es Insekten erreichen. Das Rotkehlchen ergreift auch gern die Beute, wenn Nahrungstiere von anderen Tieren freigelegt oder aufgescheucht werden oder andere Vögel sie von Bäumen herunterfallen lassen. Kleine Steine werden zur Verdauungsförderung aufgenommen, unverdauliche Teile wie Chitin als Gewölle in länglichen Ballen hervorgewürgt.\nIm Winter ernährt sich das Rotkehlchen häufig an Futterhäuschen, wo es Fettnahrung wie Fettfutter und Körner vorzieht."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "erithacus_rubecula_0.jpg",
+      "urheber": "Juan Emilio from Las Palmas de Gran Canaria, España",
+      "lizenz": "CC BY-SA 2.0",
+      "commons": "Datei:Petirrojo (Erithacus rubecula superbus ) (6178028365).jpg"
+    },
+    {
+      "datei": "erithacus_rubecula_1.jpg",
+      "urheber": "Samuel Tobler",
+      "lizenz": "CC BY 4.0",
+      "commons": "Datei:Robin (Erithacus rubecula) in snowy winter landscape.jpg"
+    },
+    {
+      "datei": "erithacus_rubecula_2.jpg",
+      "urheber": "Luis García (Zaqarbal)",
+      "lizenz": "CC BY-SA 3.0 es",
+      "commons": "Datei:Erithacus rubecula (Madrid, Spain) 07.jpg"
+    },
+    {
+      "datei": "erithacus_rubecula_3.jpg",
+      "urheber": "Klausronja",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Erithacus rubecula Radeberg 4.jpg"
+    },
+    {
+      "datei": "erithacus_rubecula_4.jpg",
+      "urheber": "Klausronja",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Erithacus rubecula Radeberg 6.jpg"
+    }
+  ]
 }

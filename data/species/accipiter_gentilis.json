@@ -152,5 +152,37 @@
       "titel": "Verhalten",
       "text": "Habichte sind monogam und streng territorial. Das Revier wird durch häufiges „gickern“ (vgl. Lautäußerungen) und durch Schauflüge markiert. Bei diesen Schauflügen werden in geradem Flug die Flügel langsam tief nach unten und wieder nach oben geschlagen. Dringen fremde Artgenossen in das Revier ein, wird zuerst durch Rufe versucht, den Eindringling zu vertreiben, anschließend durch Annäherung und weitere Rufe. Im Gegensatz zu anderen Greifvögeln erfolgen direkte Angriffe mit Körperkontakt bei Habichten im Rahmen territorialer Auseinandersetzungen offenbar nur als allerletztes Mittel. Vermutlich ist dies darauf zurückzuführen, dass eine solche Auseinandersetzung wegen der auf die schnelle Tötung von relativ großen Wirbeltieren spezialisierten Füße und Krallen für beide Parteien mit einem erheblichen Risiko verbunden ist."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "accipiter_gentilis_0.jpg",
+      "urheber": "Elke Brüser, Flügelschlag und Leisetreter",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Habicht Horst (Accipiter gentilis).jpg"
+    },
+    {
+      "datei": "accipiter_gentilis_1.jpg",
+      "urheber": "SanoAK: Alexander Kürthy",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:AccipiterGentilis.png"
+    },
+    {
+      "datei": "accipiter_gentilis_2.jpg",
+      "urheber": "Roger Culos",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Accipiter gentilis MHNT.ZOO.2010.11.84.2.jpg"
+    },
+    {
+      "datei": "accipiter_gentilis_3.jpg",
+      "urheber": "Eigenes Werk",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Austria States green.png"
+    },
+    {
+      "datei": "accipiter_gentilis_4.jpg",
+      "urheber": "Jaap Bijsmans",
+      "lizenz": "CC BY 3.0",
+      "commons": "Datei:Havik eet konijn.webm"
+    }
+  ]
 }

@@ -259,5 +259,37 @@
       "titel": "Verhalten",
       "text": "Der tagaktive Eichelhäher verhält sich während der Brutzeit zumeist sehr unauffällig, fällt aber durch sein ausgeprägtes, lautes Warnverhalten auf. Außerhalb der Brutzeit sieht man ihn oft in kleinen, zerstreuten Trupps, ziehend oder auf der Nahrungssuche. Sehr charakteristisch und auffällig ist der Flug der Art, der durch die unregelmäßigen Flügelschläge leicht unbeholfen wirkt und bei dem die auffällige Färbung besonders deutlich zur Geltung kommt. Meist werden nur kurze Strecken überflogen und geschickt die Deckung von Waldrändern und Gebüschen ausgenutzt, wobei weitere Vögel eines Trupps meist mit deutlichem Abstand folgen. Im Wald fliegt der Vogel sehr geschickt und wendig auch in geschlossenen Beständen. Auf dem Boden und im Geäst bewegt er sich meist hüpfend, wobei oft der Schwanz kurz aufgespreizt wird."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "garrulus_glandarius_0.jpg",
+      "urheber": "Richard Bartz, Munich Makro Freak",
+      "lizenz": "CC BY-SA 2.5",
+      "commons": "Datei:Garrulus glandarius albipectus.jpg"
+    },
+    {
+      "datei": "garrulus_glandarius_1.jpg",
+      "urheber": "Jannis Lehmann",
+      "lizenz": "CC0",
+      "commons": "Datei:Eichelhäher Jungtier.jpg"
+    },
+    {
+      "datei": "garrulus_glandarius_2.jpg",
+      "urheber": "Jodocus Oesenbry",
+      "lizenz": "Public domain",
+      "commons": "Datei:Eichelhäher Oesenbry.jpg"
+    },
+    {
+      "datei": "garrulus_glandarius_3.jpg",
+      "urheber": "Detlef Geissler",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Eichelhäher bei Mais sammeln163314.jpg"
+    },
+    {
+      "datei": "garrulus_glandarius_4.jpg",
+      "urheber": "Eva-maria-mueller",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Eichelhäher beim Baden.jpg"
+    }
+  ]
 }

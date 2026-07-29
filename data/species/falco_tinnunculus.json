@@ -188,5 +188,37 @@
       "titel": "Verhalten",
       "text": "Turmfalken sind sogenannte Breitfrontzieher, die keinen traditionellen Zugrouten folgen und überwiegend einzeln ziehen. So zogen über die Meerenge von Gibraltar unter 210.000 Greifvögeln und Falkenartigen im Jahre 1973 fast 121.000 Wespenbussarde, aber nur 1237 Turmfalken. In dieser Zahl zeigt sich zum einen, dass die in Mitteleuropa so häufigen Vögel nur zu einem kleinen Teil in Afrika überwintern, und zum anderen, dass sie in breiter Front das Mittelmeer überqueren.\nWährend des Zuges fliegen Turmfalken relativ niedrig und halten sich meist in einer Flughöhe von 45 bis 100 Metern auf. Sie setzen ihren Zug auch bei schlechtem Wetter fort und sind anders als viele Greifvögel nicht auf gute Thermik angewiesen. Sie überqueren daher auch die Alpen, die von auf Thermik angewiesenen Greifvögeln wie dem Mäusebussard nur selten überquert werden. Bei ihrer Alpenüberquerung nutzen sie überwiegend Pässe, sie überfliegen aber auch Gipfel und Gletscher."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "falco_tinnunculus_0.jpg",
+      "urheber": "Se90",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Turmfalke (Falco tinnunculus) 2011-05-12.jpg"
+    },
+    {
+      "datei": "falco_tinnunculus_1.jpg",
+      "urheber": "MWill",
+      "lizenz": "CC BY 4.0",
+      "commons": "Datei:Turmfalke (Falco tinnunculus) Eiablage.webm"
+    },
+    {
+      "datei": "falco_tinnunculus_2.jpg",
+      "urheber": "Andreas Trepte",
+      "lizenz": "CC BY-SA 2.5",
+      "commons": "Datei:Turmfalke Falco tinnunculus.jpg"
+    },
+    {
+      "datei": "falco_tinnunculus_3.jpg",
+      "urheber": "Artur Mikołajewski",
+      "lizenz": "CC BY 3.0",
+      "commons": "Datei:Falco tinnunculus male female am.jpg"
+    },
+    {
+      "datei": "falco_tinnunculus_4.jpg",
+      "urheber": "Andreas Trepte",
+      "lizenz": "CC BY-SA 2.5",
+      "commons": "Datei:Common kestrel falco tinnunculus.jpg"
+    }
+  ]
 }

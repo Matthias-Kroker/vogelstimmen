@@ -321,5 +321,37 @@
       "titel": "Verhalten",
       "text": "Der Haussperling zeigt das ganze Jahr über ein geselliges und soziales Verhalten. Viele Verhaltensweisen des Haussperlings sind auf das Leben in der Gruppe ausgerichtet, und der Tagesablauf ist stark synchronisiert.\n\nAktivität: Haussperlinge werden während der bürgerlichen Dämmerung aktiv. Der Gesang beginnt im Mittel etwa 18 Minuten vor Sonnenaufgang, wobei durch Bewölkung verursachte Helligkeitsunterschiede weitgehend ohne Einfluss bleiben. Das Ende der Aktivität liegt auch im Winter noch vor Sonnenuntergang.\nIn mittleren Breiten werden gelegentlich nächtliche Aktivitäten beobachtet, zum Beispiel beim Insektenfang im Flutlicht von Industrieanlagen. Auch auf dem Empire State Building kann man mehr als 300 Meter über dem Erdboden nachts jagende Spatzen entdecken.\n\nNahrungserwerb: Die Nahrungsaufnahme erfolgt fast immer gesellig, auch während der Aufzucht der Jungen. Hierzu finden sich oft Schwärme, kleinere Trupps oder zumindest lose Verbände zusammen. In Getreidefeldern ist bei Trupps von etwa 20 Vögeln die Nahrungsaufnahme am effizientesten, da die für das Sicherungsverhalten verwendete Zeit in größeren Gemeinschaften kürzer wird, jedoch der Zeitaufwand für Auseinandersetzungen mit Artgenossen bei noch größeren Verbänden diese Zeitersparnis mehr als aufwiegt."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "passer_domesticus_0.jpg",
+      "urheber": "SanoAK: Alexander Kürthy",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:PasserDomesticusIUCNver2019-3.png"
+    },
+    {
+      "datei": "passer_domesticus_1.jpg",
+      "urheber": "Arnold Paul",
+      "lizenz": "CC BY-SA 2.5",
+      "commons": "Datei:Passer domesticus 03.jpg"
+    },
+    {
+      "datei": "passer_domesticus_2.jpg",
+      "urheber": "Didier Descouens",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Passer domesticus domesticus MHNT.ZOO.2010.11.208.jpg"
+    },
+    {
+      "datei": "passer_domesticus_3.jpg",
+      "urheber": "Bisco",
+      "lizenz": "Public domain",
+      "commons": "Datei:Passer domesticus female - foraging plants.ogv"
+    },
+    {
+      "datei": "passer_domesticus_4.jpg",
+      "urheber": "Loz (L. B. Tettenborn)",
+      "lizenz": "CC BY-SA 2.5",
+      "commons": "Datei:Image-Passer italiae 2(loz).jpg"
+    }
+  ]
 }

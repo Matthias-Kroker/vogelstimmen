@@ -264,5 +264,37 @@
       "titel": "Verhalten",
       "text": "Der Aktivitätsbeginn der Art liegt in der Regel etwa eine halbe Stunde vor Sonnenaufgang, variiert aber je nach Jahreszeit. Während der Stunde vor Sonnenuntergang nähern sich Elstern immer mehr ihrem Schlafplatz, den sie kurz darauf einnehmen.\nDie Elster lebt in zwei verschiedenen Sozialformen. In der Brutzeit leben Brutpaare allein in ihren Revieren, während sich Nichtbrüter zu Gruppen zusammenschließen. Im Winter bilden Elstern Scharen von einem Dutzend bis zu einigen hundert Vögeln.\n\nFortpflanzung: Die Elster wird im ersten Herbst ihres Lebens geschlechtsreif. Sie wird dann Mitglied einer Gemeinschaft aus anderen Nichtbrütern. Im darauf folgenden Frühling brüten nur knapp die Hälfte der Männchen und gut die Hälfte der Weibchen.\n\nPaarbildung und Nistplatzwahl: Die Elster lebt in lebenslanger Monogamie, stirbt einer der Partner, ersetzt ihn der andere meistens schnell durch einen einjährigen Vogel. Wiederholen sich erfolglose Bruten zu häufig, trennen sich Paare in der Regel auch. Im Herbst verbringt ein zukünftiges Paar zunehmend mehr Zeit miteinander, bis sich beide aneinander gebunden fühlen (Umpaarungen). Sie gehen aber nach wie vor allein auf Nahrungssuche. Hat ein junges Elsternpaar ein Revier erobert, finden manchmal balzartige Handlungen statt.\nDie Inspektion der möglichen Nistplätze durch Herumstochern findet von Oktober bis Januar statt, in Mitteleuropa bis Februar."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "pica_pica_0.jpg",
+      "urheber": "Dumi",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Pica pica.01.jpg"
+    },
+    {
+      "datei": "pica_pica_1.jpg",
+      "urheber": "MPF (talk)",
+      "lizenz": "CC BY 2.5",
+      "commons": "Datei:Pica pica mauretanica1.jpg"
+    },
+    {
+      "datei": "pica_pica_2.jpg",
+      "urheber": "Stauss in der Wikipedia auf Deutsch",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Elster2.jpg"
+    },
+    {
+      "datei": "pica_pica_3.jpg",
+      "urheber": "Kclama",
+      "lizenz": "CC SA 1.0",
+      "commons": "Datei:Pica serica - Hong Kong.jpg"
+    },
+    {
+      "datei": "pica_pica_4.jpg",
+      "urheber": "Cyberolm",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Elster jung.png"
+    }
+  ]
 }

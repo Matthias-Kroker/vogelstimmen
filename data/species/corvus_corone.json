@@ -252,5 +252,37 @@
       "titel": "Verhalten",
       "text": "Ernährung: Aaskrähen sind Allesfresser und ernähren sich sehr vielseitig. Die Hauptnahrungsquellen der Art sind Getreidesamen und Wirbellose, hinzu kommen kleine Wirbeltiere, Vogeleier, Aas und Abfälle. Die Zusammensetzung des Nahrungsspektrums variiert stark nach Angebot, Lebensraum und Jahreszeit. Getreide ist im britischen Oxfordshire das ganze Jahr über, vor allem aber im Herbst und Winter von Bedeutung. Kleinfrüchte und Obst werden gegen Herbst wichtig, spielen im Rest des Jahres aber meist eine untergeordnete Rolle. Auf den windgeschorenen Wipfelflächen beerentragender weiblicher Sanddornbäumchen an der Ostseeküste kann man Nebelkrähen gruppenweise die reifen, sehr sauren Früchte picken sehen. Im Frühjahr nimmt die Zahl gefressener Regenwürmer und Käfer stark zu, gefolgt von einem Anstieg an vertilgten anderen Insekten. Vogeleier werden im Frühjahr und Frühsommer von Aaskrähen gefressen, wenn sie ausreichend zur Verfügung stehen. Kleinsäuger rücken etwas später, gegen Sommer, in das Zentrum der Aufmerksamkeit. Anderenorts können sich deutlich andere Akzente im Nahrungsspektrum ergeben: In Weideregionen ist Aas im Winter eine wichtige Nahrungsquelle."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "corvus_corone_0.jpg",
+      "urheber": "PierreSelim",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Annecy - Corvus Corone - 20111230 - 02.JPG"
+    },
+    {
+      "datei": "corvus_corone_1.jpg",
+      "urheber": "Perikaryon (Diskussion)",
+      "lizenz": "CC BY-SA 3.0 de",
+      "commons": "Datei:Cranium Corvus corone corone.jpg"
+    },
+    {
+      "datei": "corvus_corone_2.jpg",
+      "urheber": "Ian Kirk from Broadstone, Dorset, UK",
+      "lizenz": "CC BY 2.0",
+      "commons": "Datei:Corvus corone -near Canford Cliffs, Poole, England-8.jpg"
+    },
+    {
+      "datei": "corvus_corone_3.jpg",
+      "urheber": "Rabe19 (Diskussion)",
+      "lizenz": "Copyrighted free use",
+      "commons": "Datei:Rabenkrähen.webm"
+    },
+    {
+      "datei": "corvus_corone_4.jpg",
+      "urheber": "Fr. Eugen Köhler",
+      "lizenz": "Public domain",
+      "commons": "Datei:Corvus cornix (PD).jpg"
+    }
+  ]
 }

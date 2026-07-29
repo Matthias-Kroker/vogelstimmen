@@ -129,5 +129,37 @@
       "titel": "Fortpflanzung",
       "text": "Heckenbraunellen haben sehr komplexe Paarbeziehungen. Da auch die Weibchen Reviere besetzen und diese sich mit den Revieren von zwei Männchen überlappen können, haben Heckenbraunellenweibchen gelegentlich zwei Männchen als Partner. Genauso häufig haben Männchen mehrere Weibchen oder ein dominantes Paar besetzt ein Territorium, bei dem unterlegene, aber ebenfalls verpaarte Männchen bei der Brutpflege helfen.\nMännchen benötigen nur eine Zehntelsekunde für die Kopulation und können sich mehr als 100 Mal am Tag paaren.\nDas Nest wird niedrig über dem Boden im Dickicht versteckt gebaut. Es befindet sich in der Regel zwischen 60 Zentimetern und drei Metern auf der Schattenseite eines Baumes, Strauches oder niedrigen Busches. Es besteht aus einem Napf aus Halmen, über die Moose verbracht werden. Dann wird es mit Haaren und Federn ausgepolstert. Es gibt zwei Jahresbruten im April und im Juli. Die erste Brut geht oft verloren. Die auffallend gefärbten Eier sind im April in der noch spärlich ausgebildeten Vegetation eine leichte Beute für Nesträuber. Das Gelege besteht aus drei bis sechs grünblauen Eiern und wird 13 bis 14 Tage vorwiegend vom Weibchen bebrütet. Die Jungen werden dann von beiden Eltern noch 11 bis 14 Tage gefüttert.\nDie Neuseeländischen Heckenbraunellen brüten in der Zeit von August bis Januar und ziehen in dieser Zeit zwei bis drei Gelege auf."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "prunella_modularis_0.jpg",
+      "urheber": "SanoAK: Alexander Kürthy",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:PrunellaModularisIUCN.png"
+    },
+    {
+      "datei": "prunella_modularis_1.jpg",
+      "urheber": "Hobbyfotowiki\n\n\nKameraposition51° 10′ 43,32″ N, 7° 00′ 23,65″ O Dieses und weitere Bilder auf OpenStreetMap 51.178700;  ",
+      "lizenz": "CC0",
+      "commons": "Datei:Singing Dunnock (Prunella modularis).jpg"
+    },
+    {
+      "datei": "prunella_modularis_2.jpg",
+      "urheber": "Charles J. Sharp",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Dunnock (Prunella modularis) 3.jpg"
+    },
+    {
+      "datei": "prunella_modularis_3.jpg",
+      "urheber": "Holger Uwe Schmitt",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:20 Gramm wiegt im Durchschnitt eine Heckenbraunelle. 04.jpg"
+    },
+    {
+      "datei": "prunella_modularis_4.jpg",
+      "urheber": "Drahkrub. Attribution must include the URL http://de.wikipedia.org/wiki/Benutzer:Drahkrub.",
+      "lizenz": "CC BY 4.0",
+      "commons": "Datei:Heckenbraunelle-(dkrb)-1.webm"
+    }
+  ]
 }

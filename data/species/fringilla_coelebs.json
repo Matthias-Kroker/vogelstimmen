@@ -328,5 +328,37 @@
       "titel": "Fortpflanzung",
       "text": "Der Buchfink brütet bevorzugt in lichten Laub- und Mischwäldern sowie in Hecken, Parks und Gärten. In Mitteleuropa beginnt die Brutperiode frühestens ab Ende März, gewöhnlich schreiten Buchfinken aber von Mitte April bis Juni zur Brut. In Marokko und Algerien brüten Buchfinken von Ende März bis Anfang Juni. Im Südwesten der Kapprovinz dagegen von September bis November. Je nach Klima und Lage ziehen sie ein bis zwei Jahresbruten pro Jahr groß.\nZu Beginn der Fortpflanzungszeit kennzeichnet das Männchen sein Brutrevier durch lautstarken Gesang. Die Größe des Brutreviers variiert abhängig vom Verbreitungsgebiet beträchtlich und ist in Europa umso größer, je höher im Norden der Buchfink brütet. In der marokkanischen Macchie haben die Brutreviere eine durchschnittliche Größe von 270 Quadratmetern. Das Brutrevier wird von beiden Vögeln eines Paares energisch verteidigt, Eindringlinge werden verjagt.\nDas sorgfältig, ausschließlich vom Weibchen gebaute, dickwandige Nest besteht aus Wurzeln, Rindenfasern, Halmen, Moosen und Flechten. Innen wird es mit Haaren und einzelnen Federn gepolstert. Das Nest wird meistens in einer Höhe von zwei bis zehn Metern auf Sträuchern oder in Bäumen in einer Astgabel gebaut und ist durch die Moose und Flechten gut getarnt."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "fringilla_coelebs_0.jpg",
+      "urheber": "Matthias Bethke",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:20240616 Buchfink ((Fringilla coelebs).jpg"
+    },
+    {
+      "datei": "fringilla_coelebs_1.jpg",
+      "urheber": "Imran Shah from Islamabad, Pakistan",
+      "lizenz": "CC BY-SA 2.0",
+      "commons": "Datei:Chaffinch (Fringilla coelebs) (38114943341).jpg"
+    },
+    {
+      "datei": "fringilla_coelebs_2.jpg",
+      "urheber": "Thermos (Thermos)",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:FringillaCoelebsFemale.jpg"
+    },
+    {
+      "datei": "fringilla_coelebs_3.jpg",
+      "urheber": "Pawel",
+      "lizenz": "CC BY 3.0",
+      "commons": "Datei:Fringilla coelebs -La Palma, Canary Islands, Spain-8.jpg"
+    },
+    {
+      "datei": "fringilla_coelebs_4.jpg",
+      "urheber": "Self: Commons user MichaelMaggs",
+      "lizenz": "CC BY-SA 2.5",
+      "commons": "Datei:Fringilla coelebs (chaffinch), male.jpg"
+    }
+  ]
 }

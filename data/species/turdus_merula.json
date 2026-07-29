@@ -378,5 +378,37 @@
       "titel": "Verhalten",
       "text": "Der Aktivitätsbeginn liegt während der meisten Jahreszeiten während der Morgendämmerung, das Aktivitätsende während der Abenddämmerung.\nZwischen Februar und Ende Juni ist allerdings von mitteleuropäischen Amseln schon weit vor Beginn der Morgendämmerung ihr Gesang zu vernehmen; im Juli und Juni sowie mitten im Winter endet die Aktivität bereits bei oder sogar vor Sonnenuntergang. Witterungsabhängige Helligkeitsunterschiede sowie künstliche Lichtquellen beeinflussen die Aktivitätsdauer.\n\nRuhe und Komfortverhalten: Amseln suchen während des gesamten Jahres spezielle Schlafplätze auf, obschon während der Brutzeit neben den brütenden Weibchen auch häufig die Männchen nachts im Revier bleiben. Die Schlafplätze liegen typischerweise in Nadelbäumen sowie dicht belaubten Laubbäumen oder Sträuchern, meist 1 bis 2,5 Meter über dem Boden. Die Übernachtung erfolgt manchmal einzeln, aber auch gesellig: In stadtnahen Wäldern können sich 700 Vögel oder mehr versammeln. Im Siedlungsgebiet werden häufig Friedhöfe oder Parks zur Nächtigung genutzt. Die zum Schlafplatz zurückzulegende Distanz liegt normalerweise unter einem Kilometer, kann aber auch bis zu vier Kilometer betragen, insbesondere im Siedlungsgebiet sind die zurückzulegenden Distanzen oft größer. Dabei verwenden die Vögel häufig dieselben Routen, ein Individuum nutzt aber nicht jeden Tag denselben Schlafplatz."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "turdus_merula_0.jpg",
+      "urheber": "Pierre-Selim",
+      "lizenz": "CC BY 2.0",
+      "commons": "Datei:Compans Caffarelli - Turdus merula - 2012-2-11.jpg"
+    },
+    {
+      "datei": "turdus_merula_1.jpg",
+      "urheber": "Ermell",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Amsel im Kirschbaum P1110124.jpg"
+    },
+    {
+      "datei": "turdus_merula_2.jpg",
+      "urheber": "Hobbyfotowiki",
+      "lizenz": "CC0",
+      "commons": "Datei:Amselmännchen der Unterart T. m. azorensis auf Terceira.jpg"
+    },
+    {
+      "datei": "turdus_merula_3.jpg",
+      "urheber": "3268zauber",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Amseln kämpfend.JPG"
+    },
+    {
+      "datei": "turdus_merula_4.jpg",
+      "urheber": "Kathy Büscher from Rinteln, Deutschland",
+      "lizenz": "CC BY 2.0",
+      "commons": "Datei:Amsel (20) (34177340804).jpg"
+    }
+  ]
 }

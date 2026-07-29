@@ -7,7 +7,8 @@ import {
 import { useAudioPlayer } from "expo-audio";
 
 import { voegel, type Anteil, type Fressfeind, type Vogel } from "./daten/voegel";
-import { vogelBilder } from "./assets/voegel";
+import { vogelBilder, vogelBilderAlle } from "./assets/voegel";
+import Quiz from "./Quiz";
 import { rufeZuVogel, type Ruf } from "./assets/rufe";
 
 const farben = {
@@ -23,6 +24,7 @@ const farben = {
 
 export default function App() {
   const [gewaehlt, setGewaehlt] = useState<Vogel | null>(null);
+  const [imQuiz, setImQuiz] = useState(false);
   const [suche, setSuche] = useState("");
 
   const gefiltert = useMemo(() => {
@@ -38,7 +40,9 @@ export default function App() {
   return (
     <SafeAreaView style={stile.flaeche}>
       <StatusBar barStyle="light-content" />
-      {gewaehlt ? (
+      {imQuiz ? (
+        <Quiz zurueck={() => setImQuiz(false)} />
+      ) : gewaehlt ? (
         <Steckbrief vogel={gewaehlt} zurueck={() => setGewaehlt(null)} />
       ) : (
         <Liste
@@ -46,6 +50,7 @@ export default function App() {
           suche={suche}
           setSuche={setSuche}
           waehlen={setGewaehlt}
+          quizStarten={() => setImQuiz(true)}
         />
       )}
     </SafeAreaView>
@@ -53,12 +58,13 @@ export default function App() {
 }
 
 function Liste({
-  liste, suche, setSuche, waehlen,
+  liste, suche, setSuche, waehlen, quizStarten,
 }: {
   liste: Vogel[];
   suche: string;
   setSuche: (s: string) => void;
   waehlen: (v: Vogel) => void;
+  quizStarten: () => void;
 }) {
   return (
     <View style={{ flex: 1 }}>
@@ -67,6 +73,12 @@ function Liste({
         <Text style={stile.untertitel}>
           {liste.length} von {voegel.length} Arten
         </Text>
+        <Pressable
+          onPress={quizStarten}
+          style={({ pressed }) => [stile.quizKnopf, pressed && { opacity: 0.8 }]}
+        >
+          <Text style={stile.quizKnopfText}>Quiz starten</Text>
+        </Pressable>
         <TextInput
           style={stile.suchfeld}
           placeholder="Suchen…"
@@ -336,6 +348,11 @@ const stile = StyleSheet.create({
   kopf: { paddingHorizontal: 18, paddingTop: 14, paddingBottom: 10 },
   titel: { color: farben.text, fontSize: 26, fontWeight: "700" },
   untertitel: { color: farben.gedaempft, fontSize: 13, marginTop: 2 },
+  quizKnopf: {
+    backgroundColor: "#0e639c", borderRadius: 8, paddingVertical: 12,
+    alignItems: "center", marginTop: 12,
+  },
+  quizKnopfText: { color: "#fff", fontSize: 15.5, fontWeight: "600" },
   suchfeld: {
     backgroundColor: farben.karte, color: farben.text, borderRadius: 8,
     paddingHorizontal: 12, paddingVertical: 9, marginTop: 12, fontSize: 15,

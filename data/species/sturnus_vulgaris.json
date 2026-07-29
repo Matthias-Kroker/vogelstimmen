@@ -153,5 +153,37 @@
       "titel": "Verhalten",
       "text": "Sozialverhalten: Stare bewegen sich ganzjährig in Trupps und zum Teil riesigen Schwärmen. Nur am Brutplatz ist der Star territorial, meist wird ein kleiner Radius bis ca. 10 m um die Bruthöhle verteidigt. Nahrungsflächen werden nicht verteidigt, sondern gemeinsam genutzt. Nichtbrüter leben auch in der Brutzeit in Trupps. Die ab Mitte Juni selbstständigen Jungvögel bilden sofort Schwärme, die sich in nahrungsreichen Gebieten konzentrieren. Diese Schwärme werden durch den Zwischenzug der Jungvögel nordöstlicher Populationen (siehe Wanderungen) immer größer mit einem Maximum im Juli.\nNachts werden gemeinsame Schlafplätze genutzt, diese Schlafplätze liegen vor allem in größeren Schilfgebieten, aber auch in Baum- und dichten Strauchgruppen, häufig auch in Stadtzentren. So besteht am Berliner Dom von Juni bis Ende Oktober ein Schlafplatz von bis zu 40.000 Staren. Im Winterquartier können diese Schlafgemeinschaften mehr als 1 Million Individuen umfassen. Die Stare sammeln sich an Vorsammelplätzen, meist auf exponierten Strukturen wie hohen Bäumen oder Stromleitungen. Von dort fliegen sie dann in Trupps oder größeren Schwärmen geschlossen zum eigentlichen Schlafplatz. Kleinere Trupps fliegen den Schlafplatz meist niedrig an."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "sturnus_vulgaris_0.jpg",
+      "urheber": "Frank Schulenburg",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Sturnus vulgaris (European starling) at Bodega Head-1209.jpg"
+    },
+    {
+      "datei": "sturnus_vulgaris_1.jpg",
+      "urheber": "R.Wampers",
+      "lizenz": "CC BY-SA 2.0 be",
+      "commons": "Datei:Sturnusvulgaris starling spreeuw.jpg"
+    },
+    {
+      "datei": "sturnus_vulgaris_2.jpg",
+      "urheber": "Die Autorenschaft wurde nicht in einer maschinell lesbaren Form angegeben. Es wird Scops~commonswiki als Autor angenomme",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Sturnus vulgaris stop on migration.jpg"
+    },
+    {
+      "datei": "sturnus_vulgaris_3.jpg",
+      "urheber": "Klaaschwotzer",
+      "lizenz": "CC0",
+      "commons": "Datei:Sturnus vulgaris vulgaris 2.jpg"
+    },
+    {
+      "datei": "sturnus_vulgaris_4.jpg",
+      "urheber": "Michael Graf (Oflow)",
+      "lizenz": "CC BY-SA 3.0 de",
+      "commons": "Datei:STURNUS VULGARIS.JPG"
+    }
+  ]
 }

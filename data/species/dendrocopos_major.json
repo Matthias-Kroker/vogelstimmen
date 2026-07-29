@@ -153,5 +153,37 @@
       "titel": "Fortpflanzung",
       "text": "Der Buntspecht ist wie alle Spechte ein Höhlenbrüter. Die Bruthöhlen zimmert er selbst und bevorzugt dazu weiche Holzarten und morsche alte Bäume. Er beginnt viele Höhlungen auszuarbeiten, bevor er eine einzige vollendet.\nDas Weibchen legt vier bis sieben weiße Eier, die etwa 11–13 Tage lang bebrütet werden. Die Jungvögel werden etwa drei bis vier Wochen lang gefüttert, bis sie ausfliegen. In der zweiten Hälfte der Fütterungsphase sind die Nester wegen des ununterbrochenen lauten Gezeters der Jungvögel leicht zu entdecken.\nBis zu 20 % der Weibchen leben in Polyandrie. Ältere erfahrene Weibchen beginnen mit einem älteren erfahrenen Männchen eine Erstbrut. Mit einem meist jüngeren Männchen folgt dann eine Zweitbrut. Das Weibchen beteiligt sich an Brut-, Schlupf- und Huderphase beider Bruten. Später überlässt sie die Aufzucht der Zweitbrut dem Männchen der Zweitbrut."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "dendrocopos_major_0.jpg",
+      "urheber": "David Meisel (BlueFox at de.wikipedia)",
+      "lizenz": "CC BY-SA 2.0 de",
+      "commons": "Datei:FlyingDendrocoposMajor.jpg"
+    },
+    {
+      "datei": "dendrocopos_major_1.jpg",
+      "urheber": "Myratz",
+      "lizenz": "CC BY-SA 3.0 de",
+      "commons": "Datei:DendrocoposMajor-feeding-child-Germany-May-2008.ogv"
+    },
+    {
+      "datei": "dendrocopos_major_2.jpg",
+      "urheber": "Cornelst",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Buntspecht Trommeln.ogv"
+    },
+    {
+      "datei": "dendrocopos_major_3.jpg",
+      "urheber": "Didier Descouens",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Dendrocopos major MHNT 232.jpg"
+    },
+    {
+      "datei": "dendrocopos_major_4.jpg",
+      "urheber": "Zaltys",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Dendrocopos minor 291108.jpg"
+    }
+  ]
 }

@@ -347,5 +347,37 @@
       "titel": "Verhalten",
       "text": "Die Kohlmeise verhält sich meist recht auffällig und ist wenig scheu. Sie bewegt sich überwiegend hüpfend und kletternd im Geäst oder auf dem Boden. Oft wird dies durch Flügelschläge oder kurze Gleitphasen unterstützt. Seltener als andere Meisen hängt sie kurzzeitig kopfüber an Zweigen. Sie ist auch in der Lage, wie ein Kleiber kopfüber an einem Stamm abwärts zu klettern. Aufgrund der relativ kurzen, runden Flügel und der langen Steuerfedern fliegt sie wendig und schnell durch das Geäst von Bäumen oder Unterholz. Freies Gelände wird meist nur zögerlich in recht langsamem, bogenförmigem Flug überflogen.\nDie Kohlmeise ist tagaktiv und zeigt ganzjährig in den frühen Morgenstunden die höchste Aktivität. Außerhalb der Brutzeit gibt es zudem abends ein zweites Aktivitätsmaximum. Der Gesang setzt kurz nach der bürgerlichen Dämmerung ein und erreicht seine höchste Intensität etwa eine Viertel- bis halbe Stunde später. Im Winterhalbjahr, teils auch schon vermehrt nach der Mauser, nächtigen Kohlmeisen in Höhlen. Der Schlaf ist sehr fest, wobei der Vogel an den Höhlenboden gekauert oder an eine Nistkastenwand angeschmiegt ist und den Kopf bei eingezogenem Hals schräg in die Höhe richtet. Sehr kalte Nächte überstehen Kohlmeisen, indem sie ihre Körpertemperatur von üblicherweise 41,8 °C auf 32 °C absenken und so wenig Energie verbrauchen."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "parus_major_0.jpg",
+      "urheber": "Luc Viatour from Bruxelles, Belgique",
+      "lizenz": "CC BY-SA 2.0",
+      "commons": "Datei:Parus major Luc Viatour.jpg"
+    },
+    {
+      "datei": "parus_major_1.jpg",
+      "urheber": "Aiwok",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Parus major 2a.JPG"
+    },
+    {
+      "datei": "parus_major_2.jpg",
+      "urheber": "Highway45",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Kohlmeise beim Füttern.jpg"
+    },
+    {
+      "datei": "parus_major_3.jpg",
+      "urheber": "Armin Kübelbeck",
+      "lizenz": "CC BY 3.0",
+      "commons": "Datei:Kohlmeisen 1d.jpg"
+    },
+    {
+      "datei": "parus_major_4.jpg",
+      "urheber": "nottsexminer",
+      "lizenz": "CC BY-SA 2.0",
+      "commons": "Datei:Great Tit (6847922138).jpg"
+    }
+  ]
 }

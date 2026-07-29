@@ -290,5 +290,37 @@
       "titel": "Fortpflanzung",
       "text": "Zilpzalpe sind am Ende des ersten Lebensjahres geschlechtsreif. Die Tiere leben überwiegend in einer monogamen Saisonehe. Bigynie, also die Verpaarung eines Männchens mit zwei Weibchen, ist jedoch nicht selten. Offenbar findet meist auch dann eine Neuverpaarung statt, wenn beide Partner in die Nähe des vorjährigen Brutplatzes zurückkehren. Männchen treffen einige Tage bis Wochen vor den Weibchen in den Revieren ein, die Balz beginnt mit der Rückkehr der Weibchen. Männchen singen in Mitteleuropa dementsprechend von Mitte oder Ende März bis Mitte oder Ende Juli.\nDas Nest wird nicht selten auf, aber überwiegend niedrig über dem Boden errichtet. Es findet sich meist in Höhen zwischen 10 und 40 cm und je nach Angebot variierend zum Beispiel in Brombeeren, hohem Gras, Brennnesseln, Jungfichten, jungen Laubbäumen und ähnlichem. Der Nistplatz wird vom Weibchen ausgewählt. Das mehr oder weniger runde und meist etwas unordentliche, geschlossene Nest hat einen seitlichen, ovalen Eingang und ist 7–13 cm breit und 8–15 cm hoch. Es besteht außen aus trockenen Halmen, Grasblättern und Moossprossen. Die Innenauskleidung erfolgt mit ähnlichem, aber feinerem Material, zusätzlich werden hierzu auch fast immer kleine Federn verwendet."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "phylloscopus_collybita_0.jpg",
+      "urheber": "Andreas Trepte",
+      "lizenz": "CC BY-SA 2.5",
+      "commons": "Datei:Chiffchaff - Phylloscopus collybita.jpg"
+    },
+    {
+      "datei": "phylloscopus_collybita_1.jpg",
+      "urheber": "Accipiter (R. Altenkamp, Berlin)",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Phylloscopus collybita 090907.jpg"
+    },
+    {
+      "datei": "phylloscopus_collybita_2.jpg",
+      "urheber": "Stse",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Phylloscopus collybita juv..jpg"
+    },
+    {
+      "datei": "phylloscopus_collybita_3.jpg",
+      "urheber": "Steve Garvie from Dunfermline, Fife, Scotland",
+      "lizenz": "CC BY-SA 2.0",
+      "commons": "Datei:Flickr - Rainbirder - Willow Warbler-Chiffchaff comparison.jpg"
+    },
+    {
+      "datei": "phylloscopus_collybita_4.jpg",
+      "urheber": "Klaus Rassinger und Gerhard Cammerer, Museum Wiesbaden",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Phylloscopus collybita MWNH 2266.JPG"
+    }
+  ]
 }

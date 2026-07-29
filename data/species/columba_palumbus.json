@@ -141,5 +141,37 @@
       "titel": "Fortpflanzung",
       "text": "Ringeltauben werden im Mai oder Juni des Jahres nach dem Jahr, in dem sie geschlüpft sind, geschlechtsreif. Die Tiere leben überwiegend in einer monogamen Saisonehe, zumindest bei nicht ziehenden Populationen kommen offenbar auch Dauerehen vor. Allerdings nur, wenn aus der vorhergegangenen Brutsaison gemeinsame Jungtiere hervorgegangen sind. Bleibt die Verbindung ohne Nachwuchs, so suchen sich 100 Prozent der Ringeltauben für das nächste Jahr einen neuen Partner. Paare, die erfolgreich gemeinsam gebrütet haben, bleiben dagegen mitunter über Jahre zusammen.\nDie Reviergründung erfolgt durch die Männchen. Gegen Artgenossen wird nur die Nestumgebung als Revier verteidigt. Die Größe des Reviers ist in Abhängigkeit von der Siedlungsdichte sehr variabel; bei sehr hoher Siedlungsdichte kann das Revier nur aus dem zur Brut genutzten Baum bestehen. Die Balz beginnt im März oder April, bei städtischen Populationen jedoch oft schon im Winter. Mit dem Beginn der Eiablage geht die Balzaktivität zurück, bedingt durch die sehr lange Brutsaison sind balzende Tiere jedoch bis in den September hinein häufig zu beobachten. Die Balz umfasst neben den häufigen Rufen auch einen Balzflug des Männchens. Dabei fliegt das Männchen von einer hohen Warte 20 bis 30 m steil nach oben und klatscht dabei oft laut mehrfach mit den Flügeln."
     }
-  }
+  },
+  "bilder": [
+    {
+      "datei": "columba_palumbus_0.jpg",
+      "urheber": "Ignacio Cobos Rey",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Columba-palumbus-dist.png"
+    },
+    {
+      "datei": "columba_palumbus_1.jpg",
+      "urheber": "Hobbyfotowiki",
+      "lizenz": "CC0",
+      "commons": "Datei:Columba palumbus azorica.jpg"
+    },
+    {
+      "datei": "columba_palumbus_2.jpg",
+      "urheber": "Marek Szczepanek",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Columba palumbus 1 (Marek Szczepanek).jpg"
+    },
+    {
+      "datei": "columba_palumbus_3.jpg",
+      "urheber": "Ruggero Turra",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Columba palumbus eating.JPG"
+    },
+    {
+      "datei": "columba_palumbus_4.jpg",
+      "urheber": "Jacques Schreiber",
+      "lizenz": "CC BY 4.0",
+      "commons": "Datei:RingeltaubeSV.jpg"
+    }
+  ]
 }
