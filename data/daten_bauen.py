@@ -30,6 +30,23 @@ export type Fressfeind = {
   bestaetigt: boolean;
 };
 
+export type Anteil = { was: string; prozent: number };
+
+/** Aus AVONET (Tobias et al. 2022) und EltonTraits (Wilman et al. 2014).
+ *  Vorsicht: grobe Kategorien fuer 11.000 Arten -- einzelne Werte koennen
+ *  fuer eine bestimmte Art unpassend sein. */
+export type Merkmale = {
+  lebensraum?: string;
+  zugverhalten?: string;
+  ernaehrungstyp?: string;
+  nahrungsnische?: string;
+  lebensweise?: string;
+  masse_g?: number | null;
+  fluegellaenge_mm?: number | null;
+  nahrung?: Anteil[];
+  nahrungsschicht?: Anteil[];
+};
+
 export type Vogel = {
   id: string;
   name_de: string;
@@ -39,9 +56,20 @@ export type Vogel = {
   wikidata_id: string | null;
   quelle_text: { name: string; url: string | null; lizenz: string };
   fressfeinde: Fressfeind[];
+  merkmale: Merkmale;
 };
 
 '''
+
+
+def bereinige(m):
+    """Kleine Nahrungsanteile verwerfen -- unter 20 % ist Rauschen der
+    groben Kategorien, nicht Aussage ueber die Art."""
+    raus = {k: v for k, v in m.items() if not k.startswith("quelle_")}
+    for feld in ("nahrung", "nahrungsschicht"):
+        if feld in raus:
+            raus[feld] = [a for a in raus[feld] if a.get("prozent", 0) >= 20]
+    return raus
 
 
 def main():
@@ -60,6 +88,9 @@ def main():
             "beschreibung": d.get("beschreibung") or "",
             "wikidata_id": d.get("wikidata_id"),
             "quelle_text": d.get("quelle_text") or {},
+            # Anteile unter 20 % weglassen: EltonTraits gibt dem Zaunkoenig
+            # "Fisch 10 %" -- ein Artefakt der groben Einteilung, kein Befund.
+            "merkmale": bereinige(d.get("merkmale") or {}),
             "fressfeinde": [
                 {"deutsch": f["deutsch"], "wissenschaftlich": f["wissenschaftlich"],
                  "stadium": f.get("stadium", "unbekannt"),

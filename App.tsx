@@ -4,7 +4,7 @@ import {
   StyleSheet, Text, TextInput, View,
 } from "react-native";
 
-import { voegel, type Fressfeind, type Vogel } from "./daten/voegel";
+import { voegel, type Anteil, type Fressfeind, type Vogel } from "./daten/voegel";
 import { vogelBilder } from "./assets/voegel";
 
 const farben = {
@@ -83,7 +83,13 @@ function Liste({
             style={({ pressed }) => [stile.karte, pressed && stile.gedrueckt]}
             onPress={() => waehlen(item)}
           >
-            <Image source={vogelBilder[item.id]} style={stile.vorschau} />
+            {/* contain statt cover: bei cover wird der Vogel angeschnitten,
+                und gerade den will man sehen. */}
+            <Image
+              source={vogelBilder[item.id]}
+              style={stile.vorschau}
+              resizeMode="contain"
+            />
             <View style={{ flex: 1, marginLeft: 12 }}>
               <Text style={stile.name}>{item.name_de}</Text>
               <Text style={stile.lateinisch}>{item.name_wissenschaftlich}</Text>
@@ -111,11 +117,19 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
         <Text style={stile.zurueckText}>‹ Alle Vögel</Text>
       </Pressable>
 
-      <Image source={vogelBilder[vogel.id]} style={stile.grossesBild} />
+      {/* Das ganze Bild zeigen, nicht zuschneiden -- sonst fehlt bei
+          Hochformat-Aufnahmen genau der Vogel. */}
+      <Image
+        source={vogelBilder[vogel.id]}
+        style={stile.grossesBild}
+        resizeMode="contain"
+      />
 
       <View style={{ paddingHorizontal: 18 }}>
         <Text style={stile.titelGross}>{vogel.name_de}</Text>
         <Text style={stile.lateinischGross}>{vogel.name_wissenschaftlich}</Text>
+
+        <Merkmale vogel={vogel} />
 
         <Text style={stile.text}>{vogel.beschreibung}</Text>
 
@@ -142,9 +156,49 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
           {vogel.wikidata_id ? ` · Wikidata ${vogel.wikidata_id}` : ""}
           {"\n"}Bild: Wikimedia Commons · Fressfeinde: GloBI, gegengeprüft mit
           Wikipedia
+          {"\n"}Merkmale: AVONET (Tobias et al. 2022) und EltonTraits (Wilman
+          et al. 2014) — grobe Kategorien für 11.000 Arten, im Einzelfall ungenau
         </Text>
       </View>
     </ScrollView>
+  );
+}
+
+function Merkmale({ vogel }: { vogel: Vogel }) {
+  const m = vogel.merkmale || {};
+  const zeilen: [string, string][] = [];
+  if (m.lebensraum) zeilen.push(["Lebensraum", m.lebensraum]);
+  if (m.zugverhalten) zeilen.push(["Zugverhalten", m.zugverhalten]);
+  if (m.ernaehrungstyp) zeilen.push(["Ernährung", m.ernaehrungstyp]);
+  if (m.lebensweise) zeilen.push(["Lebensweise", m.lebensweise]);
+  if (m.masse_g) zeilen.push(["Gewicht", `${m.masse_g} g`]);
+
+  const liste = (a?: Anteil[]) =>
+    (a || []).map((x) => `${x.was} ${x.prozent} %`).join(" · ");
+
+  if (!zeilen.length && !m.nahrung?.length) return null;
+
+  return (
+    <View style={stile.merkmale}>
+      {zeilen.map(([k, v]) => (
+        <View key={k} style={stile.merkmalZeile}>
+          <Text style={stile.merkmalName}>{k}</Text>
+          <Text style={stile.merkmalWert}>{v}</Text>
+        </View>
+      ))}
+      {!!m.nahrung?.length && (
+        <View style={stile.merkmalZeile}>
+          <Text style={stile.merkmalName}>Nahrung</Text>
+          <Text style={stile.merkmalWert}>{liste(m.nahrung)}</Text>
+        </View>
+      )}
+      {!!m.nahrungsschicht?.length && (
+        <View style={stile.merkmalZeile}>
+          <Text style={stile.merkmalName}>sucht in</Text>
+          <Text style={stile.merkmalWert}>{liste(m.nahrungsschicht)}</Text>
+        </View>
+      )}
+    </View>
   );
 }
 
@@ -192,7 +246,7 @@ const stile = StyleSheet.create({
     borderRadius: 10, padding: 10, marginBottom: 10,
   },
   gedrueckt: { backgroundColor: farben.karteHell },
-  vorschau: { width: 78, height: 78, borderRadius: 8, backgroundColor: "#000" },
+  vorschau: { width: 84, height: 84, borderRadius: 8, backgroundColor: "#0d0d0d" },
   name: { color: farben.text, fontSize: 17, fontWeight: "600" },
   lateinisch: { color: farben.gedaempft, fontSize: 13, fontStyle: "italic" },
   feindzahl: { color: farben.akzent, fontSize: 12, marginTop: 4 },
@@ -200,7 +254,7 @@ const stile = StyleSheet.create({
 
   zurueck: { paddingHorizontal: 18, paddingTop: 12, paddingBottom: 6 },
   zurueckText: { color: farben.akzent, fontSize: 15 },
-  grossesBild: { width: "100%", height: 260, backgroundColor: "#000" },
+  grossesBild: { width: "100%", height: 300, backgroundColor: "#0d0d0d" },
   titelGross: {
     color: farben.text, fontSize: 27, fontWeight: "700", marginTop: 14,
   },
@@ -208,6 +262,14 @@ const stile = StyleSheet.create({
     color: farben.gedaempft, fontSize: 15, fontStyle: "italic", marginBottom: 12,
   },
   text: { color: farben.text, fontSize: 15, lineHeight: 22 },
+
+  merkmale: {
+    backgroundColor: farben.karte, borderRadius: 10, padding: 13,
+    marginTop: 4, marginBottom: 16,
+  },
+  merkmalZeile: { flexDirection: "row", paddingVertical: 4 },
+  merkmalName: { color: farben.gedaempft, fontSize: 13.5, width: 108 },
+  merkmalWert: { color: farben.text, fontSize: 13.5, flex: 1 },
 
   block: {
     backgroundColor: farben.karte, borderRadius: 10, borderLeftWidth: 3,

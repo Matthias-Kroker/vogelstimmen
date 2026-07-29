@@ -12,6 +12,23 @@ export type Fressfeind = {
   bestaetigt: boolean;
 };
 
+export type Anteil = { was: string; prozent: number };
+
+/** Aus AVONET (Tobias et al. 2022) und EltonTraits (Wilman et al. 2014).
+ *  Vorsicht: grobe Kategorien fuer 11.000 Arten -- einzelne Werte koennen
+ *  fuer eine bestimmte Art unpassend sein. */
+export type Merkmale = {
+  lebensraum?: string;
+  zugverhalten?: string;
+  ernaehrungstyp?: string;
+  nahrungsnische?: string;
+  lebensweise?: string;
+  masse_g?: number | null;
+  fluegellaenge_mm?: number | null;
+  nahrung?: Anteil[];
+  nahrungsschicht?: Anteil[];
+};
+
 export type Vogel = {
   id: string;
   name_de: string;
@@ -21,6 +38,7 @@ export type Vogel = {
   wikidata_id: string | null;
   quelle_text: { name: string; url: string | null; lizenz: string };
   fressfeinde: Fressfeind[];
+  merkmale: Merkmale;
 };
 
 export const voegel: Vogel[] = [
@@ -35,6 +53,43 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Amsel",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "vielseitig",
+      "masse_g": 102.7,
+      "fluegellaenge_mm": 128.4,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 50
+        },
+        {
+          "was": "Früchte",
+          "prozent": 20
+        },
+        {
+          "was": "Samen",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 60
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 20
+        },
+        {
+          "was": "mittlere Höhe",
+          "prozent": 20
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -156,6 +211,43 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Blaumeise",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Insektenfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 11.1,
+      "fluegellaenge_mm": 65.6,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 50
+        },
+        {
+          "was": "Früchte",
+          "prozent": 20
+        },
+        {
+          "was": "Samen",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Unterholz",
+          "prozent": 30
+        },
+        {
+          "was": "mittlere Höhe",
+          "prozent": 30
+        },
+        {
+          "was": "Kronendach",
+          "prozent": 30
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Baummarder",
@@ -199,6 +291,43 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Buchfink",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Teilzieher",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Insektenfresser",
+      "lebensweise": "vielseitig",
+      "masse_g": 23.8,
+      "fluegellaenge_mm": 85.9,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 60
+        },
+        {
+          "was": "Samen",
+          "prozent": 20
+        },
+        {
+          "was": "sonstige Pflanzenteile",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 40
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 30
+        },
+        {
+          "was": "mittlere Höhe",
+          "prozent": 30
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Rabenkrähe",
@@ -220,6 +349,39 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Buntspecht",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "lichter Wald",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 74.9,
+      "fluegellaenge_mm": 136.2,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 50
+        },
+        {
+          "was": "Samen",
+          "prozent": 30
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "mittlere Höhe",
+          "prozent": 40
+        },
+        {
+          "was": "Kronendach",
+          "prozent": 30
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 20
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -278,6 +440,43 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Eichelh%C3%A4her",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Teilzieher",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 159.5,
+      "fluegellaenge_mm": 181.1,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 40
+        },
+        {
+          "was": "Früchte",
+          "prozent": 30
+        },
+        {
+          "was": "Samen",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 60
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 20
+        },
+        {
+          "was": "mittlere Höhe",
+          "prozent": 20
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Eichelhäher",
@@ -327,6 +526,39 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Elster",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Siedlungsraum",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "bodenlebend",
+      "masse_g": 217.5,
+      "fluegellaenge_mm": 194.5,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 20
+        },
+        {
+          "was": "Wirbeltiere",
+          "prozent": 20
+        },
+        {
+          "was": "Aas/Wirbeltiere",
+          "prozent": 20
+        },
+        {
+          "was": "Aas",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 70
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -413,6 +645,27 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Habicht",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Teilzieher",
+      "ernaehrungstyp": "Fleischfresser",
+      "nahrungsnische": "Wirbeltierjäger",
+      "lebensweise": "vielseitig",
+      "masse_g": 866.0,
+      "fluegellaenge_mm": 337.6,
+      "nahrung": [
+        {
+          "was": "Wirbeltiere",
+          "prozent": 90
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 100
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Habicht",
@@ -434,6 +687,35 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Haussperling",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Siedlungsraum",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Pflanzenfresser",
+      "nahrungsnische": "Körnerfresser",
+      "lebensweise": "bodenlebend",
+      "masse_g": 26.5,
+      "fluegellaenge_mm": 74.9,
+      "nahrung": [
+        {
+          "was": "Samen",
+          "prozent": 60
+        },
+        {
+          "was": "sonstige Pflanzenteile",
+          "prozent": 30
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 50
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 50
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -484,6 +766,31 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Heckenbraunelle",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Insektenfresser",
+      "lebensweise": "bodenlebend",
+      "masse_g": 20.2,
+      "fluegellaenge_mm": 69.1,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 50
+        },
+        {
+          "was": "Samen",
+          "prozent": 50
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 100
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -542,6 +849,43 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Kohlmeise",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "lichter Wald",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Insektenfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 16.2,
+      "fluegellaenge_mm": 70.9,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 40
+        },
+        {
+          "was": "Früchte",
+          "prozent": 20
+        },
+        {
+          "was": "Samen",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "mittlere Höhe",
+          "prozent": 60
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 20
+        },
+        {
+          "was": "Kronendach",
+          "prozent": 20
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Buntspecht",
@@ -570,6 +914,31 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Kolkrabe",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Teilzieher",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "bodenlebend",
+      "masse_g": 928.0,
+      "fluegellaenge_mm": 419.7,
+      "nahrung": [
+        {
+          "was": "Wirbeltiere",
+          "prozent": 20
+        },
+        {
+          "was": "Aas",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 80
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -600,6 +969,27 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/M%C3%A4usebussard",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "Grasland",
+      "zugverhalten": "Teilzieher",
+      "ernaehrungstyp": "Fleischfresser",
+      "nahrungsnische": "Wirbeltierjäger",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 759.1,
+      "fluegellaenge_mm": 382.9,
+      "nahrung": [
+        {
+          "was": "Wirbeltiere",
+          "prozent": 90
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 100
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Habicht",
@@ -628,6 +1018,39 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Rabenkr%C3%A4he",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Siedlungsraum",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Fleischfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "bodenlebend",
+      "masse_g": 570.0,
+      "fluegellaenge_mm": 323.9,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 30
+        },
+        {
+          "was": "Wirbeltiere",
+          "prozent": 20
+        },
+        {
+          "was": "Aas/Wirbeltiere",
+          "prozent": 20
+        },
+        {
+          "was": "Aas",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 90
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -700,6 +1123,39 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Ringeltaube",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "lichter Wald",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Pflanzenfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "bodenlebend",
+      "masse_g": 490.0,
+      "fluegellaenge_mm": 246.4,
+      "nahrung": [
+        {
+          "was": "sonstige Pflanzenteile",
+          "prozent": 40
+        },
+        {
+          "was": "Früchte",
+          "prozent": 30
+        },
+        {
+          "was": "Samen",
+          "prozent": 30
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 80
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 20
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Baummarder",
@@ -756,6 +1212,35 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Rotkehlchen",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Zugvogel",
+      "ernaehrungstyp": "Fleischfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "vielseitig",
+      "masse_g": 17.7,
+      "fluegellaenge_mm": 71.6,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 40
+        },
+        {
+          "was": "Früchte",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 50
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 50
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -835,6 +1320,39 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Star_(Art)",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "Siedlungsraum",
+      "zugverhalten": "Teilzieher",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Allesfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 77.1,
+      "fluegellaenge_mm": 128.3,
+      "nahrung": [
+        {
+          "was": "Früchte",
+          "prozent": 30
+        },
+        {
+          "was": "Wirbellose",
+          "prozent": 20
+        },
+        {
+          "was": "Samen",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 80
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 20
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Baumfalke",
@@ -891,6 +1409,39 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Sumpfmeise",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Standvogel",
+      "ernaehrungstyp": "Allesfresser",
+      "nahrungsnische": "Insektenfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 11.1,
+      "fluegellaenge_mm": 64.0,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 50
+        },
+        {
+          "was": "Früchte",
+          "prozent": 20
+        },
+        {
+          "was": "Samen",
+          "prozent": 20
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "mittlere Höhe",
+          "prozent": 80
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 20
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -949,6 +1500,27 @@ export const voegel: Vogel[] = [
       "url": "https://de.wikipedia.org/wiki/Turmfalke",
       "lizenz": "CC BY-SA 4.0"
     },
+    "merkmale": {
+      "lebensraum": "Gebüsch",
+      "zugverhalten": "Zugvogel",
+      "ernaehrungstyp": "Fleischfresser",
+      "nahrungsnische": "Wirbeltierjäger",
+      "lebensweise": "in der Luft jagend",
+      "masse_g": 183.2,
+      "fluegellaenge_mm": 241.0,
+      "nahrung": [
+        {
+          "was": "Wirbeltiere",
+          "prozent": 90
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 80
+        }
+      ]
+    },
     "fressfeinde": [
       {
         "deutsch": "Mäusebussard",
@@ -991,6 +1563,31 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Zaunk%C3%B6nig",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Zugvogel",
+      "ernaehrungstyp": "Fleischfresser",
+      "nahrungsnische": "Insektenfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 9.7,
+      "fluegellaenge_mm": 48.5,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 60
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 50
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 50
+        }
+      ]
     },
     "fressfeinde": [
       {
@@ -1048,6 +1645,39 @@ export const voegel: Vogel[] = [
       "name": "Wikipedia (de)",
       "url": "https://de.wikipedia.org/wiki/Zilpzalp",
       "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {
+      "lebensraum": "Wald",
+      "zugverhalten": "Zugvogel",
+      "ernaehrungstyp": "Fleischfresser",
+      "nahrungsnische": "Insektenfresser",
+      "lebensweise": "sitzend/ansitzend",
+      "masse_g": 8.3,
+      "fluegellaenge_mm": 58.8,
+      "nahrung": [
+        {
+          "was": "Wirbellose",
+          "prozent": 80
+        }
+      ],
+      "nahrungsschicht": [
+        {
+          "was": "Boden",
+          "prozent": 25
+        },
+        {
+          "was": "Unterholz",
+          "prozent": 25
+        },
+        {
+          "was": "mittlere Höhe",
+          "prozent": 25
+        },
+        {
+          "was": "Kronendach",
+          "prozent": 25
+        }
+      ]
     },
     "fressfeinde": [
       {
