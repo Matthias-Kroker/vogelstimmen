@@ -26,6 +26,13 @@ ZIEL_DIR = BASIS / "referenzrufe" / "Amsel"
 SEITE = BASIS / "referenzrufe_Amsel.html"
 UA = {"User-Agent": "Vogelstimmen-Lern-App/0.1 (privates Lernprojekt)"}
 
+# Zu jedem eng geschnittenen Ruf gibt es denselben Moment mit Umfeld.
+# Sonst hoert man zwar den Ruf, weiss aber nicht, ob er allein steht oder
+# in Gesang eingebettet ist -- und genau das unterscheidet die Faelle.
+KONTEXT_VOR = 6.0      # Sekunden vor der Stelle
+KONTEXT_NACH = 8.0     # Sekunden danach
+GANZ_MAX_MS = 35000    # ungeschnittene Aufnahmen bis hierhin
+
 # Handverlesen. "stellen" = Sekunden, an denen der Ruf laut Anmerkung
 # vorkommt; leer heisst: ganze Aufnahme nehmen (sie ist dann kurz genug).
 REFERENZRUFE = [
@@ -153,17 +160,24 @@ def main():
         audio = AudioSegment.from_file(roh)
         schnipsel = []
         if eintrag["stellen"]:
-            # Nur die Stellen, die in der Anmerkung genannt sind
             for nr, sek in enumerate(eintrag["stellen"]):
+                # eng: nur der Ruf selbst
                 start = max(0, (sek - 0.7) * 1000)
                 ende = min(len(audio), start + eintrag["fenster"] * 1000)
                 name = f"XC{xid}_t{nr}.wav"
                 audio[start:ende].export(ZIEL_DIR / name, format="wav")
                 schnipsel.append((name, f"bei {sek:g} s"))
+
+                # weit: derselbe Moment mit Umfeld. Sonst weiss man nicht, ob
+                # der Ruf allein steht oder in etwas anderes eingebettet ist.
+                w_start = max(0, (sek - KONTEXT_VOR) * 1000)
+                w_ende = min(len(audio), (sek + KONTEXT_NACH) * 1000)
+                w_name = f"XC{xid}_t{nr}_umfeld.wav"
+                audio[w_start:w_ende].export(ZIEL_DIR / w_name, format="wav")
+                schnipsel.append((w_name, f"mit Umfeld ({(w_ende-w_start)/1000:.0f} s)"))
         else:
-            # Ganze Aufnahme, aber auf 20 s begrenzt
             name = f"XC{xid}_ganz.wav"
-            audio[:20000].export(ZIEL_DIR / name, format="wav")
+            audio[:GANZ_MAX_MS].export(ZIEL_DIR / name, format="wav")
             schnipsel.append((name, rec.get("length") or ""))
 
         fertig.append({**eintrag, "schnipsel": schnipsel,
