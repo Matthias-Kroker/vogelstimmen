@@ -11,8 +11,8 @@ am Gehör und am Bild erkennen.
 |---|---|
 | **Lernaudio** | ✅ läuft — 177 Einträge, 42 min, Piper-Stimme „Thorsten", gemischt |
 | **Artdaten** | ✅ 20 Arten mit Text, Bild, Fressfeinden (2 Achsen) |
-| **Ruftyp-Analyse** | 🟡 Vorlagen für Amsel geeicht, andere Arten offen |
-| **App** | 🔴 Grundgerüst steht, noch keine Oberfläche |
+| **Ruftyp-Analyse** | 🟡 automatische Zuordnung läuft, 41 von 131 Phrasen sicher |
+| **App** | 🟡 Liste + Steckbriefe mit Bildern, noch kein Ton |
 
 Repos: `Vogelstimmen-App` (diese App) und `Vogelstimmen` (Audio-Generator,
 getrennt, weil unabhängig nutzbar).
@@ -84,6 +84,26 @@ Nach Marler: Warnruf ~7 kHz, weich ein- und ausklingend, **schwer zu orten**
 
 ---
 
+## Automatische Zuordnung — Stand
+
+Aus den belegten Rufen gebaute Vorlagen, angewandt auf die 131 Phrasen der
+30 Referenzaufnahmen (`kalibrieren.py`):
+
+- **41 zugeordnet, 90 unsicher (68 %).** Bewusst streng — lieber offen
+  lassen als falsch zuordnen.
+- **Selbstprüfung bestanden:** 13 von 15 Phrasen aus reinen `song`-Aufnahmen
+  werden als Gesang erkannt (86 %).
+- Fehler beim ersten Versuch: Normierung lief nur über die 39
+  Vorlagenphrasen und wurde dann auf 131 fremde angewandt — alle lagen
+  ausserhalb, 97 % galten als unsicher. Massstabsfehler, nicht Merkmalsfehler.
+  Jetzt wird über Vorlagen und Zielphrasen gemeinsam normiert.
+
+**Auffällig:** unter den 131 Phrasen wurde **kein einziger ssiih** gefunden.
+Zwei Kandidaten über 6,5 kHz stecken in `merula_call_XC772744`, beide zu
+breitbandig für die Vorlage (3,34 bzw. 2,46 kHz gegen 1,02 beim Beleg).
+Entweder ist der ssiih in q:A-Aufnahmen aus Deutschland wirklich selten,
+oder die Phrasenbildung zerlegt ihn falsch. Ungeklärt.
+
 ## Offene Punkte
 
 - **Eulen-Aufnahme XC167956** passt in keine Schublade: schmalbandig wie ein
@@ -93,8 +113,10 @@ Nach Marler: Warnruf ~7 kHz, weich ein- und ausklingend, **schwer zu orten**
   Verwirrung am größten ist. Andere Arten (Buntspecht 10, Kolkrabe 9) sind
   besser versorgt.
 - **Vorlagen nur an Amsel geeicht.** Andere Arten brauchen eigene Belege.
-- **AVONET/EltonTraits** noch nicht eingebunden (Massen-CSV, andere Bauart
-  als die Einzelabfragen).
+- **AVONET/EltonTraits** als nächster Schritt vorgemerkt (Lebensraum,
+  Nahrungsnische, Zugverhalten). Massen-CSV, andere Bauart als die
+  Einzelabfragen.
+- **Kein ssiih in den 131 Phrasen** — siehe oben.
 
 ---
 
