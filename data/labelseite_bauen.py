@@ -175,12 +175,27 @@ def merkmale(seg, sr):
     glatt = np.convolve(huelle, np.ones(kern) / kern, mode="same")
     modulation = float(np.std(glatt) / (np.mean(glatt) + 1e-9))
 
+    # Weichheit des Ein- und Ausklangs. Matthias' Beobachtung: der
+    # Luftwarnruf "wird leiser". Genau so beschreibt die Literatur ihn --
+    # weicher Ein- und Ausklang, damit er schwer zu orten ist. Ein Tixen
+    # dagegen setzt hart ein und hoert hart auf.
+    #
+    # Gemessen als Anteil der Silbe, der ueber 60 % der Spitzenlautstaerke
+    # liegt: ein Rechteck ("hart") kommt nahe 1, eine weiche Glocke
+    # deutlich darunter.
+    if glatt.max() > 0:
+        ueber = glatt > (0.6 * glatt.max())
+        kantigkeit = float(ueber.sum() / len(glatt))
+    else:
+        kantigkeit = 1.0
+
     return {
         "spitze_hz": float(fr[int(np.argmax(sp))]),
         "schwerpunkt_hz": schwerpunkt,
         "bandbreite_hz": bandbreite,
         "flachheit": flachheit,
         "modulation": modulation,
+        "kantigkeit": kantigkeit,
         "dauer_ms": len(seg) / sr * 1000.0,
     }
 
@@ -255,7 +270,8 @@ def verarbeite_art(ordner, verzeichnis, anzahl_gruppen):
             phrase_ms = (ende - start) / sr * 1000
             m = {feld: float(np.median([e[feld] for e in einzeln]))
                  for feld in ("spitze_hz", "schwerpunkt_hz", "bandbreite_hz",
-                              "flachheit", "modulation", "dauer_ms")}
+                              "flachheit", "modulation", "kantigkeit",
+                              "dauer_ms")}
             m["silben"] = len(einzeln)
             # Wiederholrate: unterscheidet gehaltenen ssiih von hackendem Tixen
             m["rate_hz"] = len(einzeln) / (phrase_ms / 1000.0) if phrase_ms else 0.0
