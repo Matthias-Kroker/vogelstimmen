@@ -4,8 +4,11 @@ import {
   StyleSheet, Text, TextInput, View,
 } from "react-native";
 
+import { useAudioPlayer } from "expo-audio";
+
 import { voegel, type Anteil, type Fressfeind, type Vogel } from "./daten/voegel";
 import { vogelBilder } from "./assets/voegel";
+import { rufeZuVogel, type Ruf } from "./assets/rufe";
 
 const farben = {
   hintergrund: "#161616",
@@ -129,6 +132,8 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
         <Text style={stile.titelGross}>{vogel.name_de}</Text>
         <Text style={stile.lateinischGross}>{vogel.name_wissenschaftlich}</Text>
 
+        <Rufe vogel={vogel} />
+
         <Merkmale vogel={vogel} />
 
         <Text style={stile.text}>{vogel.beschreibung}</Text>
@@ -161,6 +166,68 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
         </Text>
       </View>
     </ScrollView>
+  );
+}
+
+const KATEGORIE_TITEL: Record<string, string> = {
+  gesang: "Gesang",
+  rufe: "Rufe",
+  trommeln: "Trommeln",
+};
+
+function Rufe({ vogel }: { vogel: Vogel }) {
+  const alle = rufeZuVogel[vogel.id] || [];
+  const [laeuft, setLaeuft] = useState<Ruf | null>(null);
+  // Ein Spieler für alles: mehrere gleichzeitig wären nur Krach.
+  const spieler = useAudioPlayer(laeuft?.quelle ?? null);
+
+  if (!alle.length) return null;
+
+  const nachKategorie: Record<string, Ruf[]> = {};
+  for (const r of alle) (nachKategorie[r.kategorie] ??= []).push(r);
+
+  const abspielen = (r: Ruf) => {
+    setLaeuft(r);
+    // seekTo(0), sonst spielt ein zweiter Klick auf denselben Ruf nicht neu
+    spieler.seekTo(0);
+    spieler.play();
+  };
+
+  return (
+    <View style={stile.rufBlock}>
+      {Object.entries(nachKategorie).map(([kat, liste]) => (
+        <View key={kat} style={{ marginBottom: 10 }}>
+          <Text style={stile.rufKategorie}>
+            {KATEGORIE_TITEL[kat] ?? kat}
+            <Text style={stile.rufAnzahl}> · {liste.length}</Text>
+          </Text>
+          <View style={stile.rufReihe}>
+            {liste.map((r, i) => (
+              <Pressable
+                key={r.id}
+                onPress={() => abspielen(r)}
+                style={({ pressed }) => [
+                  stile.rufKnopf,
+                  laeuft?.id === r.id && stile.rufKnopfAktiv,
+                  pressed && { opacity: 0.7 },
+                ]}
+              >
+                <Text style={stile.rufKnopfText}>▶ {i + 1}</Text>
+              </Pressable>
+            ))}
+          </View>
+        </View>
+      ))}
+
+      {laeuft && (
+        // Namensnennung ist bei BY-NC-SA Pflicht, nicht Höflichkeit.
+        <Text style={stile.rufQuelle}>
+          {laeuft.xcTyp} · {laeuft.land}
+          {"\n"}Aufnahme: {laeuft.aufnehmer} · xeno-canto XC{laeuft.xcId}
+          {"\n"}{laeuft.lizenz}
+        </Text>
+      )}
+    </View>
   );
 }
 
@@ -262,6 +329,25 @@ const stile = StyleSheet.create({
     color: farben.gedaempft, fontSize: 15, fontStyle: "italic", marginBottom: 12,
   },
   text: { color: farben.text, fontSize: 15, lineHeight: 22 },
+
+  rufBlock: {
+    backgroundColor: farben.karte, borderRadius: 10, padding: 13,
+    marginTop: 4, marginBottom: 12, borderLeftWidth: 3,
+    borderLeftColor: farben.akzent,
+  },
+  rufKategorie: { color: farben.akzent, fontSize: 14, fontWeight: "600" },
+  rufAnzahl: { color: farben.gedaempft, fontWeight: "400", fontSize: 12.5 },
+  rufReihe: { flexDirection: "row", flexWrap: "wrap", gap: 7, marginTop: 6 },
+  rufKnopf: {
+    backgroundColor: farben.karteHell, borderRadius: 6,
+    paddingVertical: 7, paddingHorizontal: 11,
+  },
+  rufKnopfAktiv: { backgroundColor: "#0e639c" },
+  rufKnopfText: { color: farben.text, fontSize: 13 },
+  rufQuelle: {
+    color: "#8a8a8a", fontSize: 11, lineHeight: 16, marginTop: 8,
+    borderTopWidth: 1, borderTopColor: "#333", paddingTop: 8,
+  },
 
   merkmale: {
     backgroundColor: farben.karte, borderRadius: 10, padding: 13,
