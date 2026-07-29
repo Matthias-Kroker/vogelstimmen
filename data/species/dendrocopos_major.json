@@ -83,5 +83,6 @@
     "name": "GloBI, gegengeprüft mit Wikipedia (de)",
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
-  }
+  },
+  "bild_lokal": "assets/voegel/dendrocopos_major.jpg"
 }
