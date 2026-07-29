@@ -84,5 +84,40 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/columba_palumbus.jpg"
+  "bild_lokal": "assets/voegel/columba_palumbus.jpg",
+  "merkmale": {
+    "lebensraum": "lichter Wald",
+    "zugverhalten": "Standvogel",
+    "ernaehrungstyp": "Pflanzenfresser",
+    "nahrungsnische": "Allesfresser",
+    "lebensweise": "bodenlebend",
+    "masse_g": 490.0,
+    "fluegellaenge_mm": 246.4,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "sonstige Pflanzenteile",
+        "prozent": 40
+      },
+      {
+        "was": "Früchte",
+        "prozent": 30
+      },
+      {
+        "was": "Samen",
+        "prozent": 30
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 80
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 20
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

@@ -84,5 +84,52 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/dendrocopos_major.jpg"
+  "bild_lokal": "assets/voegel/dendrocopos_major.jpg",
+  "merkmale": {
+    "lebensraum": "lichter Wald",
+    "zugverhalten": "Standvogel",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Allesfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 74.9,
+    "fluegellaenge_mm": 136.2,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 50
+      },
+      {
+        "was": "Samen",
+        "prozent": 30
+      },
+      {
+        "was": "Wirbeltiere",
+        "prozent": 10
+      },
+      {
+        "was": "Aas",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "mittlere Höhe",
+        "prozent": 40
+      },
+      {
+        "was": "Kronendach",
+        "prozent": 30
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 20
+      },
+      {
+        "was": "Luft",
+        "prozent": 10
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

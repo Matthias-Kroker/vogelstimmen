@@ -84,5 +84,44 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/poecile_palustris.jpg"
+  "bild_lokal": "assets/voegel/poecile_palustris.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Standvogel",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Insektenfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 11.1,
+    "fluegellaenge_mm": 64.0,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 50
+      },
+      {
+        "was": "Früchte",
+        "prozent": 20
+      },
+      {
+        "was": "Samen",
+        "prozent": 20
+      },
+      {
+        "was": "sonstige Pflanzenteile",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "mittlere Höhe",
+        "prozent": 80
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 20
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

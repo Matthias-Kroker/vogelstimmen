@@ -260,5 +260,40 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/passer_domesticus.jpg"
+  "bild_lokal": "assets/voegel/passer_domesticus.jpg",
+  "merkmale": {
+    "lebensraum": "Siedlungsraum",
+    "zugverhalten": "Standvogel",
+    "ernaehrungstyp": "Pflanzenfresser",
+    "nahrungsnische": "Körnerfresser",
+    "lebensweise": "bodenlebend",
+    "masse_g": 26.5,
+    "fluegellaenge_mm": 74.9,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Samen",
+        "prozent": 60
+      },
+      {
+        "was": "sonstige Pflanzenteile",
+        "prozent": 30
+      },
+      {
+        "was": "Wirbellose",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 50
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 50
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

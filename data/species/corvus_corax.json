@@ -148,5 +148,64 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/corvus_corax.jpg"
+  "bild_lokal": "assets/voegel/corvus_corax.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Teilzieher",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Allesfresser",
+    "lebensweise": "bodenlebend",
+    "masse_g": 928.0,
+    "fluegellaenge_mm": 419.7,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbeltiere",
+        "prozent": 20
+      },
+      {
+        "was": "Aas",
+        "prozent": 20
+      },
+      {
+        "was": "Wirbellose",
+        "prozent": 10
+      },
+      {
+        "was": "Aas/Wirbeltiere",
+        "prozent": 10
+      },
+      {
+        "was": "Fisch",
+        "prozent": 10
+      },
+      {
+        "was": "Früchte",
+        "prozent": 10
+      },
+      {
+        "was": "Samen",
+        "prozent": 10
+      },
+      {
+        "was": "sonstige Pflanzenteile",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 80
+      },
+      {
+        "was": "mittlere Höhe",
+        "prozent": 10
+      },
+      {
+        "was": "Luft",
+        "prozent": 10
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

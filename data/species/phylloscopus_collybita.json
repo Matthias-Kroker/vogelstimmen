@@ -225,5 +225,48 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/phylloscopus_collybita.jpg"
+  "bild_lokal": "assets/voegel/phylloscopus_collybita.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Zugvogel",
+    "ernaehrungstyp": "Fleischfresser",
+    "nahrungsnische": "Insektenfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 8.3,
+    "fluegellaenge_mm": 58.8,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 80
+      },
+      {
+        "was": "Früchte",
+        "prozent": 10
+      },
+      {
+        "was": "Samen",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 25
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 25
+      },
+      {
+        "was": "mittlere Höhe",
+        "prozent": 25
+      },
+      {
+        "was": "Kronendach",
+        "prozent": 25
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

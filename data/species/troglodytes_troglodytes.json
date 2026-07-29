@@ -84,5 +84,48 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/troglodytes_troglodytes.jpg"
+  "bild_lokal": "assets/voegel/troglodytes_troglodytes.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Zugvogel",
+    "ernaehrungstyp": "Fleischfresser",
+    "nahrungsnische": "Insektenfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 9.7,
+    "fluegellaenge_mm": 48.5,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 60
+      },
+      {
+        "was": "Aas/Wirbeltiere",
+        "prozent": 10
+      },
+      {
+        "was": "Fisch",
+        "prozent": 10
+      },
+      {
+        "was": "Früchte",
+        "prozent": 10
+      },
+      {
+        "was": "Samen",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 50
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 50
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

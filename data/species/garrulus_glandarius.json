@@ -190,5 +190,48 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/garrulus_glandarius.jpg"
+  "bild_lokal": "assets/voegel/garrulus_glandarius.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Teilzieher",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Allesfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 159.5,
+    "fluegellaenge_mm": 181.1,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 40
+      },
+      {
+        "was": "Früchte",
+        "prozent": 30
+      },
+      {
+        "was": "Samen",
+        "prozent": 20
+      },
+      {
+        "was": "Wirbeltiere",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 60
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 20
+      },
+      {
+        "was": "mittlere Höhe",
+        "prozent": 20
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

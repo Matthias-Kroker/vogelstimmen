@@ -84,5 +84,32 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/prunella_modularis.jpg"
+  "bild_lokal": "assets/voegel/prunella_modularis.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Standvogel",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Insektenfresser",
+    "lebensweise": "bodenlebend",
+    "masse_g": 20.2,
+    "fluegellaenge_mm": 69.1,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 50
+      },
+      {
+        "was": "Samen",
+        "prozent": 50
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 100
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

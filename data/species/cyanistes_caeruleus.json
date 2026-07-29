@@ -239,5 +239,52 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/cyanistes_caeruleus.jpg"
+  "bild_lokal": "assets/voegel/cyanistes_caeruleus.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Standvogel",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Insektenfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 11.1,
+    "fluegellaenge_mm": 65.6,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 50
+      },
+      {
+        "was": "Früchte",
+        "prozent": 20
+      },
+      {
+        "was": "Samen",
+        "prozent": 20
+      },
+      {
+        "was": "Nektar",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Unterholz",
+        "prozent": 30
+      },
+      {
+        "was": "mittlere Höhe",
+        "prozent": 30
+      },
+      {
+        "was": "Kronendach",
+        "prozent": 30
+      },
+      {
+        "was": "Boden",
+        "prozent": 10
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

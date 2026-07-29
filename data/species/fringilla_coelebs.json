@@ -267,5 +267,44 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/fringilla_coelebs.jpg"
+  "bild_lokal": "assets/voegel/fringilla_coelebs.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Teilzieher",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Insektenfresser",
+    "lebensweise": "vielseitig",
+    "masse_g": 23.8,
+    "fluegellaenge_mm": 85.9,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 60
+      },
+      {
+        "was": "Samen",
+        "prozent": 20
+      },
+      {
+        "was": "sonstige Pflanzenteile",
+        "prozent": 20
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 40
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 30
+      },
+      {
+        "was": "mittlere Höhe",
+        "prozent": 30
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

@@ -99,5 +99,32 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/accipiter_gentilis.jpg"
+  "bild_lokal": "assets/voegel/accipiter_gentilis.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Teilzieher",
+    "ernaehrungstyp": "Fleischfresser",
+    "nahrungsnische": "Wirbeltierjäger",
+    "lebensweise": "vielseitig",
+    "masse_g": 866.0,
+    "fluegellaenge_mm": 337.6,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbeltiere",
+        "prozent": 90
+      },
+      {
+        "was": "Aas/Wirbeltiere",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 100
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

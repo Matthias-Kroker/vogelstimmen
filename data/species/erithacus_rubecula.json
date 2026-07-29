@@ -267,5 +267,52 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/erithacus_rubecula.jpg"
+  "bild_lokal": "assets/voegel/erithacus_rubecula.jpg",
+  "merkmale": {
+    "lebensraum": "Wald",
+    "zugverhalten": "Zugvogel",
+    "ernaehrungstyp": "Fleischfresser",
+    "nahrungsnische": "Allesfresser",
+    "lebensweise": "vielseitig",
+    "masse_g": 17.7,
+    "fluegellaenge_mm": 71.6,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 40
+      },
+      {
+        "was": "Früchte",
+        "prozent": 20
+      },
+      {
+        "was": "Aas/Wirbeltiere",
+        "prozent": 10
+      },
+      {
+        "was": "Fisch",
+        "prozent": 10
+      },
+      {
+        "was": "Aas",
+        "prozent": 10
+      },
+      {
+        "was": "Samen",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 50
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 50
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

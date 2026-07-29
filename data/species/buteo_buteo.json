@@ -106,5 +106,32 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/buteo_buteo.jpg"
+  "bild_lokal": "assets/voegel/buteo_buteo.jpg",
+  "merkmale": {
+    "lebensraum": "Grasland",
+    "zugverhalten": "Teilzieher",
+    "ernaehrungstyp": "Fleischfresser",
+    "nahrungsnische": "Wirbeltierjäger",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 759.1,
+    "fluegellaenge_mm": 382.9,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbeltiere",
+        "prozent": 90
+      },
+      {
+        "was": "Aas/Wirbeltiere",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 100
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

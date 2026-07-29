@@ -10,7 +10,7 @@ am Gehör und am Bild erkennen.
 | Bereich | Stand |
 |---|---|
 | **Lernaudio** | ✅ läuft — 177 Einträge, 42 min, Piper-Stimme „Thorsten", gemischt |
-| **Artdaten** | ✅ 20 Arten mit Text, Bild, Fressfeinden (2 Achsen) |
+| **Artdaten** | ✅ 20 Arten: Text, Bild, Fressfeinde, Lebensraum, Nahrung, Zug |
 | **Ruftyp-Analyse** | 🟡 automatische Zuordnung läuft, 41 von 131 Phrasen sicher |
 | **App** | 🟡 Liste + Steckbriefe mit Bildern, noch kein Ton |
 
@@ -101,8 +101,36 @@ Aus den belegten Rufen gebaute Vorlagen, angewandt auf die 131 Phrasen der
 **Auffällig:** unter den 131 Phrasen wurde **kein einziger ssiih** gefunden.
 Zwei Kandidaten über 6,5 kHz stecken in `merula_call_XC772744`, beide zu
 breitbandig für die Vorlage (3,34 bzw. 2,46 kHz gegen 1,02 beim Beleg).
-Entweder ist der ssiih in q:A-Aufnahmen aus Deutschland wirklich selten,
-oder die Phrasenbildung zerlegt ihn falsch. Ungeklärt.
+
+**Matthias' Einschätzung dazu (2026-07-29):** der schöne ssiih ist wirklich
+außerordentlich selten — er meint, er sei in keiner unserer bisherigen
+Aufnahmen vorgekommen. Das stützt „im Bestand selten" gegen „meine
+Phrasenbildung zerlegt ihn falsch". Passt auch dazu, dass ausgerechnet
+unser einziger Beleg aus **Schweden** stammt, nicht aus Deutschland.
+Wenn das stimmt, ist der ssiih über Suche kaum zu beschaffen — dann müsste
+gezielt nach Aufnahmen mit Greifvogel-Kontext in der Anmerkung gesucht
+werden statt nach Ruftyp-Etiketten.
+
+## Merkmale aus AVONET und EltonTraits
+
+Beide Datensätze eingebunden (`traits_holen.py`), **20 von 20 Arten** ergänzt.
+
+- **AVONET** (Tobias et al. 2022, 11.009 Arten): Lebensraum, Zugverhalten,
+  Ernährungstyp, Nahrungsnische, Lebensweise, Masse, Flügellänge.
+  Bezug über die figshare-API, `AVONET1_BirdLife`-Blatt.
+- **EltonTraits 1.0** (Wilman et al. 2014, 9.993 Arten): Nahrung in Prozent
+  und Nahrungsschicht. Direkter Download von esapubs.org.
+
+Verknüpft über den wissenschaftlichen Namen; für abweichende Taxonomie gibt
+es eine Ersatztabelle (`Cyanistes caeruleus` ↔ `Parus caeruleus`,
+`Poecile palustris` ↔ `Parus palustris`).
+
+Alles ins Deutsche übersetzt, weil die Datensätze englisch sind.
+
+**Vorsicht bei groben Kategorien:** EltonTraits gibt dem Zaunkönig
+„Fisch 10 %" — ein Artefakt der groben Einteilung, kein Befund. AVONET
+setzt den Turmfalken auf „Gebüsch". Die Werte sind für 11.000 Arten
+gemacht, nicht für die Feinheiten von zwanzig.
 
 ## Offene Punkte
 
@@ -113,10 +141,12 @@ oder die Phrasenbildung zerlegt ihn falsch. Ungeklärt.
   Verwirrung am größten ist. Andere Arten (Buntspecht 10, Kolkrabe 9) sind
   besser versorgt.
 - **Vorlagen nur an Amsel geeicht.** Andere Arten brauchen eigene Belege.
-- **AVONET/EltonTraits** als nächster Schritt vorgemerkt (Lebensraum,
-  Nahrungsnische, Zugverhalten). Massen-CSV, andere Bauart als die
-  Einzelabfragen.
-- **Kein ssiih in den 131 Phrasen** — siehe oben.
+- **Kein ssiih in den 131 Phrasen** — siehe oben. Nächster Ansatz: nach
+  Greifvogel-Kontext in der Anmerkung suchen statt nach Ruftyp-Etikett.
+- **Merkmale in der App noch nicht angezeigt** — stehen in den JSONs, aber
+  `daten_bauen.py` und der Steckbrief kennen sie noch nicht.
+- **90 unsichere Phrasen** warten auf ein Urteil
+  (`unsichere_Amsel.html`, 19 Schnipsel in 7 Klanggruppen).
 
 ---
 
@@ -166,3 +196,9 @@ hatten über Mischaufnahmen gemittelt und ihn verwischt.
 ### 2026-07-29 — App-Gerüst
 Expo SDK 57 (React 19.2, RN 0.86, TypeScript). Artdaten und Bilder werden
 eingebacken, damit die App offline funktioniert.
+
+### 2026-07-29 — Merkmale und unsichere Phrasen
+AVONET und EltonTraits eingebunden, 20 von 20 Arten ergänzt. Verkürzte
+Abhörseite für die 90 unsicheren Phrasen: gruppiert nach Klang, je Gruppe
+die typischsten Vertreter, sortiert nach Abstand zu den bekannten Vorlagen —
+19 Entscheidungen statt 90.

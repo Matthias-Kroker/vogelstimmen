@@ -127,5 +127,40 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/falco_tinnunculus.jpg"
+  "bild_lokal": "assets/voegel/falco_tinnunculus.jpg",
+  "merkmale": {
+    "lebensraum": "Gebüsch",
+    "zugverhalten": "Zugvogel",
+    "ernaehrungstyp": "Fleischfresser",
+    "nahrungsnische": "Wirbeltierjäger",
+    "lebensweise": "in der Luft jagend",
+    "masse_g": 183.2,
+    "fluegellaenge_mm": 241.0,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbeltiere",
+        "prozent": 90
+      },
+      {
+        "was": "Wirbellose",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 80
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 10
+      },
+      {
+        "was": "mittlere Höhe",
+        "prozent": 10
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

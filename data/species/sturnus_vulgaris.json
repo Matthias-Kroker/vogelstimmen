@@ -84,5 +84,52 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/sturnus_vulgaris.jpg"
+  "bild_lokal": "assets/voegel/sturnus_vulgaris.jpg",
+  "merkmale": {
+    "lebensraum": "Siedlungsraum",
+    "zugverhalten": "Teilzieher",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Allesfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 77.1,
+    "fluegellaenge_mm": 128.3,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Früchte",
+        "prozent": 30
+      },
+      {
+        "was": "Wirbellose",
+        "prozent": 20
+      },
+      {
+        "was": "Samen",
+        "prozent": 20
+      },
+      {
+        "was": "Aas/Wirbeltiere",
+        "prozent": 10
+      },
+      {
+        "was": "Aas",
+        "prozent": 10
+      },
+      {
+        "was": "Nektar",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "Boden",
+        "prozent": 80
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 20
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }

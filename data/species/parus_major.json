@@ -274,5 +274,52 @@
     "url": "https://www.globalbioticinteractions.org/",
     "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
   },
-  "bild_lokal": "assets/voegel/parus_major.jpg"
+  "bild_lokal": "assets/voegel/parus_major.jpg",
+  "merkmale": {
+    "lebensraum": "lichter Wald",
+    "zugverhalten": "Standvogel",
+    "ernaehrungstyp": "Allesfresser",
+    "nahrungsnische": "Insektenfresser",
+    "lebensweise": "sitzend/ansitzend",
+    "masse_g": 16.2,
+    "fluegellaenge_mm": 70.9,
+    "quelle_avonet": "AVONET (Tobias et al. 2022)",
+    "nahrung": [
+      {
+        "was": "Wirbellose",
+        "prozent": 40
+      },
+      {
+        "was": "Früchte",
+        "prozent": 20
+      },
+      {
+        "was": "Samen",
+        "prozent": 20
+      },
+      {
+        "was": "Aas",
+        "prozent": 10
+      },
+      {
+        "was": "Nektar",
+        "prozent": 10
+      }
+    ],
+    "nahrungsschicht": [
+      {
+        "was": "mittlere Höhe",
+        "prozent": 60
+      },
+      {
+        "was": "Unterholz",
+        "prozent": 20
+      },
+      {
+        "was": "Kronendach",
+        "prozent": 20
+      }
+    ],
+    "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  }
 }
