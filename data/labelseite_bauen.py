@@ -306,7 +306,11 @@ h1{margin:0 0 6px;font-size:19px}
 .gruppe h2{margin:0 0 4px;font-size:16px;color:#7fd1c1}
 .werte{color:#999;font-size:12.5px;margin-bottom:12px;font-family:ui-monospace,monospace}
 .schnipsel{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:12px}
-.schnipsel figure{margin:0;background:#191919;padding:9px;border-radius:6px}
+.schnipsel figure{margin:0;background:#191919;padding:9px;border-radius:6px;width:210px}
+.schnipsel select{width:100%;margin-top:6px;font-size:12.5px;padding:5px 7px}
+.sammel{margin-bottom:12px;font-size:13px;color:#bbb}
+.klein{color:#888;font-size:12px}
+.xc{color:#6a8caf}
 .schnipsel figcaption{font-size:11px;color:#888;margin-bottom:5px;font-family:ui-monospace,monospace}
 audio{height:32px;display:block}
 select{background:#2c2c2c;color:#eee;border:1px solid #444;padding:7px 10px;border-radius:5px;font-size:14px}
@@ -317,10 +321,13 @@ button{background:#0e639c;color:#fff;border:0;padding:9px 16px;border-radius:5px
 font-size:14px;cursor:pointer;margin-top:9px}
 </style></head><body>
 <div class="kopf"><h1>{art} — Silben beschriften</h1>
-<div class="hinweis">Pro Gruppe zwei, drei Schnipsel anhören — nicht alle.
-Die Gruppen sind nach akustischer Ähnlichkeit gebildet, nicht nach den
-xeno-canto-Etiketten. Passt eine Gruppe nicht zusammen, ruhig „unklar“
-wählen; dann wird feiner unterteilt.</div></div>
+<div class="hinweis">Jede Phrase lässt sich <b>einzeln</b> zuordnen — Gruppen
+sind nur eine Vorsortierung nach Klang und enthalten oft mehrere
+verschiedene Geräusche. Klingt eine ganze Gruppe einheitlich, geht es über
+„Ganze Gruppe auf einmal“ schneller; einzelne Felder bleiben trotzdem
+änderbar. Was unklar ist, ruhig leer lassen — leer ist besser als geraten.
+Die blaue Angabe ist das xeno-canto-Etikett; es ist erwiesenermaßen
+unzuverlässig, also ruhig widersprechen.</div></div>
 <div class="legende">"""
 
     # .replace statt .format -- im CSS stehen geschweifte Klammern, die
@@ -353,33 +360,64 @@ wählen; dann wird feiner unterteilt.</div></div>
             f'Phrase {mit("phrase_ms")/1000:.1f} s<br>'
             f'xeno-canto sagt dazu: {herkunft}</div>')
 
-        teile.append('<div class="schnipsel">')
-        schritt = max(1, len(drin) // BEISPIELE_PRO_GRUPPE)
-        for s in drin[::schritt][:BEISPIELE_PRO_GRUPPE]:
-            teile.append(
-                f'<figure><figcaption>{s["spitze_hz"]/1000:.1f} kHz · '
-                f'{s["silben"]}× · {s["phrase_ms"]/1000:.1f} s</figcaption>'
-                f'<audio controls preload="none" src="silben/{art}/{s["datei"]}"></audio>'
-                f'</figure>')
-        teile.append("</div>")
-
-        teile.append(f'<select data-gruppe="{g}"><option value="">— zuordnen —</option>')
+        # Sammelzuordnung als Abkuerzung -- setzt alle Schnipsel der Gruppe,
+        # die noch leer sind. Einzelne bleiben jederzeit uebersteuerbar.
+        teile.append('<div class="sammel">Ganze Gruppe auf einmal: '
+                     f'<select data-sammel="{g}">'
+                     '<option value="">— wählen —</option>')
         for schluessel, titel, _ in RUFTYPEN:
             teile.append(f'<option value="{schluessel}">{titel}</option>')
-        teile.append("</select></div>")
+        teile.append('</select> <span class="klein">setzt nur die noch '
+                     'nicht zugeordneten</span></div>')
+
+        # ALLE Phrasen zeigen, nicht nur eine Auswahl. Eine Gruppe kann
+        # mehrere verschiedene Geraeusche enthalten -- das sieht man nur,
+        # wenn auch alle da sind.
+        teile.append('<div class="schnipsel">')
+        for s in drin:
+            teile.append(
+                f'<figure><figcaption>{s["spitze_hz"]/1000:.1f} kHz · '
+                f'{s["silben"]}× · {s["phrase_ms"]/1000:.1f} s · '
+                f'<span class="xc">{s["xc_typ"]}</span></figcaption>'
+                f'<audio controls preload="none" src="silben/{art}/{s["datei"]}"></audio>'
+                f'<select data-datei="{s["datei"]}" data-gruppe="{g}">'
+                '<option value="">— zuordnen —</option>')
+            for schluessel, titel, _ in RUFTYPEN:
+                teile.append(f'<option value="{schluessel}">{titel}</option>')
+            teile.append("</select></figure>")
+        teile.append("</div></div>")
 
     teile.append("""<div class="ausgabe"><h2>Ergebnis</h2>
+<div id="zaehler" class="klein">noch nichts zugeordnet</div>
 <textarea id="raus" readonly placeholder="Zuordnungen erscheinen hier"></textarea>
 <button onclick="navigator.clipboard.writeText(document.getElementById('raus').value)">
 kopieren</button></div>
 <script>
-const felder=[...document.querySelectorAll('select[data-gruppe]')];
+const einzeln=[...document.querySelectorAll('select[data-datei]')];
+const sammel=[...document.querySelectorAll('select[data-sammel]')];
+
 function aktualisieren(){
   const o={};
-  felder.forEach(f=>{if(f.value)o['gruppe_'+f.dataset.gruppe]=f.value});
+  einzeln.forEach(f=>{if(f.value)o[f.dataset.datei]=f.value});
   document.getElementById('raus').value=JSON.stringify(o,null,2);
+  const n=Object.keys(o).length;
+  document.getElementById('zaehler').textContent=
+    n+' von '+einzeln.length+' Phrasen zugeordnet';
+  einzeln.forEach(f=>{
+    f.closest('figure').style.outline=f.value?'2px solid #2d6a4f':'none';
+  });
 }
-felder.forEach(f=>f.addEventListener('change',aktualisieren));
+
+einzeln.forEach(f=>f.addEventListener('change',aktualisieren));
+sammel.forEach(s=>s.addEventListener('change',()=>{
+  if(!s.value)return;
+  // nur leere Felder fuellen -- schon Zugeordnetes bleibt stehen
+  einzeln.filter(f=>f.dataset.gruppe===s.dataset.sammel&&!f.value)
+         .forEach(f=>{f.value=s.value});
+  s.value='';
+  aktualisieren();
+}));
+aktualisieren();
 </script></body></html>""")
 
     seite.write_text("".join(teile), encoding="utf-8")
