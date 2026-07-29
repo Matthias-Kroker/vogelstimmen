@@ -1,0 +1,1462 @@
+[
+  {
+    "xc_id": "1073340",
+    "art": "Amsel",
+    "wissenschaftlich": "Turdus merula",
+    "typ": "dawn song",
+    "laenge": "1:25",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Amselforscher",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 3,
+    "beispiele": [
+      [
+        "03:16",
+        "song"
+      ],
+      [
+        "04:29",
+        "song"
+      ],
+      [
+        "05:17",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "798515",
+    "art": "Kohlmeise",
+    "wissenschaftlich": "Parus major",
+    "typ": "aberrant, song",
+    "laenge": "0:29",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 7,
+    "beispiele": [
+      [
+        "0:14.5",
+        "call"
+      ],
+      [
+        "0:22",
+        "call"
+      ],
+      [
+        "0:23.5",
+        "call"
+      ],
+      [
+        "0:03.8",
+        "call"
+      ],
+      [
+        "0:10.4",
+        "call"
+      ],
+      [
+        "0:04.4",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "798922",
+    "art": "Kohlmeise",
+    "wissenschaftlich": "Parus major",
+    "typ": "song, tsi-daa tsi-daa",
+    "laenge": "0:52",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 5,
+    "beispiele": [
+      [
+        "0:00.6",
+        "flight"
+      ],
+      [
+        "0:11.1",
+        "flight"
+      ],
+      [
+        "0:22",
+        "song"
+      ],
+      [
+        "0:23.6",
+        "song"
+      ],
+      [
+        "0:45.8",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "694882",
+    "art": "Blaumeise",
+    "wissenschaftlich": "Cyanistes caeruleus",
+    "typ": "alarm call, call, chutter call",
+    "laenge": "0:15",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 7,
+    "beispiele": [
+      [
+        "0:00.9",
+        "call"
+      ],
+      [
+        "0:06.6",
+        "call"
+      ],
+      [
+        "0:08.9",
+        "call"
+      ],
+      [
+        "0:11.8",
+        "call"
+      ],
+      [
+        "0:03.9",
+        "call"
+      ],
+      [
+        "0:07.7",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "543800",
+    "art": "Star",
+    "wissenschaftlich": "Sturnus vulgaris",
+    "typ": "imitation, song, mimicry/imitation",
+    "laenge": "0:36",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 12,
+    "beispiele": [
+      [
+        "0:11.6",
+        "alarm"
+      ],
+      [
+        "0:14.7",
+        "alarm"
+      ],
+      [
+        "0:20.8",
+        "call"
+      ],
+      [
+        "0:18.9",
+        "alarm"
+      ],
+      [
+        "0:23.5",
+        "alarm"
+      ],
+      [
+        "0:26.3",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "466075",
+    "art": "Star",
+    "wissenschaftlich": "Sturnus vulgaris",
+    "typ": "imitation, song, imitation song",
+    "laenge": "4:25",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Beatrix Saadi-Varchmin",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 12,
+    "beispiele": [
+      [
+        "00:44",
+        "call"
+      ],
+      [
+        "01:08",
+        "call"
+      ],
+      [
+        "01:12",
+        "call"
+      ],
+      [
+        "02:02",
+        "flight"
+      ],
+      [
+        "02:06",
+        "flight"
+      ],
+      [
+        "02:08",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "796160",
+    "art": "Star",
+    "wissenschaftlich": "Sturnus vulgaris",
+    "typ": "call, imitation, song",
+    "laenge": "20:37",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Beatrix Saadi-Varchmin",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 8,
+    "beispiele": [
+      [
+        "06:29",
+        "song"
+      ],
+      [
+        "11:39",
+        "song"
+      ],
+      [
+        "18:52",
+        "song"
+      ],
+      [
+        "06:52",
+        "song"
+      ],
+      [
+        "11:51",
+        "song"
+      ],
+      [
+        "10:34",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "546046",
+    "art": "Star",
+    "wissenschaftlich": "Sturnus vulgaris",
+    "typ": "imitation, song, mimicry/imitation",
+    "laenge": "2:41",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Beatrix Saadi-Varchmin",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 6,
+    "beispiele": [
+      [
+        "00:21",
+        "call"
+      ],
+      [
+        "00:26",
+        "call"
+      ],
+      [
+        "10:51",
+        "call"
+      ],
+      [
+        "01:58",
+        "call"
+      ],
+      [
+        "2:01",
+        "call"
+      ],
+      [
+        "02:15",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "605883",
+    "art": "Star",
+    "wissenschaftlich": "Sturnus vulgaris",
+    "typ": "call, flight call, distress call (?), wing beat",
+    "laenge": "1:43",
+    "qualitaet": "A",
+    "land": "Belgium",
+    "aufnehmer": "Alain Malengreau",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 3,
+    "beispiele": [
+      [
+        "0:45",
+        "call"
+      ],
+      [
+        "0:02",
+        "call"
+      ],
+      [
+        "0:17",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "759801",
+    "art": "Rabenkrähe",
+    "wissenschaftlich": "Corvus corone",
+    "typ": "call, dialogue, instrumental loud (\"Knapsen\")",
+    "laenge": "1:58",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Beatrix Saadi-Varchmin",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 6,
+    "beispiele": [
+      [
+        "0:28",
+        "call"
+      ],
+      [
+        "0:40",
+        "call"
+      ],
+      [
+        "0:58",
+        "call"
+      ],
+      [
+        "1:20",
+        "call"
+      ],
+      [
+        "1:39",
+        "call"
+      ],
+      [
+        "1:53",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "611927",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call, flight call",
+    "laenge": "0:19",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 7,
+    "beispiele": [
+      [
+        "0:01.2",
+        "flight"
+      ],
+      [
+        "0:04.6",
+        "flight"
+      ],
+      [
+        "0:07.8",
+        "flight"
+      ],
+      [
+        "0:10",
+        "flight"
+      ],
+      [
+        "0:14.5",
+        "flight"
+      ],
+      [
+        "0:05.1",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "467664",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "alarm call, call, song",
+    "laenge": "2:43",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Ulf Elman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 3,
+    "beispiele": [
+      [
+        "02:28",
+        "call"
+      ],
+      [
+        "02:06",
+        "call"
+      ],
+      [
+        "02:42",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "729930",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call",
+    "laenge": "2:18",
+    "qualitaet": "A",
+    "land": "United States",
+    "aufnehmer": "Scott Olmstead",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "1:27",
+        "call"
+      ],
+      [
+        "1:45",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "677082",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call, duet",
+    "laenge": "3:05",
+    "qualitaet": "A",
+    "land": "Mexico",
+    "aufnehmer": "Richard E. Webster",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "0:25",
+        "flight"
+      ],
+      [
+        "1:05",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "662951",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call",
+    "laenge": "5:06",
+    "qualitaet": "A",
+    "land": "United States",
+    "aufnehmer": "Richard E. Webster",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "1:44",
+        "flight"
+      ],
+      [
+        "2:04",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "662948",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call",
+    "laenge": "1:02",
+    "qualitaet": "A",
+    "land": "United States",
+    "aufnehmer": "Richard E. Webster",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "0:20",
+        "flight"
+      ],
+      [
+        "0:20",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "662943",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call",
+    "laenge": "4:33",
+    "qualitaet": "A",
+    "land": "United States",
+    "aufnehmer": "Richard E. Webster",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "2:18",
+        "call"
+      ],
+      [
+        "4:21",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "466239",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call",
+    "laenge": "4:27",
+    "qualitaet": "A",
+    "land": "Mexico",
+    "aufnehmer": "Richard E. Webster",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "1:50",
+        "call"
+      ],
+      [
+        "2:25",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "465374",
+    "art": "Kolkrabe",
+    "wissenschaftlich": "Corvus corax",
+    "typ": "call",
+    "laenge": "3:48",
+    "qualitaet": "A",
+    "land": "Mexico",
+    "aufnehmer": "Richard E. Webster",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "0:36",
+        "flight"
+      ],
+      [
+        "2:58",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "843167",
+    "art": "Rotkehlchen",
+    "wissenschaftlich": "Erithacus rubecula",
+    "typ": "dawn song, song",
+    "laenge": "4:34",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Beatrix Saadi-Varchmin",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 3,
+    "beispiele": [
+      [
+        "01:08",
+        "call"
+      ],
+      [
+        "01:58",
+        "call"
+      ],
+      [
+        "01:36",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "989126",
+    "art": "Buchfink",
+    "wissenschaftlich": "Fringilla coelebs",
+    "typ": "call, song, rain call",
+    "laenge": "2:13",
+    "qualitaet": "A",
+    "land": "Spain",
+    "aufnehmer": "Jacobo Ramil Millarengo",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "0:49",
+        "call"
+      ],
+      [
+        "1:18",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "738895",
+    "art": "Zaunkönig",
+    "wissenschaftlich": "Troglodytes troglodytes",
+    "typ": "call, ticking call",
+    "laenge": "0:24",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 3,
+    "beispiele": [
+      [
+        "0:07.7",
+        "call"
+      ],
+      [
+        "0:21.9",
+        "call"
+      ],
+      [
+        "0:23.7",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "884360",
+    "art": "Eichelhäher",
+    "wissenschaftlich": "Garrulus glandarius",
+    "typ": "call, screech call",
+    "laenge": "0:47",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 16,
+    "beispiele": [
+      [
+        "0:01.9",
+        "call"
+      ],
+      [
+        "0:13.4",
+        "call"
+      ],
+      [
+        "0:25",
+        "call"
+      ],
+      [
+        "0:42.4",
+        "call"
+      ],
+      [
+        "0:00.4",
+        "call"
+      ],
+      [
+        "0:19.9",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "537612",
+    "art": "Eichelhäher",
+    "wissenschaftlich": "Garrulus glandarius",
+    "typ": "alarm call, imitation, song, mimicry/imitation",
+    "laenge": "27:22",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Ulf Elman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 8,
+    "beispiele": [
+      [
+        "00:00",
+        "call"
+      ],
+      [
+        "00:40",
+        "call"
+      ],
+      [
+        "02:33",
+        "call"
+      ],
+      [
+        "02:49",
+        "call"
+      ],
+      [
+        "05:13",
+        "call"
+      ],
+      [
+        "06:51",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "466895",
+    "art": "Eichelhäher",
+    "wissenschaftlich": "Garrulus glandarius",
+    "typ": "alarm call, call, flight call, imitation, song, mimicry/imitation",
+    "laenge": "3:41",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Ulf Elman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "01:06",
+        "call"
+      ],
+      [
+        "02:18",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "348747",
+    "art": "Eichelhäher",
+    "wissenschaftlich": "Garrulus glandarius",
+    "typ": "alarm call",
+    "laenge": "0:56",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Ulf Elman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "00:00",
+        "call"
+      ],
+      [
+        "00:28",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "635931",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "alarm call, call, drumming",
+    "laenge": "1:38",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Markus Jacobs",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 12,
+    "beispiele": [
+      [
+        "00:02.5",
+        "drum"
+      ],
+      [
+        "00:18.9",
+        "drum"
+      ],
+      [
+        "00:40.5",
+        "call"
+      ],
+      [
+        "00:08.9",
+        "call"
+      ],
+      [
+        "00:23.0",
+        "drum"
+      ],
+      [
+        "00:31.0",
+        "drum"
+      ]
+    ]
+  },
+  {
+    "xc_id": "543838",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "drumming, song",
+    "laenge": "0:38",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 12,
+    "beispiele": [
+      [
+        "0:00.6",
+        "drum"
+      ],
+      [
+        "0:03.3",
+        "drum"
+      ],
+      [
+        "0:11.2",
+        "drum"
+      ],
+      [
+        "0:29.2",
+        "drum"
+      ],
+      [
+        "0:01.6",
+        "call"
+      ],
+      [
+        "0:02.5",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "695414",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "drumming",
+    "laenge": "4:45",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 9,
+    "beispiele": [
+      [
+        "0:04.8",
+        "song"
+      ],
+      [
+        "0:18.3",
+        "song"
+      ],
+      [
+        "0:38.8",
+        "call"
+      ],
+      [
+        "2:14.6",
+        "call"
+      ],
+      [
+        "2:18.9",
+        "call"
+      ],
+      [
+        "0:41.4",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "620192",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "drumming",
+    "laenge": "1:43",
+    "qualitaet": "A",
+    "land": "United Kingdom",
+    "aufnehmer": "Anthony McGeehan ",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 9,
+    "beispiele": [
+      [
+        "0:41",
+        "drum"
+      ],
+      [
+        "0:05",
+        "drum"
+      ],
+      [
+        "0:21",
+        "drum"
+      ],
+      [
+        "0:02",
+        "song"
+      ],
+      [
+        "0:25",
+        "song"
+      ],
+      [
+        "0:07",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "693259",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "drumming, song",
+    "laenge": "0:25",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 6,
+    "beispiele": [
+      [
+        "0:02.1",
+        "drum"
+      ],
+      [
+        "0:04.8",
+        "drum"
+      ],
+      [
+        "0:08.8",
+        "drum"
+      ],
+      [
+        "0:22.7",
+        "alarm"
+      ],
+      [
+        "0:11.3",
+        "call"
+      ],
+      [
+        "0:14.2",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "980407",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "drumming",
+    "laenge": "2:11",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Ulf Elman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "marken": 5,
+    "beispiele": [
+      [
+        "00:00.8",
+        "drum"
+      ],
+      [
+        "00:27.9",
+        "drum"
+      ],
+      [
+        "00:48.9",
+        "drum"
+      ],
+      [
+        "01:08.7",
+        "drum"
+      ],
+      [
+        "01:58.2",
+        "drum"
+      ]
+    ]
+  },
+  {
+    "xc_id": "733928",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "begging call, food call",
+    "laenge": "0:48",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 4,
+    "beispiele": [
+      [
+        "0:02.3",
+        "song"
+      ],
+      [
+        "0:15.9",
+        "song"
+      ],
+      [
+        "0:32.4",
+        "song"
+      ],
+      [
+        "0:42.7",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "594543",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "call, contact-call",
+    "laenge": "0:56",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 4,
+    "beispiele": [
+      [
+        "0:03.5",
+        "contact"
+      ],
+      [
+        "0:25.7",
+        "contact"
+      ],
+      [
+        "0:02",
+        "call"
+      ],
+      [
+        "0:32.3",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "897086",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "call, drumming",
+    "laenge": "1:45",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Ulf Elman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "00:25.8",
+        "drum"
+      ],
+      [
+        "00:54.4",
+        "drum"
+      ]
+    ]
+  },
+  {
+    "xc_id": "631258",
+    "art": "Buntspecht",
+    "wissenschaftlich": "Dendrocopos major",
+    "typ": "",
+    "laenge": "7:25",
+    "qualitaet": "A",
+    "land": "Germany",
+    "aufnehmer": "Beatrix Saadi-Varchmin",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "01:08",
+        "drum"
+      ],
+      [
+        "3:00",
+        "drum"
+      ]
+    ]
+  },
+  {
+    "xc_id": "777237",
+    "art": "Sumpfmeise",
+    "wissenschaftlich": "Poecile palustris",
+    "typ": "call, pitchüü call",
+    "laenge": "0:24",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 10,
+    "beispiele": [
+      [
+        "0:01.8",
+        "call"
+      ],
+      [
+        "0:09.8",
+        "call"
+      ],
+      [
+        "0:18.3",
+        "call"
+      ],
+      [
+        "0:04.8",
+        "call"
+      ],
+      [
+        "0:11",
+        "call"
+      ],
+      [
+        "0:15.9",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "706317",
+    "art": "Sumpfmeise",
+    "wissenschaftlich": "Poecile palustris",
+    "typ": "call, pitchüü call",
+    "laenge": "0:44",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 9,
+    "beispiele": [
+      [
+        "0:01.8",
+        "call"
+      ],
+      [
+        "0:09.2",
+        "call"
+      ],
+      [
+        "0:15.7",
+        "call"
+      ],
+      [
+        "0:20.5",
+        "call"
+      ],
+      [
+        "0:01",
+        "song"
+      ],
+      [
+        "0:36.9",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "900042",
+    "art": "Zilpzalp",
+    "wissenschaftlich": "Phylloscopus collybita",
+    "typ": "song",
+    "laenge": "2:13",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 17,
+    "beispiele": [
+      [
+        "0:07.1",
+        "song"
+      ],
+      [
+        "0:31.1",
+        "song"
+      ],
+      [
+        "1:18.9",
+        "song"
+      ],
+      [
+        "0:10",
+        "drum"
+      ],
+      [
+        "0:31.3",
+        "drum"
+      ],
+      [
+        "1:49.4",
+        "drum"
+      ]
+    ]
+  },
+  {
+    "xc_id": "589489",
+    "art": "Zilpzalp",
+    "wissenschaftlich": "Phylloscopus collybita",
+    "typ": "call",
+    "laenge": "0:22",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 6,
+    "beispiele": [
+      [
+        "0:01.1",
+        "call"
+      ],
+      [
+        "0:04.9",
+        "call"
+      ],
+      [
+        "0:19",
+        "call"
+      ],
+      [
+        "0:02.5",
+        "flight"
+      ],
+      [
+        "0:07.9",
+        "flight"
+      ],
+      [
+        "0:20.5",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "559309",
+    "art": "Zilpzalp",
+    "wissenschaftlich": "Phylloscopus collybita",
+    "typ": "song, beak, wings",
+    "laenge": "2:07",
+    "qualitaet": "A",
+    "land": "Poland",
+    "aufnehmer": "Jarek Matusiak",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 4,
+    "beispiele": [
+      [
+        "0:41",
+        "flight"
+      ],
+      [
+        "0:59",
+        "flight"
+      ],
+      [
+        "1:02",
+        "flight"
+      ],
+      [
+        "1:13",
+        "flight"
+      ]
+    ]
+  },
+  {
+    "xc_id": "659943",
+    "art": "Heckenbraunelle",
+    "wissenschaftlich": "Prunella modularis",
+    "typ": "song",
+    "laenge": "0:25",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 4,
+    "beispiele": [
+      [
+        "0:01.3",
+        "song"
+      ],
+      [
+        "0:06.1",
+        "song"
+      ],
+      [
+        "0:15.8",
+        "call"
+      ],
+      [
+        "0:22.2",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "757210",
+    "art": "Turmfalke",
+    "wissenschaftlich": "Falco tinnunculus",
+    "typ": "call, flight call",
+    "laenge": "0:31",
+    "qualitaet": "A",
+    "land": "China",
+    "aufnehmer": "Ray Tsu 诸仁",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 4,
+    "beispiele": [
+      [
+        "00:13",
+        "call"
+      ],
+      [
+        "00:02",
+        "call"
+      ],
+      [
+        "00:07",
+        "call"
+      ],
+      [
+        "00:27",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "726229",
+    "art": "Turmfalke",
+    "wissenschaftlich": "Falco tinnunculus",
+    "typ": "call",
+    "laenge": "3:10",
+    "qualitaet": "A",
+    "land": "China",
+    "aufnehmer": "Ray Tsu 诸仁",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 4,
+    "beispiele": [
+      [
+        "00:41",
+        "alarm"
+      ],
+      [
+        "01:19",
+        "call"
+      ],
+      [
+        "01:29",
+        "call"
+      ],
+      [
+        "02:37",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "393422",
+    "art": "Mäusebussard",
+    "wissenschaftlich": "Buteo buteo",
+    "typ": "call",
+    "laenge": "1:46",
+    "qualitaet": "A",
+    "land": "Estonia",
+    "aufnehmer": "Livon",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "01:39",
+        "call"
+      ],
+      [
+        "0:19",
+        "call"
+      ]
+    ]
+  },
+  {
+    "xc_id": "978938",
+    "art": "Habicht",
+    "wissenschaftlich": "Accipiter gentilis",
+    "typ": "song, pair-contact call, mutual-duet call",
+    "laenge": "0:41",
+    "qualitaet": "A",
+    "land": "Sweden",
+    "aufnehmer": "Thomas Bergman",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 3,
+    "beispiele": [
+      [
+        "0:02.3",
+        "contact"
+      ],
+      [
+        "0:20.3",
+        "contact"
+      ],
+      [
+        "0:06.8",
+        "song"
+      ]
+    ]
+  },
+  {
+    "xc_id": "757056",
+    "art": "Habicht",
+    "wissenschaftlich": "Accipiter gentilis",
+    "typ": "begging call",
+    "laenge": "0:59",
+    "qualitaet": "B",
+    "land": "Germany",
+    "aufnehmer": "Lars Lachmann",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 3,
+    "beispiele": [
+      [
+        "0:02",
+        "begging"
+      ],
+      [
+        "0:32",
+        "begging"
+      ],
+      [
+        "0:53",
+        "begging"
+      ]
+    ]
+  },
+  {
+    "xc_id": "928948",
+    "art": "Habicht",
+    "wissenschaftlich": "Accipiter gentilis",
+    "typ": "begging call, call, flight call",
+    "laenge": "0:40",
+    "qualitaet": "B",
+    "land": "United Kingdom",
+    "aufnehmer": "Thomas Coldwell",
+    "lizenz": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "marken": 2,
+    "beispiele": [
+      [
+        "0:22",
+        "begging"
+      ],
+      [
+        "0:22",
+        "begging"
+      ]
+    ]
+  }
+]
