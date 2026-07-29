@@ -54,22 +54,41 @@ Erzeugte Ordner (`referenz/`, `referenzrufe/`, `silben/`) liegen in
 - Das Typfeld ist teils **Freitext** — es gibt kein durchgesetztes Vokabular.
 - `call` und `alarm call` überlappen akustisch zu 77 %: der `call`-Bereich
   (1,34–6,59 kHz) enthält den `alarm call`-Bereich (2,73–4,86 kHz) vollständig.
+  **Matthias hört dasselbe** („teilweise extrem ähnlich"), und die
+  automatische Zuordnung findet in beiden dieselbe Mischung. → *Ruf gegen
+  Alarmruf ist keine echte akustische Unterscheidung* und wird in der App
+  nicht gelehrt. Stattdessen die realen Typen, die quer dazu liegen.
 - Nur 5 % sind als gemischt gekennzeichnet, gehört sind es viel mehr. Der
   Aufnehmende etikettiert die Absicht, das Mikrofon nimmt alles auf.
 - → **Aufnahmeebene taugt nicht als Wahrheit. Phrasenebene schon.**
 
-### Ruftypen der Amsel (an belegten Beispielen geeicht, von Matthias gehört)
+### Ruftypen der Amsel — Benennung nach der Fachliteratur
+
+Quellen: **Messmer & Messmer 1956** (*Zeitschrift für Tierpsychologie*) als
+Grundlagenarbeit, **Cramp, Birds of the Western Palearctic Bd. 5** — das
+Werk, das Thomas Bergman bei seinen Aufnahmen zitiert — sowie ein
+kuratiertes Klangportrait (AMPLE Edition; kommerziell, aber deckungsgleich).
+
+Vollständiges Repertoire: Gesang, **Siih**, **Tixen**, **Zetern**,
+**Djück-Rufe**, Bettelrufe, Jugendgesang, Herbstgesang.
 
 | Ruf | Spitze | Bandbreite | Rate | Anlass |
 |---|---|---|---|---|
-| **ssiih** | 7,9–8,2 kHz | **0,9–1,2 kHz** | einzeln, 0,3–0,9/s | Greifvogel im Flug |
-| **Tixen** | 5,7 kHz | 2,5 kHz | 1,4/s | Bodenfeind |
-| **Zetern** | 5,7 kHz | 2,6–2,9 kHz | bis 3,2/s | starke Erregung, auch Revierstreit |
-| **Bodenalarm** | 4,3–4,6 kHz | 3,0 kHz | 2,8–3,0/s | Katze, belegt |
+| **Siih** | 7,9–8,2 kHz | **0,9–1,2 kHz** | einzeln, 0,3–0,9/s | Beutegreifer, meist aus der Luft |
+| **Tixen** | 4,0–6,5 kHz | 2,2–3,4 kHz | 1,0–3,5/s | Bodenfeind |
+| **Zetern** | 5,7 kHz | 2,6–2,9 kHz | bis 3,2/s | höchste Erregung, auch Revierstreit |
+| **Djück** | 4,3–5,1 kHz | 2,5 kHz | 0,7–2,7/s | gedämpfte Unmutslaute, z.B. am Futterplatz |
 | **Gesang** | 2,1 kHz | — | — | — |
 
-Stärkster Unterscheider ist die **Bandbreite**: ssiih 0,9–1,2 kHz gegen
-2,5–3,1 kHz bei allem anderen. Faktor 2–3, keine Grauzone.
+**Tixen und Zetern sind ein Übergang, keine zwei Schubladen** — die
+Literatur beschreibt Tixen, „das bei stärkerer Erregung in Zetern
+übergeht". Die frühere selbstgebaute Kategorie *bodenalarm* ist deshalb
+in Tixen aufgegangen: funktional dasselbe (Bodenfeind), nur erregter.
+
+**Bandbreite höher gewichten als Spitzenfrequenz.** Hohe Frequenzen werden
+über Entfernung stärker gedämpft — ein entfernter Siih rutscht scheinbar
+nach unten (XC982288: 3,5 kHz), bleibt aber schmalbandig (1,67 kHz).
+Matthias hatte die Entfernung selbst vermutet; das ist physikalisch stimmig.
 
 ### Alarmrufe: zwei unabhängige Achsen
 - `stadium` — **was** erbeutet wird (Altvogel / Nest / beides)
@@ -141,8 +160,18 @@ gemacht, nicht für die Feinheiten von zwanzig.
   Verwirrung am größten ist. Andere Arten (Buntspecht 10, Kolkrabe 9) sind
   besser versorgt.
 - **Vorlagen nur an Amsel geeicht.** Andere Arten brauchen eigene Belege.
-- **Kein ssiih in den 131 Phrasen** — siehe oben. Nächster Ansatz: nach
+- **Kein Siih in den 131 Phrasen** — siehe oben. Nächster Ansatz: nach
   Greifvogel-Kontext in der Anmerkung suchen statt nach Ruftyp-Etikett.
+- **„tsiirr"-Anlockruf** (5,1–9,9 kHz, 102–359 ms, auf dem Zug und in der
+  Brutzeit) liegt im selben Band wie der Siih, hat aber andere Funktion.
+  Verwechslungsgefahr, noch nicht eingearbeitet.
+- **Phrasenerkennung filtert keine Nicht-Vogel-Geräusche.** Vier von
+  Matthias markierte „neue Typen" waren mit 7 kHz Bandbreite bei 1,4 kHz
+  Spitze fast sicher der röhrende Rothirsch aus dem Hintergrund
+  (XC590275, laut Anmerkung „Rutting season of Red Deer").
+- **Nicht zugänglich:** Messmer & Messmer 1956 (Wiley) und „Die
+  Zeteraktivität der Amsel" (Springer) stehen hinter Bezahlschranken.
+  Wären die belastbarsten Quellen; über eine Bibliothek zu holen.
 - **Merkmale in der App noch nicht angezeigt** — stehen in den JSONs, aber
   `daten_bauen.py` und der Steckbrief kennen sie noch nicht.
 - **90 unsichere Phrasen** warten auf ein Urteil
@@ -202,3 +231,10 @@ AVONET und EltonTraits eingebunden, 20 von 20 Arten ergänzt. Verkürzte
 Abhörseite für die 90 unsicheren Phrasen: gruppiert nach Klang, je Gruppe
 die typischsten Vertreter, sortiert nach Abstand zu den bekannten Vorlagen —
 19 Entscheidungen statt 90.
+
+### 2026-07-29 — Repertoire nach Literatur
+Selbstgebaute Kategorien durch die Fachbenennung ersetzt. Matthias' als
+„neuer Typ" markierte Laute vom Futterplatz sind **Djück-Rufe** — die
+standen schlicht nicht auf meiner Liste. Vier weitere seiner Markierungen
+waren vermutlich gar keine Amsel, sondern ein röhrender Hirsch im
+Hintergrund; die Phrasenerkennung braucht einen Rauschfilter.

@@ -1,44 +1,26 @@
 {
-  "quelle": "Von Matthias abgehoert und bestaetigt, 2026-07-29, an belegten Referenzrufen",
+  "quelle": "Von Matthias abgehoert (2026-07-29) an belegten Referenzrufen; Benennung nach Messmer & Messmer 1956 / Cramp BWP Bd. 5",
   "hinweis": "Nur an Amsel geeicht. Andere Arten brauchen eigene Belege.",
   "ruftypen": {
-    "ssiih": {
-      "spitze_khz": [
-        7.0,
-        9.0
-      ],
-      "bandbreite_khz": [
-        0.7,
-        1.5
-      ],
-      "rate_hz": [
-        0.0,
-        1.2
-      ],
-      "belege": [
-        "XC815414_t0",
-        "XC815414_t1",
-        "XC815414_t2"
-      ],
-      "merkmal": "sehr hoch UND sehr schmalbandig, einzeln stehend"
-    },
     "tixen": {
       "spitze_khz": [
-        5.0,
+        4.0,
         6.5
       ],
       "bandbreite_khz": [
         2.2,
-        3.0
+        3.4
       ],
       "rate_hz": [
         1.0,
-        2.0
+        3.5
       ],
       "belege": [
-        "XC894642_ganz"
+        "XC894642_ganz",
+        "XC544297_ganz",
+        "XC424175_ganz"
       ],
-      "merkmal": "mittelhoch, breitbandig, einzelne Anschlaege"
+      "merkmal": "breitbandig, harte Anschlaege. Frueher als zwei Kategorien gefuehrt (tixen / bodenalarm) -- die Literatur kennt nur eine, mit fliessendem Uebergang zum Zetern bei steigender Erregung."
     },
     "zetern": {
       "spitze_khz": [
@@ -59,25 +41,6 @@
       ],
       "merkmal": "wie Tixen, aber weicher im Ansatz (Kantigkeit ~0.25) und dichter"
     },
-    "bodenalarm": {
-      "spitze_khz": [
-        4.0,
-        5.0
-      ],
-      "bandbreite_khz": [
-        2.8,
-        3.4
-      ],
-      "rate_hz": [
-        2.5,
-        3.5
-      ],
-      "belege": [
-        "XC544297_ganz",
-        "XC424175_ganz"
-      ],
-      "merkmal": "tiefer als ssiih, breitbandig, in schneller Folge"
-    },
     "gesang": {
       "spitze_khz": [
         1.8,
@@ -95,9 +58,51 @@
         "XC1050351_ganz"
       ],
       "merkmal": "tief, floetend"
+    },
+    "siih": {
+      "spitze_khz": [
+        7.0,
+        9.0
+      ],
+      "bandbreite_khz": [
+        0.7,
+        1.5
+      ],
+      "rate_hz": [
+        0.0,
+        1.2
+      ],
+      "belege": [
+        "XC815414_t0",
+        "XC815414_t1",
+        "XC815414_t2"
+      ],
+      "merkmal": "sehr schmalbandig (0.7-1.5 kHz) und einzeln stehend. Die Bandbreite ist das verlaessliche Merkmal -- die Spitzenfrequenz sinkt mit der Entfernung, weil hohe Anteile staerker gedaempft werden."
+    },
+    "djueck": {
+      "spitze_khz": [
+        4.0,
+        5.5
+      ],
+      "bandbreite_khz": [
+        2.3,
+        2.8
+      ],
+      "rate_hz": [
+        0.5,
+        3.0
+      ],
+      "belege": [
+        "merula_call_XC772744 (Futterplatz, 7 Maennchen)"
+      ],
+      "merkmal": "monotone Serien unterdrueckter Unmutslaute, gedaempft. Von Matthias als \"Schmatzgeraeusche mit Schnaebeln\" beschrieben.",
+      "status": "vorlaeufig -- nur eine Aufnahme, noch nicht gegen die Literatur geprueft"
     }
   },
   "offen": {
-    "eule_XC167956": "Matthias hoert es als ssiih-aehnlich, nur tiefer und entspannter. Messung passt dazu: schmalbandig (1.74 kHz) wie ssiih, aber nur 4.25 kHz und in Folge (2.6/s). Passt in KEINE der Schubladen -- eigener Typ? Widerspricht ausserdem der Annahme Eule -> Hassruf."
-  }
+    "tsiirr": "Es gibt einen Anlockruf \"tsiirr\" bei 5.1-9.9 kHz, 102-359 ms, auf dem Zug und in der Brutzeit. Liegt im selben Band wie der Siih, hat aber eine andere Funktion -- Verwechslungsgefahr.",
+    "eule_XC167956": "Schmalbandig (1.74 kHz) bei 4.25 kHz. Koennte ein entfernter Siih sein statt eines eigenen Typs -- gleiche Signatur wie XC982288.",
+    "nicht_zugaenglich": "Messmer & Messmer 1956 (Wiley) und \"Die Zeteraktivitaet der Amsel\" (Springer) sind hinter Bezahlschranken. Waeren die belastbarsten Quellen."
+  },
+  "gewichtung": "Bandbreite hoeher gewichten als Spitzenfrequenz: die Spitzenfrequenz ist entfernungsabhaengig, die Bandbreite nicht."
 }

@@ -50,24 +50,42 @@ LUECKE_MS = 450        # groessere Pause trennt zwei Phrasen
 MIN_PHRASE_MS = 1500   # kuerzere Schnipsel werden symmetrisch aufgefuellt
 MAX_PHRASE_MS = 6000
 
-# Aus der ornithologischen Literatur -- steht in der Seite neben den Knoepfen,
-# damit man nicht raten muss, sondern weiss, worauf zu achten ist.
+# Repertoire nach der Fachliteratur statt selbstgebauter Einteilung.
+# Quellen: Messmer & Messmer 1956 (Zeitschrift für Tierpsychologie) als
+# Grundlagenarbeit, Cramp „Birds of the Western Palearctic“ Bd. 5 -- das
+# Werk, das auch Thomas Bergman bei seinen Aufnahmen zitiert -- sowie ein
+# kuratiertes Klangportrait (AMPLE Edition, kommerziell, aber deckungsgleich).
+#
+# WICHTIG: Tixen und Zetern sind KEINE zwei Schubladen, sondern ein
+# Uebergang. Die Literatur beschreibt Tixen, "das bei staerkerer Erregung
+# in Zetern uebergeht". Wer sich zwischen beiden nicht entscheiden kann,
+# hoert vermutlich etwas dazwischen -- das ist kein Fehler.
 RUFTYPEN = [
-    ("ssiih", "Warnruf Luftfeind",
-     "hoher, dünner, abfallender Ton. Durchgehalten, OHNE schnelle Modulation. "
-     "Schwer zu orten — das ist Absicht."),
-    ("sozialruf", "Sozialruf",
-     "ebenfalls hoch, aber mit „grillenhafter“ schneller Modulation im Ton. "
-     "Frühmorgens, keine Gefahr. Verwechslungsgefahr mit ssiih!"),
-    ("tixen", "Tixen — Bodenfeind",
-     "kurze, harte Klicks „tix-tix-tix“, wiederholt. Leicht zu orten."),
-    ("zetern", "Zetern / Keckern",
-     "gesteigertes Tixen, überschlägt sich. Starke Erregung, Mobbing, "
-     "auch Revierstreit zwischen Männchen."),
     ("gesang", "Gesang",
-     "tief, melodisch, flötend. Ganze Strophen statt einzelner Rufe."),
-    ("unklar", "unklar / Störgeräusch",
-     "nicht zuzuordnen, zu leise, oder gar kein Vogel."),
+     "volltönend, melodiös, abwechslungsreich. Ganze Strophen mit Pausen, "
+     "nicht einzelne Rufe. Tief — um 2 kHz."),
+    ("siih", "Siih — Warnung vor Beutegreifern",
+     "gedehnter, durchdringender hoher Ton. Weich ein- und ausklingend, "
+     "dadurch schwer zu orten. Schmalbandig — das bleibt auch auf Entfernung "
+     "erhalten, während die Tonhöhe scheinbar sinkt."),
+    ("tixen", "Tixen — Bodenfeind",
+     "anhaltende hohe Warnrufe „tix-tix-tix“. Harte Einzelanschläge, "
+     "leicht zu orten. Geht bei Erregung in Zetern über."),
+    ("zetern", "Zetern",
+     "gesteigertes Tixen, überschlägt sich. Höchste Erregungsstufe — "
+     "Mobbing, aber auch Revierstreit zwischen Männchen."),
+    ("djueck", "Djück-Rufe",
+     "monotone Serien unterdrückter Unmutslaute. Gedämpft, tief, in Folge. "
+     "Typisch bei fressenden Vögeln, die sich gegenseitig stören."),
+    ("bettelruf", "Bettelruf",
+     "laute Bettelrufe der Jungvögel."),
+    ("jugendgesang", "Jugendgesang",
+     "unfertiger Gesang junger Vögel, leiser und ungeordneter."),
+    ("stoergeraeusch", "kein Vogel / Störgeräusch",
+     "Wind, Verkehr, andere Tiere. Sehr breitbandig (über 5 kHz Bandbreite) "
+     "ist fast immer Rauschen, kein Ruf."),
+    ("unklar", "unklar",
+     "nicht zuzuordnen oder zu leise. Lieber das als geraten."),
 ]
 
 
