@@ -138,6 +138,8 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
 
         <Text style={stile.text}>{vogel.beschreibung}</Text>
 
+        <Abschnitte vogel={vogel} />
+
         {warnruf.length > 0 && (
           <FeindListe
             titel="Warnruf — Feind aus der Luft"
@@ -227,6 +229,36 @@ function Rufe({ vogel }: { vogel: Vogel }) {
           {"\n"}{laeuft.lizenz}
         </Text>
       )}
+    </View>
+  );
+}
+
+/** Reihenfolge bewusst: Stimme zuerst -- darum geht es in diesem Projekt. */
+const ABSCHNITT_REIHENFOLGE = [
+  "stimme", "merkmale", "lebensraum", "ernaehrung", "fortpflanzung", "verhalten",
+];
+
+function Abschnitte({ vogel }: { vogel: Vogel }) {
+  const [offen, setOffen] = useState<string | null>("stimme");
+  const vorhanden = ABSCHNITT_REIHENFOLGE.filter((k) => vogel.abschnitte?.[k]);
+  if (!vorhanden.length) return null;
+
+  return (
+    <View style={{ marginTop: 16 }}>
+      {vorhanden.map((k) => {
+        const a = vogel.abschnitte[k];
+        const auf = offen === k;
+        return (
+          <View key={k} style={stile.abschnitt}>
+            <Pressable onPress={() => setOffen(auf ? null : k)}>
+              <Text style={stile.abschnittTitel}>
+                {auf ? "▾" : "▸"} {a.titel}
+              </Text>
+            </Pressable>
+            {auf && <Text style={stile.abschnittText}>{a.text}</Text>}
+          </View>
+        );
+      })}
     </View>
   );
 }
@@ -347,6 +379,15 @@ const stile = StyleSheet.create({
   rufQuelle: {
     color: "#8a8a8a", fontSize: 11, lineHeight: 16, marginTop: 8,
     borderTopWidth: 1, borderTopColor: "#333", paddingTop: 8,
+  },
+
+  abschnitt: {
+    backgroundColor: farben.karte, borderRadius: 8, padding: 12,
+    marginBottom: 8,
+  },
+  abschnittTitel: { color: farben.akzent, fontSize: 15, fontWeight: "600" },
+  abschnittText: {
+    color: farben.text, fontSize: 14, lineHeight: 21, marginTop: 8,
   },
 
   merkmale: {

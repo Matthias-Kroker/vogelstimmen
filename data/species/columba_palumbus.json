@@ -119,5 +119,27 @@
       }
     ],
     "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  },
+  "abschnitte": {
+    "stimme": {
+      "titel": "Stimme",
+      "text": "Der Reviergesang ist ein dumpfes, heiseres und nicht sehr lautes Gurren, das mit einem „rúhgu, gugu“ beginnt. Danach folgt ein 2- bis 13-mal, meist aber 4- bis 5-mal wiederholtes fünfsilbiges „rugúgu, gugu“ und schließlich am Ende meist ein kurzes „gu!“. Der Balzruf ist ein kürzeres „grrugu-rú“. Der Revierruf des Taubers wird in der Jägersprache als „Rucksen“ bezeichnet."
+    },
+    "merkmale": {
+      "titel": "Merkmale",
+      "text": "Ringeltauben sind große, kräftig gebaute Tauben mit relativ langem Schwanz und recht kleinem Kopf. Mit einer Körperlänge von 38–43 cm und einer Flügelspannweite von 68–77 cm sind sie die größten Tauben Mitteleuropas. Der Geschlechtsdimorphismus ist bezüglich Größe und Gewicht schwach ausgeprägt, Männchen sind etwas größer und schwerer als Weibchen. So hatten frischtote Männchen aus Ostdeutschland eine Flügellänge von 240–267 mm, im Mittel 254 mm; Weibchen erreichten 238–260 mm, im Mittel 249 mm. Das Gewicht unterliegt saisonalen Schwankungen und ist im Herbst und frühen Winter durch die Anlage von Depotfett am höchsten. Zum Beispiel wogen in Südschweden von August bis September gesammelte adulte Männchen 465–613 g, im Mittel 539 g; Weibchen wogen 420–600 g, im Mittel 498 g; von Dezember bis März dort gesammelte Männchen wogen im Mittel 498 g; Weibchen im Mittel 478 g.\nBei adulten Ringeltauben der Nominatform sind der vordere Rücken und der Schulterbereich schiefergrau bis graubraun, der übrige Rumpf ist oberseits blaugrau. Kropfbereich und Brust sind diffus gräulich weinrot, zum Bauch hin wird die Färbung heller und ist vor den Unterschwanzdecken sehr hell grau. Der Kopf ist blaugrau."
+    },
+    "lebensraum": {
+      "titel": "Lebensraum",
+      "text": "Die Art besiedelt weite Teile der Paläarktis von Nordafrika, Portugal und Irland nach Nordosten bis Westsibirien sowie nach Südosten über Kleinasien bis zum Tian Shan und bis Kaschmir. Sie kommt in fast ganz Europa vor und fehlt hier nur im äußersten Norden etwa ab 67 °N.\nRingeltauben bewohnen bewaldete Landschaften aller Art; gegebenenfalls reichen für eine Ansiedlung aber auch einzelne Bäume oder Büsche. Wenn auch diese fehlen, brüten die Tiere z. B. in Dünen, auf Strandwiesen oder in Getreidefeldern auch auf dem Boden. Bruten im besiedelten Bereich sind in Europa mindestens seit 1821 bekannt; heute brüten Ringeltauben in Alleen, Parks und auf Friedhöfen vielfach auch bis in die Zentren der Städte. Die Brutplätze dürfen nicht zu weit von geeigneten Nahrungshabitaten entfernt sein; das sind in Europa heute vor allem landwirtschaftlich genutzte Bereiche wie Grünland und Äcker, aber auch die zur Brut genutzten Wälder und Grünanlagen. Die Nahrungsflüge können sich je nach Angebot auf die Nestumgebung beschränken, aber auch regelmäßig über Entfernungen von 10 bis 15 Kilometer erfolgen."
+    },
+    "ernaehrung": {
+      "titel": "Ernährung",
+      "text": "Die Nahrungssuche erfolgt sowohl auf dem Boden als auch, im Gegensatz zu den anderen mitteleuropäischen Tauben, zu erheblichen Teilen auf Bäumen und Sträuchern. Die Art ist bei der Nahrungssuche außerhalb der Reviere gesellig und bildet hier oft kleine Schwärme. Die Nahrung ist wie bei den meisten Arten der Familie fast ausschließlich pflanzlich. Hauptnahrung sind in Europa Eicheln, Bucheckern und Getreidesamen. Daneben wird jedoch je nach dem lokalen Angebot ein sehr breites Spektrum weiterer Vegetabilien gefressen, dazu zählen grüne Blätter, Knospen und Blüten verschiedener Pflanzen, Beeren und andere Früchte, Wurzelknollen (z. B. Kartoffeln oder Rüben) sowie Eichengallen. Städtische Populationen können sich hauptsächlich von Brot und anderen Backwaren ernähren. Tierische Nahrung wird gelegentlich aufgenommen, am häufigsten offenbar Schildläuse sowie Schmetterlingsraupen und -puppen, vereinzelt auch andere Gliederfüßer und Regenwürmer. Offenbar zur Deckung des Kalkbedarfs werden manchmal kleine Weichtiere, also Muscheln und Schnecken, gefressen."
+    },
+    "fortpflanzung": {
+      "titel": "Fortpflanzung",
+      "text": "Ringeltauben werden im Mai oder Juni des Jahres nach dem Jahr, in dem sie geschlüpft sind, geschlechtsreif. Die Tiere leben überwiegend in einer monogamen Saisonehe, zumindest bei nicht ziehenden Populationen kommen offenbar auch Dauerehen vor. Allerdings nur, wenn aus der vorhergegangenen Brutsaison gemeinsame Jungtiere hervorgegangen sind. Bleibt die Verbindung ohne Nachwuchs, so suchen sich 100 Prozent der Ringeltauben für das nächste Jahr einen neuen Partner. Paare, die erfolgreich gemeinsam gebrütet haben, bleiben dagegen mitunter über Jahre zusammen.\nDie Reviergründung erfolgt durch die Männchen. Gegen Artgenossen wird nur die Nestumgebung als Revier verteidigt. Die Größe des Reviers ist in Abhängigkeit von der Siedlungsdichte sehr variabel; bei sehr hoher Siedlungsdichte kann das Revier nur aus dem zur Brut genutzten Baum bestehen. Die Balz beginnt im März oder April, bei städtischen Populationen jedoch oft schon im Winter. Mit dem Beginn der Eiablage geht die Balzaktivität zurück, bedingt durch die sehr lange Brutsaison sind balzende Tiere jedoch bis in den September hinein häufig zu beobachten. Die Balz umfasst neben den häufigen Rufen auch einen Balzflug des Männchens. Dabei fliegt das Männchen von einer hohen Warte 20 bis 30 m steil nach oben und klatscht dabei oft laut mehrfach mit den Flügeln."
+    }
   }
 }

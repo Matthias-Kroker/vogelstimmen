@@ -207,5 +207,31 @@
       }
     ],
     "quelle_elton": "EltonTraits 1.0 (Wilman et al. 2014)"
+  },
+  "abschnitte": {
+    "stimme": {
+      "titel": "Stimme",
+      "text": "Der am häufigsten zu hörende Ruf ist ein lautes und scharfes „kraa“, das bei Bedrohung geäußert wird; bei starker Bedrohung wird gereiht „kraa, kraa, kraa, kraa“ oder „rak, rak, rak, rak“ gerufen. Beim paarweisen Gleit- oder Schlagflug über weitere Strecken sowie bei mit der Balz in Verbindung stehenden Flugmanövern wie Luftrollen oder Wellenflügen wird häufig einzeln „klong“, „raok“ oder „oang“ gerufen. Darüber hinaus verfügen Kolkraben über eine große Vielfalt von Lautäußerungen; ihr Repertoire umfasst „mehrsilbige, an Kolken, Grunzen, Rülpsen, Knarren, Sirren bis zu hellen Xylophonklängen erinnernde Laute“, bei mitteleuropäischen Raben wurden mindestens 34 verschiedene Ruftypen gefunden. Schließlich imitieren Kolkraben gern Geräusche und Rufe anderer Tierarten: Rufe von Krähen, den Balzgesang des Auerhahns, Hundegebell.\nKolkraben können ihre Stimmlage je nach Art der Bekanntschaft mit einem Artgenossen verändern: Auf fremde Artgenossen reagieren sie mit deutlich tieferer und rauerer Stimme als auf ihnen vertraute Raben, und ihnen aus früheren Begegnungen als „freundlich“ bekannte Raben werden mit höherer Stimme begrüßt als ihnen als „unfreundlich“ bekannte Individuen."
+    },
+    "merkmale": {
+      "titel": "Merkmale",
+      "text": "Der Kolkrabe ist mit einer Körperlänge von 54 bis 67 cm und einer Flügelspannweite von 115 bis 130 cm größer als ein Mäusebussard und der mit Abstand größte europäische Rabenvogel. Der Unterschied zwischen männlichen und weiblichen Tieren ist bezüglich der Größe gering, Männchen sind im Mittel etwas größer und schwerer als Weibchen. In einer Untersuchung in Polen hatten adulte Männchen eine Flügellänge von 388–442 mm, im Mittel 423,3 mm und wogen 1080–1370 g, im Mittel 1254 g, Weibchen hatten eine Flügellänge von 395–433 mm, im Mittel 413,8 mm, und wogen 1070–1235 g, im Mittel 1147 g. Der Schnabel ist sehr groß und kräftig, der First des Oberschnabels ist deutlich nach unten gebogen.\nBei adulten Vögeln ist das Gefieder einfarbig schwarz und je nach Lichteinfall metallisch grün oder blauviolett glänzend. Die Iris ist dunkelbraun, Beine und Schnabel sind schwarz. Die Federn an der Kehle sind verlängert und lanzettlich zugespitzt; vor allem wenn die Vögel rufen, stehen diese Federn deutlich ab. Der Schwanz ist am Ende deutlich keilförmig. Im Flug sind neben dem keilförmigen Schwanz die langen und im Handflügel deutlich verschmälerten Flügel sowie der kräftige Hals mit dem großen Kopf und dem großen Schnabel kennzeichnend.\nIm Jugendkleid fehlt dem Gefieder fast völlig der Metallglanz, es ist oberseits braunschwarz, auf der Unterseite braun."
+    },
+    "lebensraum": {
+      "titel": "Lebensraum",
+      "text": "Der Kolkrabe ist hinsichtlich der besiedelten Lebensräume sehr anpassungsfähig und bewohnt Hochgebirge, Wälder sowie offene und halboffene Landschaften aller Art von der Tundra im Norden über die mitteleuropäische Kultursteppe bis zu Halbwüsten im Süden des Verbreitungsgebietes. Mit abnehmender menschlicher Verfolgung werden zunehmend siedlungsnahe Bereiche bewohnt – so gab es in Berlin Ende der 1990er Jahre bereits mindestens 15 Brutpaare."
+    },
+    "ernaehrung": {
+      "titel": "Ernährung",
+      "text": "Wie viele Rabenvögel ist der Kolkrabe Allesfresser, wobei tierische Anteile meist überwiegen. Das Nahrungsspektrum umfasst kleine Wirbeltiere aller Art sowie deren Entwicklungsstadien (z. B. Vogeleier), größere Insekten, Regenwürmer und weitere Wirbellose, Aas jeder Größe, Früchte, landwirtschaftliche Produkte wie Mais sowie menschliche Nahrungsabfälle jeder Art."
+    },
+    "fortpflanzung": {
+      "titel": "Fortpflanzung",
+      "text": "Der Eintritt der Geschlechtsreife bei Männchen ist bisher nicht bekannt, Weibchen sind im Alter von 3 Jahren geschlechtsreif, brüten meist erst im Alter von vier Jahren. Kolkraben leben in monogamer Dauerehe, revierbesitzende Paare sind ganzjährig in den Revieren anzutreffen. Die Partner erkennen sich an der Stimme. Die Balz erfolgt in Mitteleuropa überwiegend im Spätwinter. Sie besteht aus paarweisen Flugspielen über dem Revier wie gemeinsamem Kreisen, halben Flugrollen und Wellenflügen, wobei oft gerufen wird. Zur Balz gehören weiterhin gegenseitige Gefiederpflege, Kraulen mit dem Schnabel und gegenseitiges Füttern.\nDas Nest wird je nach Angebot variabel auf Bäumen, in Felswänden oder auf künstlichen Unterlagen errichtet, in Mitteleuropa in den letzten Jahrzehnten zunehmend auf Hochspannungsmasten, vereinzelt an exponierten Gebäuden. In Norddeutschland werden die Nester überwiegend auf Rotbuchen gebaut, in Ostdeutschland am häufigsten auf Waldkiefern. Beide Partner bauen; das meist runde Nest besteht aus recht groben, toten Ästen; die Mulde wird mit Erdklumpen, Wolle, Fellfetzen, Haaren, Bindegarn und ähnlichem ausgelegt. Die Nester werden oft mehrfach genutzt, viele Paare haben ein oder mehrere Wechselnester."
+    },
+    "verhalten": {
+      "titel": "Verhalten",
+      "text": "Wie andere Rabenvögel spielen Kolkraben oft. Typische Spiele, vor allem mit Artgenossen, sind „Rodeln“ oder herunterrollen lassen im Schnee, auf Sanddünen oder an sonstigen glatten Strukturen, das Kopfunterhängen oder Schaukeln, letzteres gelegentlich bis zur Riesenfelge, auch Balancieren und Spiele mit Gegenständen."
+    }
   }
 }

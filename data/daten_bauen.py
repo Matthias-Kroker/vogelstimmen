@@ -47,6 +47,8 @@ export type Merkmale = {
   nahrungsschicht?: Anteil[];
 };
 
+export type Abschnitt = { titel: string; text: string };
+
 export type Vogel = {
   id: string;
   name_de: string;
@@ -57,6 +59,9 @@ export type Vogel = {
   quelle_text: { name: string; url: string | null; lizenz: string };
   fressfeinde: Fressfeind[];
   merkmale: Merkmale;
+  /** Ausschnitte aus dem deutschen Wikipedia-Artikel (CC BY-SA).
+   *  "stimme" ist fuer dieses Projekt der wichtigste. */
+  abschnitte: Record<string, Abschnitt>;
 };
 
 '''
@@ -91,6 +96,7 @@ def main():
             # Anteile unter 20 % weglassen: EltonTraits gibt dem Zaunkoenig
             # "Fisch 10 %" -- ein Artefakt der groben Einteilung, kein Befund.
             "merkmale": bereinige(d.get("merkmale") or {}),
+            "abschnitte": d.get("abschnitte") or {},
             "fressfeinde": [
                 {"deutsch": f["deutsch"], "wissenschaftlich": f["wissenschaftlich"],
                  "stadium": f.get("stadium", "unbekannt"),
