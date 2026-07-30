@@ -57,9 +57,16 @@ PRAEFIX = re.compile(r"^(datei|file|image):\s*", re.I)
 ABZUEGE = [
     (re.compile(r"(figurine|figur|statue|zeichnung|drawing|illustration|"
                 r"gemälde|painting|kunst|briefmarke)", re.I), 100),
-    (re.compile(r"(mwnh|museum|specimen|präparat|praeparat|balg|skelet)", re.I), 100),
+    # Sammlungskuerzel von Naturkundemuseen: MHNT Toulouse, MWNH Wiesbaden,
+    # NHMW Wien, RMNH Leiden. Dahinter stecken Praeparate, Baelge und Eier --
+    # genau die "Eier bei der Sumpfmeise", die Matthias aufgefallen sind.
+    (re.compile(r"(mhnt|mwnh|nhmw|rmnh|zoo\.\d|museum|specimen|"
+                r"präparat|praeparat|balg|skelet)", re.I), 100),
     (re.compile(r"(\bei\b|\beier\b|gelege|clutch|egg)", re.I), 80),
-    (re.compile(r"(nestling|nistkasten|nest\b|nistplatz|brutkasten)", re.I), 60),
+    # "Horst" ist das deutsche Wort fuer ein Greifvogelnest -- stand erst
+    # nicht drin, weshalb beim Habicht ein Nestbild durchkam.
+    (re.compile(r"(nestling|nistkasten|nest\b|nistplatz|brutkasten|"
+                r"\bhorst\b|eyrie|brutplatz)", re.I), 60),
     (re.compile(r"(jungvogel|juvenil|juvenile|\bjunge[rns]?\b|days old|"
                 r"küken|kueken|chick|fledgling)", re.I), 50),
     (re.compile(r"(symptom|krank|disease|usutu|tot\b|dead|verletzt)", re.I), 90),
@@ -77,10 +84,12 @@ def bewerte(dateiname, info, vogel):
         if muster.search(name):
             punkte -= abzug
 
-    # Wer die Art im Namen traegt, zeigt sie meist auch
-    for begriff in (vogel["name_de"], vogel["gattung"], vogel["art"]):
-        if begriff and begriff.lower() in name.lower():
-            punkte += 25
+    # Wer die Art im Namen traegt, zeigt sie meist auch. EINMAL zaehlen,
+    # nicht je Synonym: "Habicht Horst (Accipiter gentilis).jpg" traf
+    # dreifach zu und uebertrumpfte damit den Nest-Abzug.
+    if any(b and b.lower() in name.lower()
+           for b in (vogel["name_de"], vogel["gattung"], vogel["art"])):
+        punkte += 40
 
     # Mittlere Groessen bevorzugen: sehr grosse Dateien sind oft
     # Detailaufnahmen, sehr kleine unbrauchbar
@@ -141,7 +150,7 @@ def bild_infos(dateinamen):
         return {}
     r = hole("https://de.wikipedia.org/w/api.php",
              {"action": "query", "prop": "imageinfo",
-              "iiprop": "url|extmetadata|size", "iiurlwidth": BREITE,
+              "iiprop": "url|extmetadata|size|mime", "iiurlwidth": BREITE,
               "format": "json", "titles": "|".join(dateinamen[:20])})
     if r is None:
         return {}
@@ -157,6 +166,7 @@ def bild_infos(dateinamen):
                 return re.sub(r"<[^>]+>", "", wert).strip()
             raus[seite["title"]] = {
                 "url": info["thumburl"],
+                "mime": info.get("mime", ""),
                 "breite": info.get("width"), "hoehe": info.get("height"),
                 "urheber": feld("Artist") or "unbekannt",
                 "lizenz": feld("LicenseShortName") or "siehe Dateiseite",
@@ -186,9 +196,22 @@ def main():
         # sortierte nach Bildbreite -- prompt gewannen Museumspraeparate,
         # Nestlinge, ein Ei und eine Porzellanfigur, weil die in hoher
         # Aufloesung vorliegen. Gross heisst nicht brauchbar.
+        # Harte Vorbedingungen -- das raeumt den Grossteil auf:
+        #   nur JPEG: Verbreitungskarten und Diagramme sind ausnahmslos PNG,
+        #             Videos (.webm/.ogv) sind ueberhaupt keine Bilder
+        #   Mindestbreite gegen Briefmarken
         brauchbar = [(n, i) for n, i in infos.items()
-                     if (i.get("breite") or 0) >= 640]
-        brauchbar.sort(key=lambda x: -bewerte(x[0], x[1], d))
+                     if (i.get("breite") or 0) >= 640
+                     and i.get("mime") == "image/jpeg"]
+        bewertet = [(n, i, bewerte(n, i, d)) for n, i in brauchbar]
+        # Schwelle 40 erzwingt einen Artnamen im Dateinamen: ein Foto mit
+        # Namen kommt auf 25 (Name) + 15 (Groesse) = 40, ohne Namen nur auf 25.
+        # Damit fliegt auch "Woodland English Autumn Sunlit.JPG" raus, das
+        # zwar unauffaellig heisst, aber gar keinen Vogel zeigt.
+        # Lieber drei gute Bilder als fuenf mit Karten dabei.
+        bewertet = [x for x in bewertet if x[2] >= 40]
+        bewertet.sort(key=lambda x: -x[2])
+        brauchbar = [(n, i) for n, i, _ in bewertet]
 
         bilder = []
         for nr, (name, info) in enumerate(brauchbar[:MAX_PRO_ART]):
@@ -206,10 +229,14 @@ def main():
                 "commons": name,
             })
 
+        # IMMER schreiben, auch wenn leer. Vorher stand hier "if bilder:" --
+        # dadurch blieb bei null Treffern der alte Eintrag stehen und zeigte
+        # auf eine geloeschte Datei. Beim Habicht war das ein Nestbild, das
+        # dadurch scheinbar unausrottbar war.
+        d["bilder"] = bilder
+        pfad.write_text(json.dumps(d, ensure_ascii=False, indent=2),
+                        encoding="utf-8")
         if bilder:
-            d["bilder"] = bilder
-            pfad.write_text(json.dumps(d, ensure_ascii=False, indent=2),
-                            encoding="utf-8")
             eintraege[d["id"]] = bilder
             gesamt += len(bilder)
         print(f"  {d['name_de']:17s} {len(bilder)} Bilder "

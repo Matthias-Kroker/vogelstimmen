@@ -145,15 +145,15 @@
   "bilder": [
     {
       "datei": "columba_palumbus_0.jpg",
-      "urheber": "Ignacio Cobos Rey",
-      "lizenz": "CC BY-SA 3.0",
-      "commons": "Datei:Columba-palumbus-dist.png"
-    },
-    {
-      "datei": "columba_palumbus_1.jpg",
       "urheber": "Hobbyfotowiki",
       "lizenz": "CC0",
       "commons": "Datei:Columba palumbus azorica.jpg"
+    },
+    {
+      "datei": "columba_palumbus_1.jpg",
+      "urheber": "Jacques Schreiber",
+      "lizenz": "CC BY 4.0",
+      "commons": "Datei:RingeltaubeSV.jpg"
     },
     {
       "datei": "columba_palumbus_2.jpg",
@@ -166,12 +166,6 @@
       "urheber": "Ruggero Turra",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Columba palumbus eating.JPG"
-    },
-    {
-      "datei": "columba_palumbus_4.jpg",
-      "urheber": "Jacques Schreiber",
-      "lizenz": "CC BY 4.0",
-      "commons": "Datei:RingeltaubeSV.jpg"
     }
   ]
 }

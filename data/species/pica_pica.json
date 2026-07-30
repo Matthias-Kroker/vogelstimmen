@@ -268,33 +268,27 @@
   "bilder": [
     {
       "datei": "pica_pica_0.jpg",
+      "urheber": "Stauss in der Wikipedia auf Deutsch",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Elster2.jpg"
+    },
+    {
+      "datei": "pica_pica_1.jpg",
       "urheber": "Dumi",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Pica pica.01.jpg"
     },
     {
-      "datei": "pica_pica_1.jpg",
+      "datei": "pica_pica_2.jpg",
       "urheber": "MPF (talk)",
       "lizenz": "CC BY 2.5",
       "commons": "Datei:Pica pica mauretanica1.jpg"
-    },
-    {
-      "datei": "pica_pica_2.jpg",
-      "urheber": "Stauss in der Wikipedia auf Deutsch",
-      "lizenz": "CC BY-SA 3.0",
-      "commons": "Datei:Elster2.jpg"
     },
     {
       "datei": "pica_pica_3.jpg",
       "urheber": "Kclama",
       "lizenz": "CC SA 1.0",
       "commons": "Datei:Pica serica - Hong Kong.jpg"
-    },
-    {
-      "datei": "pica_pica_4.jpg",
-      "urheber": "Cyberolm",
-      "lizenz": "CC BY-SA 4.0",
-      "commons": "Datei:Elster jung.png"
     }
   ]
 }

@@ -243,27 +243,21 @@
     },
     {
       "datei": "corvus_corax_1.jpg",
-      "urheber": "Alan Vernon",
-      "lizenz": "CC BY 2.0",
-      "commons": "Datei:Corvus corax head profile.jpg"
-    },
-    {
-      "datei": "corvus_corax_2.jpg",
-      "urheber": "Frank Schulenburg",
-      "lizenz": "CC BY-SA 4.0",
-      "commons": "Datei:Corvus corax clarionensis, Point Reyes National Seashore.jpg"
-    },
-    {
-      "datei": "corvus_corax_3.jpg",
       "urheber": "Accipiter (R. Altenkamp, Berlin)",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Kolkrabe juv. Berlin 090516.jpg"
     },
     {
-      "datei": "corvus_corax_4.jpg",
-      "urheber": "Frank Liebig",
-      "lizenz": "CC BY-SA 3.0 de",
-      "commons": "Datei:Kanarische Rabenkrähe (Cuervo).jpg"
+      "datei": "corvus_corax_2.jpg",
+      "urheber": "Alan Vernon",
+      "lizenz": "CC BY 2.0",
+      "commons": "Datei:Corvus corax head profile.jpg"
+    },
+    {
+      "datei": "corvus_corax_3.jpg",
+      "urheber": "Frank Schulenburg",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Corvus corax clarionensis, Point Reyes National Seashore.jpg"
     }
   ]
 }

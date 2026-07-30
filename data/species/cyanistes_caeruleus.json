@@ -316,27 +316,33 @@
   "bilder": [
     {
       "datei": "cyanistes_caeruleus_0.jpg",
-      "urheber": "Claus Fisser",
-      "lizenz": "CC BY-SA 3.0",
-      "commons": "Datei:CyanistesCaeruleusWithForage.jpg"
-    },
-    {
-      "datei": "cyanistes_caeruleus_1.jpg",
       "urheber": "Maximilian Dorsch",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:ParusCaeruleusBathing.jpg"
     },
     {
-      "datei": "cyanistes_caeruleus_2.jpg",
+      "datei": "cyanistes_caeruleus_1.jpg",
       "urheber": "Luc Viatour",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Parus caeruleus 1 Luc Viatour.jpg"
+    },
+    {
+      "datei": "cyanistes_caeruleus_2.jpg",
+      "urheber": "Claus Fisser",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:CyanistesCaeruleusWithForage.jpg"
     },
     {
       "datei": "cyanistes_caeruleus_3.jpg",
       "urheber": "unbekannt",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Parus caeruleus01.jpg"
+    },
+    {
+      "datei": "cyanistes_caeruleus_4.jpg",
+      "urheber": "Sławek Staszczuk",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Parus caeruleus1.jpg"
     }
   ]
 }

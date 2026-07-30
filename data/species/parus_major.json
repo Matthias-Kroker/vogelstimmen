@@ -351,33 +351,33 @@
   "bilder": [
     {
       "datei": "parus_major_0.jpg",
-      "urheber": "Luc Viatour from Bruxelles, Belgique",
-      "lizenz": "CC BY-SA 2.0",
-      "commons": "Datei:Parus major Luc Viatour.jpg"
-    },
-    {
-      "datei": "parus_major_1.jpg",
-      "urheber": "Aiwok",
-      "lizenz": "CC BY-SA 3.0",
-      "commons": "Datei:Parus major 2a.JPG"
-    },
-    {
-      "datei": "parus_major_2.jpg",
       "urheber": "Highway45",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Kohlmeise beim Füttern.jpg"
     },
     {
-      "datei": "parus_major_3.jpg",
+      "datei": "parus_major_1.jpg",
+      "urheber": "Luc Viatour from Bruxelles, Belgique",
+      "lizenz": "CC BY-SA 2.0",
+      "commons": "Datei:Parus major Luc Viatour.jpg"
+    },
+    {
+      "datei": "parus_major_2.jpg",
       "urheber": "Armin Kübelbeck",
       "lizenz": "CC BY 3.0",
       "commons": "Datei:Kohlmeisen 1d.jpg"
     },
     {
+      "datei": "parus_major_3.jpg",
+      "urheber": "Aiwok",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Parus major 2a.JPG"
+    },
+    {
       "datei": "parus_major_4.jpg",
-      "urheber": "nottsexminer",
-      "lizenz": "CC BY-SA 2.0",
-      "commons": "Datei:Great Tit (6847922138).jpg"
+      "urheber": "Armin Kübelbeck",
+      "lizenz": "CC BY-SA 3.0",
+      "commons": "Datei:Kohlmeise Entsorgung.jpg"
     }
   ]
 }

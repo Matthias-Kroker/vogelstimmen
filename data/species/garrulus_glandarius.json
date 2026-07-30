@@ -263,33 +263,33 @@
   "bilder": [
     {
       "datei": "garrulus_glandarius_0.jpg",
-      "urheber": "Richard Bartz, Munich Makro Freak",
-      "lizenz": "CC BY-SA 2.5",
-      "commons": "Datei:Garrulus glandarius albipectus.jpg"
-    },
-    {
-      "datei": "garrulus_glandarius_1.jpg",
       "urheber": "Jannis Lehmann",
       "lizenz": "CC0",
       "commons": "Datei:Eichelhäher Jungtier.jpg"
     },
     {
-      "datei": "garrulus_glandarius_2.jpg",
+      "datei": "garrulus_glandarius_1.jpg",
       "urheber": "Jodocus Oesenbry",
       "lizenz": "Public domain",
       "commons": "Datei:Eichelhäher Oesenbry.jpg"
     },
     {
-      "datei": "garrulus_glandarius_3.jpg",
+      "datei": "garrulus_glandarius_2.jpg",
       "urheber": "Detlef Geissler",
       "lizenz": "CC BY-SA 4.0",
       "commons": "Datei:Eichelhäher bei Mais sammeln163314.jpg"
     },
     {
-      "datei": "garrulus_glandarius_4.jpg",
+      "datei": "garrulus_glandarius_3.jpg",
       "urheber": "Eva-maria-mueller",
       "lizenz": "CC BY-SA 4.0",
       "commons": "Datei:Eichelhäher beim Baden.jpg"
+    },
+    {
+      "datei": "garrulus_glandarius_4.jpg",
+      "urheber": "Markus Beck",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Eichelhäher im Gebüsch.jpg"
     }
   ]
 }

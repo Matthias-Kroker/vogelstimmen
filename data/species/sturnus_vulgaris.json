@@ -157,33 +157,33 @@
   "bilder": [
     {
       "datei": "sturnus_vulgaris_0.jpg",
+      "urheber": "Gemiwala",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Alt Zeschdorf (MOL Brandenburg) - Singstare.jpg"
+    },
+    {
+      "datei": "sturnus_vulgaris_1.jpg",
+      "urheber": "Membeth",
+      "lizenz": "CC0",
+      "commons": "Datei:Star-Paerchen.mit.Kirsche.P1300574.jpg"
+    },
+    {
+      "datei": "sturnus_vulgaris_2.jpg",
+      "urheber": "Martin Lindner",
+      "lizenz": "CC BY-SA 4.0",
+      "commons": "Datei:Star Wanderfalkenbeute.jpg"
+    },
+    {
+      "datei": "sturnus_vulgaris_3.jpg",
       "urheber": "Frank Schulenburg",
       "lizenz": "CC BY-SA 4.0",
       "commons": "Datei:Sturnus vulgaris (European starling) at Bodega Head-1209.jpg"
     },
     {
-      "datei": "sturnus_vulgaris_1.jpg",
-      "urheber": "R.Wampers",
-      "lizenz": "CC BY-SA 2.0 be",
-      "commons": "Datei:Sturnusvulgaris starling spreeuw.jpg"
-    },
-    {
-      "datei": "sturnus_vulgaris_2.jpg",
+      "datei": "sturnus_vulgaris_4.jpg",
       "urheber": "Die Autorenschaft wurde nicht in einer maschinell lesbaren Form angegeben. Es wird Scops~commonswiki als Autor angenomme",
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Sturnus vulgaris stop on migration.jpg"
-    },
-    {
-      "datei": "sturnus_vulgaris_3.jpg",
-      "urheber": "Klaaschwotzer",
-      "lizenz": "CC0",
-      "commons": "Datei:Sturnus vulgaris vulgaris 2.jpg"
-    },
-    {
-      "datei": "sturnus_vulgaris_4.jpg",
-      "urheber": "Michael Graf (Oflow)",
-      "lizenz": "CC BY-SA 3.0 de",
-      "commons": "Datei:STURNUS VULGARIS.JPG"
     }
   ]
 }
