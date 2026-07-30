@@ -179,5 +179,57 @@
       "lizenz": "CC BY 4.0",
       "commons": "Datei:Eurasian wren (Troglodytes troglodytes).jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "troglodytes_troglodytes_vogel0.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Carić (Troglodytes troglodytes); Eurasian Wren.jpg"
+      },
+      {
+        "datei": "troglodytes_troglodytes_vogel1.jpg",
+        "urheber": "Sonnenscheinsusi",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Der Zaunkönig.jpg"
+      },
+      {
+        "datei": "troglodytes_troglodytes_vogel2.jpg",
+        "urheber": "Frank Vassen from Brussels, Belgium",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Eurasian wren (Troglodytes troglodytes), Forêt de Soignes, Brussels (34005176286).jpg"
+      },
+      {
+        "datei": "troglodytes_troglodytes_vogel3.jpg",
+        "urheber": "Frank Vassen from Brussels, Belgium",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Eurasian wren (Troglodytes troglodytes), Forêt de Soignes, Brussels (36464608992).jpg"
+      },
+      {
+        "datei": "troglodytes_troglodytes_vogel4.jpg",
+        "urheber": "Frank Vassen from Brussels, Belgium",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Eurasian Wren (Troglodytes troglodytes), Parc de Woluwé, Brussels (32687822414).jpg"
+      },
+      {
+        "datei": "troglodytes_troglodytes_vogel5.jpg",
+        "urheber": "Frank Vassen from Brussels, Belgium",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Eurasian Wren (Troglodytes troglodytes), Parc du Rouge-Cloître, Brussels (7223349292).jpg"
+      },
+      {
+        "datei": "troglodytes_troglodytes_vogel6.jpg",
+        "urheber": "Joefrei",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Ein neugieriger Zaunkönig.jpg"
+      },
+      {
+        "datei": "troglodytes_troglodytes_vogel7.jpg",
+        "urheber": "Blondinrikard Fröberg",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Eurasian wren, Troglodytes troglodytes, Gärdsmyg (50925547531).jpg"
+      }
+    ]
+  }
 }

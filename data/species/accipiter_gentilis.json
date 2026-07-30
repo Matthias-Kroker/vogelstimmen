@@ -153,5 +153,79 @@
       "text": "Habichte sind monogam und streng territorial. Das Revier wird durch häufiges „gickern“ (vgl. Lautäußerungen) und durch Schauflüge markiert. Bei diesen Schauflügen werden in geradem Flug die Flügel langsam tief nach unten und wieder nach oben geschlagen. Dringen fremde Artgenossen in das Revier ein, wird zuerst durch Rufe versucht, den Eindringling zu vertreiben, anschließend durch Annäherung und weitere Rufe. Im Gegensatz zu anderen Greifvögeln erfolgen direkte Angriffe mit Körperkontakt bei Habichten im Rahmen territorialer Auseinandersetzungen offenbar nur als allerletztes Mittel. Vermutlich ist dies darauf zurückzuführen, dass eine solche Auseinandersetzung wegen der auf die schnelle Tötung von relativ großen Wirbeltieren spezialisierten Füße und Krallen für beide Parteien mit einem erheblichen Risiko verbunden ist."
     }
   },
-  "bilder": []
+  "bilder": [],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "accipiter_gentilis_vogel0.jpg",
+        "urheber": "Bengt Nyman from Vaxholm, Sweden",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Accipiter gentilis 3185 (16176486790).jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_vogel1.jpg",
+        "urheber": "Jevgenijs Slihto from Riga, Latvia",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Accipiter gentilis, Kronvalda Park, Riga, Latvia.jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_vogel2.jpg",
+        "urheber": "Jerzy Strzelecki",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Accipiter gentilis02(js), Lodz(Poland).jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_vogel3.jpg",
+        "urheber": "Afr.1994",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Habicht (LSG Melaten-Friedhof Köln).jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_vogel4.jpg",
+        "urheber": "harum.koh from Kobe city, Japan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Northern Goshawk (Accipiter gentilis fujiyamae) (31091963456).jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_vogel5.jpg",
+        "urheber": "Imran Shah from Islamabad, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Northern Goshawk (Accipiter gentilis) (23674254966).jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_vogel6.jpg",
+        "urheber": "Imran Shah from Islamabad, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Northern Goshawk (Accipiter gentilis) (24726388586).jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_vogel7.jpg",
+        "urheber": "Imran Shah from Islamabad, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Northern Goshawk (Accipiter gentilis) (31273749157).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "accipiter_gentilis_nest0.jpg",
+        "urheber": "Elke Brüser, Flügelschlag und Leisetreter",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Habicht Horst (Accipiter gentilis).jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "accipiter_gentilis_jung0.jpg",
+        "urheber": "Kudaibergen Amirekul",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Accipiter gentilis 247057515.jpg"
+      },
+      {
+        "datei": "accipiter_gentilis_jung1.jpg",
+        "urheber": "unbekannt",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Acc nest.jpg"
+      }
+    ]
+  }
 }

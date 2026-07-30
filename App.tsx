@@ -7,7 +7,7 @@ import {
 import { useAudioPlayer } from "expo-audio";
 
 import { voegel, type Anteil, type Fressfeind, type Vogel } from "./daten/voegel";
-import { vogelBilder, vogelBilderAlle } from "./assets/voegel";
+import { bildgruppen, vogelBilder, vogelBilderAlle } from "./assets/voegel";
 import Quiz from "./Quiz";
 import { rufeZuVogel, type Ruf } from "./assets/rufe";
 
@@ -132,13 +132,7 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
         <Text style={stile.zurueckText}>‹ Alle Vögel</Text>
       </Pressable>
 
-      {/* Das ganze Bild zeigen, nicht zuschneiden -- sonst fehlt bei
-          Hochformat-Aufnahmen genau der Vogel. */}
-      <Image
-        source={vogelBilder[vogel.id]}
-        style={stile.grossesBild}
-        resizeMode="contain"
-      />
+      <Galerie vogel={vogel} />
 
       <View style={{ paddingHorizontal: 18 }}>
         <Text style={stile.titelGross}>{vogel.name_de}</Text>
@@ -180,6 +174,73 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
         </Text>
       </View>
     </ScrollView>
+  );
+}
+
+const BILDGRUPPE_TITEL: Record<string, string> = {
+  vogel: "Der Vogel",
+  nest: "Nest & Eier",
+  jung: "Jungvögel",
+};
+
+function Galerie({ vogel }: { vogel: Vogel }) {
+  const gruppen = bildgruppen[vogel.id] || {};
+  const [gruppe, setGruppe] = useState<"vogel" | "nest" | "jung">("vogel");
+  const [nr, setNr] = useState(0);
+
+  const vorhanden = (["vogel", "nest", "jung"] as const).filter(
+    (g) => (gruppen[g]?.length ?? 0) > 0,
+  );
+  const bilder = gruppen[gruppe] || [];
+  const bild = bilder[Math.min(nr, bilder.length - 1)];
+  if (!bild) return null;
+
+  return (
+    <View>
+      {/* contain, nicht cover: sonst wird bei Hochformat der Vogel
+          angeschnitten -- und gerade den will man sehen. */}
+      <Image source={bild.quelle} style={stile.grossesBild} resizeMode="contain" />
+
+      {/* Punkte zum Durchblättern innerhalb der Gruppe */}
+      {bilder.length > 1 && (
+        <View style={stile.punktreihe}>
+          {bilder.map((_, i) => (
+            <Pressable key={i} onPress={() => setNr(i)} hitSlop={8}>
+              <View style={[stile.punkt, i === Math.min(nr, bilder.length - 1)
+                && stile.punktAktiv]} />
+            </Pressable>
+          ))}
+        </View>
+      )}
+
+      {vorhanden.length > 1 && (
+        <View style={stile.gruppenreihe}>
+          {vorhanden.map((g) => (
+            <Pressable
+              key={g}
+              onPress={() => { setGruppe(g); setNr(0); }}
+              style={({ pressed }) => [
+                stile.gruppenknopf,
+                g === gruppe && stile.gruppenknopfAktiv,
+                pressed && { opacity: 0.8 },
+              ]}
+            >
+              <Text style={[stile.gruppenknopfText,
+                g === gruppe && { color: "#fff" }]}>
+                {BILDGRUPPE_TITEL[g]}
+                <Text style={stile.gruppenAnzahl}> {gruppen[g]!.length}</Text>
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      )}
+
+      {/* Commons verlangt Namensnennung je Bild */}
+      <Text style={stile.bildquelle}>
+        {bild.urheber ? `Foto: ${bild.urheber}` : "Wikimedia Commons"}
+        {bild.lizenz ? ` · ${bild.lizenz}` : ""}
+      </Text>
+    </View>
   );
 }
 
@@ -371,6 +432,28 @@ const stile = StyleSheet.create({
   zurueck: { paddingHorizontal: 18, paddingTop: 12, paddingBottom: 6 },
   zurueckText: { color: farben.akzent, fontSize: 15 },
   grossesBild: { width: "100%", height: 300, backgroundColor: "#0d0d0d" },
+  punktreihe: {
+    flexDirection: "row", justifyContent: "center", gap: 7, marginTop: 9,
+  },
+  punkt: {
+    width: 8, height: 8, borderRadius: 4, backgroundColor: "#3a3a3a",
+  },
+  punktAktiv: { backgroundColor: farben.akzent },
+  gruppenreihe: {
+    flexDirection: "row", flexWrap: "wrap", gap: 7,
+    justifyContent: "center", marginTop: 11,
+  },
+  gruppenknopf: {
+    backgroundColor: farben.karte, borderRadius: 7,
+    paddingVertical: 7, paddingHorizontal: 12,
+  },
+  gruppenknopfAktiv: { backgroundColor: "#0e639c" },
+  gruppenknopfText: { color: farben.gedaempft, fontSize: 13, fontWeight: "600" },
+  gruppenAnzahl: { fontWeight: "400", opacity: 0.7 },
+  bildquelle: {
+    color: "#6e6e6e", fontSize: 10.5, textAlign: "center", marginTop: 9,
+    paddingHorizontal: 18,
+  },
   titelGross: {
     color: farben.text, fontSize: 27, fontWeight: "700", marginTop: 14,
   },

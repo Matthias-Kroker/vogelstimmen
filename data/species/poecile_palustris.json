@@ -159,5 +159,57 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Parus palustris01.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "poecile_palustris_vogel0.jpg",
+        "urheber": "Georgi.petrov66",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Marsh Tit ( Parus palustris).jpg"
+      },
+      {
+        "datei": "poecile_palustris_vogel1.jpg",
+        "urheber": "Georgi.petrov66",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Marsh Tit - Poecile palustris - Лъскавоглав синигер.jpg"
+      },
+      {
+        "datei": "poecile_palustris_vogel2.jpg",
+        "urheber": "gailhampshire",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Marsh Tit Poecile palustris (51975770827).jpg"
+      },
+      {
+        "datei": "poecile_palustris_vogel3.jpg",
+        "urheber": "gailhampshire",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Marsh Tit Poecile palustris (51975770897).jpg"
+      },
+      {
+        "datei": "poecile_palustris_vogel4.jpg",
+        "urheber": "gailhampshire",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Marsh Tit Poecile palustris (51977048534).jpg"
+      },
+      {
+        "datei": "poecile_palustris_vogel5.jpg",
+        "urheber": "gailhampshire from Cradley, Malvern, U.K",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Marsh Tit Poecile palustris, Wyre Forest, Worcs.jpg"
+      },
+      {
+        "datei": "poecile_palustris_vogel6.jpg",
+        "urheber": "David Merrett from Daventry, England",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Marsh Tit Poecile palustris.jpg"
+      },
+      {
+        "datei": "poecile_palustris_vogel7.jpg",
+        "urheber": "Ken Billington",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Marsh Tit (Poecile palustris) (1).jpg"
+      }
+    ]
+  }
 }

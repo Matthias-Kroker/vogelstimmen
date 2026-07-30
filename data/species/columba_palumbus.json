@@ -167,5 +167,91 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Columba palumbus eating.JPG"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "columba_palumbus_vogel0.jpg",
+        "urheber": "MPF",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2009-02-14 Columba palumbus eating Hedera helix berries.jpg"
+      },
+      {
+        "datei": "columba_palumbus_vogel1.jpg",
+        "urheber": "MPF",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2018-03-14 Columba palumbus eating Cotoneaster frigidus berries.jpg"
+      },
+      {
+        "datei": "columba_palumbus_vogel2.jpg",
+        "urheber": "Donald Hobern from Copenhagen, Denmark",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Columba palumbus (18927452680).jpg"
+      },
+      {
+        "datei": "columba_palumbus_vogel3.jpg",
+        "urheber": "Donald Hobern from Copenhagen, Denmark",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Columba palumbus (7221031842).jpg"
+      },
+      {
+        "datei": "columba_palumbus_vogel4.jpg",
+        "urheber": "Donald Hobern from Copenhagen, Denmark",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Columba palumbus (7221033602).jpg"
+      },
+      {
+        "datei": "columba_palumbus_vogel5.jpg",
+        "urheber": "Donald Hobern from Copenhagen, Denmark",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Columba palumbus (7221035404).jpg"
+      },
+      {
+        "datei": "columba_palumbus_vogel6.jpg",
+        "urheber": "Donald Hobern from Copenhagen, Denmark",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Columba palumbus (7221037272).jpg"
+      },
+      {
+        "datei": "columba_palumbus_vogel7.jpg",
+        "urheber": "Donald Hobern from Copenhagen, Denmark",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Columba palumbus (8657699564).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "columba_palumbus_nest0.jpg",
+        "urheber": "Hannes Grobe",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Ringeltaube-ei hg.jpg"
+      },
+      {
+        "datei": "columba_palumbus_nest1.jpg",
+        "urheber": "VSchagow",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2023032401 Bruetende Ringeltaube in Baum bei Leipziger Strasse 118 2023.jpg"
+      },
+      {
+        "datei": "columba_palumbus_nest2.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Golub grivnaš, odrasla jedinka i mladunac (Columba palumbus) Wood Pigeon, adult and juvenille.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "columba_palumbus_jung0.jpg",
+        "urheber": "Walter Baxter",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:A fledgling wood pigeon (Columba palumbus) - geograph.org.uk - 7365953.jpg"
+      },
+      {
+        "datei": "columba_palumbus_jung1.jpg",
+        "urheber": "Adrian Pingstone (Arpingstone)",
+        "lizenz": "Public domain",
+        "commons": "File:Columba palumbus (juvenile) arp.jpg"
+      }
+    ]
+  }
 }

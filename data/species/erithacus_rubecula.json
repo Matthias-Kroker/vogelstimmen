@@ -372,5 +372,91 @@
       "lizenz": "CC BY-SA 4.0",
       "commons": "Datei:Erithacus rubecula Radeberg 4.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "erithacus_rubecula_vogel0.jpg",
+        "urheber": "JoachimKohler-HB",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:200218 Rotkehlchen.jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_vogel1.jpg",
+        "urheber": "Freddy2001",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:2017-01-22 Tantelbruch, Rotkehlchen (freddy2001).jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_vogel2.jpg",
+        "urheber": "Jaramo81",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:2021-07-09 Rotkehlchen (1).jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_vogel3.jpg",
+        "urheber": "JoachimKohler-HB",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:210110 Rotkehlchen im Winter (2021).jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_vogel4.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Crvendać (Erithacus rubecula); European Robin.jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_vogel5.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Crvendać, mužjak (Erithacus rubecula); European Robin male.jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_vogel6.jpg",
+        "urheber": "DarkConny94",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Aachen, Naturschutzgebiet Seffent mit Wilkensberg (Erithacus rubecula), 2020-05-17.jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_vogel7.jpg",
+        "urheber": "David Dixon",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Britain's Favourite Bird - Erithacus rubecula - geograph.org.uk - 4772322.jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "erithacus_rubecula_nest0.jpg",
+        "urheber": "Notafly",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Erithacus rubecula eggs.JPG"
+      },
+      {
+        "datei": "erithacus_rubecula_nest1.jpg",
+        "urheber": "Yerpo",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Erithacus rubecula in nest.jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_nest2.jpg",
+        "urheber": "Charles J. Sharp",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:European robin (Erithacus rubecula) with nest material.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "erithacus_rubecula_jung0.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Crvendać, mladi (Erithacus rubecula); European Robin juvenile.jpg"
+      },
+      {
+        "datei": "erithacus_rubecula_jung1.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Crvendać, mladunac (Erithacus rubecula); European Robin juvenile.jpg"
+      }
+    ]
+  }
 }

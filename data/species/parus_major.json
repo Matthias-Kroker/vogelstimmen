@@ -379,5 +379,91 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Kohlmeise Entsorgung.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "parus_major_vogel0.jpg",
+        "urheber": "Bärbel Miemietz",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2023-03-11 Kohlmeise.jpg"
+      },
+      {
+        "datei": "parus_major_vogel1.jpg",
+        "urheber": "https://vogelskijken.store/",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:A great tit koolmees parus major.jpg"
+      },
+      {
+        "datei": "parus_major_vogel2.jpg",
+        "urheber": "WikiPokos",
+        "lizenz": "CC0",
+        "commons": "File:Carbonero común (Parus major) en Salburua.jpg"
+      },
+      {
+        "datei": "parus_major_vogel3.jpg",
+        "urheber": "Salvatore De Castro",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Cinciallegra (Parus major).jpg"
+      },
+      {
+        "datei": "parus_major_vogel4.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:13 bis 15 Zentimeter wird eine Kohlmeise lang. 01.jpg"
+      },
+      {
+        "datei": "parus_major_vogel5.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:13 bis 15 Zentimeter wird eine Kohlmeise lang. 04.jpg"
+      },
+      {
+        "datei": "parus_major_vogel6.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:13 bis 15 Zentimeter wird eine Kohlmeise lang. 10.jpg"
+      },
+      {
+        "datei": "parus_major_vogel7.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:13 bis 15 Zentimeter wird eine Kohlmeise lang. 11.jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "parus_major_nest0.jpg",
+        "urheber": "unbekannt",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Eggs of Parus major.jpg"
+      },
+      {
+        "datei": "parus_major_nest1.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Velika senica leglo (Parus major) Great Tit clutch (nest box).jpg"
+      },
+      {
+        "datei": "parus_major_nest2.jpg",
+        "urheber": "Zeynel Cebeci",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Büyük Baştankara - Parus major 04.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "parus_major_jung0.jpg",
+        "urheber": "Bernd Thaller from Graz, Austria",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:A Young Great Tit (Kohlmeise) (49914289727).jpg"
+      },
+      {
+        "datei": "parus_major_jung1.jpg",
+        "urheber": "4028mdk09",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Fütterung einer jungen Kohlmeise.JPG"
+      }
+    ]
+  }
 }

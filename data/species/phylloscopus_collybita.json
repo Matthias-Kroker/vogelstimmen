@@ -310,5 +310,77 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Phylloscopus collybita juv..jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "phylloscopus_collybita_vogel0.jpg",
+        "urheber": "Zeynel Cebeci",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Bayağı çıvgın - Phylloscopus collybita 03.jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_vogel1.jpg",
+        "urheber": "gailhampshire from Cradley, Malvern, U.K",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Chiffchaff. Phylloscopus collybita - Flickr - gailhampshire.jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_vogel2.jpg",
+        "urheber": "gailhampshire from Cradley, Malvern, U.K",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Chiffchaff. Phylloscopus collybita(2) (43737951421).jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_vogel3.jpg",
+        "urheber": "gailhampshire from Cradley, Malvern, U.K",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Chiffchaff. Phylloscopus collybita(3) (43689718372).jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_vogel4.jpg",
+        "urheber": "Andreas Eichler",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2016.07.14.-16-Westensee Felde--Zilpzalp.jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_vogel5.jpg",
+        "urheber": "Andreas Eichler",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2017.05.17.-05-Kirschgartshaeuser Schlaege-Mannheim--Zilpzalp.jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_vogel6.jpg",
+        "urheber": "Andreas Eichler",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2017.05.17.-06-Kirschgartshaeuser Schlaege-Mannheim--Zilpzalp.jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_vogel7.jpg",
+        "urheber": "Andreas Eichler",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2017.07.08.-07-Wendisch Rietz--Zilpzalp.jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "phylloscopus_collybita_nest0.jpg",
+        "urheber": "unbekannt",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Phylloscopus collybitus (AM LB10250-1).jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_nest1.jpg",
+        "urheber": "unbekannt",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Phylloscopus collybitus (AM LB10676-1).jpg"
+      },
+      {
+        "datei": "phylloscopus_collybita_nest2.jpg",
+        "urheber": "unbekannt",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Phylloscopus collybitus (AM LB10677-1).jpg"
+      }
+    ]
+  }
 }

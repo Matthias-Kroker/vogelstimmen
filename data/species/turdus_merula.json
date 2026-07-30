@@ -410,5 +410,91 @@
       "lizenz": "CC BY 2.0",
       "commons": "Datei:Amsel (20) (34177340804).jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "turdus_merula_vogel0.jpg",
+        "urheber": "Federlesen",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Amsel (Turdus merula) in Beeren.jpg"
+      },
+      {
+        "datei": "turdus_merula_vogel1.jpg",
+        "urheber": "Glitzerli",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Amsel in Fassadenbegrünung.jpg"
+      },
+      {
+        "datei": "turdus_merula_vogel2.jpg",
+        "urheber": "Niklas Vogel Experte",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Amsel Männchen .jpg"
+      },
+      {
+        "datei": "turdus_merula_vogel3.jpg",
+        "urheber": "Vera Buhl",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:2009-12-18 (7) Amsel, Merl, Turdus merula.JPG"
+      },
+      {
+        "datei": "turdus_merula_vogel4.jpg",
+        "urheber": "Romate",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Amsel weiblich Angriff.JPG"
+      },
+      {
+        "datei": "turdus_merula_vogel5.jpg",
+        "urheber": "Kolforn (Kolforn)\nI'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use this picture out of the Wik",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:-2018-11-15 Female blackbird (Turdus merula), Trimingham, Norfolk.JPG"
+      },
+      {
+        "datei": "turdus_merula_vogel6.jpg",
+        "urheber": "Kolforn (Kolforn)\nI'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use this picture out of the Wik",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:-2019-12-08 Female blackbird (Turdus merula), Trimingham (1).JPG"
+      },
+      {
+        "datei": "turdus_merula_vogel7.jpg",
+        "urheber": "Vera Buhl",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:2006-01-26 garten bodenheim Blackbird, Amsel, Turdus merula.JPG"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "turdus_merula_nest0.jpg",
+        "urheber": "Reinhold Möller Ermell",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Amsel Ei -20260425-RM-123142.jpg"
+      },
+      {
+        "datei": "turdus_merula_nest1.jpg",
+        "urheber": "ThomasKrude",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Amsel Ei.jpeg"
+      },
+      {
+        "datei": "turdus_merula_nest2.jpg",
+        "urheber": "Fred Stinnen",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Amselei.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "turdus_merula_jung0.jpg",
+        "urheber": "Drahreg01",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Amsel füttert Jungtier.jpg"
+      },
+      {
+        "datei": "turdus_merula_jung1.jpg",
+        "urheber": "Niklas Vogel Experte",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Amsel Weibchen.jpg"
+      }
+    ]
+  }
 }

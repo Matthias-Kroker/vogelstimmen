@@ -259,5 +259,91 @@
       "lizenz": "CC BY-SA 4.0",
       "commons": "Datei:Corvus corax clarionensis, Point Reyes National Seashore.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "corvus_corax_vogel0.jpg",
+        "urheber": "Charles J. Sharp",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Common raven (Corvus corax) in flight Uckermark.jpg"
+      },
+      {
+        "datei": "corvus_corax_vogel1.jpg",
+        "urheber": "Bailey Duncan",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Corvus corax - Bailey Duncan - 603089030.jpeg"
+      },
+      {
+        "datei": "corvus_corax_vogel2.jpg",
+        "urheber": "Bailey Duncan",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Corvus corax - Bailey Duncan - 610786449.jpeg"
+      },
+      {
+        "datei": "corvus_corax_vogel3.jpg",
+        "urheber": "Rene Nueesch",
+        "lizenz": "CC BY 3.0",
+        "commons": "File:Kolkrabe - panoramio.jpg"
+      },
+      {
+        "datei": "corvus_corax_vogel4.jpg",
+        "urheber": "Joshua Tree National Park",
+        "lizenz": "Public domain",
+        "commons": "File:Raven (Corvus corax) atop a Joshua tree (50731219031).jpg"
+      },
+      {
+        "datei": "corvus_corax_vogel5.jpg",
+        "urheber": "Joshua Tree National Park",
+        "lizenz": "Public domain",
+        "commons": "File:Raven (Corvus corax) atop a Joshua tree (50731219176).jpg"
+      },
+      {
+        "datei": "corvus_corax_vogel6.jpg",
+        "urheber": "Joshua Tree National Park",
+        "lizenz": "Public domain",
+        "commons": "File:Raven (Corvus corax) playing in the snow at Barker Dam Trail (51194171233).jpg"
+      },
+      {
+        "datei": "corvus_corax_vogel7.jpg",
+        "urheber": "Joshua Tree National Park",
+        "lizenz": "Public domain",
+        "commons": "File:Raven (Corvus corax) playing in the snow at Barker Dam Trail (51194726914).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "corvus_corax_nest0.jpg",
+        "urheber": "Віщун",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Corvus corax nesting near Lutsk, Ukraine, april 2020.jpg"
+      },
+      {
+        "datei": "corvus_corax_nest1.jpg",
+        "urheber": "Tamdikatamdikabalebale",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:47C65538.jpg"
+      },
+      {
+        "datei": "corvus_corax_nest2.jpg",
+        "urheber": "User:XRiffRaffx",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Kolkrabe egg.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "corvus_corax_jung0.jpg",
+        "urheber": "xulescu_g",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Corvus corax (35307371936).jpg"
+      },
+      {
+        "datei": "corvus_corax_jung1.jpg",
+        "urheber": "Ciaran Lee from Ireland",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Corvus corax -Donegal -Ireland -chicks-8.jpg"
+      }
+    ]
+  }
 }

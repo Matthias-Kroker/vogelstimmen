@@ -167,5 +167,91 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Dendrocopos minor 291108.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "dendrocopos_major_vogel0.jpg",
+        "urheber": "JoachimKohler-HB",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Buntspecht betreut den Nachwuchs (Kreuzlingen, 2016).jpg"
+      },
+      {
+        "datei": "dendrocopos_major_vogel1.jpg",
+        "urheber": "Արարատ Թրվանց",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Dendrocopos 01.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_vogel2.jpg",
+        "urheber": "Արարատ Թրվանց",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Dendrocopos 02.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_vogel3.jpg",
+        "urheber": "Արարատ Թրվանց",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Dendrocopos 03.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_vogel4.jpg",
+        "urheber": "hedera.baltica from Wrocław, Poland",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Dendrocopos major (41554885581) (cropped).jpg"
+      },
+      {
+        "datei": "dendrocopos_major_vogel5.jpg",
+        "urheber": "Ксения Волянская",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Dendrocopos major 113370987.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_vogel6.jpg",
+        "urheber": "Михаил Малышев",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Dendrocopos major 113378826.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_vogel7.jpg",
+        "urheber": "Francesco Cecere",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Dendrocopos major 113903285.jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "dendrocopos_major_nest0.jpg",
+        "urheber": "Acabashi",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Great spotted woodpecker Dendrocopos major pinetorum in Downhills Park, Haringey London England 1.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_nest1.jpg",
+        "urheber": "Beentree",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Dendrocopos major bialowieza beentree.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_nest2.jpg",
+        "urheber": "Andy  Vernon",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Dendrocopos major -Potteric Carr nature Reserve, South Yorkshire, England -female-8.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "dendrocopos_major_jung0.jpg",
+        "urheber": "Ein Dahmer",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Buntspecht 6750.jpg"
+      },
+      {
+        "datei": "dendrocopos_major_jung1.jpg",
+        "urheber": "Mucki",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Buntspecht Garten.jpg"
+      }
+    ]
+  }
 }

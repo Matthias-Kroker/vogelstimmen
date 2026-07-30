@@ -284,5 +284,91 @@
       "lizenz": "CC BY 2.0",
       "commons": "Datei:Corvus corone -near Canford Cliffs, Poole, England-8.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "corvus_corone_vogel0.jpg",
+        "urheber": "José Véron-Durand",
+        "lizenz": "CC0",
+        "commons": "File:Agraula o Corbaishina - Corvus corone - Corneille noire.jpg"
+      },
+      {
+        "datei": "corvus_corone_vogel1.jpg",
+        "urheber": "M J Richardson",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Carrion Crow (Corvus corone) - geograph.org.uk - 6490253.jpg"
+      },
+      {
+        "datei": "corvus_corone_vogel2.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Carrion Crow (Corvus corone) - London, England 2023-10-26.jpg"
+      },
+      {
+        "datei": "corvus_corone_vogel3.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Carrion Crow (Corvus corone) - London, England 2023-10-30.jpg"
+      },
+      {
+        "datei": "corvus_corone_vogel4.jpg",
+        "urheber": "pete beard",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Carrion Crow (Corvus corone), Essex 1.jpg"
+      },
+      {
+        "datei": "corvus_corone_vogel5.jpg",
+        "urheber": "Charles J. Sharp",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Carrion crow (corvus corone).jpg"
+      },
+      {
+        "datei": "corvus_corone_vogel6.jpg",
+        "urheber": "AnemoneProjectors (talk)",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Carrion Crow aka Corvus corone.jpg"
+      },
+      {
+        "datei": "corvus_corone_vogel7.jpg",
+        "urheber": "KPFC",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Corvus corone (KPFC).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "corvus_corone_nest0.jpg",
+        "urheber": "Marie-Lan Taÿ Pamart",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Corvus corone nest Alice JdP 20250426.jpg"
+      },
+      {
+        "datei": "corvus_corone_nest1.jpg",
+        "urheber": "Marie-Lan Taÿ Pamart",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Corvus corone nest anti-bird spiked Bercy 20220205.jpg"
+      },
+      {
+        "datei": "corvus_corone_nest2.jpg",
+        "urheber": "Marie-Lan Taÿ Pamart",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Corvus corone nest Bercy 20220205 01.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "corvus_corone_jung0.jpg",
+        "urheber": "Gzen92",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Corneille noire juvénile (Corvus corone).jpg"
+      },
+      {
+        "datei": "corvus_corone_jung1.jpg",
+        "urheber": "Marie-Lan Taÿ Pamart",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Corvus corone fledgeling Parc André-Malraux 20180703 t174007.jpg"
+      }
+    ]
+  }
 }

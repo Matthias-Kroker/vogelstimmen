@@ -291,5 +291,91 @@
       "lizenz": "CC BY-SA 4.0",
       "commons": "Datei:Eichelhäher im Gebüsch.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "garrulus_glandarius_vogel0.jpg",
+        "urheber": "Donfredo-sl",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Eichelhäher im Anflug !.jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_vogel1.jpg",
+        "urheber": "zoetnet",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Garrulus glandarius -Zoetermeer, Netherlands -flying-6a.jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_vogel2.jpg",
+        "urheber": "Michel Langeveld",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Garrulus glandarius 117257839.jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_vogel3.jpg",
+        "urheber": "Birkenpilz",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Garrulus glandarius at feeding place.jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_vogel4.jpg",
+        "urheber": "Crusier",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Garrulus glandarius fly.JPG"
+      },
+      {
+        "datei": "garrulus_glandarius_vogel5.jpg",
+        "urheber": "Boksi",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Garrulus glandarius in flight.JPG"
+      },
+      {
+        "datei": "garrulus_glandarius_vogel6.jpg",
+        "urheber": "Lotte76",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:NSG Mastberg und Innersteaue - Eichelhäher (20).jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_vogel7.jpg",
+        "urheber": "Lotte76",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:NSG Mastberg und Innersteaue - Eichelhäher (6).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "garrulus_glandarius_nest0.jpg",
+        "urheber": "User:XRiffRaffx",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Eichelhäher Ei.jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_nest1.jpg",
+        "urheber": "nottsexminer",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Jay Nest 13-05-12 (7190047172).jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_nest2.jpg",
+        "urheber": "nottsexminer",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Jay Nest 13-05-12 (7190059330).jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "garrulus_glandarius_jung0.jpg",
+        "urheber": "Jannis Lehmann",
+        "lizenz": "CC0",
+        "commons": "File:Eichelhäher Jungtier.jpg"
+      },
+      {
+        "datei": "garrulus_glandarius_jung1.jpg",
+        "urheber": "Soldier of Wasteland",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Jay Garrulus glandarius juvenile.jpg"
+      }
+    ]
+  }
 }

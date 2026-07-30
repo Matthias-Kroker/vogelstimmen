@@ -191,5 +191,91 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Mäusebussarde kabbeln sich von W. v Graefe.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "buteo_buteo_vogel0.jpg",
+        "urheber": "Hans Hillewaert",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Buteo buteo (2nd winter).jpg"
+      },
+      {
+        "datei": "buteo_buteo_vogel1.jpg",
+        "urheber": "Brian Eager from Livno, Bosnia and Herzegovina",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Buteo buteo in BiH.jpg"
+      },
+      {
+        "datei": "buteo_buteo_vogel2.jpg",
+        "urheber": "Konstantinos Ntougkas",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Buteo buteo, Anatoli, Greece (83460805).jpg"
+      },
+      {
+        "datei": "buteo_buteo_vogel3.jpg",
+        "urheber": "Notafly",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:ButeoButeoHilden24March2015.JPG"
+      },
+      {
+        "datei": "buteo_buteo_vogel4.jpg",
+        "urheber": "Frank Vassen from Brussels, Belgium",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Common Buzzard (Buteo buteo), Aldringen, Eastern Belgium (6778246611).jpg"
+      },
+      {
+        "datei": "buteo_buteo_vogel5.jpg",
+        "urheber": "Vera Buhl",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:2010-02-18 (55) Mäusebussard, Common Buzzard, Buteo buteo.JPG"
+      },
+      {
+        "datei": "buteo_buteo_vogel6.jpg",
+        "urheber": "Vera Buhl",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:2010-02-18 (56) Mäusebussard, Common Buzzard, Buteo buteo.JPG"
+      },
+      {
+        "datei": "buteo_buteo_vogel7.jpg",
+        "urheber": "Vera Buhl",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:2010-06-15 (32) Mäusebussard, Common Buzzard, Buteo buteo.JPG"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "buteo_buteo_nest0.jpg",
+        "urheber": "Dominicus Johannes Bergsma",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Ei van een Buizerd (Buteo buteo) 02.jpg"
+      },
+      {
+        "datei": "buteo_buteo_nest1.jpg",
+        "urheber": "Dominicus Johannes Bergsma",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Ei van een Buizerd (Buteo buteo) 01.jpg"
+      },
+      {
+        "datei": "buteo_buteo_nest2.jpg",
+        "urheber": "Seebohm",
+        "lizenz": "Public domain",
+        "commons": "File:Eggs of British Birds Seebohm 1896 Plate3-Buteo buteo.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "buteo_buteo_jung0.jpg",
+        "urheber": "Fischer.H",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:9541 Mäusebussard.jpg"
+      },
+      {
+        "datei": "buteo_buteo_jung1.jpg",
+        "urheber": "FrooiOhnesorg",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Buteo buteo - FrooiOhnesorg.jpg"
+      }
+    ]
+  }
 }

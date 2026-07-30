@@ -290,5 +290,91 @@
       "lizenz": "CC SA 1.0",
       "commons": "Datei:Pica serica - Hong Kong.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "pica_pica_vogel0.jpg",
+        "urheber": "4028mdk09",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Beim Nistmaterial sammeln eine Elster.JPG"
+      },
+      {
+        "datei": "pica_pica_vogel1.jpg",
+        "urheber": "Charles J. Sharp",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Common Magpie (Pica pica).JPG"
+      },
+      {
+        "datei": "pica_pica_vogel2.jpg",
+        "urheber": "Konstantin Lukas",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Elster auf Rohr.jpg"
+      },
+      {
+        "datei": "pica_pica_vogel3.jpg",
+        "urheber": "Fischer.H",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Elster IMG 8815.jpg"
+      },
+      {
+        "datei": "pica_pica_vogel4.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Eurasian Magpie (Pica pica) - London, England 2023-10-26.jpg"
+      },
+      {
+        "datei": "pica_pica_vogel5.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Eurasian Magpie (Pica pica) - Oslo, Norway 2021-05-20.jpg"
+      },
+      {
+        "datei": "pica_pica_vogel6.jpg",
+        "urheber": "blondinrikard",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Eurasian magpie, common magpie, Pica pica, skata.jpg"
+      },
+      {
+        "datei": "pica_pica_vogel7.jpg",
+        "urheber": "gailhampshire from Cradley, Malvern, U.K",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Eurasian Magpie. Pica pica (32275730438).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "pica_pica_nest0.jpg",
+        "urheber": "W.carter",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Frosty Pica pica nest in Tuntorp.jpg"
+      },
+      {
+        "datei": "pica_pica_nest1.jpg",
+        "urheber": "Leo Johannes",
+        "lizenz": "Public domain",
+        "commons": "File:Pica pica in Enskededalen in spring 2008-2.JPG"
+      },
+      {
+        "datei": "pica_pica_nest2.jpg",
+        "urheber": "W.carter",
+        "lizenz": "CC0",
+        "commons": "File:Pica pica nest in Brastad 1.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "pica_pica_jung0.jpg",
+        "urheber": "Ragnar76149",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Elster-Küken.jpg"
+      },
+      {
+        "datei": "pica_pica_jung1.jpg",
+        "urheber": "Ulilil",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Elsterküken mit Nest abgestürzt und gerettet!.jpg"
+      }
+    ]
+  }
 }

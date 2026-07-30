@@ -220,5 +220,91 @@
       "lizenz": "CC BY-SA 2.5",
       "commons": "Datei:Common kestrel falco tinnunculus.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "falco_tinnunculus_vogel0.jpg",
+        "urheber": "Fabian Horst",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2020-06-14 - Falco tinnunculus FMT Kiel (1).jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_vogel1.jpg",
+        "urheber": "Fabian Horst",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2020-06-14 - Falco tinnunculus FMT Kiel (2).jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_vogel2.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Common Kestrel (Falco tinnunculus) (53423031603).jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_vogel3.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Common Kestrel (Falco tinnunculus) (53467679462).jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_vogel4.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Common Kestrel (Falco tinnunculus) (53487415256).jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_vogel5.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Common Kestrel (Falco tinnunculus) (53496063555).jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_vogel6.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Common Kestrel (Falco tinnunculus) (53619153224).jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_vogel7.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Common Kestrel (Falco tinnunculus) (53902364940).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "falco_tinnunculus_nest0.jpg",
+        "urheber": "Marie-Lan Taÿ Pamart",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Falco tinnunculus clutch Paslières 20210514.jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_nest1.jpg",
+        "urheber": "Notafly",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Falcotinnunculuseggs.JPG"
+      },
+      {
+        "datei": "falco_tinnunculus_nest2.jpg",
+        "urheber": "Oberheimbach",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Turmfalken Eier im Blumenkasten.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "falco_tinnunculus_jung0.jpg",
+        "urheber": "Oberheimbach",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:5 Junge Turmfalken einige Tage nach dem Schlüpfen.jpg"
+      },
+      {
+        "datei": "falco_tinnunculus_jung1.jpg",
+        "urheber": "Roman Eisele",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Bad Rappenau - Bonfeld - Evangelische Kirche - junger Turmfalke im Nistkasten.jpg"
+      }
+    ]
+  }
 }

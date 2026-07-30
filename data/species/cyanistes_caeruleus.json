@@ -344,5 +344,91 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Parus caeruleus1.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "cyanistes_caeruleus_vogel0.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (10) (34633615550).jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_vogel1.jpg",
+        "urheber": "Daniel Schiersner",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (15843002336).jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_vogel2.jpg",
+        "urheber": "Daniel Schiersner",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (17109589142).jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_vogel3.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (18) (34633604040).jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_vogel4.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (20) (34177177294).jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_vogel5.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (21) (34633598430).jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_vogel6.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (23) (34633592920).jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_vogel7.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Blaumeise (24) (34210204403).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "cyanistes_caeruleus_nest0.jpg",
+        "urheber": "Dellex",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Blaumeise Ei, Cyanistes caeruleus, Parus caeruleus.jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_nest1.jpg",
+        "urheber": "Oskila",
+        "lizenz": "CC BY-SA 2.5 se",
+        "commons": "File:Parus caeruleus chick and egg.jpg"
+      },
+      {
+        "datei": "cyanistes_caeruleus_nest2.jpg",
+        "urheber": "Rüdiger Stehn from Kiel, Deutschland",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:01 Blaumeise 1988 (16567444170).jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "cyanistes_caeruleus_jung0.jpg",
+        "urheber": "Powerhauer",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Blaumeise 2.JPG"
+      },
+      {
+        "datei": "cyanistes_caeruleus_jung1.jpg",
+        "urheber": "losch",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Blaumeise eben Flügge IMG 7574.jpg"
+      }
+    ]
+  }
 }

@@ -360,5 +360,91 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Madeira Buchfink-001.JPG"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "fringilla_coelebs_vogel0.jpg",
+        "urheber": "HKokopelli",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Biosphärenreservat Elbtalaue Buchfink.jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_vogel1.jpg",
+        "urheber": "blondinrikard",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Brambling, Fringilla montifringilla, Bergfink.jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_vogel2.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Buchfink (1) (34210090703).jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_vogel3.jpg",
+        "urheber": "Kathy Büscher from Rinteln, Deutschland",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Buchfink (10) (35020779215).jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_vogel4.jpg",
+        "urheber": "Membeth",
+        "lizenz": "CC0",
+        "commons": "File:Buchfink-Maennchen.Luther-Friedhof.P1067297.jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_vogel5.jpg",
+        "urheber": "Membeth",
+        "lizenz": "CC0",
+        "commons": "File:Buchfink-Maennchen.Luther-Friedhof.P1067348.jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_vogel6.jpg",
+        "urheber": "Membeth",
+        "lizenz": "CC0",
+        "commons": "File:Buchfink-Maennchen.Luther-Friedhof.P1067394.jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_vogel7.jpg",
+        "urheber": "Membeth",
+        "lizenz": "CC0",
+        "commons": "File:Buchfink.Hainich.jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "fringilla_coelebs_nest0.jpg",
+        "urheber": "Sciencia58",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Buchfink Nest - Nest of chaffinch - Fringilla coelebs 1.jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_nest1.jpg",
+        "urheber": "Ensahequ",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Nido di fringuello (Fringilla coelebs).jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_nest2.jpg",
+        "urheber": "Nikola Veljković",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Obična zeba (Fringilla coelebs).jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "fringilla_coelebs_jung0.jpg",
+        "urheber": "Andreas Eichler",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2012.06.26.-g-20-Carpin-Buchfink-Jungvogel.jpg"
+      },
+      {
+        "datei": "fringilla_coelebs_jung1.jpg",
+        "urheber": "Andreas Eichler",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:2012.06.26.-g-21-Carpin-Buchfink-Jungvogel.jpg"
+      }
+    ]
+  }
 }

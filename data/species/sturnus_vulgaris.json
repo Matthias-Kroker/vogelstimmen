@@ -185,5 +185,91 @@
       "lizenz": "CC BY-SA 3.0",
       "commons": "Datei:Sturnus vulgaris stop on migration.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "sturnus_vulgaris_vogel0.jpg",
+        "urheber": "Gemiwala",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Alt Zeschdorf (MOL Brandenburg) - Singstare.jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_vogel1.jpg",
+        "urheber": "Mike Prince from Bangalore, India",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Common Starling (14363075697).jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_vogel2.jpg",
+        "urheber": "Mike Prince from Bangalore, India",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Common Starling (49643326006).jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_vogel3.jpg",
+        "urheber": "hedera.baltica from Wrocław, Poland",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Common starling (52422502424).jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_vogel4.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Common Starling (Storno) (Sturnus vulgaris) - Rome, Italy 2024-03-02.jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_vogel5.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Common Starling (Sturnus vulgaris) - Hå, Norway 2021-08-09.jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_vogel6.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Common Starling (Sturnus vulgaris) - Kristiansand, Norway 2021-08-12.jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_vogel7.jpg",
+        "urheber": "Si Griffiths",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Common Starling (Sturnus vulgaris) In The Snow.jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "sturnus_vulgaris_nest0.jpg",
+        "urheber": "Simon Mannweiler",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Sturnus vulgaris (Star) 2024-04-25 (01).jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_nest1.jpg",
+        "urheber": "Joris Egger",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Star (Sturnus vulgaris) mit Strohalm im Schnabel an einem Nistkasten.JPG"
+      },
+      {
+        "datei": "sturnus_vulgaris_nest2.jpg",
+        "urheber": "Franzfoto",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Markhausen (Friesoythe) - Starenkästen für gesellige Vögel.JPG"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "sturnus_vulgaris_jung0.jpg",
+        "urheber": "Airwolfhound from Hertfordshire, UK",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Baby Starling (7257986092).jpg"
+      },
+      {
+        "datei": "sturnus_vulgaris_jung1.jpg",
+        "urheber": "Charles J. Sharp",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Common starling (Sturnus vulgaris) juvenile.jpg"
+      }
+    ]
+  }
 }

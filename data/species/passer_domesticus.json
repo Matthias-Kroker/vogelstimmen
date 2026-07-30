@@ -335,5 +335,91 @@
       "lizenz": "CC BY-SA 2.5",
       "commons": "Datei:Passer domesticus 03.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "passer_domesticus_vogel0.jpg",
+        "urheber": "Elke Brüser",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Haussperling (Passer domesticus) am Dach.jpg"
+      },
+      {
+        "datei": "passer_domesticus_vogel1.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:House Sparrow (Passer domesticus) (53443974496).jpg"
+      },
+      {
+        "datei": "passer_domesticus_vogel2.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:House Sparrow (Passer domesticus) (53545540395).jpg"
+      },
+      {
+        "datei": "passer_domesticus_vogel3.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:House Sparrow (Passer domesticus) (53604274410).jpg"
+      },
+      {
+        "datei": "passer_domesticus_vogel4.jpg",
+        "urheber": "Birds of Gilgit-Baltistan from Aliabad, Hunza, Pakistan",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:House Sparrow (Passer domesticus) (53631390895).jpg"
+      },
+      {
+        "datei": "passer_domesticus_vogel5.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:House Sparrow (Passer domesticus) - Bergen, Norway 2021-07-30.jpg"
+      },
+      {
+        "datei": "passer_domesticus_vogel6.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:House Sparrow (Passer domesticus) - Bærum, Norway 2021-05-07 (02).jpg"
+      },
+      {
+        "datei": "passer_domesticus_vogel7.jpg",
+        "urheber": "Ryan Hodnett",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:House Sparrow (Passer domesticus) - Bærum, Norway 2021-05-07 (03).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "passer_domesticus_nest0.jpg",
+        "urheber": "Elke Brüser",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Haussperling (Passer domesticus) am Nistkasten.jpg"
+      },
+      {
+        "datei": "passer_domesticus_nest1.jpg",
+        "urheber": "Notafly",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Passerdomesticuseggs.JPG"
+      },
+      {
+        "datei": "passer_domesticus_nest2.jpg",
+        "urheber": "Zeynel Cebeci",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:Passer domesticus - House sparrow 06.jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "passer_domesticus_jung0.jpg",
+        "urheber": "BlueBreezeWiki",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:180622-Haussperling-01.jpg"
+      },
+      {
+        "datei": "passer_domesticus_jung1.jpg",
+        "urheber": "BlueBreezeWiki",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:180622-Haussperling-02.jpg"
+      }
+    ]
+  }
 }

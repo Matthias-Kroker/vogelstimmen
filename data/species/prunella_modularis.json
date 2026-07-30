@@ -149,5 +149,91 @@
       "lizenz": "CC BY-SA 4.0",
       "commons": "Datei:Dunnock (Prunella modularis) 3.jpg"
     }
-  ]
+  ],
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "prunella_modularis_vogel0.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:20 Gramm wiegt im Durchschnitt eine Heckenbraunelle. 01.jpg"
+      },
+      {
+        "datei": "prunella_modularis_vogel1.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:20 Gramm wiegt im Durchschnitt eine Heckenbraunelle. 02.jpg"
+      },
+      {
+        "datei": "prunella_modularis_vogel2.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:20 Gramm wiegt im Durchschnitt eine Heckenbraunelle. 03.jpg"
+      },
+      {
+        "datei": "prunella_modularis_vogel3.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:20 Gramm wiegt im Durchschnitt eine Heckenbraunelle. 04.jpg"
+      },
+      {
+        "datei": "prunella_modularis_vogel4.jpg",
+        "urheber": "Holger Uwe Schmitt",
+        "lizenz": "CC BY-SA 4.0",
+        "commons": "File:20 Gramm wiegt im Durchschnitt eine Heckenbraunelle. 05.jpg"
+      },
+      {
+        "datei": "prunella_modularis_vogel5.jpg",
+        "urheber": "Bernard DUPONT from FRANCE",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Dunnock (Prunella modularis) (28922164048).jpg"
+      },
+      {
+        "datei": "prunella_modularis_vogel6.jpg",
+        "urheber": "Frank Vassen from Brussels, Belgium",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Dunnock (Prunella modularis), Parc du Rouge-Cloître, Bruxelles (16167784565).jpg"
+      },
+      {
+        "datei": "prunella_modularis_vogel7.jpg",
+        "urheber": "AnemoneProjectors (talk)",
+        "lizenz": "CC BY-SA 2.0",
+        "commons": "File:Dunnock (Prunella modularis).jpg"
+      }
+    ],
+    "nest": [
+      {
+        "datei": "prunella_modularis_nest0.jpg",
+        "urheber": "Walcoford",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Dunnock (Prunella modularis) juveniles close.jpg"
+      },
+      {
+        "datei": "prunella_modularis_nest1.jpg",
+        "urheber": "Walcoford",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Dunnock (Prunella modularis) juveniles full shot.JPG"
+      },
+      {
+        "datei": "prunella_modularis_nest2.jpg",
+        "urheber": "unbekannt",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Prunella modularis (AM LB10098-1).jpg"
+      }
+    ],
+    "jung": [
+      {
+        "datei": "prunella_modularis_jung0.jpg",
+        "urheber": "caroline legg",
+        "lizenz": "CC BY 2.0",
+        "commons": "File:Dunnock - Prunella modularis (Juvenile) (52080230098).jpg"
+      },
+      {
+        "datei": "prunella_modularis_jung1.jpg",
+        "urheber": "Ralf Hüsges",
+        "lizenz": "CC BY 4.0",
+        "commons": "File:Junge Heckenbraunelle - 54716113789.jpg"
+      }
+    ]
+  }
 }
