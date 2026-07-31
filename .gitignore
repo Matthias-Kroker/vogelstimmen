@@ -52,3 +52,6 @@ data/unsicher/
 data/unsichere_*.html
 data/grundlagen/
 data/grundlagen_*.html
+
+# Statischer Export -- jederzeit neu erzeugbar
+dist/
