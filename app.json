@@ -1,17 +1,17 @@
 {
   "expo": {
-    "name": "app",
-    "slug": "app",
+    "name": "Vogelstimmen",
+    "slug": "vogelstimmen",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#161616",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -23,6 +23,10 @@
     },
     "plugins": [
       "expo-audio"
-    ]
+    ],
+    "experiments": {
+      "_kommentar_baseUrl": "Die App liegt bei GitHub Pages unter dem Unterpfad /vogelstimmen. Ohne diese Angabe schreibt Expo absolute Pfade wie /assets/... ins Bundle; die landen dann auf der Domainwurzel und liefern 404 -- sichtbar als schwarze Bilder und stumme Rufe.",
+      "baseUrl": "/vogelstimmen"
+    }
   }
 }
