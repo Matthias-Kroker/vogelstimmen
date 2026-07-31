@@ -5,6 +5,64 @@ am Gehör und am Bild erkennen.
 
 ---
 
+## ⚠ Was NICHT sattelfest ist
+
+Zuerst lesen. Alles hier ist entweder unbelegt, nur teilweise geprüft oder
+bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
+
+### Ruftypen
+- **Zuordnung steckt bei 41 von 131 Phrasen (31 %).** Der Rest ist unsicher
+  und wartet auf ein Urteil per Gehör (`unsichere_Amsel.html`).
+- **Vorlagen nur an der Amsel geeicht.** Für alle anderen Arten gibt es
+  keine geprüften Werte — die Zahlen dürfen nicht übertragen werden.
+- **Kein einziger Siih unter 131 Phrasen.** Matthias bestätigt, dass der
+  Ruf sehr selten ist; unser einziger Beleg stammt aus Schweden. Ob er im
+  deutschen Bestand fehlt oder meine Phrasenbildung ihn zerlegt, ist
+  ungeklärt.
+- **Die Eulen-Aufnahme XC167956 passt in keine Schublade** (schmalbandig
+  wie ein Siih, aber tief und in Folge). Möglicherweise ein entfernter
+  Siih, möglicherweise ein eigener Typ. Widerspricht der Annahme
+  *Eule → Hassruf*.
+- **Der „tsiirr"-Anlockruf** (5,1–9,9 kHz) liegt im selben Band wie der
+  Siih, hat aber andere Funktion. Nicht eingearbeitet — ein Teil dessen,
+  was wir für Siih halten, könnte dieser Ruf sein.
+- **Bandbreite müsste höher gewichtet werden als Spitzenfrequenz** (die ist
+  entfernungsabhängig). Erkannt, aber in `kalibrieren.py` noch nicht
+  umgesetzt.
+
+### Messung
+- **Die Phrasenerkennung filtert keine Nicht-Vogel-Geräusche.** Vier
+  vermeintliche Rufe waren ein röhrender Rothirsch aus dem Hintergrund.
+  Sehr breitbandige Phrasen (über 5 kHz) sind fast immer Störgeräusch.
+- **Die Schwellwerte in `analyse_alarmtyp.py` sind geraten**, nicht an
+  gehört bestätigten Beispielen geeicht. Im Code als unkalibriert markiert.
+
+### Daten
+- **AVONET und EltonTraits sind grobe Kategorien für 11.000 Arten.**
+  EltonTraits gibt dem Zaunkönig „Fisch 10 %", AVONET setzt den Turmfalken
+  auf „Gebüsch". Anteile unter 20 % werden deshalb verworfen — die
+  verbleibenden sind trotzdem nur Näherungen.
+- **Bilder verlassen sich auf fremde Einordnung bei Commons.** Einzelne
+  Fehler kommen durch: „Amsel Weibchen.jpg" steckt dort in der
+  Jungvogel-Kategorie.
+- **Die xeno-canto-Etiketten sind nachweislich unzuverlässig** (`call` und
+  `alarm call` überlappen zu 77 %). Sie werden nirgends als Wahrheit
+  verwendet, tauchen in der Oberfläche aber als Herkunftsangabe auf.
+- **Messmer & Messmer 1956 und „Die Zeteraktivität der Amsel"** stehen
+  hinter Bezahlschranken. Das sind die belastbarsten Quellen zum
+  Ruf-Repertoire — wir arbeiten ersatzweise mit einem kommerziellen
+  Klangportrait, das sich zwar deckt, aber nicht begutachtet ist.
+
+### App
+- **Das Ähnlichkeitsmaß im Quiz ist ökologisch, nicht optisch.** Amsel und
+  Rabenkrähe landen bei „leicht" gegeneinander, obwohl beide schwarz sind.
+  Richtig wäre eine gepflegte Verwechslungstabelle.
+- **Sumpfmeise** hat keine Nest- und Jungvogelbilder (Commons hat für sie
+  keine Unterkategorien), **Heckenbraunelle** keinen Stimme-Abschnitt
+  (Lücke bei Wikipedia).
+
+---
+
 ## Aktueller Stand
 
 | Bereich | Stand |
@@ -12,7 +70,7 @@ am Gehör und am Bild erkennen.
 | **Lernaudio** | ✅ läuft — 177 Einträge, 42 min, Piper-Stimme „Thorsten", gemischt |
 | **Artdaten** | ✅ 20 Arten: Text, Bild, Fressfeinde, Lebensraum, Nahrung, Zug |
 | **Ruftyp-Analyse** | 🟡 automatische Zuordnung läuft, 41 von 131 Phrasen sicher |
-| **App** | 🟡 Liste + Steckbriefe mit Bildern, noch kein Ton |
+| **App** | 🟢 Liste, Steckbriefe (Galerie/Ton/Merkmale), Quiz mit Lernfortschritt |
 
 Repos: `Vogelstimmen-App` (diese App) und `Vogelstimmen` (Audio-Generator,
 getrennt, weil unabhängig nutzbar).
@@ -238,3 +296,14 @@ Selbstgebaute Kategorien durch die Fachbenennung ersetzt. Matthias' als
 standen schlicht nicht auf meiner Liste. Vier weitere seiner Markierungen
 waren vermutlich gar keine Amsel, sondern ein röhrender Hirsch im
 Hintergrund; die Phrasenerkennung braucht einen Rauschfilter.
+
+### 2026-07-31 — Bilder aus Commons, Quiz, Lernfortschritt
+Bilder aus den Commons-Kategorien statt nur aus dem Artikel: 246 statt 78,
+mit Nestern und Jungvögeln als eigenen Gruppen (Idee von Matthias — Nester
+sind Lernstoff, gehören nur nicht unter „so sieht der Vogel aus"). Der
+Durchbruch war, dass Commons seine Unterkategorien nach Motiv **benennt**;
+damit entfällt das Raten an Dateinamen.
+
+Quiz mit drei Schwierigkeitsgraden (Matthias' Vorschlag statt getrennter
+Modi), Lernfortschritt mit abgestufter Wiederholung. Verwechslungen werden
+paarweise gemerkt und kommen bevorzugt wieder gegeneinander.

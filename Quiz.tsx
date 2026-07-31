@@ -7,6 +7,11 @@ import { useAudioPlayer } from "expo-audio";
 import { voegel, type Vogel } from "./daten/voegel";
 import { vogelBilderAlle } from "./assets/voegel";
 import { rufeZuVogel, type Ruf } from "./assets/rufe";
+import {
+  antwortVerbuchen, haeufigsteVerwechslungen, laden, naechsteArten,
+  speichern, uebersicht, zuruecksetzen, MAX_STUFE,
+  type Lernstand,
+} from "./lernstand";
 
 const farben = {
   hintergrund: "#161616",
@@ -69,9 +74,16 @@ type Frage = {
   auswahl: Vogel[];
 };
 
-function frageBauen(stufe: Stufe): Frage | null {
+function frageBauen(stufe: Stufe, stand: Lernstand): Frage | null {
   if (spielbar.length < 4) return null;
-  const richtig = zufall(spielbar);
+
+  // Nicht zufaellig waehlen, sondern nach Dringlichkeit: was noch nie dran
+  // war oder oft danebenging, kommt zuerst. Aus den obersten fuenf wird
+  // gelost, damit es nicht stumpf immer dieselbe Reihenfolge ist.
+  const reihenfolge = naechsteArten(stand, spielbar.map((v) => v.id));
+  const vorne = reihenfolge.slice(0, 5);
+  const gewaehlteId = zufall(vorne);
+  const richtig = spielbar.find((v) => v.id === gewaehlteId) ?? zufall(spielbar);
   const rufe = rufeZuVogel[richtig.id] || [];
   if (!rufe.length) return null;
 
@@ -80,10 +92,17 @@ function frageBauen(stufe: Stufe): Frage | null {
     (x, y) => aehnlichkeit(richtig, y) - aehnlichkeit(richtig, x),
   );
 
+  // Wer schon einmal mit dieser Art verwechselt wurde, kommt bevorzugt
+  // wieder dagegen -- eine Verwechslung loest man am Gegenstueck auf.
+  const verwechselt = haeufigsteVerwechslungen(stand, richtig.id)
+    .map((id) => andere.find((v) => v.id === id))
+    .filter((v): v is Vogel => !!v);
+
   let falsche: Vogel[];
   if (stufe === 3) {
-    // die drei ähnlichsten
-    falsche = sortiert.slice(0, 3);
+    // die drei ähnlichsten, Verwechslungspartner zuerst
+    falsche = [...verwechselt, ...sortiert].slice(0, 3);
+    falsche = [...new Map(falsche.map((v) => [v.id, v])).values()].slice(0, 3);
   } else if (stufe === 1) {
     // die drei unähnlichsten
     falsche = sortiert.slice(-3);
@@ -112,16 +131,20 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
   const [frage, setFrage] = useState<Frage | null>(null);
   const [geraten, setGeraten] = useState<Vogel | null>(null);
   const [punkte, setPunkte] = useState({ richtig: 0, gesamt: 0 });
+  const [stand, setStand] = useState<Lernstand>(() => laden());
 
   const spieler = useAudioPlayer(frage?.ruf.quelle ?? null);
 
-  const neueFrage = useCallback((s: Stufe) => {
+  const neueFrage = useCallback((s: Stufe, aktuell: Lernstand) => {
     setGeraten(null);
-    setFrage(frageBauen(s));
+    setFrage(frageBauen(s, aktuell));
   }, []);
 
   useEffect(() => {
-    if (stufe) neueFrage(stufe);
+    if (stufe) neueFrage(stufe, stand);
+    // stand absichtlich NICHT in den Abhaengigkeiten: sonst waechselt die
+    // Frage mitten in der Antwort, sobald der Fortschritt gespeichert wird.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stufe, neueFrage]);
 
   // Beim Erscheinen einer neuen Frage gleich abspielen -- man will hören,
@@ -154,6 +177,11 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
             <Text style={stile.stufeText}>{s.beschreibung}</Text>
           </Pressable>
         ))}
+        <Fortschritt stand={stand} zuruecksetzenFn={() => {
+          zuruecksetzen();
+          setStand({});
+        }} />
+
         <Text style={stile.fussnote}>
           {spielbar.length} von {voegel.length} Arten haben Rufe und sind
           spielbar.
@@ -172,12 +200,19 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
 
   const antworten = (v: Vogel) => {
     if (geraten) return;
+    const stimmt = v.id === frage.richtig.id;
     setGeraten(v);
     setPunkte((p) => ({
-      richtig: p.richtig + (v.id === frage.richtig.id ? 1 : 0),
+      richtig: p.richtig + (stimmt ? 1 : 0),
       gesamt: p.gesamt + 1,
     }));
+    const neu = antwortVerbuchen(stand, frage.richtig.id, stimmt,
+                                 stimmt ? undefined : v.id);
+    setStand(neu);
+    speichern(neu);
   };
+
+  const eigenerStand = stand[frage.richtig.id];
 
   return (
     <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
@@ -251,8 +286,16 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
               {frage.richtig.abschnitte.stimme.text}
             </Text>
           )}
+          {/* Was die abgestufte Wiederholung gerade macht, sichtbar
+              halten -- sonst wirkt die Auswahl willkuerlich. */}
+          {eigenerStand && (
+            <Text style={stile.stufenzeile}>
+              {frage.richtig.name_de}: Stufe {eigenerStand.stufe} von {MAX_STUFE}
+              {" · "}{eigenerStand.richtig} richtig, {eigenerStand.falsch} falsch
+            </Text>
+          )}
           <Pressable
-            onPress={() => neueFrage(stufe)}
+            onPress={() => neueFrage(stufe, stand)}
             style={({ pressed }) => [stile.weiter, pressed && stile.gedrueckt]}
           >
             <Text style={stile.weiterText}>Nächster Ruf ›</Text>
@@ -260,6 +303,45 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
         </View>
       )}
     </ScrollView>
+  );
+}
+
+function Fortschritt({
+  stand, zuruecksetzenFn,
+}: { stand: Lernstand; zuruecksetzenFn: () => void }) {
+  const u = uebersicht(stand);
+  if (!u.gesehen) return null;
+  const quote = u.richtig + u.falsch > 0
+    ? Math.round((u.richtig / (u.richtig + u.falsch)) * 100) : 0;
+
+  const schwach = Object.entries(stand)
+    .filter(([, a]) => a.falsch > 0)
+    .sort((a, b) => b[1].falsch - a[1].falsch)
+    .slice(0, 5)
+    .map(([id, a]) => {
+      const v = voegel.find((x) => x.id === id);
+      return v ? `${v.name_de} (${a.falsch}×)` : null;
+    })
+    .filter(Boolean);
+
+  return (
+    <View style={stile.fortschritt}>
+      <Text style={stile.fortschrittTitel}>Dein Stand</Text>
+      <Text style={stile.fortschrittZeile}>
+        {u.gesehen} Arten geübt · {u.sitzt} sitzen · {u.wackelt} wackeln
+      </Text>
+      <Text style={stile.fortschrittZeile}>
+        {u.richtig} richtig, {u.falsch} falsch ({quote} %)
+      </Text>
+      {schwach.length > 0 && (
+        <Text style={stile.fortschrittSchwach}>
+          Häufigste Fehler: {schwach.join(" · ")}
+        </Text>
+      )}
+      <Pressable onPress={zuruecksetzenFn} hitSlop={6}>
+        <Text style={stile.zuruecksetzen}>Fortschritt zurücksetzen</Text>
+      </Pressable>
+    </View>
   );
 }
 
@@ -278,6 +360,25 @@ const stile = StyleSheet.create({
   stufeTitel: { color: farben.akzent, fontSize: 17, fontWeight: "600" },
   stufeText: { color: farben.gedaempft, fontSize: 13.5, marginTop: 4, lineHeight: 19 },
   fussnote: { color: "#6e6e6e", fontSize: 12, marginTop: 14 },
+  fortschritt: {
+    backgroundColor: farben.karte, borderRadius: 10, padding: 14,
+    marginTop: 14, borderLeftWidth: 3, borderLeftColor: farben.akzent,
+  },
+  fortschrittTitel: {
+    color: farben.akzent, fontSize: 15, fontWeight: "700", marginBottom: 6,
+  },
+  fortschrittZeile: { color: farben.text, fontSize: 13.5, lineHeight: 20 },
+  fortschrittSchwach: {
+    color: "#e0a458", fontSize: 12.5, marginTop: 6, lineHeight: 18,
+  },
+  zuruecksetzen: {
+    color: "#6e6e6e", fontSize: 11.5, marginTop: 10,
+    textDecorationLine: "underline",
+  },
+  stufenzeile: {
+    color: farben.gedaempft, fontSize: 12, marginTop: 10,
+    fontVariant: ["tabular-nums"],
+  },
   gedrueckt: { opacity: 0.75 },
 
   abspielen: {
