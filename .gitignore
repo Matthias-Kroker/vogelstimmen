@@ -55,3 +55,6 @@ data/grundlagen_*.html
 
 # Statischer Export -- jederzeit neu erzeugbar
 dist/
+
+__pycache__/
+*.pyc
