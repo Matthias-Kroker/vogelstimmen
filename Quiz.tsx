@@ -133,7 +133,11 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
   const [punkte, setPunkte] = useState({ richtig: 0, gesamt: 0 });
   const [stand, setStand] = useState<Lernstand>(() => laden());
 
-  const spieler = useAudioPlayer(frage?.ruf.quelle ?? null);
+  // EINEN Spieler anlegen und die Quelle wechseln, statt bei jeder Frage
+  // einen neuen bauen zu lassen. Uebergibt man dem Hook wechselnde Quellen,
+  // verwirft er den alten Spieler mitten im Laden -- daher der AbortError
+  // "fetching process ... aborted by the user agent" im Protokoll.
+  const spieler = useAudioPlayer();
 
   const neueFrage = useCallback((s: Stufe, aktuell: Lernstand) => {
     setGeraten(null);
@@ -150,9 +154,13 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
   // Beim Erscheinen einer neuen Frage gleich abspielen -- man will hören,
   // nicht erst einen Knopf suchen.
   useEffect(() => {
-    if (frage) {
-      spieler.seekTo(0);
+    if (!frage) return;
+    try {
+      spieler.replace(frage.ruf.quelle);
       spieler.play();
+    } catch {
+      // Ein fehlgeschlagener Ton darf das Quiz nicht anhalten -- der Knopf
+      // "Ruf nochmal hören" bleibt ja da.
     }
   }, [frage]);
 
@@ -217,16 +225,25 @@ export default function Quiz({ zurueck }: { zurueck: () => void }) {
   return (
     <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
       <View style={stile.kopfzeile}>
-        <Pressable onPress={() => setStufe(null)}>
-          <Text style={stile.zurueck}>‹ Stufe</Text>
-        </Pressable>
+        {/* Zwei Wege hinaus: zurueck zur Stufenwahl oder ganz raus.
+            Vorher ging es nur ueber zwei Schritte. */}
+        <View style={stile.kopfLinks}>
+          <Pressable onPress={zurueck} hitSlop={8}>
+            <Text style={stile.zurueck}>‹ Vögel</Text>
+          </Pressable>
+          <Pressable onPress={() => setStufe(null)} hitSlop={8}>
+            <Text style={stile.zurueckZweit}>Stufe wechseln</Text>
+          </Pressable>
+        </View>
         <Text style={stile.punkte}>
           {punkte.richtig} / {punkte.gesamt}
         </Text>
       </View>
 
       <Pressable
-        onPress={() => { spieler.seekTo(0); spieler.play(); }}
+        onPress={() => {
+          try { spieler.seekTo(0); spieler.play(); } catch { /* egal */ }
+        }}
         style={({ pressed }) => [stile.abspielen, pressed && stile.gedrueckt]}
       >
         <Text style={stile.abspielenText}>▶ Ruf nochmal hören</Text>
@@ -351,6 +368,8 @@ const stile = StyleSheet.create({
     alignItems: "center", marginBottom: 12,
   },
   zurueck: { color: farben.akzent, fontSize: 15 },
+  kopfLinks: { flexDirection: "row", alignItems: "center", gap: 14 },
+  zurueckZweit: { color: farben.gedaempft, fontSize: 13.5 },
   punkte: { color: farben.gedaempft, fontSize: 15, fontVariant: ["tabular-nums"] },
   titel: { color: farben.text, fontSize: 22, fontWeight: "700", marginBottom: 6 },
   hinweis: { color: farben.gedaempft, fontSize: 14, marginBottom: 16, lineHeight: 20 },

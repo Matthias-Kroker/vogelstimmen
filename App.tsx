@@ -253,8 +253,10 @@ const KATEGORIE_TITEL: Record<string, string> = {
 function Rufe({ vogel }: { vogel: Vogel }) {
   const alle = rufeZuVogel[vogel.id] || [];
   const [laeuft, setLaeuft] = useState<Ruf | null>(null);
-  // Ein Spieler für alles: mehrere gleichzeitig wären nur Krach.
-  const spieler = useAudioPlayer(laeuft?.quelle ?? null);
+  // Ein Spieler für alles: mehrere gleichzeitig wären nur Krach. Und der
+  // Spieler wird EINMAL angelegt, danach nur die Quelle gewechselt --
+  // sonst verwirft der Hook den alten mitten im Laden (AbortError).
+  const spieler = useAudioPlayer();
 
   if (!alle.length) return null;
 
@@ -263,9 +265,17 @@ function Rufe({ vogel }: { vogel: Vogel }) {
 
   const abspielen = (r: Ruf) => {
     setLaeuft(r);
-    // seekTo(0), sonst spielt ein zweiter Klick auf denselben Ruf nicht neu
-    spieler.seekTo(0);
-    spieler.play();
+    try {
+      if (r.id === laeuft?.id) {
+        // Derselbe Ruf nochmal: nur zurueckspulen, nicht neu laden
+        spieler.seekTo(0);
+      } else {
+        spieler.replace(r.quelle);
+      }
+      spieler.play();
+    } catch {
+      // Ein fehlgeschlagener Ton soll die Ansicht nicht stoeren
+    }
   };
 
   return (
