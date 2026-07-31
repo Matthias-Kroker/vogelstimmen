@@ -70,10 +70,19 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
 | **Lernaudio** | ✅ läuft — 177 Einträge, 42 min, Piper-Stimme „Thorsten", gemischt |
 | **Artdaten** | ✅ 20 Arten: Text, Bild, Fressfeinde, Lebensraum, Nahrung, Zug |
 | **Ruftyp-Analyse** | 🟡 automatische Zuordnung läuft, 41 von 131 Phrasen sicher |
-| **App** | 🟢 Liste, Steckbriefe (Galerie/Ton/Merkmale), Quiz mit Lernfortschritt |
+| **App** | 🟢 veröffentlicht: https://matthias-kroker.github.io/vogelstimmen/ |
 
-Repos: `Vogelstimmen-App` (diese App) und `Vogelstimmen` (Audio-Generator,
-getrennt, weil unabhängig nutzbar).
+Repos: `Vogelstimmen-App` (diese App, öffentlich auf GitHub als
+`Matthias-Kroker/vogelstimmen`) und `Vogelstimmen` (Audio-Generator, lokal,
+getrennt weil unabhängig nutzbar).
+
+**Veröffentlicht:** https://matthias-kroker.github.io/vogelstimmen/ — bei
+jedem Push auf `main` baut GitHub Actions neu und stellt online. Öffentlich,
+weil GitHub Pages auf dem kostenlosen Plan nur aus öffentlichen Repos
+funktioniert; ein privates Repo ginge erst mit Pro, und selbst dann bliebe
+die Seite öffentlich. Lizenzrechtlich unbedenklich: BY-NC-SA erlaubt
+nicht-kommerzielle Weitergabe mit Namensnennung, die bei jedem Bild und
+jedem Ruf steht.
 
 ---
 
@@ -307,3 +316,14 @@ damit entfällt das Raten an Dateinamen.
 Quiz mit drei Schwierigkeitsgraden (Matthias' Vorschlag statt getrennter
 Modi), Lernfortschritt mit abgestufter Wiederholung. Verwechslungen werden
 paarweise gemerkt und kommen bevorzugt wieder gegeneinander.
+
+### 2026-07-31 — Veröffentlicht
+Bilder von 82 auf 21 MB verkleinert (103 verwaiste Dateien aus früheren
+Verfahren entfernt, Rest auf 720 px). Kompletter Export: 32 MB.
+
+PWA-Teile ergänzt, die Expo nicht liefert: Manifest, Service Worker
+(Gerüst network-first, Medien cache-first), relative Pfade, Symbole.
+GitHub Actions baut bei jedem Push und veröffentlicht.
+
+Vor der Veröffentlichung geprüft: kein API-Schlüssel im Repo oder im
+Verlauf, `__pycache__` aus der Versionsverwaltung entfernt.
