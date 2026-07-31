@@ -1,0 +1,63 @@
+name: PWA bauen und veröffentlichen
+
+# Bei jedem Push auf main neu bauen. So bleibt die veroeffentlichte App
+# automatisch auf dem Stand des Repos -- kein Handbetrieb noetig.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Laufende Veroeffentlichung nicht abbrechen, aber auch nicht doppelt starten
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  bauen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Abhängigkeiten
+        run: npm ci
+
+      - name: Typen prüfen
+        run: npx tsc --noEmit
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # pwa_bauen.py erzeugt die Symbole mit Pillow
+      - name: Pillow
+        run: pip install Pillow
+
+      - name: Web-Export
+        run: npx expo export --platform web --output-dir dist
+
+      - name: Manifest, Service Worker, relative Pfade
+        run: python data/pwa_bauen.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  veroeffentlichen:
+    needs: bauen
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - id: pages
+        uses: actions/deploy-pages@v4
