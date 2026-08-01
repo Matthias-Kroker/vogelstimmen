@@ -53,6 +53,25 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
   Ruf-Repertoire — wir arbeiten ersatzweise mit einem kommerziellen
   Klangportrait, das sich zwar deckt, aber nicht begutachtet ist.
 
+### Vogelsprache
+- **Das Tracking-Dokument ist KEINE unabhängige Quelle** — es wurde
+  größtenteils von Claude selbst verfasst. Wer daraus zitiert, zitiert
+  Claude. Deshalb trägt jeder Eintrag in `daten/vogelsprache.ts` ein Feld
+  `beleg` (`literatur` oder `einschaetzung`), das auch in der Oberfläche
+  sichtbar ist.
+- **Belegt** sind: Jon Youngs Fünf Stimmen, das Flügelklatschen der Tauben
+  (science.org, PMC2821341), das Krähen-Repertoire (McGowan, Cornell), die
+  Sperlingsrufe (birdsoftheworld.org).
+- **Geschätzt** sind: welche Arten Leitarten sind, und die Auffälligkeit
+  1–5. Nirgends gemessen.
+- **Kohlmeise, Star, Buchfink und Zilpzalp haben gar keine
+  Alarm-Einschätzung.** Die Kohlmeise ist die zweithäufigste Art im
+  Rhein-Main-Gebiet und mit Sicherheit alarmrelevant — sie fällt beim
+  Lernziel „Vogelsprache" trotzdem hinten runter. Lücke, kein Nullwert.
+- **Das Dokument selbst enthält den Fehler `type:alarm`** in seinen
+  xeno-canto-Beispielen — denselben, der uns anfangs 14 von 20 falsche
+  Clips beschert hat.
+
 ### App
 - **Das Ähnlichkeitsmaß im Quiz ist ökologisch, nicht optisch.** Amsel und
   Rabenkrähe landen bei „leicht" gegeneinander, obwohl beide schwarz sind.
@@ -60,6 +79,8 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
 - **Sumpfmeise** hat keine Nest- und Jungvogelbilder (Commons hat für sie
   keine Unterkategorien), **Heckenbraunelle** keinen Stimme-Abschnitt
   (Lücke bei Wikipedia).
+- **Die App unterscheidet nur Gesang / Rufe / Trommeln**, nicht die Fünf
+  Stimmen. Die xeno-canto-Etiketten geben mehr nicht her.
 
 ---
 
@@ -91,6 +112,14 @@ jedem Ruf steht.
 | Was | Datei |
 |---|---|
 | Artdaten je Vogel | `data/species/<gattung>_<art>.json` |
+| Vogelsprache, Fünf Stimmen, Alarmprofile | `daten/vogelsprache.ts` |
+| Standortlisten bauen | `data/region_bauen.py` → `daten/regionen/` |
+| Offline-Paket, Speicherbudget | `regionspaket.ts`, `Offline.tsx` |
+| Lernfortschritt (abgestufte Wiederholung) | `lernstand.ts` |
+| Quiz mit Schwierigkeitsgraden | `Quiz.tsx` |
+| PWA-Teile (Manifest, Service Worker) | `web/`, `data/pwa_bauen.py` |
+| Bilder aus Commons holen | `data/bilder_commons.py` |
+| Rufe komprimiert einbacken | `data/rufe_einbacken.py` |
 | Ruftyp-Vorlagen (geeicht) | `data/ruftyp_vorlagen_Amsel.json` |
 | Aufnahmen mit Zeitmarken | `data/annotierte_aufnahmen.json` |
 | Belegte Referenzrufe | `data/referenzrufe_bauen.py` → `referenzrufe_Amsel.html` |
@@ -218,6 +247,58 @@ Alles ins Deutsche übersetzt, weil die Datensätze englisch sind.
 setzt den Turmfalken auf „Gebüsch". Die Werte sind für 11.000 Arten
 gemacht, nicht für die Feinheiten von zwanzig.
 
+## Vogelsprache — der eigentliche Lernrahmen
+
+Aus Matthias' Tracking-Dokument: **Jon Youngs Fünf Stimmen.** Entscheidend
+ist, dass **vier davon Baseline sind** und nur die fünfte Gefahr bedeutet.
+
+| Stimme | Zustand |
+|---|---|
+| Gesang | Baseline |
+| Begleitrufe | Baseline |
+| **Territorial-/Aggressionsrufe** | **Baseline** — klingt wie Alarm, ist keiner |
+| Bettelrufe | Baseline |
+| Alarm | Gefahr |
+
+**Das löst rückwirkend ein Rätsel:** XC123588 („two males had trouble with
+each other"), von xeno-canto als `alarm call` geführt und von Matthias als
+Keckern gehört, ist Stimme 3 — Territorialruf, also Baseline. Die
+Literatur benennt genau diese Verwechslung und nennt ein Erkennungsmerkmal:
+*andere Arten reagieren kaum darauf.*
+
+**Nicht-vokale Alarme sind eine eigene Kategorie.** Die Ringeltaube hat
+keinen vokalen Alarmruf; ihr Flügelklatschen beim erschreckten Auffliegen
+ist ein belegtes mechanisches Signal (schneller und lauter als der normale
+Abflug), auf das andere Tauben reagieren. Im Offenland auffällig, im
+dichten Wald weniger.
+
+**Rollen aus unseren eigenen Daten abgeleitet:** 8 der 20 Arten lösen
+selbst Alarm aus. Habicht bei 9 Arten (Warnruf), Rabenkrähe bei 8
+(Hassruf). Der **Sperber** steht auf Platz 6 der Auslöser — und fehlt in
+unseren 20. Nach Häufigkeit wäre er nie aufgetaucht.
+
+## Standortbezogene Artenlisten
+
+`data/region_bauen.py` stellt für einen Ort eine Liste zusammen — als
+nachrechenbares Regelwerk, nicht als Sprachmodell-Aufruf, damit jede
+Region gleich hergeleitet wird.
+
+- **Häufigkeit** aus GBIF (ohne Schlüssel, Umkreis oder Land)
+- **Alarmnutzen** aus Leitart, Auffälligkeit und Auslöser-Rolle
+
+Dieselbe Region, zwei Lernziele:
+
+```
+Vogelsprache            Artenkunde
+1 Rabenkrähe            1 Ringeltaube
+2 Elster                2 Kohlmeise
+3 Amsel                 3 Amsel
+9 Kolkrabe (3.054)      9 Buchfink (11.483)
+```
+
+Der Kolkrabe kommt bei „Vogelsprache" trotz geringer Beobachtungszahl mit —
+genau der Fall, den reine Häufigkeit verfehlt.
+
 ## Offene Punkte
 
 - **Eulen-Aufnahme XC167956** passt in keine Schublade: schmalbandig wie ein
@@ -327,3 +408,45 @@ GitHub Actions baut bei jedem Push und veröffentlicht.
 
 Vor der Veröffentlichung geprüft: kein API-Schlüssel im Repo oder im
 Verlauf, `__pycache__` aus der Versionsverwaltung entfernt.
+
+### 2026-08-01 — Veröffentlichung, Offline, Vogelsprache
+
+**Veröffentlicht** auf https://matthias-kroker.github.io/vogelstimmen/ —
+öffentlich, weil GitHub Pages auf dem freien Plan nur aus öffentlichen
+Repos baut (privates Repo erst mit Pro, und selbst dann bliebe die Seite
+öffentlich). Vor dem Push geprüft: kein API-Schlüssel im Repo oder Verlauf.
+
+**Zwei echte Fehler behoben:**
+- `baseUrl` fehlte. Expo schrieb absolute Pfade `/assets/...` ins Bundle,
+  die unter `/vogelstimmen/` ins Leere zeigten — Bilder schwarz, Rufe
+  stumm. Nachgewiesen mit HTTP 404 vorher, 200 nachher.
+- Der Tonspieler bekam bei jedem Ruf eine neue Quelle und verwarf den
+  alten mitten im Laden (`AbortError`). Jetzt einmal anlegen und
+  `player.replace()`.
+
+**Eine falsche Annahme korrigiert.** Ich wollte die Medien „aus dem Bundle
+auslagern". Nachgemessen: das JS-Bundle ist **808 KB**, die Medien liegen
+längst als 246 + 191 **einzelne Dateien** daneben und werden erst beim
+Anzeigen geholt. Der Umbau war überflüssig und wurde gestrichen.
+
+**Der echte Engpass** ist der Cache auf dem Gerät: iOS Safari erlaubt einer
+PWA rund **50 MB** und räumt nach etwa einer Woche Nichtnutzung auf,
+Android bis 60 % des freien Speichers. Deshalb **eine** Fassung nach der
+strengeren Grenze und ein Offline-Paket mit 40-MB-Budget (gemessen: 1,57 MB
+je Art bei vollem Umfang, also bis 77 Arten bei knappem Umfang).
+
+**Vogelsprache eingeführt** — siehe eigener Abschnitt oben. Dabei fiel auf,
+dass ich beinahe mich selbst als Quelle zitiert hätte.
+
+---
+
+## Als Nächstes vorgemerkt
+
+1. **Belege für Alarm-Auffälligkeit gezielt suchen** — vor allem Kohlmeise,
+   Star, Buchfink, Zilpzalp. Vorbild ist der Sperling, für den
+   birdsoftheworld.org eine brauchbare Beschreibung liefert. Ziel: die
+   Schätzungen durch Belege ersetzen, nicht durch bessere Schätzungen.
+2. **Sperber ergänzen** — Platz 6 der Alarm-Auslöser, fehlt bisher.
+3. **Artenzahl erweitern**, sobald die Alarm-Bewertung steht. Das
+   Offline-Budget trägt bei knappem Umfang bis zu 77 Arten.
+4. **Regionsauswahl in die App** — bisher nur als Skript.
