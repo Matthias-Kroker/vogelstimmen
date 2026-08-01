@@ -1,0 +1,99 @@
+{
+  "region": "Rhein-Main",
+  "lernziel": "artenkunde",
+  "lernziel_titel": "Artenkunde",
+  "beobachtungen_gesamt": 537758,
+  "hinweis": "haeufigkeit ist gemessen (GBIF), alarmnutzen teils geschaetzt (siehe daten/vogelsprache.ts)",
+  "arten": [
+    {
+      "wissenschaftlich": "Columba palumbus",
+      "name_de": "Ringeltaube",
+      "beobachtungen": 23689,
+      "haeufigkeit": 1.0,
+      "alarmnutzen": 0.21,
+      "punkte": 1.0,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Parus major",
+      "name_de": "Kohlmeise",
+      "beobachtungen": 23328,
+      "haeufigkeit": 0.985,
+      "alarmnutzen": 0.0,
+      "punkte": 0.985,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Turdus merula",
+      "name_de": "Amsel",
+      "beobachtungen": 22240,
+      "haeufigkeit": 0.939,
+      "alarmnutzen": 0.75,
+      "punkte": 0.939,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "name_de": "Rabenkrähe",
+      "beobachtungen": 19140,
+      "haeufigkeit": 0.808,
+      "alarmnutzen": 0.95,
+      "punkte": 0.808,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Cyanistes caeruleus",
+      "name_de": "Blaumeise",
+      "beobachtungen": 18044,
+      "haeufigkeit": 0.762,
+      "alarmnutzen": 0.68,
+      "punkte": 0.762,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Erithacus rubecula",
+      "name_de": "Rotkehlchen",
+      "beobachtungen": 15234,
+      "haeufigkeit": 0.643,
+      "alarmnutzen": 0.68,
+      "punkte": 0.643,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Pica pica",
+      "name_de": "Elster",
+      "beobachtungen": 15226,
+      "haeufigkeit": 0.643,
+      "alarmnutzen": 0.875,
+      "punkte": 0.643,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Sturnus vulgaris",
+      "name_de": "Star",
+      "beobachtungen": 13028,
+      "haeufigkeit": 0.55,
+      "alarmnutzen": 0.0,
+      "punkte": 0.55,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Fringilla coelebs",
+      "name_de": "Buchfink",
+      "beobachtungen": 11483,
+      "haeufigkeit": 0.485,
+      "alarmnutzen": 0.0,
+      "punkte": 0.485,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Buteo buteo",
+      "name_de": "Mäusebussard",
+      "beobachtungen": 11250,
+      "haeufigkeit": 0.475,
+      "alarmnutzen": 0.15,
+      "punkte": 0.475,
+      "haben_wir": true
+    }
+  ]
+}

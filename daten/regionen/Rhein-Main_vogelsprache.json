@@ -1,0 +1,99 @@
+{
+  "region": "Rhein-Main",
+  "lernziel": "vogelsprache",
+  "lernziel_titel": "Vogelsprache",
+  "beobachtungen_gesamt": 537758,
+  "hinweis": "haeufigkeit ist gemessen (GBIF), alarmnutzen teils geschaetzt (siehe daten/vogelsprache.ts)",
+  "arten": [
+    {
+      "wissenschaftlich": "Corvus corone",
+      "name_de": "Rabenkrähe",
+      "beobachtungen": 19140,
+      "haeufigkeit": 0.808,
+      "alarmnutzen": 0.95,
+      "punkte": 1.233,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Pica pica",
+      "name_de": "Elster",
+      "beobachtungen": 15226,
+      "haeufigkeit": 0.643,
+      "alarmnutzen": 0.875,
+      "punkte": 1.1,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Turdus merula",
+      "name_de": "Amsel",
+      "beobachtungen": 22240,
+      "haeufigkeit": 0.939,
+      "alarmnutzen": 0.75,
+      "punkte": 1.079,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Cyanistes caeruleus",
+      "name_de": "Blaumeise",
+      "beobachtungen": 18044,
+      "haeufigkeit": 0.762,
+      "alarmnutzen": 0.68,
+      "punkte": 0.947,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Erithacus rubecula",
+      "name_de": "Rotkehlchen",
+      "beobachtungen": 15234,
+      "haeufigkeit": 0.643,
+      "alarmnutzen": 0.68,
+      "punkte": 0.905,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Passer domesticus",
+      "name_de": "Haussperling",
+      "beobachtungen": 10942,
+      "haeufigkeit": 0.462,
+      "alarmnutzen": 0.68,
+      "punkte": 0.842,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "name_de": "Eichelhäher",
+      "beobachtungen": 8355,
+      "haeufigkeit": 0.353,
+      "alarmnutzen": 0.525,
+      "punkte": 0.648,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Columba palumbus",
+      "name_de": "Ringeltaube",
+      "beobachtungen": 23689,
+      "haeufigkeit": 1.0,
+      "alarmnutzen": 0.21,
+      "punkte": 0.56,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "name_de": "Kolkrabe",
+      "beobachtungen": 3054,
+      "haeufigkeit": 0.129,
+      "alarmnutzen": 0.355,
+      "punkte": 0.4,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Parus major",
+      "name_de": "Kohlmeise",
+      "beobachtungen": 23328,
+      "haeufigkeit": 0.985,
+      "alarmnutzen": 0.0,
+      "punkte": 0.345,
+      "haben_wir": true
+    }
+  ]
+}
