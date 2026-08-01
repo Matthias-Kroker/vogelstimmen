@@ -9,6 +9,7 @@ import { useAudioPlayer } from "expo-audio";
 import { voegel, type Anteil, type Fressfeind, type Vogel } from "./daten/voegel";
 import { bildgruppen, vogelBilder, vogelBilderAlle } from "./assets/voegel";
 import Quiz from "./Quiz";
+import Offline from "./Offline";
 import { rufeZuVogel, type Ruf } from "./assets/rufe";
 
 const farben = {
@@ -25,6 +26,7 @@ const farben = {
 export default function App() {
   const [gewaehlt, setGewaehlt] = useState<Vogel | null>(null);
   const [imQuiz, setImQuiz] = useState(false);
+  const [imOffline, setImOffline] = useState(false);
   const [suche, setSuche] = useState("");
 
   const gefiltert = useMemo(() => {
@@ -40,7 +42,9 @@ export default function App() {
   return (
     <SafeAreaView style={stile.flaeche}>
       <StatusBar barStyle="light-content" />
-      {imQuiz ? (
+      {imOffline ? (
+        <Offline zurueck={() => setImOffline(false)} />
+      ) : imQuiz ? (
         <Quiz zurueck={() => setImQuiz(false)} />
       ) : gewaehlt ? (
         <Steckbrief vogel={gewaehlt} zurueck={() => setGewaehlt(null)} />
@@ -51,6 +55,7 @@ export default function App() {
           setSuche={setSuche}
           waehlen={setGewaehlt}
           quizStarten={() => setImQuiz(true)}
+          offlineOeffnen={() => setImOffline(true)}
         />
       )}
     </SafeAreaView>
@@ -58,13 +63,14 @@ export default function App() {
 }
 
 function Liste({
-  liste, suche, setSuche, waehlen, quizStarten,
+  liste, suche, setSuche, waehlen, quizStarten, offlineOeffnen,
 }: {
   liste: Vogel[];
   suche: string;
   setSuche: (s: string) => void;
   waehlen: (v: Vogel) => void;
   quizStarten: () => void;
+  offlineOeffnen: () => void;
 }) {
   return (
     <View style={{ flex: 1 }}>
@@ -73,12 +79,20 @@ function Liste({
         <Text style={stile.untertitel}>
           {liste.length} von {voegel.length} Arten
         </Text>
-        <Pressable
-          onPress={quizStarten}
-          style={({ pressed }) => [stile.quizKnopf, pressed && { opacity: 0.8 }]}
-        >
-          <Text style={stile.quizKnopfText}>Quiz starten</Text>
-        </Pressable>
+        <View style={stile.knopfreihe}>
+          <Pressable
+            onPress={quizStarten}
+            style={({ pressed }) => [stile.quizKnopf, pressed && { opacity: 0.8 }]}
+          >
+            <Text style={stile.quizKnopfText}>Quiz starten</Text>
+          </Pressable>
+          <Pressable
+            onPress={offlineOeffnen}
+            style={({ pressed }) => [stile.offlineKnopf, pressed && { opacity: 0.8 }]}
+          >
+            <Text style={stile.offlineKnopfText}>Offline</Text>
+          </Pressable>
+        </View>
         <TextInput
           style={stile.suchfeld}
           placeholder="Suchen…"
@@ -419,10 +433,16 @@ const stile = StyleSheet.create({
   kopf: { paddingHorizontal: 18, paddingTop: 14, paddingBottom: 10 },
   titel: { color: farben.text, fontSize: 26, fontWeight: "700" },
   untertitel: { color: farben.gedaempft, fontSize: 13, marginTop: 2 },
+  knopfreihe: { flexDirection: "row", gap: 8, marginTop: 12 },
   quizKnopf: {
     backgroundColor: "#0e639c", borderRadius: 8, paddingVertical: 12,
-    alignItems: "center", marginTop: 12,
+    alignItems: "center", flex: 1,
   },
+  offlineKnopf: {
+    backgroundColor: farben.karte, borderRadius: 8, paddingVertical: 12,
+    paddingHorizontal: 16, alignItems: "center",
+  },
+  offlineKnopfText: { color: farben.akzent, fontSize: 15.5, fontWeight: "600" },
   quizKnopfText: { color: "#fff", fontSize: 15.5, fontWeight: "600" },
   suchfeld: {
     backgroundColor: farben.karte, color: farben.text, borderRadius: 8,
