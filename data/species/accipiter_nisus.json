@@ -1,0 +1,168 @@
+{
+  "id": "accipiter_nisus",
+  "domaene": "voegel",
+  "name_de": "Sperber",
+  "name_wissenschaftlich": "Accipiter nisus",
+  "gattung": "Accipiter",
+  "art": "nisus",
+  "wikidata_id": "Q25380",
+  "kurzbeschreibung": "species of bird",
+  "beschreibung": "Der Sperber ist ein Greifvogel und gehört zur Familie der Habichtartigen (Accipitridae). Die Weibchen sind deutlich größer als die Männchen und fast doppelt so schwer. In der Jägersprache werden die Männchen Sprinz genannt.",
+  "quelle_text": {
+    "name": "Wikipedia (de)",
+    "url": "https://de.wikipedia.org/wiki/Sperber_(Art)",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/7/75/Accipiter_nisus_kill.jpg",
+  "quelle_bild": {
+    "name": "Wikimedia Commons",
+    "lizenz": "siehe Dateiseite"
+  },
+  "fressfeinde": [
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "deutsch": "Sperber",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": true
+    }
+  ],
+  "fressfeinde_unbestaetigt": [
+    {
+      "wissenschaftlich": "Martes martes",
+      "deutsch": "Baummarder",
+      "stadium": "beides",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Garrulus glandarius",
+      "deutsch": "Eichelhäher",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "deutsch": "Habicht",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Corvus corax",
+      "deutsch": "Kolkrabe",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Corvus corone",
+      "deutsch": "Rabenkrähe",
+      "stadium": "Nest",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Aquila chrysaetos",
+      "deutsch": "Steinadler",
+      "stadium": "Altvogel",
+      "alarmtyp": "Warnruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Bubo bubo",
+      "deutsch": "Uhu",
+      "stadium": "Altvogel",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Strix aluco",
+      "deutsch": "Waldkauz",
+      "stadium": "Altvogel",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    },
+    {
+      "wissenschaftlich": "Asio otus",
+      "deutsch": "Waldohreule",
+      "stadium": "Altvogel",
+      "alarmtyp": "Hassruf",
+      "bestaetigt": false
+    }
+  ],
+  "alarmtypen": {
+    "Warnruf": {
+      "ausloeser": "Greifvogel im Flug",
+      "klang": "hoher, gleichbleibender dünner Ton (~7 kHz), weich ein- und ausklingend",
+      "warum": "absichtlich schwer zu orten — verrät den Rufer nicht",
+      "reaktion": "Deckung suchen, verstummen",
+      "beispiel_amsel": "langes „ziiiiehhh“"
+    },
+    "Hassruf": {
+      "ausloeser": "sitzender oder bodengebundener Feind, auch Nesträuber",
+      "klang": "breitbandig, hart, abgehackt",
+      "warum": "absichtlich leicht zu orten — ruft Artgenossen zur Verstärkung",
+      "reaktion": "hinfliegen und den Feind bedrängen („Hassen“)",
+      "beispiel_amsel": "„keckern“, Schäckern"
+    }
+  },
+  "quelle_fressfeinde": {
+    "name": "GloBI, gegengeprüft mit Wikipedia (de)",
+    "url": "https://www.globalbioticinteractions.org/",
+    "hinweis": "auf mitteleuropäische Arten gefiltert; als bestätigt gilt, wer im Artikel der Art namentlich vorkommt. 'stadium' unterscheidet Jäger von Altvögeln und Nesträubern -- nur erstere lösen Alarmrufe aus."
+  },
+  "bildgruppen": {
+    "vogel": [
+      {
+        "datei": "accipiter_nisus_vogel0.jpg",
+        "urheber": "YCapelle",
+        "lizenz": "Public domain",
+        "commons": "File:Accipiter nisus 117.jpg"
+      },
+      {
+        "datei": "accipiter_nisus_vogel1.jpg",
+        "urheber": "Хомелка",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Accipiter nisus in Minsk.jpg"
+      },
+      {
+        "datei": "accipiter_nisus_vogel2.jpg",
+        "urheber": "Père Igor",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Accipiter nisus Périgueux (11).jpg"
+      },
+      {
+        "datei": "accipiter_nisus_vogel3.jpg",
+        "urheber": "Père Igor",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Accipiter nisus Périgueux (12).jpg"
+      },
+      {
+        "datei": "accipiter_nisus_vogel4.jpg",
+        "urheber": "Père Igor",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Accipiter nisus Périgueux (14).jpg"
+      },
+      {
+        "datei": "accipiter_nisus_vogel5.jpg",
+        "urheber": "Père Igor",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Accipiter nisus Périgueux (2).jpg"
+      },
+      {
+        "datei": "accipiter_nisus_vogel6.jpg",
+        "urheber": "Père Igor",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Accipiter nisus Périgueux (20).jpg"
+      },
+      {
+        "datei": "accipiter_nisus_vogel7.jpg",
+        "urheber": "Père Igor",
+        "lizenz": "CC BY-SA 3.0",
+        "commons": "File:Accipiter nisus Périgueux (23).jpg"
+      }
+    ]
+  }
+}

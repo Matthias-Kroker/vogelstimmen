@@ -11,6 +11,7 @@
       "beobachtungen": 19140,
       "haeufigkeit": 0.808,
       "alarmnutzen": 0.95,
+      "alarm_beleg": "belegt",
       "punkte": 1.233,
       "haben_wir": true
     },
@@ -20,7 +21,18 @@
       "beobachtungen": 15226,
       "haeufigkeit": 0.643,
       "alarmnutzen": 0.875,
+      "alarm_beleg": "geschätzt",
       "punkte": 1.1,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Parus major",
+      "name_de": "Kohlmeise",
+      "beobachtungen": 23328,
+      "haeufigkeit": 0.985,
+      "alarmnutzen": 0.75,
+      "alarm_beleg": "belegt",
+      "punkte": 1.095,
       "haben_wir": true
     },
     {
@@ -29,6 +41,7 @@
       "beobachtungen": 22240,
       "haeufigkeit": 0.939,
       "alarmnutzen": 0.75,
+      "alarm_beleg": "geschätzt",
       "punkte": 1.079,
       "haben_wir": true
     },
@@ -38,6 +51,7 @@
       "beobachtungen": 18044,
       "haeufigkeit": 0.762,
       "alarmnutzen": 0.68,
+      "alarm_beleg": "geschätzt",
       "punkte": 0.947,
       "haben_wir": true
     },
@@ -47,6 +61,7 @@
       "beobachtungen": 15234,
       "haeufigkeit": 0.643,
       "alarmnutzen": 0.68,
+      "alarm_beleg": "geschätzt",
       "punkte": 0.905,
       "haben_wir": true
     },
@@ -56,6 +71,7 @@
       "beobachtungen": 10942,
       "haeufigkeit": 0.462,
       "alarmnutzen": 0.68,
+      "alarm_beleg": "belegt",
       "punkte": 0.842,
       "haben_wir": true
     },
@@ -65,6 +81,7 @@
       "beobachtungen": 8355,
       "haeufigkeit": 0.353,
       "alarmnutzen": 0.525,
+      "alarm_beleg": "geschätzt",
       "punkte": 0.648,
       "haben_wir": true
     },
@@ -74,7 +91,18 @@
       "beobachtungen": 23689,
       "haeufigkeit": 1.0,
       "alarmnutzen": 0.21,
+      "alarm_beleg": "belegt",
       "punkte": 0.56,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Fringilla coelebs",
+      "name_de": "Buchfink",
+      "beobachtungen": 11483,
+      "haeufigkeit": 0.485,
+      "alarmnutzen": 0.28,
+      "alarm_beleg": "belegt",
+      "punkte": 0.45,
       "haben_wir": true
     },
     {
@@ -83,17 +111,83 @@
       "beobachtungen": 3054,
       "haeufigkeit": 0.129,
       "alarmnutzen": 0.355,
+      "alarm_beleg": "geschätzt",
       "punkte": 0.4,
       "haben_wir": true
     },
     {
-      "wissenschaftlich": "Parus major",
-      "name_de": "Kohlmeise",
-      "beobachtungen": 23328,
-      "haeufigkeit": 0.985,
-      "alarmnutzen": 0.0,
-      "punkte": 0.345,
+      "wissenschaftlich": "Buteo buteo",
+      "name_de": "Mäusebussard",
+      "beobachtungen": 11250,
+      "haeufigkeit": 0.475,
+      "alarmnutzen": 0.15,
+      "alarm_beleg": "-",
+      "punkte": 0.316,
       "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Dendrocopos major",
+      "name_de": "Buntspecht",
+      "beobachtungen": 10851,
+      "haeufigkeit": 0.458,
+      "alarmnutzen": 0.125,
+      "alarm_beleg": "-",
+      "punkte": 0.285,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Phylloscopus collybita",
+      "name_de": "Zilpzalp",
+      "beobachtungen": 7885,
+      "haeufigkeit": 0.333,
+      "alarmnutzen": 0.14,
+      "alarm_beleg": "belegt",
+      "punkte": 0.256,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "name_de": "Turmfalke",
+      "beobachtungen": 9247,
+      "haeufigkeit": 0.39,
+      "alarmnutzen": 0.1,
+      "alarm_beleg": "-",
+      "punkte": 0.237,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Sturnus vulgaris",
+      "name_de": "Star",
+      "beobachtungen": 13028,
+      "haeufigkeit": 0.55,
+      "alarmnutzen": 0.0,
+      "alarm_beleg": "belegt",
+      "punkte": 0.192,
+      "haben_wir": true
+    },
+    {
+      "wissenschaftlich": "Accipiter gentilis",
+      "name_de": "Habicht",
+      "beobachtungen": null,
+      "haeufigkeit": null,
+      "alarmnutzen": 0.225,
+      "alarm_beleg": "-",
+      "punkte": null,
+      "haben_wir": true,
+      "als_ausloeser": true,
+      "loest_alarm_aus_bei": 9
+    },
+    {
+      "wissenschaftlich": "Accipiter nisus",
+      "name_de": "Sperber",
+      "beobachtungen": null,
+      "haeufigkeit": null,
+      "alarmnutzen": 0.175,
+      "alarm_beleg": "-",
+      "punkte": null,
+      "haben_wir": true,
+      "als_ausloeser": true,
+      "loest_alarm_aus_bei": 7
     }
   ]
 }

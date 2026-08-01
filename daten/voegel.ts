@@ -1684,6 +1684,30 @@ export const voegel: Vogel[] = [
     ]
   },
   {
+    "id": "accipiter_nisus",
+    "name_de": "Sperber",
+    "name_wissenschaftlich": "Accipiter nisus",
+    "kurzbeschreibung": "species of bird",
+    "beschreibung": "Der Sperber ist ein Greifvogel und gehört zur Familie der Habichtartigen (Accipitridae). Die Weibchen sind deutlich größer als die Männchen und fast doppelt so schwer. In der Jägersprache werden die Männchen Sprinz genannt.",
+    "wikidata_id": "Q25380",
+    "quelle_text": {
+      "name": "Wikipedia (de)",
+      "url": "https://de.wikipedia.org/wiki/Sperber_(Art)",
+      "lizenz": "CC BY-SA 4.0"
+    },
+    "merkmale": {},
+    "abschnitte": {},
+    "fressfeinde": [
+      {
+        "deutsch": "Sperber",
+        "wissenschaftlich": "Accipiter nisus",
+        "stadium": "Altvogel",
+        "alarmtyp": "Warnruf",
+        "bestaetigt": true
+      }
+    ]
+  },
+  {
     "id": "sturnus_vulgaris",
     "name_de": "Star",
     "name_wissenschaftlich": "Sturnus vulgaris",

@@ -12,7 +12,8 @@ import Quiz from "./Quiz";
 import Offline from "./Offline";
 import { rufeZuVogel, type Ruf } from "./assets/rufe";
 import {
-  ALARMPROFILE, AUSLOESER_HINWEIS, FUENF_STIMMEN, QUELLE, type Stimme,
+  ALARMPROFILE, AUSLOESER_HINWEIS, FUENF_STIMMEN, QUELLE, SIGNALBAU_INFO,
+  type Stimme,
 } from "./daten/vogelsprache";
 
 const farben = {
@@ -391,24 +392,38 @@ function Vogelsprache({ vogel }: { vogel: Vogel }) {
             {profil.leitart && (
               <Text style={stile.marke}>Alarm-Leitart</Text>
             )}
-            <Text style={stile.markeSchlicht}>
-              {profil.art === "mechanisch" ? "mechanisches Signal"
-                : profil.art === "beides" ? "vokal + mechanisch" : "vokal"}
-            </Text>
-            <Text style={stile.markeSchlicht}>
-              Auffälligkeit {profil.auffaelligkeit}/5
-            </Text>
-            <Text style={profil.beleg === "literatur"
-              ? stile.markeBeleg : stile.markeSchaetzung}>
-              {profil.beleg === "literatur" ? "belegt" : "Einschätzung"}
-            </Text>
             {profil.besonders_in && (
               <Text style={stile.markeSchlicht}>
                 v.a. {profil.besonders_in}
               </Text>
             )}
           </View>
-          <Text style={stile.spracheText}>{profil.hinweis}</Text>
+
+          {profil.merksatz && (
+            <Text style={stile.merksatz}>{profil.merksatz}</Text>
+          )}
+
+          {profil.signale.map((s, i) => (
+            <View key={i} style={stile.signal}>
+              <View style={stile.spracheZeile}>
+                <Text style={stile.signalName}>{s.name}</Text>
+                <Text style={stile.markeSchlicht}>
+                  {SIGNALBAU_INFO[s.bau].titel}
+                </Text>
+                <Text style={s.beleg === "literatur"
+                  ? stile.markeBeleg : stile.markeSchaetzung}>
+                  {s.beleg === "literatur" ? "belegt" : "Einschätzung"}
+                </Text>
+                <Text style={stile.markeSchlicht}>
+                  {s.auffaelligkeit
+                    ? `hörbar ${s.auffaelligkeit}/5`
+                    : "Hörbarkeit unbekannt"}
+                </Text>
+              </View>
+              <Text style={stile.spracheText}>{s.beschreibung}</Text>
+              {s.quelle && <Text style={stile.signalQuelle}>{s.quelle}</Text>}
+            </View>
+          ))}
         </>
       )}
 
@@ -600,6 +615,21 @@ const stile = StyleSheet.create({
     paddingVertical: 3, paddingHorizontal: 8, borderRadius: 5, overflow: "hidden",
   },
   spracheText: { color: farben.text, fontSize: 13.5, lineHeight: 19 },
+  merksatz: {
+    color: "#d4a373", fontSize: 13, lineHeight: 19, fontStyle: "italic",
+    marginBottom: 10,
+  },
+  signal: {
+    marginBottom: 10, paddingLeft: 9,
+    borderLeftWidth: 2, borderLeftColor: "#3a3a3a",
+  },
+  signalName: {
+    color: farben.text, fontSize: 13, fontWeight: "700",
+    paddingVertical: 3, paddingRight: 2,
+  },
+  signalQuelle: {
+    color: "#6e6e6e", fontSize: 10.5, lineHeight: 15, marginTop: 4,
+  },
   markeBeleg: {
     backgroundColor: "#2d4a3e", color: "#9fd6bc", fontSize: 11.5,
     paddingVertical: 3, paddingHorizontal: 8, borderRadius: 5, overflow: "hidden",

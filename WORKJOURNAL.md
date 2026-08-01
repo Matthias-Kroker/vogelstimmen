@@ -59,18 +59,40 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
   Claude. Deshalb trägt jeder Eintrag in `daten/vogelsprache.ts` ein Feld
   `beleg` (`literatur` oder `einschaetzung`), das auch in der Oberfläche
   sichtbar ist.
-- **Belegt** sind: Jon Youngs Fünf Stimmen, das Flügelklatschen der Tauben
-  (science.org, PMC2821341), das Krähen-Repertoire (McGowan, Cornell), die
-  Sperlingsrufe (birdsoftheworld.org).
-- **Geschätzt** sind: welche Arten Leitarten sind, und die Auffälligkeit
-  1–5. Nirgends gemessen.
-- **Kohlmeise, Star, Buchfink und Zilpzalp haben gar keine
-  Alarm-Einschätzung.** Die Kohlmeise ist die zweithäufigste Art im
-  Rhein-Main-Gebiet und mit Sicherheit alarmrelevant — sie fällt beim
-  Lernziel „Vogelsprache" trotzdem hinten runter. Lücke, kein Nullwert.
+- **Belegt** sind inzwischen 7 von 13 Arten: Buchfink und Kohlmeise
+  (Marler 1955/1956; Sci. Rep. 9, 2019), Zilpzalp (Cramp/BWP), Star
+  (Devereux et al. 2008 — allerdings nur das Rufverhalten, nicht die
+  Lautstärke), dazu wie bisher Haussperling, Rabenkrähe und Ringeltaube.
+  Grundlage bleibt Jon Youngs Fünf-Stimmen-Schema.
+- **Geschätzt** sind noch: Amsel, Rotkehlchen, Blaumeise, Elster,
+  Kolkrabe, Eichelhäher — also ausgerechnet die sechs, die als
+  „Einstiegsarten für die Alarm-Praxis" gelten. Der Rang, den sie in der
+  Regionsliste bekommen, beruht auf nichts als meiner Einordnung.
+- **Die Blaumeise ist der unangenehmste Fall:** Für die Kohlmeise ist der
+  Hassruf jetzt belegt, für ihre nächste Verwandte nicht. Es ist
+  verlockend, das eine aufs andere zu übertragen — im Eintrag steht
+  ausdrücklich, dass das *nicht* belegt ist.
+- **Der Star hat bewusst KEINE Hörbarkeitszahl.** Belegt ist nur, dass er
+  bei schlechter Sicht häufiger ruft. Wie auffällig der Ruf klingt, war
+  nicht zu finden — das Feld bleibt leer statt geraten.
 - **Das Dokument selbst enthält den Fehler `type:alarm`** in seinen
   xeno-canto-Beispielen — denselben, der uns anfangs 14 von 20 falsche
   Clips beschert hat.
+
+### Werkzeuge, die stillschweigend Daten zerstören
+- **`bilder_commons.py` ohne Artnamen überschreibt ALLE Bildmanifeste.**
+  Am 2026-08-01 versehentlich passiert: ein Lauf ohne Filter hat 582 Zeilen
+  Nest- und Jungvogelbilder aus 18 Steckbriefen entfernt, weil Commons in
+  dem Moment die passenden Unterkategorien nicht auswarf. Das Skript meldete
+  dabei „Fertig" — der Verlust fiel nur durch `git status` auf.
+  Wiederhergestellt per `git checkout`; seitdem verlangt der Gesamtlauf
+  ausdrücklich `--alle`. **Vor jedem Datenlauf committen**: die Skripte
+  schreiben ohne Rückfrage und ohne Sicherung.
+- Ungeklärt bleibt, **warum** Commons diesmal keine Nest-Unterkategorien
+  lieferte, obwohl die Kategorien selbst gefunden wurden (Kohlmeise: 137
+  Dateien, 3 Unterkategorien, davon 0 als Nest erkannt). Entweder eine
+  Regression in `gruppe_von()` oder eine Änderung bei Commons. Solange das
+  offen ist, ist ein Gesamtlauf nicht sicher.
 
 ### App
 - **Das Ähnlichkeitsmaß im Quiz ist ökologisch, nicht optisch.** Amsel und
@@ -274,8 +296,60 @@ dichten Wald weniger.
 
 **Rollen aus unseren eigenen Daten abgeleitet:** 8 der 20 Arten lösen
 selbst Alarm aus. Habicht bei 9 Arten (Warnruf), Rabenkrähe bei 8
-(Hassruf). Der **Sperber** steht auf Platz 6 der Auslöser — und fehlt in
-unseren 20. Nach Häufigkeit wäre er nie aufgetaucht.
+(Hassruf). Der **Sperber** stand auf Platz 6 der Auslöser und fehlte —
+**seit 2026-08-01 ist er die 21. Art.** Nach Häufigkeit wäre er nie
+aufgetaucht: GBIF führt ihn im Rhein-Main-Gebiet nicht einmal in den
+Top 60.
+
+### Ein Signal, zwei Bauformen — und warum eine Zahl je Art falsch war
+
+Die gezielte Suche nach Belegen hat einen Konstruktionsfehler im eigenen
+Datenmodell aufgedeckt. Der erste Entwurf gab jeder Art **eine**
+„Auffälligkeit 1–5". Genau das ist nach Marler (1955, *Nature* 176: 6–8)
+nicht haltbar: Viele Arten haben **zwei** Alarmrufe mit gegensätzlichem
+Bau, und der Gegensatz ist der Sinn der Sache.
+
+| | Luftalarm („siiih") | Hassruf (mobbing) |
+|---|---|---|
+| Bau | hoher Dauerton 6–9 kHz, schmalbandig, weich ein-/ausgeblendet | abrupt, tiefer, breitbandig |
+| Absicht | **nicht** ortbar sein — der Habicht soll den Rufer nicht finden | ortbar sein — andere sollen zusammenkommen |
+| Anlass | Greifvogel im Anflug | sitzender Feind, Katze, Eule |
+| Reaktion | Deckung suchen | hinfliegen und bedrängen |
+| Für uns | am Rand des Hörbaren | **das, was man lernen kann** |
+
+Ein Mittelwert aus beidem beschreibt keinen der beiden Rufe. Deshalb hängt
+die Hörbarkeit jetzt am **Signal**, nicht an der Art — und in der
+Regionsliste zählt das **Maximum**, nicht das Mittel.
+
+Belegt gefunden:
+
+- **Buchfink** — die Lehrbuchart schlechthin: An ihr hat Marler den
+  Unterschied überhaupt erst beschrieben (Nature 1955, ausführlich *Ibis*
+  98, 1956). Sein „pink" ist ein kurzer, klarer Ruf aus etwa drei
+  gleichzeitigen, steil ansteigenden Tönen, beharrlich wiederholt und gut
+  zu orten. Sein „siiih" ist das genaue Gegenteil.
+- **Kohlmeise** — das Zetern ist breitbandig und dicht; ein Ruf dauert
+  grob eine halbe Sekunde und enthält sechs bis sieben Elemente. Und er
+  sagt mit, **wer** da sitzt: gegenüber dem Sperber messbar länger
+  (0,53 s) und elementreicher als gegenüber dem Waldkauz (0,42 s)
+  — *Scientific Reports* 9 (2019). Das verbindet die Meise direkt mit dem
+  neu aufgenommenen Sperber.
+- **Zilpzalp** — hat **gar keinen** eigenen Alarmruf. Sein „huit" ist
+  ganzjährig Kontaktruf; Erregung zeigt sich nur an schnellerem Vortrag,
+  bei Störung an einem schärferen „fiet" (Cramp, BWP). Damit lehrt er
+  etwas, das sonst keine unserer Arten so klar zeigt: **Alarm kann im
+  Tempo stecken statt im Klang.** Dafür gibt es jetzt eine eigene
+  Signalbauform.
+- **Star** — belegt ist nur, *ob* er ruft, nicht wie laut: Im hohen Gras,
+  wo er wenig sieht, ruft er deutlich häufiger als auf kurz gefressenem
+  Gras, wo er stumm und steil abfliegt (Devereux et al., *Ibis* 150
+  Suppl. 1, 2008: 191–198). Rufen kostet den Rufer also etwas. Die
+  Hörbarkeitszahl bleibt leer.
+
+Was das für die Praxis heißt: **Wer draußen Alarm lesen will, lernt
+Hassrufe.** Die Luftalarme sind so gebaut, dass sie sich der Ortung
+entziehen — dass wir bei 131 Phrasen keinen einzigen Siih gefunden haben,
+passt ins Bild und ist womöglich weniger ein Messfehler als erwartet.
 
 ## Standortbezogene Artenlisten
 
@@ -438,15 +512,46 @@ je Art bei vollem Umfang, also bis 77 Arten bei knappem Umfang).
 **Vogelsprache eingeführt** — siehe eigener Abschnitt oben. Dabei fiel auf,
 dass ich beinahe mich selbst als Quelle zitiert hätte.
 
+### Checkpoint 2026-08-01 — gezielte Belegsuche
+
+Vier Arten gesucht, vier belegt: **Buchfink** und **Kohlmeise** über
+Marler (1955/1956) und *Scientific Reports* 9 (2019), **Zilpzalp** über
+Cramp/BWP, **Star** über Devereux et al. (2008). Beim Star nur teilweise —
+das Rufverhalten ist belegt, die Lautstärke nicht, und die Zahl bleibt
+deshalb leer.
+
+**Der eigentliche Ertrag war kein Wert, sondern ein Strukturfehler.** Eine
+einzige „Auffälligkeit" je Art mittelt genau die Unterscheidung weg, um die
+es beim Alarm-Lernen geht (Luftalarm vs. Hassruf, siehe Abschnitt oben).
+`daten/vogelsprache.ts` hat jetzt eine Signalliste je Art; die Hörbarkeit
+ist optional, damit eine Lücke als Lücke sichtbar bleibt statt als Null.
+
+**Sperber ist die 21. Art.** Dabei kam heraus, dass `region_bauen.py` im
+Kopfkommentar versprach, Auslöser beim Ziel „Vogelsprache" mitzunehmen —
+und es nicht tat. Sperber und Habicht stehen so weit unten, dass sie gar
+nicht erst in die GBIF-Auswertung geraten. Jetzt werden sie ausdrücklich
+nachgetragen und als solche gekennzeichnet, statt über Punkte
+hereinzukommen.
+
+**Ein Fehlgriff mit Datenverlust:** `bilder_commons.py` ohne Artnamen
+gestartet (es hat kein `--help`, der Schalter wurde wegfiltert) — der
+Gesamtlauf entfernte 582 Zeilen Nest- und Jungvogelbilder aus 18
+Steckbriefen und meldete „Fertig". Über `git checkout` wiederhergestellt,
+Sperber danach einzeln nachgeholt. Das Skript verlangt für den Gesamtlauf
+jetzt `--alle`. Siehe den neuen Warnabschnitt ganz oben.
+
 ---
 
 ## Als Nächstes vorgemerkt
 
-1. **Belege für Alarm-Auffälligkeit gezielt suchen** — vor allem Kohlmeise,
-   Star, Buchfink, Zilpzalp. Vorbild ist der Sperling, für den
-   birdsoftheworld.org eine brauchbare Beschreibung liefert. Ziel: die
-   Schätzungen durch Belege ersetzen, nicht durch bessere Schätzungen.
-2. **Sperber ergänzen** — Platz 6 der Alarm-Auslöser, fehlt bisher.
+1. **Belege für die restlichen sechs Arten** — Amsel, Rotkehlchen,
+   Blaumeise, Elster, Kolkrabe, Eichelhäher. Ausgerechnet die
+   „Einstiegsarten" sind noch reine Einschätzung. Für Amsel und Blaumeise
+   dürfte am ehesten etwas zu finden sein; die drei Rabenvögel sind
+   schwierig, weil ihr Repertoire nicht ins Fünf-Stimmen-Schema passt.
+2. **Warum lieferte Commons keine Nest-Unterkategorien?** Ungeklärt, und
+   solange das offen ist, ist `--alle` nicht sicher.
 3. **Artenzahl erweitern**, sobald die Alarm-Bewertung steht. Das
    Offline-Budget trägt bei knappem Umfang bis zu 77 Arten.
 4. **Regionsauswahl in die App** — bisher nur als Skript.
+5. **90 unsichere Phrasen** warten weiter auf ein Urteil per Gehör.

@@ -46,6 +46,12 @@ SPECIES = [
     ("Turmfalke", "Falco", "tinnunculus"),
     ("Mäusebussard", "Buteo", "buteo"),
     ("Habicht", "Accipiter", "gentilis"),
+    # Ergaenzt 2026-08: steht in den Fressfeind-Listen unserer Arten an
+    # sechster Stelle, fehlte aber als eigene Art. Zudem der Praedator,
+    # gegen den die Kohlmeise nachweislich laenger und elementreicher
+    # zetert als gegen den Waldkauz (Sci. Rep. 9, 2019) -- also genau die
+    # Art, die man beim Alarm-Lernen kennen muss.
+    ("Sperber", "Accipiter", "nisus"),
 ]
 
 # GloBI liefert weltweite Datensaetze und enthaelt Unsinn fuer unseren Raum

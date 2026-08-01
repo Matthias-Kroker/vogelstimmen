@@ -55,6 +55,11 @@ LERNZIELE = {
                         "Auslöser kommen mit, auch wenn sie selten sind.",
         "gewicht_haeufigkeit": 0.35,
         "gewicht_alarm": 1.0,
+        # Ohne das hier bleibt der Satz oben ein leeres Versprechen: Sperber
+        # und Habicht stehen in den Beobachtungszahlen so weit unten, dass
+        # sie nicht einmal in die GBIF-Auswertung geraten -- obwohl sie
+        # genau die Arten sind, wegen derer die anderen ueberhaupt rufen.
+        "ausloeser_garantiert": True,
     },
     "gemischt": {
         "titel": "Gemischt",
@@ -126,17 +131,34 @@ def eigene_arten():
 
 # Aus daten/vogelsprache.ts gespiegelt, damit das Skript ohne TypeScript
 # auskommt. Bei Aenderungen dort mitziehen.
-#   (Leitart, Auffaelligkeit 1-5)
+#
+#   (Leitart, hoechste Hoerbarkeit 1-5, belegt?)
+#
+# Die Hoerbarkeit ist bewusst das MAXIMUM ueber alle Signale einer Art, nicht
+# ihr Mittel. Grund: Arten wie Buchfink und Kohlmeise haben zwei Alarmrufe
+# mit gegensaetzlichem Bau -- einen Hassruf, der geortet werden SOLL, und
+# einen Luftalarm, der absichtlich unortbar ist (Marler 1955). Mittelt man
+# beides, kommt eine Zahl heraus, die keinem der beiden Rufe entspricht.
+# Fuers Lernen zaehlt der Ruf, den man tatsaechlich bemerken kann.
+#
+# 0 als Hoerbarkeit heisst "nicht belegt und nicht geschaetzt" -- etwa beim
+# Star, wo nur das Rufverhalten belegt ist, nicht die Auffaelligkeit.
 ALARMPROFILE = {
-    "Turdus merula": (True, 5),
-    "Erithacus rubecula": (True, 4),
-    "Cyanistes caeruleus": (True, 4),
-    "Pica pica": (True, 5),
-    "Passer domesticus": (True, 4),
-    "Corvus corone": (True, 5),
-    "Corvus corax": (False, 4),
-    "Columba palumbus": (False, 3),      # mechanisch, Fluegelklatschen
-    "Garrulus glandarius": (False, 5),
+    # belegt
+    "Fringilla coelebs": (False, 4, True),    # pink-Ruf 4, Luftalarm 1
+    "Parus major": (True, 5, True),           # Zetern 5, Luftalarm 1
+    "Phylloscopus collybita": (False, 2, True),  # nur Tempo, kein eigener Ruf
+    "Sturnus vulgaris": (False, 0, True),     # Rufverhalten belegt, Lautstaerke nicht
+    "Passer domesticus": (True, 4, True),
+    "Corvus corone": (True, 5, True),
+    "Columba palumbus": (False, 3, True),     # mechanisch, Fluegelklatschen
+    # Einschaetzung
+    "Turdus merula": (True, 5, False),
+    "Erithacus rubecula": (True, 4, False),
+    "Cyanistes caeruleus": (True, 4, False),
+    "Pica pica": (True, 5, False),
+    "Corvus corax": (False, 4, False),
+    "Garrulus glandarius": (False, 5, False),
 }
 
 
@@ -148,16 +170,25 @@ def alarmnutzen(wissenschaftlich, daten):
     Die Ringeltaube bekam 0,00, obwohl ihr Fluegelklatschen ein belegtes
     Alarmsignal ist. Deshalb geht jetzt auch die Auffaelligkeit ein.
     """
-    leitart, auffaelligkeit = ALARMPROFILE.get(wissenschaftlich, (False, 0))
+    leitart, hoerbarkeit, _belegt = ALARMPROFILE.get(
+        wissenschaftlich, (False, 0, False))
     punkte = 0.0
     if leitart:
         punkte += 0.4
-    # Auffaelligkeit 1-5 -> bis 0,35 Punkte
-    punkte += (auffaelligkeit / 5) * 0.35
+    # Hoerbarkeit 1-5 -> bis 0,35 Punkte
+    punkte += (hoerbarkeit / 5) * 0.35
     if daten:
         # bei bis zu 10 Arten Ausloeser -> bis 0,25 Punkte
         punkte += min(daten.get("_ausloeser_bei", 0) / 10, 1.0) * 0.25
     return min(punkte, 1.0)
+
+
+def belegstand(wissenschaftlich):
+    """'belegt', 'geschaetzt' oder '-' -- damit die Liste ehrlich bleibt."""
+    eintrag = ALARMPROFILE.get(wissenschaftlich)
+    if not eintrag:
+        return "-"
+    return "belegt" if eintrag[2] else "geschätzt"
 
 
 def main():
@@ -205,20 +236,56 @@ def main():
             "beobachtungen": anzahl,
             "haeufigkeit": round(h, 3),
             "alarmnutzen": round(al, 3),
+            "alarm_beleg": belegstand(wissenschaftlich),
             "punkte": round(punkte, 3),
             "haben_wir": bool(d),
         })
     bewertet.sort(key=lambda x: -x["punkte"])
 
-    print(f"{'#':>3} {'Art':28s} {'Beob.':>8s} {'Häuf':>5s} {'Alarm':>6s} "
-          f"{'Punkte':>6s}  Daten")
-    print("-" * 74)
+    # Auslöser nachtragen. Sie sind nicht das, was man hoert, sondern der
+    # Grund, warum man etwas hoert -- wer Alarm lesen will, muss sie kennen,
+    # auch wenn GBIF sie kaum meldet.
+    nachgetragen = []
+    if ziel.get("ausloeser_garantiert"):
+        drin = {e["wissenschaftlich"] for e in bewertet[:args.anzahl]}
+        for wiss, d in sorted(arten.items(),
+                              key=lambda kv: -kv[1].get("_ausloeser_bei", 0)):
+            if wiss in drin or d.get("_ausloeser_bei", 0) < 3:
+                continue
+            beob = dict(liste).get(wiss, 0)
+            nachgetragen.append({
+                "wissenschaftlich": wiss,
+                "name_de": d["name_de"],
+                # 0 heisst hier "nicht in den GBIF-Top-60 aufgetaucht",
+                # nicht "nie beobachtet" -- deshalb None statt einer Null.
+                "beobachtungen": beob or None,
+                "haeufigkeit": round(beob / hoechste, 3) if beob else None,
+                "alarmnutzen": round(alarmnutzen(wiss, d), 3),
+                "alarm_beleg": belegstand(wiss),
+                "punkte": None,          # nicht ueber Punkte hereingekommen
+                "haben_wir": True,
+                "als_ausloeser": True,
+                "loest_alarm_aus_bei": d.get("_ausloeser_bei", 0),
+            })
+
+    print(f"{'#':>3} {'Art':26s} {'Beob.':>8s} {'Häuf':>5s} {'Alarm':>6s} "
+          f"{'Punkte':>6s}  {'Beleg':9s} Daten")
+    print("-" * 84)
     for i, e in enumerate(bewertet[:args.anzahl], 1):
         name = e["name_de"] or e["wissenschaftlich"]
         marke = "ja" if e["haben_wir"] else "FEHLT"
-        print(f"{i:3d} {name[:28]:28s} {e['beobachtungen']:8,} "
+        print(f"{i:3d} {name[:26]:26s} {e['beobachtungen']:8,} "
               f"{e['haeufigkeit']:5.2f} {e['alarmnutzen']:6.2f} "
-              f"{e['punkte']:6.2f}  {marke}")
+              f"{e['punkte']:6.2f}  {e['alarm_beleg']:9s} {marke}")
+
+    if nachgetragen:
+        print("\nAls Auslöser nachgetragen — nicht über die Rangfolge, "
+              "sondern weil man sie kennen muss:")
+        for e in nachgetragen:
+            beob = f"{e['beobachtungen']:,} Beob." if e["beobachtungen"] \
+                else "in den GBIF-Top-60 nicht enthalten"
+            print(f"  {e['name_de']:26s} {beob:32s}"
+                  f" löst Alarm aus bei {e['loest_alarm_aus_bei']} Arten")
 
     fehlen = [e for e in bewertet[:args.anzahl] if not e["haben_wir"]]
     if fehlen:
@@ -238,7 +305,7 @@ def main():
         "beobachtungen_gesamt": gesamt,
         "hinweis": "haeufigkeit ist gemessen (GBIF), alarmnutzen teils "
                    "geschaetzt (siehe daten/vogelsprache.ts)",
-        "arten": bewertet[:args.anzahl],
+        "arten": bewertet[:args.anzahl] + nachgetragen,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n-> {ziel_datei}")
 

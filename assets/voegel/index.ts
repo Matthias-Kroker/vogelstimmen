@@ -35,6 +35,18 @@ export const bildgruppen: Record<string, Bildgruppen> = {
       { quelle: require("./accipiter_gentilis_jung1.jpg"), urheber: "unbekannt", lizenz: "CC BY-SA 3.0" },
     ],
   },
+  "accipiter_nisus": {
+    vogel: [
+      { quelle: require("./accipiter_nisus_vogel0.jpg"), urheber: "YCapelle", lizenz: "Public domain" },
+      { quelle: require("./accipiter_nisus_vogel1.jpg"), urheber: "Хомелка", lizenz: "CC BY-SA 3.0" },
+      { quelle: require("./accipiter_nisus_vogel2.jpg"), urheber: "Père Igor", lizenz: "CC BY-SA 3.0" },
+      { quelle: require("./accipiter_nisus_vogel3.jpg"), urheber: "Père Igor", lizenz: "CC BY-SA 3.0" },
+      { quelle: require("./accipiter_nisus_vogel4.jpg"), urheber: "Père Igor", lizenz: "CC BY-SA 3.0" },
+      { quelle: require("./accipiter_nisus_vogel5.jpg"), urheber: "Père Igor", lizenz: "CC BY-SA 3.0" },
+      { quelle: require("./accipiter_nisus_vogel6.jpg"), urheber: "Père Igor", lizenz: "CC BY-SA 3.0" },
+      { quelle: require("./accipiter_nisus_vogel7.jpg"), urheber: "Père Igor", lizenz: "CC BY-SA 3.0" },
+    ],
+  },
   "buteo_buteo": {
     vogel: [
       { quelle: require("./buteo_buteo_vogel0.jpg"), urheber: "Hans Hillewaert", lizenz: "CC BY-SA 4.0" },

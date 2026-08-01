@@ -238,6 +238,21 @@ def main():
     argumente = [a for a in sys.argv[1:] if not a.startswith("--")]
     filter_ = argumente[0].lower() if argumente else None
 
+    # Schutz vor einem teuren Fehlgriff (2026-08 passiert): ohne Artfilter
+    # laeuft das Skript ueber ALLE Arten und schreibt jedes bildgruppen-Feld
+    # neu. Liefert Commons dabei fuer eine Art gerade keine Nest- oder
+    # Jungvogel-Unterkategorie, verschwinden vorhandene gute Eintraege
+    # stillschweigend -- beim letzten Mal 582 Zeilen auf einen Schlag, und
+    # zwar unbemerkt, weil das Skript "fertig" meldet. Der Gesamtlauf muss
+    # deshalb ausdruecklich verlangt werden.
+    if not filter_ and "--alle" not in sys.argv[1:]:
+        print("Kein Artname angegeben.\n"
+              "  Eine Art:      bilder_commons.py Sperber\n"
+              "  Wirklich alle: bilder_commons.py --alle\n"
+              "Der Gesamtlauf ueberschreibt ALLE bildgruppen-Eintraege und "
+              "kann Nest-/Jungvogelbilder verlieren. Vorher committen.")
+        sys.exit(1)
+
     BILD_DIR.mkdir(parents=True, exist_ok=True)
     summe = {"vogel": 0, "nest": 0, "jung": 0}
 
