@@ -58,3 +58,6 @@ dist/
 
 __pycache__/
 *.pyc
+
+# Persoenliches Dokument -- gehoert nicht ins oeffentliche Repo
+Jagd-und-Tracking-Gesamtdokument.md

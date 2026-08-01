@@ -11,6 +11,9 @@ import { bildgruppen, vogelBilder, vogelBilderAlle } from "./assets/voegel";
 import Quiz from "./Quiz";
 import Offline from "./Offline";
 import { rufeZuVogel, type Ruf } from "./assets/rufe";
+import {
+  ALARMPROFILE, AUSLOESER_HINWEIS, FUENF_STIMMEN, QUELLE, type Stimme,
+} from "./daten/vogelsprache";
 
 const farben = {
   hintergrund: "#161616",
@@ -153,6 +156,8 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
         <Text style={stile.lateinischGross}>{vogel.name_wissenschaftlich}</Text>
 
         <Rufe vogel={vogel} />
+
+        <Vogelsprache vogel={vogel} />
 
         <Merkmale vogel={vogel} />
 
@@ -360,6 +365,63 @@ function Abschnitte({ vogel }: { vogel: Vogel }) {
   );
 }
 
+/** Wie oft löst diese Art bei den anderen Arten Alarm aus? */
+function ausloeserZaehlen(vogel: Vogel): { anzahl: number; typ: string } {
+  let anzahl = 0;
+  const typen = new Set<string>();
+  for (const v of voegel) {
+    const treffer = v.fressfeinde.find((f) => f.deutsch === vogel.name_de);
+    if (treffer) { anzahl += 1; typen.add(treffer.alarmtyp); }
+  }
+  return { anzahl, typ: [...typen].join(" / ") };
+}
+
+function Vogelsprache({ vogel }: { vogel: Vogel }) {
+  const profil = ALARMPROFILE[vogel.id];
+  const ausloeser = ausloeserZaehlen(vogel);
+  if (!profil && ausloeser.anzahl === 0) return null;
+
+  return (
+    <View style={stile.sprache}>
+      <Text style={stile.spracheTitel}>Vogelsprache</Text>
+
+      {profil && (
+        <>
+          <View style={stile.spracheZeile}>
+            {profil.leitart && (
+              <Text style={stile.marke}>Alarm-Leitart</Text>
+            )}
+            <Text style={stile.markeSchlicht}>
+              {profil.art === "mechanisch" ? "mechanisches Signal"
+                : profil.art === "beides" ? "vokal + mechanisch" : "vokal"}
+            </Text>
+            <Text style={stile.markeSchlicht}>
+              Auffälligkeit {profil.auffaelligkeit}/5
+            </Text>
+            <Text style={profil.beleg === "literatur"
+              ? stile.markeBeleg : stile.markeSchaetzung}>
+              {profil.beleg === "literatur" ? "belegt" : "Einschätzung"}
+            </Text>
+            {profil.besonders_in && (
+              <Text style={stile.markeSchlicht}>
+                v.a. {profil.besonders_in}
+              </Text>
+            )}
+          </View>
+          <Text style={stile.spracheText}>{profil.hinweis}</Text>
+        </>
+      )}
+
+      {ausloeser.anzahl > 0 && (
+        <Text style={stile.ausloeser}>
+          Löst bei {ausloeser.anzahl} unserer Arten Alarm aus ({ausloeser.typ}).
+          {" "}{AUSLOESER_HINWEIS}
+        </Text>
+      )}
+    </View>
+  );
+}
+
 function Merkmale({ vogel }: { vogel: Vogel }) {
   const m = vogel.merkmale || {};
   const zeilen: [string, string][] = [];
@@ -518,6 +580,37 @@ const stile = StyleSheet.create({
   abschnittTitel: { color: farben.akzent, fontSize: 15, fontWeight: "600" },
   abschnittText: {
     color: farben.text, fontSize: 14, lineHeight: 21, marginTop: 8,
+  },
+
+  sprache: {
+    backgroundColor: farben.karte, borderRadius: 10, padding: 13,
+    marginBottom: 12, borderLeftWidth: 3, borderLeftColor: "#b08968",
+  },
+  spracheTitel: {
+    color: "#d4a373", fontSize: 15, fontWeight: "700", marginBottom: 8,
+  },
+  spracheZeile: { flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 7 },
+  marke: {
+    backgroundColor: "#8a5a2b", color: "#fff", fontSize: 11.5,
+    paddingVertical: 3, paddingHorizontal: 8, borderRadius: 5,
+    fontWeight: "700", overflow: "hidden",
+  },
+  markeSchlicht: {
+    backgroundColor: farben.karteHell, color: farben.gedaempft, fontSize: 11.5,
+    paddingVertical: 3, paddingHorizontal: 8, borderRadius: 5, overflow: "hidden",
+  },
+  spracheText: { color: farben.text, fontSize: 13.5, lineHeight: 19 },
+  markeBeleg: {
+    backgroundColor: "#2d4a3e", color: "#9fd6bc", fontSize: 11.5,
+    paddingVertical: 3, paddingHorizontal: 8, borderRadius: 5, overflow: "hidden",
+  },
+  markeSchaetzung: {
+    backgroundColor: "#4a3a2d", color: "#d6b89f", fontSize: 11.5,
+    paddingVertical: 3, paddingHorizontal: 8, borderRadius: 5, overflow: "hidden",
+  },
+  ausloeser: {
+    color: farben.gedaempft, fontSize: 12.5, lineHeight: 18, marginTop: 8,
+    borderTopWidth: 1, borderTopColor: "#333", paddingTop: 8,
   },
 
   merkmale: {
