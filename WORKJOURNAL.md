@@ -36,6 +36,16 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
   Sehr breitbandige Phrasen (über 5 kHz) sind fast immer Störgeräusch.
 - **Die Schwellwerte in `analyse_alarmtyp.py` sind geraten**, nicht an
   gehört bestätigten Beispielen geeicht. Im Code als unkalibriert markiert.
+- **Unterhalb 1,2 kHz singt kein heimischer Singvogel** — was die
+  Phrasenerkennung dort findet, ist Wind, Schritte oder Kleidung am
+  Mikrofon. Das hat am 2026-08-02 ein ganzes Messergebnis gekippt (siehe
+  Checkpoint). `youngs_kriterium.py` filtert jetzt, `analyse_alarmtyp.py`
+  und die Phrasenbildung **noch nicht** — dort steckt derselbe Fehler
+  vermutlich weiter drin.
+- **Alarmaufnahmen sind systematisch verrauschter als Gesangsaufnahmen.**
+  Sie entstehen hastig und aus der Hand, Gesang oft vom Stativ. Jeder
+  Vergleich Alarm gegen Gesang muss das ausschließen, sonst misst man die
+  Aufnahmesituation.
 
 ### Daten
 - **AVONET und EltonTraits sind grobe Kategorien für 11.000 Arten.**
@@ -692,6 +702,44 @@ hier unabhängig, was in `vogelsprache.ts` steht.
 Ebenfalls neu greifbar: 3 Aufnahmen wurden **mit Klangattrappe** gelockt.
 Deren Reaktion ist provoziert und als Alarmbeispiel wertlos — bisher war
 das nicht erkennbar.
+
+### Checkpoint 2026-08-02 (4) — Youngs Kriterium gemessen und wieder verworfen
+
+Gedacht war: Bei echtem Alarm reagieren Nachbarn, auch anderer Arten. Also
+müssten Alarmaufnahmen mehr Silben enthalten, die nicht zum Rufer passen.
+Umgesetzt in `data/youngs_kriterium.py`: je Art ein Frequenzband aus ihrem
+sicher zugeordneten Gesang, dann zählen, was rausfällt.
+
+**Erster Durchgang sah überzeugend aus:** Alarm 16 % Fremdsilben gegen
+3 % beim Gesang. Faktor fünf — und das, obwohl die Morgenchor-Verzerrung
+(Gesang wird im Chor aufgenommen, da singen viele mit) das Gegenteil
+begünstigt hätte.
+
+**Zwei Gegentests haben es zerlegt.**
+
+1. *Sind die Fremdsilben der Rufer selbst?* Der Luftalarm liegt weit über
+   dem Gesangsband — der Amsel-Siih bei 7 kHz gegen einen Gesang um 2–3.
+   Wäre das die Erklärung, müssten die Fremdsilben **darüber** liegen.
+   Sie lagen darunter: 218 unter dem Band, 26 darüber. Verdacht erledigt.
+2. *Sind es überhaupt Vögel?* Unterhalb etwa 1,2 kHz singt kein heimischer
+   Singvogel. Genau dorthin fiel der Großteil. Nach Ausschluss bleibt:
+   Gesang 2 %, Alarm 8 %, **unbestimmt 9 %**.
+
+„Unbestimmt" liegt damit vor Alarm. Wenn Fremdsilben eine
+Gemeinschaftsreaktion anzeigten, dürfte das nicht passieren. Mehr als die
+Hälfte des Effekts war Aufnahmerauschen — Alarm wird hastig und aus der
+Hand aufgenommen, Gesang vom Stativ.
+
+**Das ist kein Gegenbeleg gegen Young**, sondern ein zu schwacher Test.
+Der entscheidende Mangel ist nicht das Rauschen, sondern dass die
+**zeitliche Reihenfolge gar nicht gemessen wird**. „Reaktion" hieße: die
+Fremdsilben setzen NACH dem Alarm ein. Dafür braucht es die ganzen
+Aufnahmen statt unserer 8-Sekunden-Ausschnitte.
+
+Der bleibende Ertrag ist der Rauschbefund: Unter 1,2 kHz ist nichts, was
+uns interessiert. `analyse_alarmtyp.py` und die Phrasenbildung filtern das
+**noch nicht** — dort steckt der Fehler vermutlich weiter drin und
+verfälscht die 131 Phrasen.
 
 ---
 

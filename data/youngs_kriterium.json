@@ -1,0 +1,1323 @@
+{
+ "band": {
+  "accipiter_gentilis": [
+   2156.25,
+   4040.6249999999995
+  ],
+  "buteo_buteo": [
+   1875.0,
+   4040.624999999998
+  ],
+  "columba_palumbus": [
+   3562.5,
+   6595.3125
+  ],
+  "corvus_corax": [
+   1218.75,
+   4350.0
+  ],
+  "corvus_corone": [
+   1875.0,
+   8316.123046875
+  ],
+  "cyanistes_caeruleus": [
+   4218.75,
+   7912.441406249999
+  ],
+  "dendrocopos_major": [
+   1205.859375,
+   1378.125
+  ],
+  "erithacus_rubecula": [
+   3273.046875,
+   8298.896484375
+  ],
+  "falco_tinnunculus": [
+   1612.5000000000002,
+   4406.25
+  ],
+  "fringilla_coelebs": [
+   2756.25,
+   5167.96875
+  ],
+  "garrulus_glandarius": [
+   2062.5,
+   4420.3125
+  ],
+  "parus_major": [
+   3789.84375,
+   7838.0859375
+  ],
+  "passer_domesticus": [
+   3014.6484375,
+   5081.8359375
+  ],
+  "phylloscopus_collybita": [
+   3875.9765625,
+   6000.0
+  ],
+  "pica_pica": [
+   1458.45703125,
+   4134.375
+  ],
+  "poecile_palustris": [
+   3965.625,
+   7378.125
+  ],
+  "prunella_modularis": [
+   3436.69921875,
+   6459.9609375
+  ],
+  "sturnus_vulgaris": [
+   2088.720703125,
+   7885.458984375
+  ],
+  "troglodytes_troglodytes": [
+   4031.25,
+   7571.074218750001
+  ],
+  "turdus_merula": [
+   1722.7734375,
+   6253.242187499999
+  ]
+ },
+ "ergebnis": {
+  "gesang": [
+   {
+    "nr": "1075227",
+    "art": "accipiter_gentilis",
+    "silben": 10,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097413",
+    "art": "accipiter_gentilis",
+    "silben": 47,
+    "fremdanteil": 0.02127659574468085,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097414",
+    "art": "accipiter_gentilis",
+    "silben": 26,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "710926",
+    "art": "accipiter_gentilis",
+    "silben": 36,
+    "fremdanteil": 0.027777777777777776,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "1097390",
+    "art": "buteo_buteo",
+    "silben": 34,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097420",
+    "art": "buteo_buteo",
+    "silben": 32,
+    "fremdanteil": 0.03125,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097740",
+    "art": "buteo_buteo",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097424",
+    "art": "columba_palumbus",
+    "silben": 14,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1076328",
+    "art": "corvus_corax",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1096713",
+    "art": "corvus_corax",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097529",
+    "art": "corvus_corone",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097609",
+    "art": "corvus_corone",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "243645",
+    "art": "corvus_corone",
+    "silben": 20,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "384541",
+    "art": "cyanistes_caeruleus",
+    "silben": 12,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "46292",
+    "art": "cyanistes_caeruleus",
+    "silben": 10,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "777203",
+    "art": "cyanistes_caeruleus",
+    "silben": 28,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "1091736",
+    "art": "dendrocopos_major",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "215495",
+    "art": "dendrocopos_major",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "76367",
+    "art": "dendrocopos_major",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "133407",
+    "art": "erithacus_rubecula",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "299253",
+    "art": "erithacus_rubecula",
+    "silben": 18,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "442630",
+    "art": "erithacus_rubecula",
+    "silben": 10,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097397",
+    "art": "falco_tinnunculus",
+    "silben": 36,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097533",
+    "art": "falco_tinnunculus",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097616",
+    "art": "falco_tinnunculus",
+    "silben": 34,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "509430",
+    "art": "falco_tinnunculus",
+    "silben": 21,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "133308",
+    "art": "fringilla_coelebs",
+    "silben": 16,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "315675",
+    "art": "fringilla_coelebs",
+    "silben": 21,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "57273",
+    "art": "fringilla_coelebs",
+    "silben": 26,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097507",
+    "art": "garrulus_glandarius",
+    "silben": 11,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097547",
+    "art": "garrulus_glandarius",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "303312",
+    "art": "parus_major",
+    "silben": 12,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "402993",
+    "art": "parus_major",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "729993",
+    "art": "parus_major",
+    "silben": 16,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "383538",
+    "art": "passer_domesticus",
+    "silben": 21,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "400941",
+    "art": "passer_domesticus",
+    "silben": 36,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "79055",
+    "art": "passer_domesticus",
+    "silben": 13,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "524866",
+    "art": "phylloscopus_collybita",
+    "silben": 18,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "685920",
+    "art": "phylloscopus_collybita",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "75462",
+    "art": "phylloscopus_collybita",
+    "silben": 12,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1037782",
+    "art": "pica_pica",
+    "silben": 15,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "355076",
+    "art": "pica_pica",
+    "silben": 10,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "928700",
+    "art": "pica_pica",
+    "silben": 14,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1097734",
+    "art": "poecile_palustris",
+    "silben": 24,
+    "fremdanteil": 0.041666666666666664,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "363842",
+    "art": "poecile_palustris",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "635172",
+    "art": "poecile_palustris",
+    "silben": 1,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "319889",
+    "art": "prunella_modularis",
+    "silben": 19,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "711346",
+    "art": "prunella_modularis",
+    "silben": 26,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "711348",
+    "art": "prunella_modularis",
+    "silben": 30,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "306693",
+    "art": "sturnus_vulgaris",
+    "silben": 13,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "706605",
+    "art": "sturnus_vulgaris",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "980097",
+    "art": "sturnus_vulgaris",
+    "silben": 28,
+    "fremdanteil": 0.03571428571428571,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "685427",
+    "art": "troglodytes_troglodytes",
+    "silben": 20,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "685921",
+    "art": "troglodytes_troglodytes",
+    "silben": 33,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "857575",
+    "art": "troglodytes_troglodytes",
+    "silben": 29,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "1107462",
+    "art": "turdus_merula",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1136226",
+    "art": "turdus_merula",
+    "silben": 4,
+    "fremdanteil": 0.25,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "735381",
+    "art": "turdus_merula",
+    "silben": 11,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "764740",
+    "art": "turdus_merula",
+    "silben": 10,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   }
+  ],
+  "alarm": [
+   {
+    "nr": "308687",
+    "art": "accipiter_gentilis",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "396773",
+    "art": "accipiter_gentilis",
+    "silben": 21,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "891772",
+    "art": "accipiter_gentilis",
+    "silben": 15,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1067905",
+    "art": "buteo_buteo",
+    "silben": 7,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "729005",
+    "art": "buteo_buteo",
+    "silben": 6,
+    "fremdanteil": 0.16666666666666666,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "206128",
+    "art": "corvus_corax",
+    "silben": 1,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "570431",
+    "art": "corvus_corax",
+    "silben": 1,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "649246",
+    "art": "corvus_corax",
+    "silben": 1,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "1155254",
+    "art": "corvus_corone",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "497850",
+    "art": "corvus_corone",
+    "silben": 13,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "684538",
+    "art": "corvus_corone",
+    "silben": 16,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "685430",
+    "art": "corvus_corone",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "1051861",
+    "art": "cyanistes_caeruleus",
+    "silben": 27,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "453459",
+    "art": "cyanistes_caeruleus",
+    "silben": 1,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "525916",
+    "art": "cyanistes_caeruleus",
+    "silben": 14,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "772870",
+    "art": "cyanistes_caeruleus",
+    "silben": 25,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "391344",
+    "art": "dendrocopos_major",
+    "silben": 6,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "391526",
+    "art": "dendrocopos_major",
+    "silben": 4,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "419601",
+    "art": "dendrocopos_major",
+    "silben": 14,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "152372",
+    "art": "erithacus_rubecula",
+    "silben": 11,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "59816",
+    "art": "erithacus_rubecula",
+    "silben": 7,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "661755",
+    "art": "erithacus_rubecula",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "684199",
+    "art": "falco_tinnunculus",
+    "silben": 17,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1052548",
+    "art": "fringilla_coelebs",
+    "silben": 33,
+    "fremdanteil": 0.030303030303030304,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "247763",
+    "art": "fringilla_coelebs",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "590196",
+    "art": "fringilla_coelebs",
+    "silben": 12,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "634668",
+    "art": "fringilla_coelebs",
+    "silben": 16,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "355945",
+    "art": "garrulus_glandarius",
+    "silben": 4,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "453641",
+    "art": "garrulus_glandarius",
+    "silben": 29,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "835749",
+    "art": "garrulus_glandarius",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "934870",
+    "art": "garrulus_glandarius",
+    "silben": 4,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "122450",
+    "art": "parus_major",
+    "silben": 20,
+    "fremdanteil": 0.05,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "129372",
+    "art": "parus_major",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "204801",
+    "art": "parus_major",
+    "silben": 4,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "899545",
+    "art": "parus_major",
+    "silben": 13,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1000094",
+    "art": "passer_domesticus",
+    "silben": 39,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "808026",
+    "art": "passer_domesticus",
+    "silben": 6,
+    "fremdanteil": 0.3333333333333333,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "820872",
+    "art": "passer_domesticus",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "107474",
+    "art": "phylloscopus_collybita",
+    "silben": 15,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "335030",
+    "art": "phylloscopus_collybita",
+    "silben": 12,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "83359",
+    "art": "phylloscopus_collybita",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1075379",
+    "art": "pica_pica",
+    "silben": 34,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "1157302",
+    "art": "pica_pica",
+    "silben": 21,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "512425",
+    "art": "pica_pica",
+    "silben": 7,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "542352",
+    "art": "pica_pica",
+    "silben": 23,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "196399",
+    "art": "poecile_palustris",
+    "silben": 20,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "419710",
+    "art": "poecile_palustris",
+    "silben": 19,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "893390",
+    "art": "poecile_palustris",
+    "silben": 21,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "293845",
+    "art": "prunella_modularis",
+    "silben": 12,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "41222",
+    "art": "prunella_modularis",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "838244",
+    "art": "prunella_modularis",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "807366",
+    "art": "sturnus_vulgaris",
+    "silben": 21,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "832739",
+    "art": "sturnus_vulgaris",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "900579",
+    "art": "sturnus_vulgaris",
+    "silben": 28,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "903242",
+    "art": "sturnus_vulgaris",
+    "silben": 34,
+    "fremdanteil": 0.029411764705882353,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1002645",
+    "art": "troglodytes_troglodytes",
+    "silben": 15,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "149922",
+    "art": "troglodytes_troglodytes",
+    "silben": 22,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "401495",
+    "art": "troglodytes_troglodytes",
+    "silben": 22,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "123587",
+    "art": "turdus_merula",
+    "silben": 14,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "826077",
+    "art": "turdus_merula",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   }
+  ],
+  "unbestimmt": [
+   {
+    "nr": "756187",
+    "art": "accipiter_gentilis",
+    "silben": 26,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "756188",
+    "art": "accipiter_gentilis",
+    "silben": 30,
+    "fremdanteil": 0.03333333333333333,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "756189",
+    "art": "accipiter_gentilis",
+    "silben": 9,
+    "fremdanteil": 0.5555555555555556,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1158073",
+    "art": "buteo_buteo",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "503228",
+    "art": "buteo_buteo",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "877725",
+    "art": "buteo_buteo",
+    "silben": 15,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1039715",
+    "art": "corvus_corone",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1048569",
+    "art": "corvus_corone",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "112373",
+    "art": "corvus_corone",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "383537",
+    "art": "cyanistes_caeruleus",
+    "silben": 33,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "75986",
+    "art": "cyanistes_caeruleus",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "211810",
+    "art": "dendrocopos_major",
+    "silben": 11,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "342794",
+    "art": "dendrocopos_major",
+    "silben": 9,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "589346",
+    "art": "dendrocopos_major",
+    "silben": 7,
+    "fremdanteil": 1.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "399651",
+    "art": "erithacus_rubecula",
+    "silben": 19,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "671020",
+    "art": "erithacus_rubecula",
+    "silben": 27,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "757939",
+    "art": "erithacus_rubecula",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1158092",
+    "art": "falco_tinnunculus",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "345719",
+    "art": "falco_tinnunculus",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "495780",
+    "art": "falco_tinnunculus",
+    "silben": 14,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "308105",
+    "art": "fringilla_coelebs",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "313213",
+    "art": "fringilla_coelebs",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "74085",
+    "art": "fringilla_coelebs",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "43833",
+    "art": "garrulus_glandarius",
+    "silben": 1,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "493170",
+    "art": "garrulus_glandarius",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "602107",
+    "art": "garrulus_glandarius",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "303324",
+    "art": "parus_major",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "337213",
+    "art": "parus_major",
+    "silben": 10,
+    "fremdanteil": 0.1,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "845912",
+    "art": "parus_major",
+    "silben": 12,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "344306",
+    "art": "passer_domesticus",
+    "silben": 9,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "376476",
+    "art": "passer_domesticus",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "722453",
+    "art": "passer_domesticus",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1158093",
+    "art": "phylloscopus_collybita",
+    "silben": 7,
+    "fremdanteil": 0.14285714285714285,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "588203",
+    "art": "phylloscopus_collybita",
+    "silben": 7,
+    "fremdanteil": 0.14285714285714285,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "60754",
+    "art": "phylloscopus_collybita",
+    "silben": 10,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "746804",
+    "art": "phylloscopus_collybita",
+    "silben": 17,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1034265",
+    "art": "pica_pica",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "1034267",
+    "art": "pica_pica",
+    "silben": 4,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "363837",
+    "art": "poecile_palustris",
+    "silben": 6,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "666251",
+    "art": "poecile_palustris",
+    "silben": 11,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "786670",
+    "art": "poecile_palustris",
+    "silben": 19,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "319887",
+    "art": "prunella_modularis",
+    "silben": 3,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "434107",
+    "art": "prunella_modularis",
+    "silben": 4,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "761839",
+    "art": "prunella_modularis",
+    "silben": 8,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "995264",
+    "art": "sturnus_vulgaris",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "995266",
+    "art": "sturnus_vulgaris",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "998053",
+    "art": "sturnus_vulgaris",
+    "silben": 2,
+    "fremdanteil": 0.5,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "502602",
+    "art": "troglodytes_troglodytes",
+    "silben": 53,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "872888",
+    "art": "troglodytes_troglodytes",
+    "silben": 25,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "93251",
+    "art": "troglodytes_troglodytes",
+    "silben": 4,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "453961",
+    "art": "turdus_merula",
+    "silben": 14,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   },
+   {
+    "nr": "779941",
+    "art": "turdus_merula",
+    "silben": 22,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   }
+  ],
+  "bettelruf": [
+   {
+    "nr": "1049538",
+    "art": "passer_domesticus",
+    "silben": 45,
+    "fremdanteil": 0.044444444444444446,
+    "als_mit_anderen": true
+   },
+   {
+    "nr": "177339",
+    "art": "turdus_merula",
+    "silben": 5,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   }
+  ],
+  "begleitruf": [
+   {
+    "nr": "926708",
+    "art": "pica_pica",
+    "silben": 2,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": false
+   }
+  ],
+  "territorial": [
+   {
+    "nr": "123588",
+    "art": "turdus_merula",
+    "silben": 19,
+    "fremdanteil": 0.0,
+    "als_mit_anderen": true
+   }
+  ]
+ }
+}
