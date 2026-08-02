@@ -404,6 +404,59 @@ export const ALARMPROFILE: Record<string, Alarmprofil> = {
     ],
   },
 
+  cyanistes_caeruleus: {
+    leitart: true,
+    merksatz:
+      "Überraschend: Von allen britischen Meisen verschlüsselt die "
+      + "Blaumeise am meisten im Ruf — mehr als die Kohlmeise. Und ihr "
+      + "Alarm hängt weniger daran, dass ein Sperber DA ist, als daran, "
+      + "dass er sich BEWEGT.",
+    signale: [
+      {
+        bau: "hassruf",
+        name: "Zetern",
+        auffaelligkeit: 4,
+        beleg: "literatur",
+        beschreibung:
+          "Im Vergleich von sechs britischen Meisenarten nutzte die "
+          + "Blaumeise alle vier untersuchten Wege, um die Gefährlichkeit "
+          + "eines Feindes im Ruf zu unterscheiden — die Kohlmeise nur "
+          + "einen. Ihr Ruf trägt also mehr Information, obwohl er leiser "
+          + "ist. Ausgelöst wird er vor allem durch BEWEGUNG: ein bewegtes "
+          + "Sperbermodell senkte die Nahrungsaufnahme und löste "
+          + "Flügelzucken aus, während Sperberrufe allein kaum wirkten und "
+          + "ein toter Artgenosse gar nicht.",
+        quelle: "Carlson, Healy & Templeton, Animal Behaviour (2017); Carlson, Pargeter & Templeton, Behav. Ecol. Sociobiol. 71 (2017): 133",
+      },
+    ],
+  },
+
+  pica_pica: {
+    leitart: true,
+    merksatz:
+      "Die Elster bricht unser Schema: Sie benutzt DENSELBEN Ruf für "
+      + "Feindalarm und für Revierstreit. Am Ruftyp ist beides nicht zu "
+      + "trennen — an der Länge schon.",
+    signale: [
+      {
+        bau: "hassruf",
+        name: "Schackern („chatter“)",
+        auffaelligkeit: 5,
+        beleg: "literatur",
+        beschreibung:
+          "Laute Triller aus deutlich abgesetzten Silben über ein breites "
+          + "Frequenzband, 5 bis 14 Silben je Einheit. Wird sowohl gegen "
+          + "Fuchs, Katze und Sperber eingesetzt als auch gegen "
+          + "Artgenossen im Revierstreit — die Fünf-Stimmen-Trennung "
+          + "zwischen Alarm und Territorialruf greift hier nicht. Was "
+          + "stattdessen zählt, ist die Dauer: Auf lange Schackerreihen "
+          + "antworteten Elstern nach 15,5 Sekunden, auf kurze erst nach "
+          + "38,2. Länge signalisiert Dringlichkeit.",
+        quelle: "Kuspiel et al., Animal Cognition (2025); vgl. Kuspiel et al., Ethology 130 (2024)",
+      },
+    ],
+  },
+
   // ---- Einschaetzungen, nicht belegt ---------------------------------
 
   erithacus_rubecula: {
@@ -419,40 +472,12 @@ export const ALARMPROFILE: Record<string, Alarmprofil> = {
     ],
   },
 
-  cyanistes_caeruleus: {
-    leitart: true,
-    signale: [
-      {
-        bau: "hassruf",
-        name: "Zetern",
-        auffaelligkeit: 4,
-        beleg: "einschaetzung",
-        beschreibung:
-          "Als Einstiegsart eingeordnet. Vermutlich wie bei der Kohlmeise "
-          + "ein breitbandiger Hassruf plus hoher Luftalarm — für die "
-          + "Blaumeise haben wir das aber nicht belegt.",
-      },
-    ],
-  },
-
-  pica_pica: {
-    leitart: true,
-    signale: [
-      {
-        bau: "hassruf",
-        name: "Schackern",
-        auffaelligkeit: 5,
-        beleg: "einschaetzung",
-        beschreibung:
-          "Einstiegsart. Rabenvogel — hält sich laut Young nicht ans "
-          + "Fünf-Stimmen-Schema, sondern hat eine eigene, komplexere "
-          + "Kommunikation.",
-      },
-    ],
-  },
-
   corvus_corax: {
     leitart: false,
+    merksatz:
+      "Über den Kolkraben ist viel bekannt — aber fast alles darüber, "
+      + "was er HÖRT, nicht was er sendet. Er reagiert sogar auf "
+      + "Alarmrufe fremder Rabenvögel, die er nie zuvor gehört hat.",
     signale: [
       {
         bau: "hassruf",
@@ -462,7 +487,10 @@ export const ALARMPROFILE: Record<string, Alarmprofil> = {
         beschreibung:
           "Wie die Rabenkrähe ein Corvus mit komplexem Repertoire; beide "
           + "sind akustisch schwer auseinanderzuhalten, auch für erfahrene "
-          + "Beobachter.",
+          + "Beobachter. Wie auffällig sein eigener Alarm ist, haben wir "
+          + "nicht belegt gefunden — die Rabenvogelforschung dreht sich um "
+          + "Kognition und darum, wem sie zuhören (Nácarová et al., "
+          + "Ethology 124, 2018; J. Ornithol. 161, 2020).",
       },
     ],
   },
@@ -489,6 +517,179 @@ export const ALARMPROFILE: Record<string, Alarmprofil> = {
     ],
   },
 };
+
+/**
+ * Was NICHT an einer einzelnen Art hängt.
+ *
+ * Diese Sätze sind der eigentliche Ertrag der Belegsuche: Sie gelten über
+ * Arten hinweg und erklären, warum die Einzeleintraege so aussehen, wie sie
+ * aussehen. Bis 2026-08 hatten sie nirgends einen Platz -- FUENF_STIMMEN
+ * war in App.tsx importiert und wurde nie angezeigt. Genau deshalb stehen
+ * sie jetzt als eigene Datenstruktur hier und bekommen eine eigene Ansicht.
+ */
+export type Grundsatz = {
+  titel: string;
+  kurz: string;
+  text: string;
+  /** Was man im Feld damit anfängt. */
+  praxis?: string;
+  beleg: Beleg;
+  quellen: string[];
+};
+
+export const GRUNDSAETZE: Grundsatz[] = [
+  {
+    titel: "Zwei Bauformen, entgegengesetzt gebaut",
+    kurz: "Der eine Ruf will nicht geortet werden, der andere unbedingt.",
+    text:
+      "Alarmrufe zerfallen in zwei Gruppen mit gegensätzlicher Bauart. Der "
+      + "Luftalarm ist ein hoher, schmalbandiger Dauerton um 6–9 kHz, der "
+      + "weich ein- und ausblendet — so gebaut, dass ein Greifvogel den "
+      + "Rufer nicht orten kann. Der Hassruf ist abrupt, tiefer und "
+      + "breitbandig, mit vielen Ortungshinweisen, damit andere "
+      + "zusammenkommen. Die Bauform folgt der Absicht.",
+    praxis:
+      "Wer draußen Alarm lesen lernen will, lernt Hassrufe. Luftalarme sind "
+      + "konstruiert, um sich der Ortung zu entziehen — auch deiner.",
+    beleg: "literatur",
+    quellen: ["Marler, Nature 176 (1955): 6–8"],
+  },
+  {
+    titel: "Arten verstehen einander",
+    kurz: "Der Luftalarm klingt bei nicht verwandten Arten fast gleich.",
+    text:
+      "Buchfink, Meise und Amsel sind nicht näher verwandt, ihre "
+      + "Luftalarme ähneln sich trotzdem. Vermutet wird konvergente "
+      + "Entwicklung unter demselben Druck durch dieselben Greifvögel. "
+      + "Die Folge: Arten können die Alarme anderer Arten nutzen. Häher "
+      + "reagieren auf das Zetern der Amsel, Kolkraben sogar auf Rufe "
+      + "fremder Rabenvögel, die sie nie gehört haben.",
+    praxis:
+      "Ein Alarm gilt selten nur einer Art. Wenn eine Art losgeht, lohnt "
+      + "der Blick auf alle anderen in Hörweite.",
+    beleg: "literatur",
+    quellen: [
+      "Marler, Nature 176 (1955): 6–8",
+      "Randler, acta ethologica 25 (2022): 101–106 — Volltext ungeprüft",
+      "Nácarová et al., J. Ornithol. 161 (2020)",
+    ],
+  },
+  {
+    titel: "Ein Hassruf sagt mehr als „Gefahr“",
+    kurz: "Richtung, Art des Feindes, Dringlichkeit — alles steckt drin.",
+    text:
+      "Im Versuch entnahmen Amseln dem Zetern ihrer Artgenossen, WO der "
+      + "Feind sitzt. Kohlmeisen zetern gegen den Sperber länger und mit "
+      + "mehr Elementen als gegen den Waldkauz. Elstern antworten auf "
+      + "lange Schackerreihen mehr als doppelt so schnell wie auf kurze. "
+      + "Und die Blaumeise nutzt von allen untersuchten britischen Meisen "
+      + "die meisten Wege, Bedrohung zu verschlüsseln — mehr als die "
+      + "Kohlmeise.",
+    praxis:
+      "Länger und dichter heißt gefährlicher. Das ist die erste "
+      + "Unterscheidung, die man ohne Artkenntnis hört.",
+    beleg: "literatur",
+    quellen: [
+      "Frankenberg, Z. Tierpsychol. 55 (1981): 97–118",
+      "Scientific Reports 9 (2019) — Kohlmeise",
+      "Kuspiel et al., Animal Cognition (2025) — Elster",
+      "Carlson, Healy & Templeton, Animal Behaviour (2017) — Meisen",
+    ],
+  },
+  {
+    titel: "Bewegung löst aus, nicht Anwesenheit",
+    kurz: "Eine sitzende Katze erzeugt weniger Alarm als eine laufende.",
+    text:
+      "Zwei unabhängige Versuche, 36 Jahre auseinander und an "
+      + "verschiedenen Arten: Bei der Amsel verstärkte sich das Zetern, "
+      + "wenn sich die Eule bewegte. Bei der Blaumeise war ein bewegtes "
+      + "Sperbermodell der mit Abstand stärkste Auslöser — Sperberrufe "
+      + "allein wirkten kaum, ein toter Artgenosse gar nicht.",
+    praxis:
+      "Bleibt der Alarm aus, heißt das nicht, dass nichts da ist. Es "
+      + "kann heißen, dass es sich nicht bewegt.",
+    beleg: "literatur",
+    quellen: [
+      "Frankenberg, Z. Tierpsychol. 55 (1981): 97–118",
+      "Carlson, Pargeter & Templeton, Behav. Ecol. Sociobiol. 71 (2017): 133",
+    ],
+  },
+  {
+    titel: "Rufen kostet etwas",
+    kurz: "Wer sich sicher fühlt, flieht lieber stumm.",
+    text:
+      "Stare rufen im hohen Gras, wo sie wenig sehen, deutlich häufiger "
+      + "als auf kurz gefressenem Gras — dort fliegen sie stumm und steil "
+      + "ab. Ein Alarmruf verrät den Rufer und wird deshalb nicht "
+      + "verschwendet.",
+    beleg: "literatur",
+    quellen: ["Devereux et al., Ibis 150 Suppl. 1 (2008): 191–198"],
+  },
+  {
+    titel: "Vier von fünf Stimmen bedeuten gar nichts Schlimmes",
+    kurz: "Nur die fünfte ist Alarm. Der Rest ist Normalzustand.",
+    text:
+      "Gesang, Begleitrufe, Territorialrufe und Bettelrufe gehören zur "
+      + "Baseline — dem Normalzustand eines Ortes. Nur die fünfte Stimme "
+      + "meldet Gefahr. Wer das nicht trennt, hält jeden Revierstreit für "
+      + "einen Alarm. Genau das ist uns passiert: eine Aufnahme zweier "
+      + "streitender Amselmännchen war bei xeno-canto als „alarm call“ "
+      + "eingetragen.",
+    praxis:
+      "Erkennungsmerkmal für Baseline: andere Arten in der Nähe reagieren "
+      + "kaum. Bei echtem Alarm reagieren sie mit.",
+    beleg: "literatur",
+    quellen: ["Jon Young, Bird Language / What the Robin Knows"],
+  },
+  {
+    titel: "Das Schema hat Ausnahmen — und die sind belegt",
+    kurz: "Bei der Elster ist Alarm und Revierstreit derselbe Ruf.",
+    text:
+      "Die Fünf Stimmen sind ein Raster, keine Naturkonstante. Die Elster "
+      + "benutzt ihr Schackern gegen Fuchs und Katze ebenso wie gegen "
+      + "Artgenossen im Revierstreit — am Ruftyp ist beides nicht zu "
+      + "trennen. Der Zilpzalp wiederum hat gar keinen eigenen Alarmruf, "
+      + "sondern trägt seinen Kontaktruf nur schneller vor. Und die "
+      + "Ringeltaube ruft überhaupt nicht, sondern klatscht mit den "
+      + "Flügeln.",
+    praxis:
+      "Nicht jede Art passt ins Raster. Wo sie nicht passt, steht es beim "
+      + "Vogel dabei.",
+    beleg: "literatur",
+    quellen: [
+      "Kuspiel et al., Animal Cognition (2025)",
+      "Cramp (Hrsg.), Birds of the Western Palearctic",
+      "Hingee & Magrath, Proc. R. Soc. B (2009)",
+    ],
+  },
+  {
+    titel: "Es gibt eine beste Hörzeit",
+    kurz: "Die Zeteraktivität beginnt vor Sonnenaufgang.",
+    text:
+      "Über vier Jahre automatisch aufgezeichnet: Die Zeteraktivität der "
+      + "Amsel folgt einem Tagesrhythmus. Der Beginn schwankt zwischen "
+      + "Individuen stark — 50 bis 20 Minuten vor Sonnenaufgang —, das "
+      + "Ende dagegen kaum.",
+    praxis: "Wer Zetern hören will, ist vor Sonnenaufgang draußen.",
+    beleg: "literatur",
+    quellen: [
+      "Haarhaus, Die Zeteraktivität der Amsel, J. Ornithol. — "
+      + "Volltext hinter Bezahlschranke",
+    ],
+  },
+  {
+    titel: "Etiketten sind keine Belege",
+    kurz: "Die Herkunftsangabe einer Aufnahme sagt wenig über den Ruf.",
+    text:
+      "Die Ruftyp-Angaben bei xeno-canto sind nachweislich unzuverlässig: "
+      + "„call“ und „alarm call“ überlappen bei unserem Material zu 77 %. "
+      + "Sie beschreiben außerdem die ganze Aufnahme, während wir "
+      + "Ausschnitte von wenigen Sekunden hören. Deshalb tauchen sie in "
+      + "dieser App als Herkunftsangabe auf, nie als Wahrheit.",
+    beleg: "einschaetzung",
+    quellen: ["Eigene Auswertung, 131 Phrasen"],
+  },
+];
 
 /** Höchste belegte oder geschätzte Auffälligkeit einer Art, für Ranglisten. */
 export function auffaelligkeitMax(profil: Alarmprofil | undefined): number {

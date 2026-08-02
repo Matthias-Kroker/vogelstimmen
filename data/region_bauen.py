@@ -153,10 +153,10 @@ ALARMPROFILE = {
     "Corvus corone": (True, 5, True),
     "Columba palumbus": (False, 3, True),     # mechanisch, Fluegelklatschen
     "Turdus merula": (True, 5, True),         # Zetern 5, pook 3, Luftalarm 1
+    "Cyanistes caeruleus": (True, 4, True),   # meiste Information aller Meisen
+    "Pica pica": (True, 5, True),             # Alarm == Territorialruf
     # Einschaetzung
     "Erithacus rubecula": (True, 4, False),
-    "Cyanistes caeruleus": (True, 4, False),
-    "Pica pica": (True, 5, False),
     "Corvus corax": (False, 4, False),
     "Garrulus glandarius": (False, 5, False),
 }

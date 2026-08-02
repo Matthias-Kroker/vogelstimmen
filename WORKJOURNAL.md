@@ -73,14 +73,15 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
   (Devereux et al. 2008 — allerdings nur das Rufverhalten, nicht die
   Lautstärke), dazu wie bisher Haussperling, Rabenkrähe und Ringeltaube.
   Grundlage bleibt Jon Youngs Fünf-Stimmen-Schema.
-- **Geschätzt** sind noch: Rotkehlchen, Blaumeise, Elster, Kolkrabe,
-  Eichelhäher. Der Rang, den sie in der Regionsliste bekommen, beruht auf
-  nichts als meiner Einordnung. Die Amsel ist seit 2026-08-02 belegt
-  (Frankenberg 1981, Snow 1988) und damit die am besten dokumentierte Art.
-- **Die Blaumeise ist der unangenehmste Fall:** Für die Kohlmeise ist der
-  Hassruf jetzt belegt, für ihre nächste Verwandte nicht. Es ist
-  verlockend, das eine aufs andere zu übertragen — im Eintrag steht
-  ausdrücklich, dass das *nicht* belegt ist.
+- **Geschätzt sind nur noch drei:** Rotkehlchen, Kolkrabe, Eichelhäher.
+  In der Rhein-Main-Liste sind 8 der obersten 11 Arten belegt. Für das
+  Rotkehlchen wurde gezielt gesucht und **nichts Brauchbares gefunden** —
+  East (1981, *Ibis* 123: 223–230) existiert, ist aber nicht zugänglich.
+- **Bei den Rabenvögeln liegt es nicht an uns.** Für Kolkrabe und
+  Eichelhäher gibt es reichlich Literatur, aber fast nur darüber, was sie
+  **hören** (Nácarová et al. 2018; J. Ornithol. 161, 2020; Randler 2022) —
+  nicht über den Bau ihrer eigenen Rufe. Die Lücke ist echt, nicht
+  Suchfaulheit.
 - **Der Star hat bewusst KEINE Hörbarkeitszahl.** Belegt ist nur, dass er
   bei schlechter Sicht häufiger ruft. Wie auffällig der Ruf klingt, war
   nicht zu finden — das Feld bleibt leer statt geraten.
@@ -112,6 +113,13 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
   (Lücke bei Wikipedia).
 - **Die App unterscheidet nur Gesang / Rufe / Trommeln**, nicht die Fünf
   Stimmen. Die xeno-canto-Etiketten geben mehr nicht her.
+- **Das Metawissen war bis 2026-08-02 unsichtbar.** `FUENF_STIMMEN` und
+  `QUELLE` waren in `App.tsx` importiert und wurden **nirgends angezeigt** —
+  das Wissen, das die Einzeleinträge überhaupt erst erklärt, existierte nur
+  im Quelltext. Jetzt gibt es dafür eine eigene Ansicht
+  (`Vogelsprache.tsx`). Ob sie an der richtigen Stelle sitzt, ist offen:
+  derzeit ein dritter Knopf neben Quiz und Offline. Denkbar wäre auch, sie
+  beim ersten Start einmal zu zeigen.
 
 ---
 
@@ -580,17 +588,62 @@ Eichelhäher auf Amselzetern reagieren. Wäre der schönste Beleg dafür, dass
 die Amsel Leitart ist — Volltext hinter Springer. In der App als ungeprüft
 markiert, nicht als Beleg gezählt.
 
+### Checkpoint 2026-08-02 (2) — die Methode trägt, und das Metawissen bekommt einen Ort
+
+Die Amsel-Lehre („nach dem Experiment suchen, nicht nach der Art") auf die
+restlichen Arten angewandt. Zwei weitere belegt, drei bleiben offen — und
+bei den offenen ist jetzt klar, **warum**.
+
+**Blaumeise** — Carlson, Healy & Templeton, *Animal Behaviour* (2017),
+sechs britische Meisenarten mit präparierten Feindmodellen: Die Blaumeise
+nutzte **alle vier** untersuchten Wege, Bedrohung im Ruf zu
+unterscheiden — die Kohlmeise nur einen. Ihr Ruf trägt also mehr
+Information, obwohl er leiser ist. Dazu Carlson, Pargeter & Templeton,
+*Behav. Ecol. Sociobiol.* 71 (2017): 133 — **Bewegung** ist der stärkste
+Auslöser; Sperberrufe allein wirkten kaum, ein toter Artgenosse gar nicht.
+(Im Abstract der Vergleichsstudie steht ein Widerspruch: „willow tits"
+erscheint sowohl bei „alle vier" als auch bei „gar keine". Die sechste Art
+ist die Sumpfmeise — welche gemeint ist, habe ich **nicht** geraten.)
+
+**Elster** — Kuspiel et al., *Animal Cognition* (2025). Und das ist der
+unbequemste Befund der ganzen Suche: Die Elster benutzt **denselben Ruf**
+gegen Fuchs, Katze und Sperber wie gegen Artgenossen im Revierstreit. Die
+Fünf-Stimmen-Trennung zwischen Alarm und Territorialruf greift bei ihr
+nicht. Was stattdessen zählt, ist die Dauer — auf lange Schackerreihen
+antworten Elstern nach 15,5 s, auf kurze erst nach 38,2 s.
+
+**Rotkehlchen, Kolkrabe, Eichelhäher** bleiben Einschätzung. Beim
+Rotkehlchen wurde gesucht und nichts gefunden. Bei den Rabenvögeln gibt es
+viel Literatur, aber über das **Zuhören**, nicht über den Rufbau.
+
+### Das Metawissen hat jetzt einen Ort
+
+Beim Einbauen fiel auf: `FUENF_STIMMEN` und `QUELLE` waren in `App.tsx`
+importiert und wurden **nie angezeigt**. Das Wissen, das die
+Einzeleinträge erklärt, stand nur im Quelltext. Neu:
+
+- `GRUNDSAETZE` in `daten/vogelsprache.ts` — neun Sätze, die über Arten
+  hinweg gelten, jeder mit Beleg-Vermerk, Quellen und einem
+  „Im Feld"-Absatz.
+- `Vogelsprache.tsx` — eigene Ansicht: Grundsätze (aufklappbar), Fünf
+  Stimmen, die vier Bauformen, Quellen. Erreichbar über einen dritten
+  Knopf auf der Startseite und über „Was heißt das? ›" in jedem Steckbrief.
+
+Die stärksten Grundsätze sind die, die aus **mehreren unabhängigen
+Arbeiten** zusammenlaufen — etwa „Bewegung löst aus, nicht Anwesenheit",
+gezeigt an der Amsel 1981 und an der Blaumeise 2017, 36 Jahre auseinander
+und an verschiedenen Arten. Solche Konvergenzen sind belastbarer als jede
+Einzelquelle und gehören deshalb an die Oberfläche.
+
 ---
 
 ## Als Nächstes vorgemerkt
 
-1. **Belege für die restlichen fünf Arten** — Rotkehlchen, Blaumeise,
-   Elster, Kolkrabe, Eichelhäher. Für die Blaumeise dürfte am ehesten
-   etwas zu finden sein (die Paridae sind gut untersucht); die drei
-   Rabenvögel sind schwierig, weil ihr Repertoire nicht ins
-   Fünf-Stimmen-Schema passt. **Lehre aus der Amsel: nicht nach der Art
-   suchen, sondern nach dem Experiment** — „mobbing" plus Artname bringt
-   mehr als „Alarmruf" plus Artname.
+1. **Sitzt die Vogelsprache-Ansicht richtig?** Sie ist derzeit ein dritter
+   Knopf neben Quiz und Offline. Das ist eine Vermutung, keine Entscheidung
+   — Matthias' Urteil steht aus.
+2. **Rotkehlchen, Kolkrabe, Eichelhäher** bleiben offen. Beim Rotkehlchen
+   wäre East (1981) der Schlüssel, wenn er zugänglich würde.
 2. **Warum lieferte Commons keine Nest-Unterkategorien?** Ungeklärt, und
    solange das offen ist, ist `--alle` nicht sicher.
 3. **Artenzahl erweitern**, sobald die Alarm-Bewertung steht. Das

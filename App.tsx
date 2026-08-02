@@ -10,10 +10,10 @@ import { voegel, type Anteil, type Fressfeind, type Vogel } from "./daten/voegel
 import { bildgruppen, vogelBilder, vogelBilderAlle } from "./assets/voegel";
 import Quiz from "./Quiz";
 import Offline from "./Offline";
+import VogelspracheAnsicht from "./Vogelsprache";
 import { rufeZuVogel, type Ruf } from "./assets/rufe";
 import {
-  ALARMPROFILE, AUSLOESER_HINWEIS, FUENF_STIMMEN, QUELLE, SIGNALBAU_INFO,
-  type Stimme,
+  ALARMPROFILE, AUSLOESER_HINWEIS, SIGNALBAU_INFO,
 } from "./daten/vogelsprache";
 
 const farben = {
@@ -31,6 +31,7 @@ export default function App() {
   const [gewaehlt, setGewaehlt] = useState<Vogel | null>(null);
   const [imQuiz, setImQuiz] = useState(false);
   const [imOffline, setImOffline] = useState(false);
+  const [inSprache, setInSprache] = useState(false);
   const [suche, setSuche] = useState("");
 
   const gefiltert = useMemo(() => {
@@ -46,12 +47,18 @@ export default function App() {
   return (
     <SafeAreaView style={stile.flaeche}>
       <StatusBar barStyle="light-content" />
-      {imOffline ? (
+      {inSprache ? (
+        <VogelspracheAnsicht zurueck={() => setInSprache(false)} />
+      ) : imOffline ? (
         <Offline zurueck={() => setImOffline(false)} />
       ) : imQuiz ? (
         <Quiz zurueck={() => setImQuiz(false)} />
       ) : gewaehlt ? (
-        <Steckbrief vogel={gewaehlt} zurueck={() => setGewaehlt(null)} />
+        <Steckbrief
+          vogel={gewaehlt}
+          zurueck={() => setGewaehlt(null)}
+          spracheOeffnen={() => setInSprache(true)}
+        />
       ) : (
         <Liste
           liste={gefiltert}
@@ -60,6 +67,7 @@ export default function App() {
           waehlen={setGewaehlt}
           quizStarten={() => setImQuiz(true)}
           offlineOeffnen={() => setImOffline(true)}
+          spracheOeffnen={() => setInSprache(true)}
         />
       )}
     </SafeAreaView>
@@ -67,7 +75,7 @@ export default function App() {
 }
 
 function Liste({
-  liste, suche, setSuche, waehlen, quizStarten, offlineOeffnen,
+  liste, suche, setSuche, waehlen, quizStarten, offlineOeffnen, spracheOeffnen,
 }: {
   liste: Vogel[];
   suche: string;
@@ -75,6 +83,7 @@ function Liste({
   waehlen: (v: Vogel) => void;
   quizStarten: () => void;
   offlineOeffnen: () => void;
+  spracheOeffnen: () => void;
 }) {
   return (
     <View style={{ flex: 1 }}>
@@ -89,6 +98,12 @@ function Liste({
             style={({ pressed }) => [stile.quizKnopf, pressed && { opacity: 0.8 }]}
           >
             <Text style={stile.quizKnopfText}>Quiz starten</Text>
+          </Pressable>
+          <Pressable
+            onPress={spracheOeffnen}
+            style={({ pressed }) => [stile.spracheKnopf, pressed && { opacity: 0.8 }]}
+          >
+            <Text style={stile.spracheKnopfText}>Vogelsprache</Text>
           </Pressable>
           <Pressable
             onPress={offlineOeffnen}
@@ -138,7 +153,9 @@ function Liste({
   );
 }
 
-function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
+function Steckbrief({ vogel, zurueck, spracheOeffnen }: {
+  vogel: Vogel; zurueck: () => void; spracheOeffnen: () => void;
+}) {
   // Nach Alarmtyp trennen -- das ist die Unterscheidung, um die es beim
   // Lernen geht: Warnruf gilt Greifvoegeln im Flug, Hassruf allem Sitzenden.
   const warnruf = vogel.fressfeinde.filter((f) => f.alarmtyp === "Warnruf");
@@ -158,7 +175,7 @@ function Steckbrief({ vogel, zurueck }: { vogel: Vogel; zurueck: () => void }) {
 
         <Rufe vogel={vogel} />
 
-        <Vogelsprache vogel={vogel} />
+        <Vogelsprache vogel={vogel} spracheOeffnen={spracheOeffnen} />
 
         <Merkmale vogel={vogel} />
 
@@ -377,14 +394,21 @@ function ausloeserZaehlen(vogel: Vogel): { anzahl: number; typ: string } {
   return { anzahl, typ: [...typen].join(" / ") };
 }
 
-function Vogelsprache({ vogel }: { vogel: Vogel }) {
+function Vogelsprache({ vogel, spracheOeffnen }: {
+  vogel: Vogel; spracheOeffnen: () => void;
+}) {
   const profil = ALARMPROFILE[vogel.id];
   const ausloeser = ausloeserZaehlen(vogel);
   if (!profil && ausloeser.anzahl === 0) return null;
 
   return (
     <View style={stile.sprache}>
-      <Text style={stile.spracheTitel}>Vogelsprache</Text>
+      <View style={stile.spracheKopf}>
+        <Text style={stile.spracheTitel}>Vogelsprache</Text>
+        <Pressable onPress={spracheOeffnen} hitSlop={8}>
+          <Text style={stile.spracheLink}>Was heißt das? ›</Text>
+        </Pressable>
+      </View>
 
       {profil && (
         <>
@@ -601,9 +625,17 @@ const stile = StyleSheet.create({
     backgroundColor: farben.karte, borderRadius: 10, padding: 13,
     marginBottom: 12, borderLeftWidth: 3, borderLeftColor: "#b08968",
   },
-  spracheTitel: {
-    color: "#d4a373", fontSize: 15, fontWeight: "700", marginBottom: 8,
+  spracheKopf: {
+    flexDirection: "row", justifyContent: "space-between",
+    alignItems: "center", marginBottom: 8,
   },
+  spracheTitel: { color: "#d4a373", fontSize: 15, fontWeight: "700" },
+  spracheLink: { color: "#d4a373", fontSize: 12.5 },
+  spracheKnopf: {
+    backgroundColor: "#4a3a2d", borderRadius: 8,
+    paddingVertical: 9, paddingHorizontal: 14,
+  },
+  spracheKnopfText: { color: "#d4a373", fontSize: 14, fontWeight: "600" },
   spracheZeile: { flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 7 },
   marke: {
     backgroundColor: "#8a5a2b", color: "#fff", fontSize: 11.5,

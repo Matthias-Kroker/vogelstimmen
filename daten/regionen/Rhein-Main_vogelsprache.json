@@ -21,7 +21,7 @@
       "beobachtungen": 15226,
       "haeufigkeit": 0.643,
       "alarmnutzen": 0.875,
-      "alarm_beleg": "geschätzt",
+      "alarm_beleg": "belegt",
       "punkte": 1.1,
       "haben_wir": true
     },
@@ -41,7 +41,7 @@
       "beobachtungen": 22240,
       "haeufigkeit": 0.939,
       "alarmnutzen": 0.75,
-      "alarm_beleg": "geschätzt",
+      "alarm_beleg": "belegt",
       "punkte": 1.079,
       "haben_wir": true
     },
@@ -51,7 +51,7 @@
       "beobachtungen": 18044,
       "haeufigkeit": 0.762,
       "alarmnutzen": 0.68,
-      "alarm_beleg": "geschätzt",
+      "alarm_beleg": "belegt",
       "punkte": 0.947,
       "haben_wir": true
     },
@@ -126,46 +126,6 @@
       "haben_wir": true
     },
     {
-      "wissenschaftlich": "Dendrocopos major",
-      "name_de": "Buntspecht",
-      "beobachtungen": 10851,
-      "haeufigkeit": 0.458,
-      "alarmnutzen": 0.125,
-      "alarm_beleg": "-",
-      "punkte": 0.285,
-      "haben_wir": true
-    },
-    {
-      "wissenschaftlich": "Phylloscopus collybita",
-      "name_de": "Zilpzalp",
-      "beobachtungen": 7885,
-      "haeufigkeit": 0.333,
-      "alarmnutzen": 0.14,
-      "alarm_beleg": "belegt",
-      "punkte": 0.256,
-      "haben_wir": true
-    },
-    {
-      "wissenschaftlich": "Falco tinnunculus",
-      "name_de": "Turmfalke",
-      "beobachtungen": 9247,
-      "haeufigkeit": 0.39,
-      "alarmnutzen": 0.1,
-      "alarm_beleg": "-",
-      "punkte": 0.237,
-      "haben_wir": true
-    },
-    {
-      "wissenschaftlich": "Sturnus vulgaris",
-      "name_de": "Star",
-      "beobachtungen": 13028,
-      "haeufigkeit": 0.55,
-      "alarmnutzen": 0.0,
-      "alarm_beleg": "belegt",
-      "punkte": 0.192,
-      "haben_wir": true
-    },
-    {
       "wissenschaftlich": "Accipiter gentilis",
       "name_de": "Habicht",
       "beobachtungen": null,
@@ -188,6 +148,30 @@
       "haben_wir": true,
       "als_ausloeser": true,
       "loest_alarm_aus_bei": 7
+    },
+    {
+      "wissenschaftlich": "Dendrocopos major",
+      "name_de": "Buntspecht",
+      "beobachtungen": 10851,
+      "haeufigkeit": 0.458,
+      "alarmnutzen": 0.125,
+      "alarm_beleg": "-",
+      "punkte": null,
+      "haben_wir": true,
+      "als_ausloeser": true,
+      "loest_alarm_aus_bei": 5
+    },
+    {
+      "wissenschaftlich": "Falco tinnunculus",
+      "name_de": "Turmfalke",
+      "beobachtungen": 9247,
+      "haeufigkeit": 0.39,
+      "alarmnutzen": 0.1,
+      "alarm_beleg": "-",
+      "punkte": null,
+      "haben_wir": true,
+      "als_ausloeser": true,
+      "loest_alarm_aus_bei": 4
     }
   ]
 }
