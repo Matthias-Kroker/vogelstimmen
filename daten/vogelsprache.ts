@@ -354,22 +354,57 @@ export const ALARMPROFILE: Record<string, Alarmprofil> = {
     ],
   },
 
-  // ---- Einschaetzungen, nicht belegt ---------------------------------
-
   turdus_merula: {
     leitart: true,
+    merksatz:
+      "Ihr Zetern sagt nicht nur „Gefahr“, sondern auch, WO. Im Experiment "
+      + "entnahmen Artgenossen dem Ruf die Richtung des Feindes. Beste "
+      + "Hörzeit: die Zeteraktivität beginnt 20 bis 50 Minuten vor "
+      + "Sonnenaufgang.",
     signale: [
       {
         bau: "hassruf",
-        name: "Tixen / Zetern",
+        name: "Zetern / „tix-tix-tix“",
         auffaelligkeit: 5,
-        beleg: "einschaetzung",
+        beleg: "literatur",
         beschreibung:
-          "Sehr lauter, unverkennbarer Alarmruf — als Einstiegsart für die "
-          + "Alarm-Praxis eingeordnet.",
+          "Der am besten untersuchte Alarmruf unserer Arten. Drei Versuche "
+          + "mit Amseln vor einer Eule zeigten: Der Ruf warnt Artgenossen "
+          + "(und den Rufer selbst), er enthält eine Richtungsangabe zum "
+          + "Feind, und er wird stärker, wenn sich der Feind bewegt. Die "
+          + "Amsel ruft dabei von einer offenen Warte, mit gestelztem "
+          + "Schwanz und hängenden Flügeln — sie will gesehen und geortet "
+          + "werden. Anlässe: Eule, Turmfalke, Elster, Rabenkrähe; oft "
+          + "gefolgt von Angriffen.",
+        quelle: "Frankenberg, Z. Tierpsychol. 55 (1981): 97–118, Adaptive Significance of Avian Mobbing IV; Ruf und Haltung nach Snow, A Study of Blackbirds (1988)",
+      },
+      {
+        bau: "luftalarm",
+        name: "„siiih“",
+        auffaelligkeit: 1,
+        beleg: "literatur",
+        beschreibung:
+          "Dünner, abfallender Reinton gegen Sperber und überfliegende "
+          + "Krähen, mit geöffnetem Schnabel und flach angelegtem Gefieder "
+          + "vorgetragen. Gehört zu Marlers konvergenter Bauform — für uns "
+          + "am Rand des Hörbaren und praktisch nicht zu orten.",
+        quelle: "Marler, Nature 176 (1955): 6–8; Beschreibung nach Snow (1988)",
+      },
+      {
+        bau: "hassruf",
+        name: "„pook“ am Boden",
+        auffaelligkeit: 3,
+        beleg: "literatur",
+        beschreibung:
+          "Weicher, bellender Einzelruf gegen Bodenfeinde — Katze, Fuchs, "
+          + "Mensch am Nest. Leiser als das Zetern und leicht zu überhören, "
+          + "aber oft dessen Vorstufe.",
+        quelle: "Snow, A Study of Blackbirds (1988), British Museum (Natural History)",
       },
     ],
   },
+
+  // ---- Einschaetzungen, nicht belegt ---------------------------------
 
   erithacus_rubecula: {
     leitart: true,
@@ -435,6 +470,10 @@ export const ALARMPROFILE: Record<string, Alarmprofil> = {
   garrulus_glandarius: {
     leitart: false,
     besonders_in: "Wald",
+    merksatz:
+      "Der Häher ist nicht nur Sender, sondern auch Empfänger: Er reagiert "
+      + "auf das Zetern der Amsel — untersucht, aber von uns nicht im "
+      + "Volltext geprüft (Randler, acta ethologica 25, 2022: 101–106).",
     signale: [
       {
         bau: "hassruf",
@@ -443,7 +482,9 @@ export const ALARMPROFILE: Record<string, Alarmprofil> = {
         beleg: "einschaetzung",
         beschreibung:
           "Rabenvogel mit eigener Kommunikation; sein Geschrei trägt weit "
-          + "und gilt als klassischer Wächter des Waldes.",
+          + "und gilt als klassischer Wächter des Waldes. Für seinen "
+          + "EIGENEN Ruf haben wir keinen Beleg — belegt ist bisher nur, "
+          + "dass er auf fremde Hassrufe hört.",
       },
     ],
   },
@@ -479,6 +520,13 @@ export const QUELLEN = [
   + "whistle sounds the alarm in a flocking bird. Proc. R. Soc. B.",
   "Cramp, S. (Hrsg.): Handbook of the Birds of the Western Palearctic — "
   + "Zilpzalp-Rufe.",
+  "Frankenberg, E. (1981): The adaptive significance of avian mobbing IV — "
+  + "„Alerting others“ and „Perception advertisement“ in blackbirds facing "
+  + "an owl. Z. Tierpsychol. 55: 97–118.",
+  "Snow, D. W. (1988): A Study of Blackbirds. British Museum (Natural "
+  + "History).",
+  "Haarhaus, D.: Die Zeteraktivität der Amsel (Turdus merula). "
+  + "J. Ornithol. — Tagesrhythmik, nicht Ruf-Akustik.",
   "McGowan, K., Cornell Lab of Ornithology: Crow FAQ — Ruftypen und "
   + "Reichweite.",
   "birdsoftheworld.org: House Sparrow, Sounds and Vocal Behavior.",

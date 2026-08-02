@@ -48,10 +48,19 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
 - **Die xeno-canto-Etiketten sind nachweislich unzuverlässig** (`call` und
   `alarm call` überlappen zu 77 %). Sie werden nirgends als Wahrheit
   verwendet, tauchen in der Oberfläche aber als Herkunftsangabe auf.
-- **Messmer & Messmer 1956 und „Die Zeteraktivität der Amsel"** stehen
-  hinter Bezahlschranken. Das sind die belastbarsten Quellen zum
-  Ruf-Repertoire — wir arbeiten ersatzweise mit einem kommerziellen
-  Klangportrait, das sich zwar deckt, aber nicht begutachtet ist.
+- **Messmer & Messmer 1956 und „Die Zeteraktivität der Amsel" sind NICHT
+  die belastbarsten Quellen zum Ruf-Repertoire** — das stand hier lange
+  falsch. Beide sind weiter hinter Bezahlschranken, aber inzwischen ist
+  bekannt, was drinsteht, und keine der beiden beantwortet unsere Frage:
+  Messmer & Messmer (*Z. Tierpsychol.* 13, 1956: 341–441) untersuchen die
+  **Entwicklung** der Lautäußerungen bei einzeln aufgezogenen Amseln in
+  schalldichten Räumen — Ontogenese, nicht Akustik im Feld. Haarhaus'
+  „Zeteraktivität" (*J. Ornithol.*) untersucht die **Tagesrhythmik** des
+  Zeterns nach Aschoffs Regeln. Die Quelle, die tatsächlich trägt, stand
+  auf keiner Liste: **Frankenberg 1981**.
+- **Der Volltext von Randler (2022)** zum Häher, der auf Amselzetern hört,
+  ist nicht geprüft — Springer-Bezahlschranke. Der Befund steht in der App
+  ausdrücklich als ungeprüft.
 
 ### Vogelsprache
 - **Das Tracking-Dokument ist KEINE unabhängige Quelle** — es wurde
@@ -64,10 +73,10 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
   (Devereux et al. 2008 — allerdings nur das Rufverhalten, nicht die
   Lautstärke), dazu wie bisher Haussperling, Rabenkrähe und Ringeltaube.
   Grundlage bleibt Jon Youngs Fünf-Stimmen-Schema.
-- **Geschätzt** sind noch: Amsel, Rotkehlchen, Blaumeise, Elster,
-  Kolkrabe, Eichelhäher — also ausgerechnet die sechs, die als
-  „Einstiegsarten für die Alarm-Praxis" gelten. Der Rang, den sie in der
-  Regionsliste bekommen, beruht auf nichts als meiner Einordnung.
+- **Geschätzt** sind noch: Rotkehlchen, Blaumeise, Elster, Kolkrabe,
+  Eichelhäher. Der Rang, den sie in der Regionsliste bekommen, beruht auf
+  nichts als meiner Einordnung. Die Amsel ist seit 2026-08-02 belegt
+  (Frankenberg 1981, Snow 1988) und damit die am besten dokumentierte Art.
 - **Die Blaumeise ist der unangenehmste Fall:** Für die Kohlmeise ist der
   Hassruf jetzt belegt, für ihre nächste Verwandte nicht. Es ist
   verlockend, das eine aufs andere zu übertragen — im Eintrag steht
@@ -540,15 +549,48 @@ Steckbriefen und meldete „Fertig". Über `git checkout` wiederhergestellt,
 Sperber danach einzeln nachgeholt. Das Skript verlangt für den Gesamtlauf
 jetzt `--alle`. Siehe den neuen Warnabschnitt ganz oben.
 
+### Checkpoint 2026-08-02 — Amsel belegt, über einen Umweg
+
+Die beiden Quellen, die ich hier als „die belastbarsten" geführt hatte,
+waren die falschen. Messmer & Messmer 1956 ist eine **Ontogenese**-Studie
+(Handaufzucht in schalldichten Räumen), Haarhaus' „Zeteraktivität" eine
+Arbeit zur **Tagesrhythmik**. Beide hätten unsere Frage nie beantwortet,
+egal wie oft man gegen die Bezahlschranke läuft.
+
+Getragen hat stattdessen **Frankenberg (1981)**, *Z. Tierpsychol.* 55:
+97–118 — drei Experimente mit Amseln vor einer Eule:
+
+- Das Zetern **warnt Artgenossen** (und den Rufer selbst).
+- Es enthält eine **Richtungsangabe** zum Feind — der Ruf sagt nicht nur
+  „Gefahr", sondern „dort".
+- Es **verstärkt sich, wenn der Feind sich bewegt**.
+
+Das ist genau die Eigenschaft, die einen Hassruf im Feld brauchbar macht,
+und sie ist hier für unsere wichtigste Art **experimentell** gezeigt statt
+aus Marlers allgemeinem Bauprinzip abgeleitet. Dazu **Snow (1988)**,
+*A Study of Blackbirds*, für die Ruftypen und die Haltung: offene Warte,
+gestelzter Schwanz, hängende Flügel — die Amsel *will* geortet werden.
+
+Nebenbefund mit Feldwert aus Haarhaus: Die Zeteraktivität beginnt je nach
+Individuum **20 bis 50 Minuten vor Sonnenaufgang**. Das ist keine
+Ruf-Eigenschaft, aber eine Hörzeit — steht jetzt im Merksatz der Amsel.
+
+Ungeprüft bleibt **Randler (2022)**, *acta ethologica* 25: 101–106, wonach
+Eichelhäher auf Amselzetern reagieren. Wäre der schönste Beleg dafür, dass
+die Amsel Leitart ist — Volltext hinter Springer. In der App als ungeprüft
+markiert, nicht als Beleg gezählt.
+
 ---
 
 ## Als Nächstes vorgemerkt
 
-1. **Belege für die restlichen sechs Arten** — Amsel, Rotkehlchen,
-   Blaumeise, Elster, Kolkrabe, Eichelhäher. Ausgerechnet die
-   „Einstiegsarten" sind noch reine Einschätzung. Für Amsel und Blaumeise
-   dürfte am ehesten etwas zu finden sein; die drei Rabenvögel sind
-   schwierig, weil ihr Repertoire nicht ins Fünf-Stimmen-Schema passt.
+1. **Belege für die restlichen fünf Arten** — Rotkehlchen, Blaumeise,
+   Elster, Kolkrabe, Eichelhäher. Für die Blaumeise dürfte am ehesten
+   etwas zu finden sein (die Paridae sind gut untersucht); die drei
+   Rabenvögel sind schwierig, weil ihr Repertoire nicht ins
+   Fünf-Stimmen-Schema passt. **Lehre aus der Amsel: nicht nach der Art
+   suchen, sondern nach dem Experiment** — „mobbing" plus Artname bringt
+   mehr als „Alarmruf" plus Artname.
 2. **Warum lieferte Commons keine Nest-Unterkategorien?** Ungeklärt, und
    solange das offen ist, ist `--alle` nicht sicher.
 3. **Artenzahl erweitern**, sobald die Alarm-Bewertung steht. Das

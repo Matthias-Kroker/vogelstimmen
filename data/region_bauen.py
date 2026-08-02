@@ -152,8 +152,8 @@ ALARMPROFILE = {
     "Passer domesticus": (True, 4, True),
     "Corvus corone": (True, 5, True),
     "Columba palumbus": (False, 3, True),     # mechanisch, Fluegelklatschen
+    "Turdus merula": (True, 5, True),         # Zetern 5, pook 3, Luftalarm 1
     # Einschaetzung
-    "Turdus merula": (True, 5, False),
     "Erithacus rubecula": (True, 4, False),
     "Cyanistes caeruleus": (True, 4, False),
     "Pica pica": (True, 5, False),
