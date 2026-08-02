@@ -43,10 +43,24 @@ ARTEN = [
 
 # Zeitangabe wie 0:01, 1:23.4, 12:07
 ZEIT = re.compile(r"\b\d{1,2}:\d{2}(?:\.\d)?\b")
-# Ruftyp-Woerter, die neben einer Zeitmarke stehen sollten
+# Ruftyp-Woerter, die neben einer Zeitmarke stehen sollten.
+# 2026-08 erweitert: um deutsche Begriffe und um Lautmalerei. Aufnehmende
+# schreiben oft nicht "alarm call", sondern was sie hoeren -- "pink at
+# 0:14", "hueet". Der erste Durchlauf suchte danach nicht.
 RUFWORT = re.compile(
     r"\b(call|song|alarm|warning|seee+|seep|rattle|tix|chink|drum|"
-    r"flight|contact|begging|scold|mobbing|subsong|advertis)", re.I)
+    r"flight|contact|begging|scold|mobbing|subsong|advertis|"
+    r"gesang|ruf\b|warnruf|alarmruf|zeter\w*|hassruf|bettel\w*|"
+    r"kontaktruf|flugruf|revier\w*|trommel\w*|"
+    r"pink|hu[ei]+t|tick|tsee|tseep|chack|chatter|churr|tsi|"
+    r"seet|siih|djueck|tuck|chuck|pook|excite\w*|agitat\w*)", re.I)
+
+# Lizenzen mit ND (no derivatives) duerfen wir nicht schneiden -- fuer die
+# App also unbrauchbar. Zum EICHEN unserer Messung sind sie trotzdem Gold:
+# dort steht, welcher Ruf wann zu hoeren ist. Deshalb werden sie nicht
+# aussortiert, sondern markiert.
+def nutzbar(lizenz):
+    return "-nd" not in (lizenz or "").lower()
 
 
 def hole(url, params=None, versuche=4, timeout=60):
@@ -97,13 +111,19 @@ def main():
         if filter_ and filter_ not in f"{name_de} {genus} {species}".lower():
             continue
         gefunden = []
-        for seite in (1, 2, 3):
+        # 2026-08: vorher nur drei Seiten -- bei der Amsel also 300 von 1804
+        # Aufnahmen. Beschriftete Zeitmarken sind selten; wer nur ein
+        # Sechstel durchsieht, findet auch nur ein Sechstel. Jetzt alle
+        # Seiten.
+        seite, seiten = 1, 1
+        while seite <= seiten:
             r = hole("https://xeno-canto.org/api/3/recordings",
                      {"query": f"gen:{genus} sp:{species}", "key": API_KEY,
                       "page": seite})
             if r is None:
                 break
             d = r.json()
+            seiten = int(d.get("numPages", 1))
             recs = d.get("recordings") or []
             if not recs:
                 break
@@ -117,11 +137,14 @@ def main():
                         "qualitaet": rec.get("q"), "land": rec.get("cnt"),
                         "aufnehmer": rec.get("rec"), "lizenz": rec.get("lic"),
                         "marken": anzahl,
-                        "beispiele": treffer[:6],
+                        # ND-Lizenzen duerfen wir nicht schneiden -- fuer
+                        # die App unbrauchbar, zum Eichen aber wertvoll.
+                        "in_app_nutzbar": nutzbar(rec.get("lic")),
+                        "bemerkung": (rec.get("rmk") or "")[:400],
+                        "beispiele": treffer[:12],
                     })
                     aufnehmer[rec.get("rec")] += 1
-            if int(d.get("numPages", 1)) <= seite:
-                break
+            seite += 1
             time.sleep(0.3)
 
         gefunden.sort(key=lambda x: -x["marken"])
@@ -135,6 +158,21 @@ def main():
     ziel.write_text(json.dumps(gesamt, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"\n{len(gesamt)} annotierte Aufnahmen -> {ziel.name}")
+
+    marken = sum(x["marken"] for x in gesamt)
+    nutzbar_n = sum(1 for x in gesamt if x["in_app_nutzbar"])
+    print(f"{marken} beschriftete Zeitpunkte insgesamt")
+    print(f"{nutzbar_n} davon mit Lizenz, die wir in der App verwenden "
+          f"duerfen — {len(gesamt) - nutzbar_n} nur zum Eichen")
+
+    woerter = collections.Counter()
+    for x in gesamt:
+        for _, w in x["beispiele"]:
+            woerter[w.lower()] += 1
+    print("\nWelche Ruftypen sind beschriftet:")
+    for w, n in woerter.most_common(20):
+        print(f"  {w:22s} {n:4d}")
+
     if aufnehmer:
         print("\nErgiebigste Aufnehmende:")
         for wer, n in aufnehmer.most_common(8):

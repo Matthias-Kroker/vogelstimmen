@@ -741,11 +741,63 @@ uns interessiert. `analyse_alarmtyp.py` und die Phrasenbildung filtern das
 **noch nicht** — dort steckt der Fehler vermutlich weiter drin und
 verfälscht die 131 Phrasen.
 
+### Checkpoint 2026-08-02 (5) — beschriftete Aufnahmen: 262 → 1757 Zeitmarken
+
+Matthias' Idee: gezielt nach Aufnahmen suchen, bei denen dabeisteht, an
+welcher Stelle welcher Ruf zu hören ist — auch solche, deren Lizenz wir in
+der App nicht verwenden dürfen, weil sie zum **Eichen** trotzdem taugen.
+
+**Vier Quellen geprüft, drei fallen durch:**
+
+| Quelle | Ergebnis |
+|---|---|
+| xeno-canto `annotation-set` | **0 von 1200** Aufnahmen gefüllt. Feld existiert, wird nicht benutzt. |
+| Tierstimmenarchiv Berlin | 120.000 Aufnahmen, aber `sound_type` in allen Datensätzen **leer**. CC BY-NC-SA. |
+| Macaulay Library | Alarmrufe fallen unter die Sammelkategorie „Call". Genau unsere Unterscheidung fehlt. Login nötig. |
+| NIPS4Bplus (PeerJ CS 5:e223) | Zeitmarken mit Beginn + Dauer + Etikett, CC BY 4.0, 687 Aufnahmen — aber nur `song`/`call`/`drum`. Für die Phrasenerkennung als Eichmaterial brauchbar, für die Fünf Stimmen nicht. |
+
+**Die eigene Spur war die richtige — sie war nur zu flach gegraben.**
+`annotierte_suchen.py` lief bisher über **3 Seiten je Art**: bei der Amsel
+300 von 1804 Aufnahmen. Und es suchte nur nach englischen Fachbegriffen,
+obwohl Aufnehmende oft schreiben, was sie *hören* („pink at 0:14",
+„hueet", „Zetern ab 0:22"). Beides behoben — alle Seiten, plus deutsche
+Begriffe und Lautmalerei.
+
+| | vorher | jetzt |
+|---|---:|---:|
+| Aufnahmen | 48 | **387** |
+| beschriftete Zeitpunkte | 262 | **1757** |
+| davon alarmnah | 6 | **202** |
+| begging | 5 | 35 |
+| contact | 4 | 16 |
+
+Alarmnahe Marken je Art: Amsel 48, Kohlmeise 40, Star 28, **Rotkehlchen
+21**, Buchfink 15, Buntspecht 8, Zilpzalp 8, Zaunkönig 7.
+
+Das Rotkehlchen ist der interessanteste Eintrag: Für seine
+Alarm-Auffälligkeit war in der Literatur **nichts** zu finden. Über die
+Zeitmarken bekommen wir jetzt 21 beschriftete Alarmstellen — ein anderer
+Weg zur selben Frage.
+
+**Zwei Bestätigungen nebenbei:** Die **Ringeltaube** hat 0 alarmnahe
+Marken bei 18 Marken gesamt — dritter unabhängiger Hinweis darauf, dass
+sie keinen vokalen Alarmruf hat. Und **Elster, Rabenkrähe, Kolkrabe,
+Eichelhäher** liegen bei 0 bis 4: die Rabenvögel entziehen sich uns
+inzwischen in Literatur *und* Daten.
+
+**Matthias' Lizenzgedanke ist eingebaut:** Jeder Treffer trägt
+`in_app_nutzbar`. 314 Aufnahmen dürfen wir ausliefern, **73 nicht**
+(ND-Lizenzen, 242 Marken) — die werden nicht mehr aussortiert, sondern
+markiert und nur zum Eichen verwendet.
+
 ---
 
 ## Als Nächstes vorgemerkt
 
-1. **Gruppierung auf Gesang / Alarm / unbestimmt umstellen** statt
+1. **Die 1757 Zeitmarken tatsächlich nutzen** — Aufnahmen holen, an den
+   Marken schneiden, daraus Vorlagen je Ruftyp rechnen. Das ist der
+   Rohstoff, der bisher fehlte. Vorher die 1,2-kHz-Grenze einbauen.
+2. **Gruppierung auf Gesang / Alarm / unbestimmt umstellen** statt
    Gesang/Rufe — mit sichtbarer Herkunft je Aufnahme. Die Fünf Stimmen
    bleiben der Erklärrahmen in der Vogelsprache-Ansicht, taugen aber nicht
    als Schubladen für das Material. Entscheidung steht bei Matthias.
