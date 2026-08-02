@@ -1,0 +1,1533 @@
+{
+ "hinweis": "stimme/sicherheit/woher je xeno-canto-Nummer. Erzeugt von data/stimmen_zuordnen.py — nicht von Hand aendern.",
+ "zuordnung": {
+  "1075227": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": true,
+   "andere_arten": false
+  },
+  "756188": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "756187": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097414": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097413": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "756189": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "710926": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "308687": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1158073": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097740": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097420": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097390": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1067905": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "877725": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "503228": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "380502": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "378844": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "96280": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1134194": {
+   "stimme": "begleitruf",
+   "sicherheit": "unsicher",
+   "woher": "Bemerkung der Aufnahme",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097424": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "979040": {
+   "stimme": "territorial",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Bemerkung der Aufnahme",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "979036": {
+   "stimme": "territorial",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Bemerkung der Aufnahme",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "782723": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "570428": {
+   "stimme": "bettelruf",
+   "sicherheit": "sicher",
+   "woher": "Altersangabe im Archiv",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "470407": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1096713": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1084504": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1048569": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1039715": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "497850": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "112373": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1155254": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1097609": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097529": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "685430": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "684538": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "777203": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "525916": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "384541": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "383537": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "75986": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "46292": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1051861": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1091736": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Trommeln zaehlt als Revieranzeige",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "589346": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "459045": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Trommeln zaehlt als Revieranzeige",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "342794": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "215495": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Trommeln zaehlt als Revieranzeige",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "211810": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "76367": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Trommeln zaehlt als Revieranzeige",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "757939": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "671020": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "661755": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1158092": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "495780": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "345719": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097616": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097533": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097397": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "684199": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "509430": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "934870": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "602107": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "493170": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "43833": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097547": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1097507": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "899545": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "845912": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "729993": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1049538": {
+   "stimme": "bettelruf",
+   "sicherheit": "sicher",
+   "woher": "Altersangabe im Archiv",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "820872": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "722453": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "400941": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "383538": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "376476": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "344306": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "79055": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "746804": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "685920": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "588203": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "524866": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "335030": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "75462": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "60754": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1158093": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1075379": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": true,
+   "andere_arten": true
+  },
+  "1034267": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1034265": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "926708": {
+   "stimme": "begleitruf",
+   "sicherheit": "unsicher",
+   "woher": "Bemerkung der Aufnahme",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1157302": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1037782": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "928700": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "893390": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "786670": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "666251": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "363842": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "363837": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1097734": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "761839": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "711348": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "711346": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "434107": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "319889": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "319887": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "838244": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "995266": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "995264": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "306693": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "998053": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "980097": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "900579": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "832739": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "872888": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "857575": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "685921": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "685427": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "502602": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "401495": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1136226": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1107462": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "826077": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "41222": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "57273": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "59816": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "74085": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "83359": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "93251": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "107474": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "122450": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "123587": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "123588": {
+   "stimme": "territorial",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Bemerkung der Aufnahme",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "129372": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "133308": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "133407": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "149922": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "152372": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "176885": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "176893": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "177339": {
+   "stimme": "bettelruf",
+   "sicherheit": "sicher",
+   "woher": "Altersangabe im Archiv",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "196399": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "204801": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "206128": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "214915": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "243645": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "247763": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "293845": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "299253": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "303312": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "303324": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "308105": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "313213": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "315675": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "337213": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "355076": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "355945": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "391344": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "391526": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "396773": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "399651": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "402218": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "402993": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "419601": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "419710": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "442630": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": true,
+   "andere_arten": false
+  },
+  "453459": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "453641": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "453961": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "512425": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "513972": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "542352": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "570431": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "590196": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "634668": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "635172": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "649246": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "706605": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "729005": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "735381": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "764740": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "772870": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "779941": {
+   "stimme": "unbestimmt",
+   "sicherheit": "unsicher",
+   "woher": "kein verwertbarer Hinweis",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "807366": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "808026": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "835749": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "891772": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "903242": {
+   "stimme": "alarm",
+   "sicherheit": "wahrscheinlich",
+   "woher": "Etikett + Bemerkung",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1000094": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1002645": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": true
+  },
+  "1052548": {
+   "stimme": "alarm",
+   "sicherheit": "unsicher",
+   "woher": "nur Etikett „alarm call“",
+   "baseline": false,
+   "gelockt": false,
+   "andere_arten": false
+  },
+  "1076328": {
+   "stimme": "gesang",
+   "sicherheit": "sicher",
+   "woher": "Etikett „song“",
+   "baseline": true,
+   "gelockt": false,
+   "andere_arten": false
+  }
+ }
+}

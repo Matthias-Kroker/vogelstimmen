@@ -111,8 +111,16 @@ bekanntermaßen ungenau — beim Weiterbauen nicht als gesichert behandeln.
 - **Sumpfmeise** hat keine Nest- und Jungvogelbilder (Commons hat für sie
   keine Unterkategorien), **Heckenbraunelle** keinen Stimme-Abschnitt
   (Lücke bei Wikipedia).
-- **Die App unterscheidet nur Gesang / Rufe / Trommeln**, nicht die Fünf
-  Stimmen. Die xeno-canto-Etiketten geben mehr nicht her.
+- **Eine Einteilung nach den Fünf Stimmen ist mit unserem Material NICHT
+  möglich** — 2026-08-02 durchgerechnet, nicht vermutet. Von 191 Aufnahmen
+  entfallen auf Territorial 3, Bettelruf 3, Begleitruf 2. Das sind keine
+  Lernkategorien. Tragfähig sind nur drei Gruppen: Gesang (65), Alarm (62),
+  unbestimmt (56). Zahlen und Herkunft: `data/stimmen_zuordnen.py`.
+- **43 der 62 Alarmaufnahmen hängen an nichts als dem Etikett
+  „alarm call"** — demselben, das nachweislich zu 77 % mit `call`
+  überlappt. Zwei Drittel unserer Alarmbeispiele sind also unbelegt.
+  Das steht jetzt je Aufnahme in `daten/stimmen.json` (`sicherheit`,
+  `woher`) und gehört sichtbar in die Oberfläche.
 - **Das Metawissen war bis 2026-08-02 unsichtbar.** `FUENF_STIMMEN` und
   `QUELLE` waren in `App.tsx` importiert und wurden **nirgends angezeigt** —
   das Wissen, das die Einzeleinträge überhaupt erst erklärt, existierte nur
@@ -635,11 +643,66 @@ gezeigt an der Amsel 1981 und an der Blaumeise 2017, 36 Jahre auseinander
 und an verschiedenen Arten. Solche Konvergenzen sind belastbarer als jede
 Einzelquelle und gehören deshalb an die Oberfläche.
 
+### Checkpoint 2026-08-02 (3) — Fünf Stimmen: durchgerechnet, geht nicht
+
+Frage von Matthias: Bekommen wir die Aufnahmen feiner eingeteilt als nur
+Gesang/Rufe? Antwort nach Messung: **teilweise, aber nicht nach den Fünf
+Stimmen.**
+
+Bisher wurde von xeno-canto nur `type` gespeichert — ausgerechnet das
+unzuverlässigste Feld. Die API liefert deutlich mehr, darunter
+**strukturierte** Felder statt Freitext: `stage` (Altersstufe), `sex`,
+`rmk` (Bemerkung), `also` (weitere Arten auf der Aufnahme),
+`playback-used`. Neu geholt für alle 191 Aufnahmen
+(`data/rufe_metadaten.py`) und ausgewertet (`data/stimmen_zuordnen.py`).
+
+Ergebnis:
+
+| Stimme | Aufnahmen | |
+|---|---:|---|
+| Gesang | 65 | Baseline |
+| Alarm | 62 | Gefahr |
+| unbestimmt | 56 | — |
+| **Territorial** | **3** | Baseline |
+| **Bettelruf** | **3** | Baseline |
+| **Begleitruf** | **2** | Baseline |
+
+Drei der fünf Stimmen haben zwei bis drei Aufnahmen. Das ist keine
+Lernkategorie, das ist ein Zufallsbefund. Ursache ist keine Schwäche
+unserer Auswertung, sondern eine **Schieflage des Archivs**: Aufgenommen
+wird, was auffällt — singende Männchen und Alarm. Bettelnde Jungvögel und
+Revierstreits landen selten in einem Archiv.
+
+Zwei Befunde, die mehr wert sind als die Einteilung selbst:
+
+1. **43 der 62 Alarmaufnahmen hängen an nichts als dem Etikett.** Zwei
+   Drittel unserer Alarmbeispiele haben keinen zweiten Beleg. Jede
+   Aufnahme trägt jetzt `sicherheit` und `woher` mit sich.
+2. **21 der 62 Alarmaufnahmen haben andere Arten mit drauf.** Genau an
+   denen ließe sich Youngs Kriterium prüfen: reagieren die anderen mit?
+   Wenn ja, ist es Alarm; wenn nicht, eher Baseline. Das wäre der erste
+   Test, der die Etiketten unabhängig überprüft — und er braucht kein
+   Gehör, sondern eine Messung.
+
+Nebenbefund: **Die Ringeltaube ist die einzige Art ohne jede
+Alarmaufnahme.** Das deckt sich mit der Literatur — sie hat keinen
+vokalen Alarmruf, sondern klatscht mit den Flügeln. Die Daten bestätigen
+hier unabhängig, was in `vogelsprache.ts` steht.
+
+Ebenfalls neu greifbar: 3 Aufnahmen wurden **mit Klangattrappe** gelockt.
+Deren Reaktion ist provoziert und als Alarmbeispiel wertlos — bisher war
+das nicht erkennbar.
+
 ---
 
 ## Als Nächstes vorgemerkt
 
-1. **Sitzt die Vogelsprache-Ansicht richtig?** Sie ist derzeit ein dritter
+1. **Gruppierung auf Gesang / Alarm / unbestimmt umstellen** statt
+   Gesang/Rufe — mit sichtbarer Herkunft je Aufnahme. Die Fünf Stimmen
+   bleiben der Erklärrahmen in der Vogelsprache-Ansicht, taugen aber nicht
+   als Schubladen für das Material. Entscheidung steht bei Matthias.
+2. **Youngs Kriterium messen** an den 21 Aufnahmen mit Fremdarten.
+3. **Sitzt die Vogelsprache-Ansicht richtig?** Sie ist derzeit ein dritter
    Knopf neben Quiz und Offline. Das ist eine Vermutung, keine Entscheidung
    — Matthias' Urteil steht aus.
 2. **Rotkehlchen, Kolkrabe, Eichelhäher** bleiben offen. Beim Rotkehlchen
