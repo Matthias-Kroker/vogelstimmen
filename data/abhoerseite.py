@@ -207,7 +207,7 @@ damit die Grundlage fehlte.</div>"""]
         t.append(f'<div class="anker"><div class="ankerTitel">{titel}</div>'
                  f'<div class="ankerText">{html.escape(beschreibung)}</div>')
         for w in dateien:
-            t.append(f'<audio controls preload="none" src="Amsel/{w}"></audio>')
+            t.append(f'<audio controls preload="none" src="abhoeren/Amsel/{w}"></audio>')
         t.append("</div>")
     return t
 
@@ -227,7 +227,7 @@ def baue(gruppen, gesamt, anker):
                      f'Phrasen · xeno-canto nennt das '
                      f'„{html.escape(e["xc_typ"] or "?")}“</span>')
             t.append(f'<audio controls preload="none" '
-                     f'src="Amsel/{e["wav"]}"></audio>')
+                     f'src="abhoeren/Amsel/{e["wav"]}"></audio>')
             t.append(f'<div class="beschreibung">'
                      f'<div class="marke">WAS DIE MESSUNG DORT FINDET</div>'
                      f'{beschreiben(e)}</div>')
