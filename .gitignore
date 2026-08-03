@@ -65,3 +65,7 @@ Jagd-und-Tracking-Gesamtdokument.md
 # Eichmaterial: vollstaendige fremde Aufnahmen, teils ND-Lizenz.
 # Nur zum Messen geladen, niemals ausgeliefert oder eingecheckt.
 data/eichmaterial/
+
+# Geschnittene Abhoerschnipsel: aus dem Eichmaterial erzeugt, 36 MB,
+# jederzeit neu baubar mit data/abhoerseite.py
+data/abhoeren/
