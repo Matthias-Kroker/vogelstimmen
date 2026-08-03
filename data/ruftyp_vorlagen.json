@@ -1,0 +1,414 @@
+{
+ "hinweis": "Aus fremdbeschrifteten Zeitmarken gemessen (data/marken_schneiden.py). Die Tonaufnahmen selbst werden NICHT ausgeliefert — nur diese Messwerte.",
+ "fenster_s": [
+  1.0,
+  3.0
+ ],
+ "hochpass_hz": 1200,
+ "ueber_alle_arten": {
+  "gesang": {
+   "n": 334,
+   "spitze_hz": 4209,
+   "spitze_streuung": 2615,
+   "anteil_ueber_5k": 0.257,
+   "dauer_s": 0.12,
+   "silben_im_fenster": 10.0
+  },
+  "alarm": {
+   "n": 180,
+   "spitze_hz": 4283,
+   "spitze_streuung": 2954,
+   "anteil_ueber_5k": 0.412,
+   "dauer_s": 0.12,
+   "silben_im_fenster": 9.0
+  },
+  "trommeln": {
+   "n": 78,
+   "spitze_hz": 1696,
+   "spitze_streuung": 1446,
+   "anteil_ueber_5k": 0.096,
+   "dauer_s": 0.048,
+   "silben_im_fenster": 9.5
+  },
+  "flugruf": {
+   "n": 64,
+   "spitze_hz": 2761,
+   "spitze_streuung": 2649,
+   "anteil_ueber_5k": 0.135,
+   "dauer_s": 0.117,
+   "silben_im_fenster": 6.0
+  },
+  "bettelruf": {
+   "n": 34,
+   "spitze_hz": 2628,
+   "spitze_streuung": 2172,
+   "anteil_ueber_5k": 0.349,
+   "dauer_s": 0.206,
+   "silben_im_fenster": 8.0
+  },
+  "luftalarm": {
+   "n": 17,
+   "spitze_hz": 6981,
+   "spitze_streuung": 2824,
+   "anteil_ueber_5k": 0.89,
+   "dauer_s": 0.112,
+   "silben_im_fenster": 3.0
+  },
+  "begleitruf": {
+   "n": 16,
+   "spitze_hz": 3970,
+   "spitze_streuung": 3171,
+   "anteil_ueber_5k": 0.522,
+   "dauer_s": 0.106,
+   "silben_im_fenster": 2.0
+  }
+ },
+ "je_art": {
+  "Buchfink": {
+   "alarm": {
+    "n": 15,
+    "spitze_hz": 4210,
+    "spitze_streuung": 81,
+    "anteil_ueber_5k": 0.22,
+    "dauer_s": 0.099,
+    "silben_im_fenster": 4.0
+   },
+   "flugruf": {
+    "n": 9,
+    "spitze_hz": 2735,
+    "spitze_streuung": 461,
+    "anteil_ueber_5k": 0.164,
+    "dauer_s": 0.048,
+    "silben_im_fenster": 5.0
+   },
+   "gesang": {
+    "n": 32,
+    "spitze_hz": 3560,
+    "spitze_streuung": 923,
+    "anteil_ueber_5k": 0.087,
+    "dauer_s": 0.085,
+    "silben_im_fenster": 11.0
+   },
+   "bettelruf": {
+    "n": 7,
+    "spitze_hz": 2857,
+    "spitze_streuung": 2392,
+    "anteil_ueber_5k": 0.281,
+    "dauer_s": 0.117,
+    "silben_im_fenster": 6.0
+   }
+  },
+  "Kohlmeise": {
+   "gesang": {
+    "n": 32,
+    "spitze_hz": 4711,
+    "spitze_streuung": 1801,
+    "anteil_ueber_5k": 0.41,
+    "dauer_s": 0.12,
+    "silben_im_fenster": 8.5
+   },
+   "alarm": {
+    "n": 37,
+    "spitze_hz": 6308,
+    "spitze_streuung": 3144,
+    "anteil_ueber_5k": 0.643,
+    "dauer_s": 0.096,
+    "silben_im_fenster": 9.0
+   },
+   "flugruf": {
+    "n": 4,
+    "spitze_hz": 5366,
+    "spitze_streuung": 1370,
+    "anteil_ueber_5k": 0.701,
+    "dauer_s": 0.059,
+    "silben_im_fenster": 8.5
+   }
+  },
+  "Zaunkönig": {
+   "gesang": {
+    "n": 22,
+    "spitze_hz": 5574,
+    "spitze_streuung": 1591,
+    "anteil_ueber_5k": 0.694,
+    "dauer_s": 0.073,
+    "silben_im_fenster": 13.5
+   },
+   "alarm": {
+    "n": 7,
+    "spitze_hz": 5369,
+    "spitze_streuung": 3091,
+    "anteil_ueber_5k": 0.839,
+    "dauer_s": 0.128,
+    "silben_im_fenster": 9.0
+   }
+  },
+  "Blaumeise": {
+   "alarm": {
+    "n": 5,
+    "spitze_hz": 4732,
+    "spitze_streuung": 1244,
+    "anteil_ueber_5k": 0.391,
+    "dauer_s": 0.085,
+    "silben_im_fenster": 8.0
+   },
+   "gesang": {
+    "n": 19,
+    "spitze_hz": 5712,
+    "spitze_streuung": 1824,
+    "anteil_ueber_5k": 0.816,
+    "dauer_s": 0.112,
+    "silben_im_fenster": 9.0
+   },
+   "bettelruf": {
+    "n": 7,
+    "spitze_hz": 1999,
+    "spitze_streuung": 488,
+    "anteil_ueber_5k": 0.473,
+    "dauer_s": 0.998,
+    "silben_im_fenster": 7.0
+   }
+  },
+  "Buntspecht": {
+   "trommeln": {
+    "n": 78,
+    "spitze_hz": 1696,
+    "spitze_streuung": 1446,
+    "anteil_ueber_5k": 0.096,
+    "dauer_s": 0.048,
+    "silben_im_fenster": 9.5
+   },
+   "gesang": {
+    "n": 32,
+    "spitze_hz": 3669,
+    "spitze_streuung": 3266,
+    "anteil_ueber_5k": 0.203,
+    "dauer_s": 0.075,
+    "silben_im_fenster": 13.5
+   },
+   "alarm": {
+    "n": 8,
+    "spitze_hz": 1903,
+    "spitze_streuung": 1608,
+    "anteil_ueber_5k": 0.192,
+    "dauer_s": 0.053,
+    "silben_im_fenster": 8.0
+   }
+  },
+  "Amsel": {
+   "gesang": {
+    "n": 50,
+    "spitze_hz": 2464,
+    "spitze_streuung": 762,
+    "anteil_ueber_5k": 0.169,
+    "dauer_s": 0.206,
+    "silben_im_fenster": 10.0
+   },
+   "alarm": {
+    "n": 46,
+    "spitze_hz": 3924,
+    "spitze_streuung": 2678,
+    "anteil_ueber_5k": 0.417,
+    "dauer_s": 0.181,
+    "silben_im_fenster": 8.5
+   },
+   "bettelruf": {
+    "n": 4,
+    "spitze_hz": 2633,
+    "spitze_streuung": 55,
+    "anteil_ueber_5k": 0.077,
+    "dauer_s": 0.209,
+    "silben_im_fenster": 11.0
+   }
+  },
+  "Star": {
+   "gesang": {
+    "n": 27,
+    "spitze_hz": 4170,
+    "spitze_streuung": 2401,
+    "anteil_ueber_5k": 0.211,
+    "dauer_s": 0.197,
+    "silben_im_fenster": 11.0
+   },
+   "flugruf": {
+    "n": 9,
+    "spitze_hz": 2542,
+    "spitze_streuung": 775,
+    "anteil_ueber_5k": 0.177,
+    "dauer_s": 0.087,
+    "silben_im_fenster": 7.0
+   },
+   "alarm": {
+    "n": 20,
+    "spitze_hz": 3980,
+    "spitze_streuung": 2886,
+    "anteil_ueber_5k": 0.294,
+    "dauer_s": 0.203,
+    "silben_im_fenster": 10.5
+   }
+  },
+  "Rotkehlchen": {
+   "alarm": {
+    "n": 12,
+    "spitze_hz": 5651,
+    "spitze_streuung": 2846,
+    "anteil_ueber_5k": 0.765,
+    "dauer_s": 0.087,
+    "silben_im_fenster": 11.0
+   },
+   "luftalarm": {
+    "n": 9,
+    "spitze_hz": 7165,
+    "spitze_streuung": 983,
+    "anteil_ueber_5k": 0.897,
+    "dauer_s": 0.104,
+    "silben_im_fenster": 1.0
+   },
+   "gesang": {
+    "n": 23,
+    "spitze_hz": 5175,
+    "spitze_streuung": 4248,
+    "anteil_ueber_5k": 0.802,
+    "dauer_s": 0.075,
+    "silben_im_fenster": 12.0
+   }
+  },
+  "Ringeltaube": {
+   "gesang": {
+    "n": 13,
+    "spitze_hz": 1321,
+    "spitze_streuung": 709,
+    "anteil_ueber_5k": 0.477,
+    "dauer_s": 2.229,
+    "silben_im_fenster": 2.0
+   }
+  },
+  "Eichelhäher": {
+   "gesang": {
+    "n": 5,
+    "spitze_hz": 2457,
+    "spitze_streuung": 434,
+    "anteil_ueber_5k": 0.173,
+    "dauer_s": 0.134,
+    "silben_im_fenster": 6.0
+   },
+   "alarm": {
+    "n": 4,
+    "spitze_hz": 3108,
+    "spitze_streuung": 1661,
+    "anteil_ueber_5k": 0.423,
+    "dauer_s": 0.141,
+    "silben_im_fenster": 8.5
+   }
+  },
+  "Zilpzalp": {
+   "gesang": {
+    "n": 42,
+    "spitze_hz": 4662,
+    "spitze_streuung": 1995,
+    "anteil_ueber_5k": 0.278,
+    "dauer_s": 0.122,
+    "silben_im_fenster": 10.0
+   },
+   "alarm": {
+    "n": 8,
+    "spitze_hz": 4523,
+    "spitze_streuung": 1568,
+    "anteil_ueber_5k": 0.241,
+    "dauer_s": 0.148,
+    "silben_im_fenster": 3.0
+   },
+   "flugruf": {
+    "n": 8,
+    "spitze_hz": 3520,
+    "spitze_streuung": 768,
+    "anteil_ueber_5k": 0.234,
+    "dauer_s": 0.117,
+    "silben_im_fenster": 3.5
+   }
+  },
+  "Kolkrabe": {
+   "gesang": {
+    "n": 5,
+    "spitze_hz": 2264,
+    "spitze_streuung": 203,
+    "anteil_ueber_5k": 0.179,
+    "dauer_s": 0.075,
+    "silben_im_fenster": 13.0
+   },
+   "flugruf": {
+    "n": 19,
+    "spitze_hz": 1507,
+    "spitze_streuung": 274,
+    "anteil_ueber_5k": 0.062,
+    "dauer_s": 0.209,
+    "silben_im_fenster": 9.0
+   },
+   "alarm": {
+    "n": 4,
+    "spitze_hz": 2293,
+    "spitze_streuung": 829,
+    "anteil_ueber_5k": 0.115,
+    "dauer_s": 0.063,
+    "silben_im_fenster": 15.0
+   }
+  },
+  "Sumpfmeise": {
+   "gesang": {
+    "n": 17,
+    "spitze_hz": 4523,
+    "spitze_streuung": 122,
+    "anteil_ueber_5k": 0.13,
+    "dauer_s": 0.096,
+    "silben_im_fenster": 5.0
+   },
+   "alarm": {
+    "n": 5,
+    "spitze_hz": 4950,
+    "spitze_streuung": 222,
+    "anteil_ueber_5k": 0.479,
+    "dauer_s": 0.053,
+    "silben_im_fenster": 6.0
+   }
+  },
+  "Heckenbraunelle": {
+   "gesang": {
+    "n": 11,
+    "spitze_hz": 4823,
+    "spitze_streuung": 604,
+    "anteil_ueber_5k": 0.329,
+    "dauer_s": 0.101,
+    "silben_im_fenster": 17.0
+   }
+  },
+  "Habicht": {
+   "bettelruf": {
+    "n": 6,
+    "spitze_hz": 3112,
+    "spitze_streuung": 3391,
+    "anteil_ueber_5k": 0.497,
+    "dauer_s": 0.177,
+    "silben_im_fenster": 8.0
+   }
+  },
+  "Haussperling": {
+   "alarm": {
+    "n": 6,
+    "spitze_hz": 3331,
+    "spitze_streuung": 1491,
+    "anteil_ueber_5k": 0.309,
+    "dauer_s": 0.458,
+    "silben_im_fenster": 11.5
+   }
+  },
+  "Elster": {
+   "flugruf": {
+    "n": 5,
+    "spitze_hz": 2889,
+    "spitze_streuung": 138,
+    "anteil_ueber_5k": 0.158,
+    "dauer_s": 0.128,
+    "silben_im_fenster": 6.0
+   }
+  }
+ }
+}

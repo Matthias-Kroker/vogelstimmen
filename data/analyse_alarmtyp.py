@@ -24,6 +24,7 @@ from pathlib import Path
 
 import numpy as np
 from pydub import AudioSegment
+from scipy.signal import butter, filtfilt
 
 FFMPEG = Path(r"C:\Users\kroker\Tools\ffmpeg\bin\ffmpeg.exe")
 if FFMPEG.exists():
@@ -34,12 +35,44 @@ if FFMPEG.exists():
 MAX_MS = 8000          # gleicher Ausschnitt wie im Lernaudio
 RAUSCHGRENZE = 0.12    # leise Rahmen ignorieren (Wind, Hintergrund)
 
+# Unterhalb dieser Grenze singt kein heimischer Singvogel. Was hier
+# Energie hat, ist Wind, Schritte, Verkehr oder Kleidung am Mikrofon.
+#
+# WARUM DAS WICHTIG IST: Ohne diesen Filter erzeugt Rumpeln eigene
+# "Silben". Am 2026-08-02 hat das ein komplettes Messergebnis gekippt --
+# Alarmaufnahmen schienen 16 % Fremdsilben zu enthalten gegen 3 % beim
+# Gesang, ein Faktor fuenf. Nach dem Filter blieben 8 % gegen 4 %, und
+# "unbestimmt" lag mit 9 % davor. Der Effekt war die Aufnahmesituation:
+# Alarm wird hastig aus der Hand aufgenommen, Gesang vom Stativ.
+#
+# Die Grenze wirkt hier zentral, damit sie fuer JEDE Auswertung gilt, die
+# lade_mono benutzt -- Phrasenbildung eingeschlossen.
+HOCHPASS_HZ = 1200
 
-def lade_mono(pfad, max_ms=MAX_MS):
-    seg = AudioSegment.from_file(pfad)[:max_ms].set_channels(1)
+
+def hochpass(signal, sr, grenze=HOCHPASS_HZ):
+    """Butterworth 4. Ordnung, nullphasig (filtfilt verschiebt nicht).
+
+    Nullphasig ist hier nicht Kosmetik: Wir schneiden spaeter an
+    Zeitmarken. Ein Filter mit Phasengang wuerde die Silben gegen die
+    Marken verschieben.
+    """
+    if sr <= 2 * grenze:
+        return signal
+    b, a = butter(4, grenze / (sr / 2), btype="highpass")
+    return filtfilt(b, a, signal)
+
+
+def lade_mono(pfad, max_ms=MAX_MS, filtern=True):
+    seg = AudioSegment.from_file(pfad)
+    if max_ms:
+        seg = seg[:max_ms]
+    seg = seg.set_channels(1)
     roh = np.array(seg.get_array_of_samples()).astype(np.float64)
     if roh.size == 0:
         return None, 0
+    if filtern:
+        roh = hochpass(roh, seg.frame_rate)
     roh /= (np.abs(roh).max() or 1.0)
     return roh, seg.frame_rate
 

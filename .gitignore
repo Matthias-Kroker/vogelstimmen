@@ -61,3 +61,7 @@ __pycache__/
 
 # Persoenliches Dokument -- gehoert nicht ins oeffentliche Repo
 Jagd-und-Tracking-Gesamtdokument.md
+
+# Eichmaterial: vollstaendige fremde Aufnahmen, teils ND-Lizenz.
+# Nur zum Messen geladen, niemals ausgeliefert oder eingecheckt.
+data/eichmaterial/

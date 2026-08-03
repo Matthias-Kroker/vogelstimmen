@@ -790,13 +790,65 @@ inzwischen in Literatur *und* Daten.
 (ND-Lizenzen, 242 Marken) — die werden nicht mehr aussortiert, sondern
 markiert und nur zum Eichen verwendet.
 
+### Checkpoint 2026-08-03 — erste gemessene Vorlagen, und Marler bestätigt sich
+
+207 annotierte Aufnahmen geladen (nach `data/eichmaterial/`, **nicht**
+eingecheckt), an 723 Marken geschnitten, dort gemessen. Vorher die
+1,2-kHz-Grenze zentral in `lade_mono()` eingebaut — Butterworth 4. Ordnung,
+**nullphasig** (`filtfilt`), weil ein Filter mit Phasengang die Silben
+gegen die Zeitmarken verschieben würde.
+
+| Ruftyp | n | Spitze | Streuung | >5 kHz | Dauer | Silben/Fenster |
+|---|---:|---:|---:|---:|---:|---:|
+| gesang | 334 | 4209 Hz | 2615 | 0,26 | 0,12 s | 10 |
+| alarm | 180 | 4283 Hz | 2954 | 0,41 | 0,12 s | 9 |
+| trommeln | 78 | 1696 Hz | 1446 | 0,10 | 0,05 s | 9,5 |
+| flugruf | 64 | 2761 Hz | 2649 | 0,14 | 0,12 s | 6 |
+| bettelruf | 34 | 2628 Hz | 2172 | 0,35 | 0,21 s | 8 |
+| **luftalarm** | **17** | **6981 Hz** | 2824 | **0,89** | 0,11 s | **3** |
+| begleitruf | 16 | 3970 Hz | 3171 | 0,52 | 0,11 s | 2 |
+
+**Der Luftalarm sticht heraus — und zwar genau so, wie Marler es 1955
+beschrieben hat.** 6981 Hz Spitzenfrequenz, 89 % der Energie über 5 kHz,
+und nur drei Silben im Fenster statt neun bis zehn. Das ist unsere erste
+**unabhängige** Bestätigung: gemessen an Stellen, die fremde Personen
+beschriftet haben, ohne Kenntnis unserer Hypothese, mit einer Messkette,
+die wir nicht darauf eingestellt haben.
+
+**Der pauschale „alarm" ist dagegen NICHT von Gesang zu unterscheiden** —
+4283 gegen 4209 Hz, gleiche Silbendauer. Nur der Hochbandanteil trennt
+etwas (0,41 gegen 0,26). Das passt zu allem, was wir gelernt haben: Unter
+dem Etikett „alarm call" steckt bei den meisten Arten der Hassruf, und der
+ist breitbandig wie Gesang. Die Elster benutzt sogar denselben Ruf für
+Revierstreit. **Die brauchbare Trennlinie läuft nicht zwischen Gesang und
+Alarm, sondern zwischen Luftalarm und allem anderen.**
+
+**Rotkehlchen: 9 Luftalarm-Proben.** Für seine Alarm-Auffälligkeit war in
+der Literatur nichts zu finden — jetzt ist sie messbar.
+
+Zwei Filter waren nötig, beide aus geprüften Fehlern:
+
+1. **2 % der Marken liegen hinter dem Ende der Aufnahme** (Marke 06:48 bei
+   4:00 Länge). `\d{1,2}:\d{2}` trifft eben auch Uhrzeiten.
+2. **Marken beschreiben die AUFNAHME, nicht zwingend den Vogel.** XC553588
+   ist eine Buchfink-Aufnahme, deren Bemerkung ausdrücklich eine
+   Singdrossel bei 0:02 nennt. Sichtbar wurde es an „Trommeln" bei
+   Buchfink und Zilpzalp — die trommeln nicht, da war ein Specht im
+   Hintergrund. Nach dem Filter sank die Trommel-Spitzenfrequenz von 1854
+   auf 1696 Hz und die Streuung von 1835 auf 1446: die Vorlage war
+   tatsächlich verunreinigt.
+
+Der zweite Fehler ist nur an offensichtlichen Fällen zu fangen. Wo ein
+Buchfink als Buchfink beschriftet ist, aber die Marke einer Amsel gilt,
+merken wir es nicht. Das begrenzt die Genauigkeit aller Vorlagen.
+
 ---
 
 ## Als Nächstes vorgemerkt
 
-1. **Die 1757 Zeitmarken tatsächlich nutzen** — Aufnahmen holen, an den
-   Marken schneiden, daraus Vorlagen je Ruftyp rechnen. Das ist der
-   Rohstoff, der bisher fehlte. Vorher die 1,2-kHz-Grenze einbauen.
+1. **Die Vorlagen gegen Matthias' 41 Urteile prüfen** — stimmen die
+   gemessenen Werte mit dem überein, was er gehört hat? Erst dann sind sie
+   mehr als plausible Zahlen.
 2. **Gruppierung auf Gesang / Alarm / unbestimmt umstellen** statt
    Gesang/Rufe — mit sichtbarer Herkunft je Aufnahme. Die Fünf Stimmen
    bleiben der Erklärrahmen in der Vogelsprache-Ansicht, taugen aber nicht
